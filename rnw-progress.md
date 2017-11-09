@@ -1,109 +1,33 @@
-**Component Progress**
+# Compatibility with react-native-web
 
-- [ ] Avatar
-  - [x] initial check 
-    - Notes:  probably no changes
-  - [ ] verify all props
-  - [ ] jest/enzyme tests
+## Component Progress
 
-- [ ] Badge 
-  - [ ] initial check 
-    - Notes:
-  - [ ] verify all props
-  - [ ] jest/enzyme tests
+Component | initial check | detailed verification | tests & snapshots |
+--|--|--|--|
+ Avatar | 2017-11-08 `no changes` |
+ Badge |
+ Button Group |
+ Buttons |
+ Card | 
+ Checkbox |
+ Divider |
+ Forms |
+ Header | 2017-11-07 `no changes`
+ Icons | 2017-11-07 [changes](#icon-changes)
+ Lists |
+ Pricing |
+ Rating |
+ Searchbar |
+ Slider | 2017-11-08 [changes](#slider-changes)
+ Social Icons |
+ Text |
+ Tile |
 
-- [ ] Button Group
-  - [ ] initial check 
-    - Notes:
-  - [ ] verify all props
-  - [ ] jest/enzyme tests
+## Changes
 
-- [ ] Buttons
-  - [ ] initial check 
-    - Notes:
-  - [ ] verify all props
-  - [ ] jest/enzyme tests
+### Icon changes
+- avoid dom prop warnings
 
-- [ ] Card
-  - [ ] initial check 
-    - Notes:
-  - [ ] verify all props
-  - [ ] jest/enzyme tests
-
-- [ ] Checkbox
-  - [ ] initial check 
-    - Notes:
-  - [ ] verify all props
-  - [ ] jest/enzyme tests
-
-- [ ] Divider
-  - [ ] initial check 
-    - Notes:
-  - [ ] verify all props
-  - [ ] jest/enzyme tests
-
-- [ ] Forms
-  - [ ] initial check 
-    - Notes:
-  - [ ] verify all props
-  - [ ] jest/enzyme tests
-
-- [ ] Header
-  - [x] initial check 
-    - Notes:  
-  - [ ] verify all props
-  - [ ] jest/enzyme tests
-
-- [ ] Icons
-  - [ ] initial check 
-    - Notes:
-  - [ ] verify all props
-  - [ ] jest/enzyme tests
-
-- [ ] Lists
-  - [ ] initial check 
-    - Notes:
-  - [ ] verify all props
-  - [ ] jest/enzyme tests
-
-- [ ] Pricing
-  - [ ] initial check 
-    - Notes:
-  - [ ] verify all props
-  - [ ] jest/enzyme tests
-
-- [ ] Rating
-  - [ ] initial check 
-    - Notes:
-  - [ ] verify all props
-  - [ ] jest/enzyme tests
-
-- [ ] Searchbar
-  - [ ] initial check 
-    - Notes: Will do this last, as it's being refactored
-  - [ ] verify all props
-  - [ ] jest/enzyme tests
-
-- [ ] Slider
-  - [ ] initial check 
-    - Notes:
-  - [ ] verify all props
-  - [ ] jest/enzyme tests
-
-- [ ] Social Icons
-  - [ ] initial check 
-    - Notes:
-  - [ ] verify all props
-  - [ ] jest/enzyme tests
-
-- [ ] Text
-  - [ ] initial check 
-    - Notes:
-  - [ ] verify all props
-  - [ ] jest/enzyme tests
-
-- [ ] Tile
-  - [ ] initial check 
-    - Notes:
-  - [ ] verify all props
-  - [ ] jest/enzyme tests
+### Slider changes
+- avoid dom prop warnings
+- small fix for "minimumTrackStyle" margin
