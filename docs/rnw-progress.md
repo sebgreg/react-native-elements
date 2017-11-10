@@ -22,11 +22,10 @@
 | Social Icons |
 | Text         |
 | Tile         |
-|              |
 
 ## Component Changes
 
-## Badge changes
+### Badge changes
 - set width instead of 100%
 
 ### Button changes
