@@ -5,3 +5,6 @@ site
 coverage
 jsconfig.json
 .vscode/
+
+docs/styleguide/public
+docs/styleguide/build

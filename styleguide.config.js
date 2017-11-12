@@ -1,10 +1,12 @@
 const path = require('path');
 
+// require: [path.join(__dirname, 'src/form/FormLabel')],
+
 const getExampleFilename = componentPath => {
   let baseName = path.basename(componentPath).replace(/\.jsx?$/, '.md');
-  if (baseName.includes('Form')) baseName = 'Forms.md';
+  if (baseName.includes('FormInput')) baseName = 'Forms.md';
+  if (baseName === 'List.md') baseName = 'Lists.md';
   const fullPath = path.resolve(`docs/styleguide/examples/${baseName}`);
-  console.warn(fullPath);
   return fullPath;
 };
 
@@ -13,9 +15,46 @@ module.exports = {
   context: {
     RN: 'react-native',
   },
-  skipComponentsWithoutExample: true,
+  skipComponentsWithoutExample: false,
   components: 'src/**/+([A-Z]*|badge).js',
+  sections: [
+    {
+      name: 'Buttons',
+      components: 'src/buttons/[A-Z]*.js',
+    },
+    {
+      name: 'Cards',
+      components: 'src/+(card|pricing)/[A-Z]*.js',
+    },
+    {
+      name: 'Forms',
+      components: 'src/form/[A-Z]*.js',
+    },
+    {
+      name: 'Icons',
+      components: 'src/+(icons|social)/[A-Z]*.js',
+    },
+    {
+      name: 'Inputs',
+      components: 'src/+(checkbox|rating|slider)/[A-Z]*.js',
+    },
+    {
+      name: 'Lists',
+      components: 'src/list/[A-Z]*.js',
+    },
+    {
+      name: 'Tiles',
+      components: 'src/tile/[A-Z]*.js',
+    },
+    {
+      name: 'misc',
+      components: 'src/+(avatar|badge|divider|header|text)/[A-Z]*.js',
+    },
+  ],
   ignore: [
+    '**/NavButton.js',
+    '**/DummyNavButton.js',
+    '**/Title.js',
     '**/config/**',
     '**/__tests__/**',
     '**/*.test.js',

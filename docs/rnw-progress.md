@@ -14,12 +14,12 @@
 | Forms        | 2017-11-11    | [low](#form-changes)        |
 | Header       | 2017-11-07    | no changes                  |
 | Icon         | 2017-11-07    | [med](#icon-changes)        |
-| Lists        |
-| Pricing      |
-| Rating       |
+| Lists        | 2017-11-11    | no changes                  |
+| Pricing      | 2017-11-11    | no changes                  |
+| Rating       | 2017-11-11    | [med](#rating-changes)      |
 | Search       |
 | Slider       | 2017-11-08    | [low](#slider-changes)      |
-| Social Icons |
+| Social Icons | 2017-11-11    | no changes                  |
 | Text         |
 | Tiles        |
 
@@ -41,6 +41,10 @@
 ### Icon changes
 - avoid dom prop warnings
 - doc example for icon font injection
+
+### Rating changes
+- Keep images from being dragged
+- mouseclick & mousemove seem off from displayed position
 
 ### Slider changes
 - avoid dom prop warnings
