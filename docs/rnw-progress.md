@@ -2,26 +2,26 @@
 
 ## Component Progress
 
-| Component    | initial check | estimated effort       | add tests | final |
-| ------------ | ------------- | ---------------------- | --------- | ----- |
-| Avatar       | 2017-11-08    | no changes             |
-| Badge        | 2017-11-10    | [med](#badge-changes)  |
-| Button Group |
-| Buttons      | 2017-11-09    | [low](#button-changes) |
-| Card         | 2017-11-10    | no changes             |
-| Checkbox     | 2017-11-10    | no changes             |
-| Divider      | 2017-11-10    | no changes             |
-| Forms        |
-| Header       | 2017-11-07    | no changes             |
-| Icons        | 2017-11-07    | [med](#icon-changes)   |
+| Component    | initial check | estimated effort            | add tests | final |
+| ------------ | ------------- | --------------------------- | --------- | ----- |
+| Avatar       | 2017-11-08    | no changes                  |
+| Badge        | 2017-11-10    | [med](#badge-changes)       |
+| Button Group | 2017-11-11    | [low](#buttongroup-changes) |
+| Buttons      | 2017-11-09    | [low](#button-changes)      |
+| Card         | 2017-11-10    | no changes                  |
+| Checkbox     | 2017-11-10    | no changes                  |
+| Divider      | 2017-11-10    | no changes                  |
+| Forms        | 2017-11-11    | [low](#form-changes)        |
+| Header       | 2017-11-07    | no changes                  |
+| Icon         | 2017-11-07    | [med](#icon-changes)        |
 | Lists        |
 | Pricing      |
 | Rating       |
-| Searchbar    |
-| Slider       | 2017-11-08    | [low](#slider-changes) |
+| Search       |
+| Slider       | 2017-11-08    | [low](#slider-changes)      |
 | Social Icons |
 | Text         |
-| Tile         |
+| Tiles        |
 
 ## Component Changes
 
@@ -30,6 +30,13 @@
 
 ### Button changes
 - add support for raised
+
+### ButtonGroup changes
+- avoid dom prop warnings
+- add units to numberic props
+
+### Form changes
+- avoid dom prop warnings
 
 ### Icon changes
 - avoid dom prop warnings

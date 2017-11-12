@@ -6,9 +6,9 @@ const View = ReactNative.View;
 const Text = ReactNative.Text;
 
 <View>
-  <Text>some text</Text>
+  <Text style={{ fontSize: 24 }}>some text</Text>
   <Divider />
-  <Text>some other text</Text>
+  <Text style={{ fontSize: 24 }}>some other text</Text>
   <Divider style={{ backgroundColor: 'orange' }} />
 </View>
 ```

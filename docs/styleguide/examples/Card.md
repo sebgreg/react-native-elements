@@ -3,13 +3,6 @@ Card examples:
 const ReactNative = require('react-native');
 const View = ReactNative.View;
 
-const users = [
- {
-    name: 'brynn',
-    avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/brynn/128.jpg'
- }
-];
-
 <View>
       <Card title="Card Title"
         containerStyle={{ backgroundColor: 'lightgreen' }}

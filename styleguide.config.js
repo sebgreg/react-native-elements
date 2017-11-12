@@ -1,17 +1,21 @@
 const path = require('path');
 
 const getExampleFilename = componentPath => {
-  const baseName = path.basename(componentPath).replace(/\.jsx?$/, '.md');
-  const fullPath = path.resolve(`src/styleguide/examples/${baseName}`);
+  let baseName = path.basename(componentPath).replace(/\.jsx?$/, '.md');
+  if (baseName.includes('Form')) baseName = 'Forms.md';
+  const fullPath = path.resolve(`docs/styleguide/examples/${baseName}`);
+  console.warn(fullPath);
   return fullPath;
 };
 
 module.exports = {
+  verbose: true,
+  context: {
+    RN: 'react-native',
+  },
+  skipComponentsWithoutExample: true,
   components: 'src/**/+([A-Z]*|badge).js',
   ignore: [
-    '**/NavButton.js',
-    '**/DummyNavButton.js',
-    'src/header/Title.js',
     '**/config/**',
     '**/__tests__/**',
     '**/*.test.js',
@@ -19,7 +23,8 @@ module.exports = {
     '**/*.spec.js',
     '**/*.spec.jsx',
   ],
-  template: 'src/styleguide/template.html',
+  template: 'docs/styleguide/template.html',
+  styleguideDir: 'docs/styleguide',
   getExampleFilename,
   webpackConfig: {
     module: {
