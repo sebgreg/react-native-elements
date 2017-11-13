@@ -13,7 +13,7 @@ import colors from '../config/colors';
 import normalize from '../helpers/normalizeText';
 import ViewPropTypes from '../config/ViewPropTypes';
 
-class Search extends Component {
+class SearchBar extends Component {
   getRef = () => {
     return this.input || this.refs[this.props.textInputRef];
   };
@@ -88,14 +88,15 @@ class Search extends Component {
               (!clearIcon && showLoadingIcon)) && { paddingRight: 30 },
           ]}
         />
-        {!noIcon &&
+        {!noIcon && (
           <Icon
             size={16}
             style={[styles.icon, styles.searchIcon, icon.style && icon.style]}
             name={icon.name || 'search'}
             color={icon.color || colors.grey3}
-          />}
-        {clearIcon &&
+          />
+        )}
+        {clearIcon && (
           <Icon
             size={16}
             style={[
@@ -106,8 +107,9 @@ class Search extends Component {
             name={clearIcon.name || 'close'}
             onPress={this.clearText.bind(this)}
             color={clearIcon.color || colors.grey3}
-          />}
-        {showLoadingIcon &&
+          />
+        )}
+        {showLoadingIcon && (
           <ActivityIndicator
             style={[
               styles.loadingIcon,
@@ -115,13 +117,14 @@ class Search extends Component {
               clearIcon && { right: 35 },
             ]}
             color={icon.color || colors.grey3}
-          />}
+          />
+        )}
       </View>
     );
   }
 }
 
-Search.propTypes = {
+SearchBar.propTypes = {
   icon: PropTypes.object,
   noIcon: PropTypes.bool,
   lightTheme: PropTypes.bool,
@@ -140,7 +143,7 @@ Search.propTypes = {
   onClearText: PropTypes.func,
 };
 
-Search.defaultProps = {
+SearchBar.defaultProps = {
   placeholderTextColor: colors.grey3,
   lightTheme: false,
   noIcon: false,
@@ -214,4 +217,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Search;
+export default SearchBar;
