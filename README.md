@@ -85,7 +85,7 @@ import { Button } from 'react-native-elements';
 
 Checkout the official [React Native Elements App](https://expo.io/@monte9/react-native-elements-app) on Expo which uses all of the React Native Elements components.
 
-Additionally, take a look at the [example/](https://github.com/react-native-training/react-native-elements/tree/master/example) folder to view the implementation & run the RNE expo app locally.
+Additionally, take a look at the [example/](https://github.com/react-native-training/react-native-elements/tree/master/examples/kitchen-sink) folder to view the implementation & run the RNE expo app locally.
 
 ## Backers
 
