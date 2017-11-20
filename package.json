@@ -14,12 +14,21 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
+    "test:web-support": "jest --config=./web-support/jest.config.json",
     "postinstall": "opencollective postinstall",
     "lint": "eslint src/",
     "precommit": "lint-staged && npm test",
     "prettify": "prettier --write 'src/**/*.js'",
-    "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide":
+      "styleguidist --config ./web-support/styleguide/styleguide.config.js server",
+    "styleguide:generate:script":
+      "webpack --config ./web-support/styleguide/webpack.generateExamples.config.js",
+    "styleguide:generate:exec":
+      "node ./web-support/styleguide/scripts/webpackedGenEx",
+    "styleguide:generate":
+      "yarn styleguide:generate:script && yarn styleguide:generate:exec && yarn styleguide",
+    "styleguide:build":
+      "styleguidist  --config ./docs/styleguide/styleguide.config.js build"
   },
   "author": "Nader Dabit & Monte Thakkar",
   "license": "MIT",
@@ -41,6 +50,7 @@
     "prop-types": "^15.5.8"
   },
   "devDependencies": {
+    "ajv": "^4.10.0",
     "babel": "^6.23.0",
     "babel-core": "^6.23.1",
     "babel-eslint": "^7.1.1",
@@ -60,15 +70,19 @@
     "image-webpack-loader": "^3.3.1",
     "jest": "^19.0.2",
     "lint-staged": "^3.4.0",
+    "lodash.merge": "^4.6.0",
     "prettier": "^1.7.4",
+    "raf": "^3.4.0",
     "react": "^15.4.2",
-    "react-addons-test-utils": "^15.6.0",
+    "react-addons-test-utils": "15.4.x",
     "react-dom": "^15.4.2",
+    "react-element-to-jsx-string": "^13.1.0",
     "react-native": "^0.41.2",
     "react-native-vector-icons": "^4.4.2",
     "react-native-web": "0.0.130",
     "react-styleguidist": "^6.0.33",
-    "react-test-renderer": "^15.6.1",
+    "react-test-renderer": "15.4.2",
+    "string-builder": "^0.1.4",
     "webpack": "^2.2.1"
   },
   "peerDependencies": {
@@ -82,10 +96,14 @@
       "!src/index.js",
       "!src/helpers/*.js"
     ],
+    "collectCoverage": true,
     "moduleNameMapper": {
       "src/config/ViewPropTypes.js": "src/config/ViewPropTypes.android.js"
     },
-    "collectCoverage": true,
+    "testPathIgnorePatterns": [
+      "<rootDir>/web-support",
+      "<rootDir>/node_modules"
+    ],
     "globals": {
       "__DEV__": true
     }
