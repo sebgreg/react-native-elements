@@ -78,6 +78,7 @@ class FormInput extends Component {
       containerRef,
       normalizeFontSize,
       shake,
+      textInputRef,
       ...attributes
     } = this.props;
     const translateX = this.shakeAnimationValue.interpolate({
