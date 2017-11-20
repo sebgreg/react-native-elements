@@ -11,7 +11,7 @@ describe('ButtonGroup Component', () => {
     const component = shallow(<ButtonGroup buttons={buttons} />);
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should have onPress event', () => {
@@ -26,7 +26,7 @@ describe('ButtonGroup Component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should render selectedIndex', () => {
@@ -40,7 +40,7 @@ describe('ButtonGroup Component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should render with button.element', () => {
@@ -52,7 +52,7 @@ describe('ButtonGroup Component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should render lastButtonStyle', () => {
@@ -64,6 +64,6 @@ describe('ButtonGroup Component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 });

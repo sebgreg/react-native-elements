@@ -1,0 +1,1065 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enzyme.mount FormInput : method:  shake 1`] = `
+<View>
+  <div
+    className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+  >
+    <Button
+      onPress={[Function]}
+      title="Start 3 sec countdown for: shake()"
+    >
+      <TouchableOpacity
+        accessibilityRole="button"
+        activeOpacity={0.2}
+        focusedOpacity={0.7}
+        onPress={[Function]}
+        style={
+          Array [
+            43,
+            undefined,
+            undefined,
+          ]
+        }
+      >
+        <View
+          accessibilityRole="button"
+          accessible={true}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Array [
+              41,
+              42,
+              Array [
+                43,
+                undefined,
+                undefined,
+              ],
+            ]
+          }
+        >
+          <div
+            className="rn-alignItems-1oszu61 rn-backgroundColor-8ndhhv rn-borderTopLeftRadius-1iymjk7 rn-borderTopRightRadius-s2skl2 rn-borderBottomRightRadius-l5bh9y rn-borderBottomLeftRadius-101sy47 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-cursor-1loqt21 rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-touchAction-1gvxusu rn-transitionDuration-eafdt9 rn-transitionProperty-1i6wzkk rn-userSelect-lrvibr"
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            role="button"
+            tabIndex="0"
+          >
+            <Text
+              style={
+                Array [
+                  44,
+                  undefined,
+                ]
+              }
+            >
+              <div
+                className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-1qtguxu rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-fontWeight-majxgm rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-tskmnb rn-paddingRight-1pyaxff rn-paddingBottom-xd6kpl rn-paddingLeft-1m04atk rn-textAlign-q4m81j rn-textDecoration-bauka4 rn-textTransform-tsynxw rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+                dir="auto"
+              >
+                Start 3 sec countdown for: shake()
+              </div>
+            </Text>
+          </div>
+        </View>
+      </TouchableOpacity>
+    </Button>
+    <FormInput
+      normalizeFontSize={true}
+    >
+      <AnimatedComponent
+        style={
+          Array [
+            140,
+            undefined,
+            Object {
+              "transform": Array [
+                Object {
+                  "translateX": AnimatedInterpolation {
+                    "_children": Array [
+                      AnimatedTransform {
+                        "_children": Array [
+                          AnimatedStyle {
+                            "_children": Array [
+                              AnimatedProps {
+                                "_callback": [Function],
+                                "_props": Object {
+                                  "children": <TextInput
+                                    autoCapitalize="sentences"
+                                    autoComplete="on"
+                                    autoCorrect={true}
+                                    editable={true}
+                                    keyboardType="default"
+                                    multiline={false}
+                                    numberOfLines={2}
+                                    secureTextEntry={false}
+                                    style={
+                                                              Array [
+                                                                                        141,
+                                                                                        Object {
+                                                                                          "fontSize": 14,
+                                                                                        },
+                                                                                        undefined,
+                                                                                      ]
+                                    }
+          />,
+                                  "style": [Circular],
+                                },
+                              },
+                            ],
+                            "_style": Object {
+                              "marginLeft": 15,
+                              "marginRight": 15,
+                              "transform": [Circular],
+                            },
+                          },
+                        ],
+                        "_transforms": [Circular],
+                      },
+                    ],
+                    "_interpolation": [Function],
+                    "_listeners": Object {},
+                    "_parent": AnimatedValue {
+                      "_animation": null,
+                      "_children": Array [
+                        [Circular],
+                      ],
+                      "_listeners": Object {},
+                      "_offset": 0,
+                      "_value": 0,
+                    },
+                  },
+                },
+              ],
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginLeft": 15,
+              "marginRight": 15,
+              "transform": Array [
+                Object {
+                  "translateX": 0,
+                },
+              ],
+            }
+          }
+        >
+          <div
+            className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginBottom-p1pxzi rn-marginLeft-1ozfoo7 rn-marginRight-y3t9qe rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+            style={
+              Object {
+                "WebkitTransform": "translateX(0px)",
+                "transform": "translateX(0px)",
+              }
+            }
+          >
+            <TextInput
+              autoCapitalize="sentences"
+              autoComplete="on"
+              autoCorrect={true}
+              editable={true}
+              keyboardType="default"
+              multiline={false}
+              numberOfLines={2}
+              secureTextEntry={false}
+              style={
+                Array [
+                  141,
+                  Object {
+                    "fontSize": 14,
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <input
+                autoCapitalize="sentences"
+                autoComplete="on"
+                autoCorrect="on"
+                className="rn-appearance-30o5oe rn-backgroundColor-wib322 rn-borderTopColor-kqr9px rn-borderRightColor-q0dj5p rn-borderBottomColor-1ah7hsa rn-borderLeftColor-137uh4u rn-borderTopLeftRadius-ou6ah9 rn-borderTopRightRadius-t12b5v rn-borderBottomRightRadius-zmljjp rn-borderBottomLeftRadius-pm2fo rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-zzr6i3 rn-font-1lw9tu2 rn-fontSize-1b43r93 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-resize-1dz5y72"
+                dir="auto"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyPress={[Function]}
+                onSelect={[Function]}
+                readOnly={false}
+                type="text"
+              />
+            </TextInput>
+          </div>
+        </View>
+      </AnimatedComponent>
+    </FormInput>
+  </div>
+</View>
+`;
+
+exports[`enzyme.mount FormInput : no props 1`] = `
+<FormInput
+  normalizeFontSize={true}
+>
+  <AnimatedComponent
+    style={
+      Array [
+        140,
+        undefined,
+        Object {
+          "transform": Array [
+            Object {
+              "translateX": AnimatedInterpolation {
+                "_children": Array [
+                  AnimatedTransform {
+                    "_children": Array [
+                      AnimatedStyle {
+                        "_children": Array [
+                          AnimatedProps {
+                            "_callback": [Function],
+                            "_props": Object {
+                              "children": <TextInput
+                                autoCapitalize="sentences"
+                                autoComplete="on"
+                                autoCorrect={true}
+                                editable={true}
+                                keyboardType="default"
+                                multiline={false}
+                                numberOfLines={2}
+                                secureTextEntry={false}
+                                style={
+                                                          Array [
+                                                                                    141,
+                                                                                    Object {
+                                                                                      "fontSize": 14,
+                                                                                    },
+                                                                                    undefined,
+                                                                                  ]
+                                }
+      />,
+                              "style": [Circular],
+                            },
+                          },
+                        ],
+                        "_style": Object {
+                          "marginLeft": 15,
+                          "marginRight": 15,
+                          "transform": [Circular],
+                        },
+                      },
+                    ],
+                    "_transforms": [Circular],
+                  },
+                ],
+                "_interpolation": [Function],
+                "_listeners": Object {},
+                "_parent": AnimatedValue {
+                  "_animation": null,
+                  "_children": Array [
+                    [Circular],
+                  ],
+                  "_listeners": Object {},
+                  "_offset": 0,
+                  "_value": 0,
+                },
+              },
+            },
+          ],
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginLeft": 15,
+          "marginRight": 15,
+          "transform": Array [
+            Object {
+              "translateX": 0,
+            },
+          ],
+        }
+      }
+    >
+      <div
+        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginBottom-p1pxzi rn-marginLeft-1ozfoo7 rn-marginRight-y3t9qe rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+        style={
+          Object {
+            "WebkitTransform": "translateX(0px)",
+            "transform": "translateX(0px)",
+          }
+        }
+      >
+        <TextInput
+          autoCapitalize="sentences"
+          autoComplete="on"
+          autoCorrect={true}
+          editable={true}
+          keyboardType="default"
+          multiline={false}
+          numberOfLines={2}
+          secureTextEntry={false}
+          style={
+            Array [
+              141,
+              Object {
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+        >
+          <input
+            autoCapitalize="sentences"
+            autoComplete="on"
+            autoCorrect="on"
+            className="rn-appearance-30o5oe rn-backgroundColor-wib322 rn-borderTopColor-kqr9px rn-borderRightColor-q0dj5p rn-borderBottomColor-1ah7hsa rn-borderLeftColor-137uh4u rn-borderTopLeftRadius-ou6ah9 rn-borderTopRightRadius-t12b5v rn-borderBottomRightRadius-zmljjp rn-borderBottomLeftRadius-pm2fo rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-zzr6i3 rn-font-1lw9tu2 rn-fontSize-1b43r93 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-resize-1dz5y72"
+            dir="auto"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onSelect={[Function]}
+            readOnly={false}
+            type="text"
+          />
+        </TextInput>
+      </div>
+    </View>
+  </AnimatedComponent>
+</FormInput>
+`;
+
+exports[`enzyme.mount FormInput : prop:  containerRef 1`] = `
+<FormInput
+  containerRef={[Function]}
+  normalizeFontSize={true}
+>
+  <AnimatedComponent
+    style={
+      Array [
+        140,
+        undefined,
+        Object {
+          "transform": Array [
+            Object {
+              "translateX": AnimatedInterpolation {
+                "_children": Array [
+                  AnimatedTransform {
+                    "_children": Array [
+                      AnimatedStyle {
+                        "_children": Array [
+                          AnimatedProps {
+                            "_callback": [Function],
+                            "_props": Object {
+                              "children": <TextInput
+                                autoCapitalize="sentences"
+                                autoComplete="on"
+                                autoCorrect={true}
+                                editable={true}
+                                keyboardType="default"
+                                multiline={false}
+                                numberOfLines={2}
+                                secureTextEntry={false}
+                                style={
+                                                          Array [
+                                                                                    141,
+                                                                                    Object {
+                                                                                      "fontSize": 14,
+                                                                                    },
+                                                                                    undefined,
+                                                                                  ]
+                                }
+      />,
+                              "style": [Circular],
+                            },
+                          },
+                        ],
+                        "_style": Object {
+                          "marginLeft": 15,
+                          "marginRight": 15,
+                          "transform": [Circular],
+                        },
+                      },
+                    ],
+                    "_transforms": [Circular],
+                  },
+                ],
+                "_interpolation": [Function],
+                "_listeners": Object {},
+                "_parent": AnimatedValue {
+                  "_animation": null,
+                  "_children": Array [
+                    [Circular],
+                  ],
+                  "_listeners": Object {},
+                  "_offset": 0,
+                  "_value": 0,
+                },
+              },
+            },
+          ],
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginLeft": 15,
+          "marginRight": 15,
+          "transform": Array [
+            Object {
+              "translateX": 0,
+            },
+          ],
+        }
+      }
+    >
+      <div
+        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginBottom-p1pxzi rn-marginLeft-1ozfoo7 rn-marginRight-y3t9qe rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+        style={
+          Object {
+            "WebkitTransform": "translateX(0px)",
+            "transform": "translateX(0px)",
+          }
+        }
+      >
+        <TextInput
+          autoCapitalize="sentences"
+          autoComplete="on"
+          autoCorrect={true}
+          editable={true}
+          keyboardType="default"
+          multiline={false}
+          numberOfLines={2}
+          secureTextEntry={false}
+          style={
+            Array [
+              141,
+              Object {
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+        >
+          <input
+            autoCapitalize="sentences"
+            autoComplete="on"
+            autoCorrect="on"
+            className="rn-appearance-30o5oe rn-backgroundColor-wib322 rn-borderTopColor-kqr9px rn-borderRightColor-q0dj5p rn-borderBottomColor-1ah7hsa rn-borderLeftColor-137uh4u rn-borderTopLeftRadius-ou6ah9 rn-borderTopRightRadius-t12b5v rn-borderBottomRightRadius-zmljjp rn-borderBottomLeftRadius-pm2fo rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-zzr6i3 rn-font-1lw9tu2 rn-fontSize-1b43r93 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-resize-1dz5y72"
+            dir="auto"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onSelect={[Function]}
+            readOnly={false}
+            type="text"
+          />
+        </TextInput>
+      </div>
+    </View>
+  </AnimatedComponent>
+</FormInput>
+`;
+
+exports[`enzyme.mount FormInput : prop:  containerStyle 1`] = `
+<FormInput
+  containerStyle={
+    Object {
+      "backgroundColor": "#181818",
+    }
+  }
+  normalizeFontSize={true}
+>
+  <AnimatedComponent
+    style={
+      Array [
+        140,
+        Object {
+          "backgroundColor": "#181818",
+        },
+        Object {
+          "transform": Array [
+            Object {
+              "translateX": AnimatedInterpolation {
+                "_children": Array [
+                  AnimatedTransform {
+                    "_children": Array [
+                      AnimatedStyle {
+                        "_children": Array [
+                          AnimatedProps {
+                            "_callback": [Function],
+                            "_props": Object {
+                              "children": <TextInput
+                                autoCapitalize="sentences"
+                                autoComplete="on"
+                                autoCorrect={true}
+                                editable={true}
+                                keyboardType="default"
+                                multiline={false}
+                                numberOfLines={2}
+                                secureTextEntry={false}
+                                style={
+                                                          Array [
+                                                                                    141,
+                                                                                    Object {
+                                                                                      "fontSize": 14,
+                                                                                    },
+                                                                                    undefined,
+                                                                                  ]
+                                }
+      />,
+                              "style": [Circular],
+                            },
+                          },
+                        ],
+                        "_style": Object {
+                          "backgroundColor": "#181818",
+                          "marginLeft": 15,
+                          "marginRight": 15,
+                          "transform": [Circular],
+                        },
+                      },
+                    ],
+                    "_transforms": [Circular],
+                  },
+                ],
+                "_interpolation": [Function],
+                "_listeners": Object {},
+                "_parent": AnimatedValue {
+                  "_animation": null,
+                  "_children": Array [
+                    [Circular],
+                  ],
+                  "_listeners": Object {},
+                  "_offset": 0,
+                  "_value": 0,
+                },
+              },
+            },
+          ],
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#181818",
+          "marginLeft": 15,
+          "marginRight": 15,
+          "transform": Array [
+            Object {
+              "translateX": 0,
+            },
+          ],
+        }
+      }
+    >
+      <div
+        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginBottom-p1pxzi rn-marginLeft-1ozfoo7 rn-marginRight-y3t9qe rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+        style={
+          Object {
+            "WebkitTransform": "translateX(0px)",
+            "backgroundColor": "rgba(24,24,24,1)",
+            "transform": "translateX(0px)",
+          }
+        }
+      >
+        <TextInput
+          autoCapitalize="sentences"
+          autoComplete="on"
+          autoCorrect={true}
+          editable={true}
+          keyboardType="default"
+          multiline={false}
+          numberOfLines={2}
+          secureTextEntry={false}
+          style={
+            Array [
+              141,
+              Object {
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+        >
+          <input
+            autoCapitalize="sentences"
+            autoComplete="on"
+            autoCorrect="on"
+            className="rn-appearance-30o5oe rn-backgroundColor-wib322 rn-borderTopColor-kqr9px rn-borderRightColor-q0dj5p rn-borderBottomColor-1ah7hsa rn-borderLeftColor-137uh4u rn-borderTopLeftRadius-ou6ah9 rn-borderTopRightRadius-t12b5v rn-borderBottomRightRadius-zmljjp rn-borderBottomLeftRadius-pm2fo rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-zzr6i3 rn-font-1lw9tu2 rn-fontSize-1b43r93 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-resize-1dz5y72"
+            dir="auto"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onSelect={[Function]}
+            readOnly={false}
+            type="text"
+          />
+        </TextInput>
+      </div>
+    </View>
+  </AnimatedComponent>
+</FormInput>
+`;
+
+exports[`enzyme.mount FormInput : prop:  inputStyle 1`] = `
+<FormInput
+  inputStyle={
+    Object {
+      "color": "#989898",
+    }
+  }
+  normalizeFontSize={true}
+>
+  <AnimatedComponent
+    style={
+      Array [
+        140,
+        undefined,
+        Object {
+          "transform": Array [
+            Object {
+              "translateX": AnimatedInterpolation {
+                "_children": Array [
+                  AnimatedTransform {
+                    "_children": Array [
+                      AnimatedStyle {
+                        "_children": Array [
+                          AnimatedProps {
+                            "_callback": [Function],
+                            "_props": Object {
+                              "children": <TextInput
+                                autoCapitalize="sentences"
+                                autoComplete="on"
+                                autoCorrect={true}
+                                editable={true}
+                                keyboardType="default"
+                                multiline={false}
+                                numberOfLines={2}
+                                secureTextEntry={false}
+                                style={
+                                                          Array [
+                                                                                    141,
+                                                                                    Object {
+                                                                                      "fontSize": 14,
+                                                                                    },
+                                                                                    Object {
+                                                                                      "color": "#989898",
+                                                                                    },
+                                                                                  ]
+                                }
+      />,
+                              "style": [Circular],
+                            },
+                          },
+                        ],
+                        "_style": Object {
+                          "marginLeft": 15,
+                          "marginRight": 15,
+                          "transform": [Circular],
+                        },
+                      },
+                    ],
+                    "_transforms": [Circular],
+                  },
+                ],
+                "_interpolation": [Function],
+                "_listeners": Object {},
+                "_parent": AnimatedValue {
+                  "_animation": null,
+                  "_children": Array [
+                    [Circular],
+                  ],
+                  "_listeners": Object {},
+                  "_offset": 0,
+                  "_value": 0,
+                },
+              },
+            },
+          ],
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginLeft": 15,
+          "marginRight": 15,
+          "transform": Array [
+            Object {
+              "translateX": 0,
+            },
+          ],
+        }
+      }
+    >
+      <div
+        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginBottom-p1pxzi rn-marginLeft-1ozfoo7 rn-marginRight-y3t9qe rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+        style={
+          Object {
+            "WebkitTransform": "translateX(0px)",
+            "transform": "translateX(0px)",
+          }
+        }
+      >
+        <TextInput
+          autoCapitalize="sentences"
+          autoComplete="on"
+          autoCorrect={true}
+          editable={true}
+          keyboardType="default"
+          multiline={false}
+          numberOfLines={2}
+          secureTextEntry={false}
+          style={
+            Array [
+              141,
+              Object {
+                "fontSize": 14,
+              },
+              Object {
+                "color": "#989898",
+              },
+            ]
+          }
+        >
+          <input
+            autoCapitalize="sentences"
+            autoComplete="on"
+            autoCorrect="on"
+            className="rn-appearance-30o5oe rn-backgroundColor-wib322 rn-borderTopColor-kqr9px rn-borderRightColor-q0dj5p rn-borderBottomColor-1ah7hsa rn-borderLeftColor-137uh4u rn-borderTopLeftRadius-ou6ah9 rn-borderTopRightRadius-t12b5v rn-borderBottomRightRadius-zmljjp rn-borderBottomLeftRadius-pm2fo rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-font-1lw9tu2 rn-fontSize-1b43r93 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-resize-1dz5y72"
+            dir="auto"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onSelect={[Function]}
+            readOnly={false}
+            style={
+              Object {
+                "color": "rgba(152,152,152,1)",
+              }
+            }
+            type="text"
+          />
+        </TextInput>
+      </div>
+    </View>
+  </AnimatedComponent>
+</FormInput>
+`;
+
+exports[`enzyme.mount FormInput : prop:  shake 1`] = `
+<FormInput
+  normalizeFontSize={true}
+  shake={true}
+>
+  <AnimatedComponent
+    style={
+      Array [
+        140,
+        undefined,
+        Object {
+          "transform": Array [
+            Object {
+              "translateX": AnimatedInterpolation {
+                "_children": Array [
+                  AnimatedTransform {
+                    "_children": Array [
+                      AnimatedStyle {
+                        "_children": Array [
+                          AnimatedProps {
+                            "_callback": [Function],
+                            "_props": Object {
+                              "children": <TextInput
+                                autoCapitalize="sentences"
+                                autoComplete="on"
+                                autoCorrect={true}
+                                editable={true}
+                                keyboardType="default"
+                                multiline={false}
+                                numberOfLines={2}
+                                secureTextEntry={false}
+                                style={
+                                                          Array [
+                                                                                    141,
+                                                                                    Object {
+                                                                                      "fontSize": 14,
+                                                                                    },
+                                                                                    undefined,
+                                                                                  ]
+                                }
+      />,
+                              "style": [Circular],
+                            },
+                          },
+                        ],
+                        "_style": Object {
+                          "marginLeft": 15,
+                          "marginRight": 15,
+                          "transform": [Circular],
+                        },
+                      },
+                    ],
+                    "_transforms": [Circular],
+                  },
+                ],
+                "_interpolation": [Function],
+                "_listeners": Object {},
+                "_parent": AnimatedValue {
+                  "_animation": TimingAnimation {
+                    "__active": true,
+                    "__isInteraction": true,
+                    "__onEnd": [Function],
+                    "_animationFrame": 2,
+                    "_delay": 0,
+                    "_duration": 375,
+                    "_easing": [Function],
+                    "_fromValue": 0,
+                    "_onUpdate": [Function],
+                    "_startTime": 1511157440527,
+                    "_toValue": 3,
+                  },
+                  "_children": Array [
+                    [Circular],
+                  ],
+                  "_listeners": Object {},
+                  "_offset": 0,
+                  "_tracking": null,
+                  "_value": 0,
+                },
+              },
+            },
+          ],
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginLeft": 15,
+          "marginRight": 15,
+          "transform": Array [
+            Object {
+              "translateX": 0,
+            },
+          ],
+        }
+      }
+    >
+      <div
+        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginBottom-p1pxzi rn-marginLeft-1ozfoo7 rn-marginRight-y3t9qe rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+        style={
+          Object {
+            "WebkitTransform": "translateX(0px)",
+            "transform": "translateX(0px)",
+          }
+        }
+      >
+        <TextInput
+          autoCapitalize="sentences"
+          autoComplete="on"
+          autoCorrect={true}
+          editable={true}
+          keyboardType="default"
+          multiline={false}
+          numberOfLines={2}
+          secureTextEntry={false}
+          style={
+            Array [
+              141,
+              Object {
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+        >
+          <input
+            autoCapitalize="sentences"
+            autoComplete="on"
+            autoCorrect="on"
+            className="rn-appearance-30o5oe rn-backgroundColor-wib322 rn-borderTopColor-kqr9px rn-borderRightColor-q0dj5p rn-borderBottomColor-1ah7hsa rn-borderLeftColor-137uh4u rn-borderTopLeftRadius-ou6ah9 rn-borderTopRightRadius-t12b5v rn-borderBottomRightRadius-zmljjp rn-borderBottomLeftRadius-pm2fo rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-zzr6i3 rn-font-1lw9tu2 rn-fontSize-1b43r93 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-resize-1dz5y72"
+            dir="auto"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onSelect={[Function]}
+            readOnly={false}
+            type="text"
+          />
+        </TextInput>
+      </div>
+    </View>
+  </AnimatedComponent>
+</FormInput>
+`;
+
+exports[`enzyme.mount FormInput : prop:  textInputRef 1`] = `
+<FormInput
+  normalizeFontSize={true}
+  textInputRef={[Function]}
+>
+  <AnimatedComponent
+    style={
+      Array [
+        140,
+        undefined,
+        Object {
+          "transform": Array [
+            Object {
+              "translateX": AnimatedInterpolation {
+                "_children": Array [
+                  AnimatedTransform {
+                    "_children": Array [
+                      AnimatedStyle {
+                        "_children": Array [
+                          AnimatedProps {
+                            "_callback": [Function],
+                            "_props": Object {
+                              "children": <TextInput
+                                autoCapitalize="sentences"
+                                autoComplete="on"
+                                autoCorrect={true}
+                                editable={true}
+                                keyboardType="default"
+                                multiline={false}
+                                numberOfLines={2}
+                                secureTextEntry={false}
+                                style={
+                                                          Array [
+                                                                                    141,
+                                                                                    Object {
+                                                                                      "fontSize": 14,
+                                                                                    },
+                                                                                    undefined,
+                                                                                  ]
+                                }
+      />,
+                              "style": [Circular],
+                            },
+                          },
+                        ],
+                        "_style": Object {
+                          "marginLeft": 15,
+                          "marginRight": 15,
+                          "transform": [Circular],
+                        },
+                      },
+                    ],
+                    "_transforms": [Circular],
+                  },
+                ],
+                "_interpolation": [Function],
+                "_listeners": Object {},
+                "_parent": AnimatedValue {
+                  "_animation": null,
+                  "_children": Array [
+                    [Circular],
+                  ],
+                  "_listeners": Object {},
+                  "_offset": 0,
+                  "_value": 0,
+                },
+              },
+            },
+          ],
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginLeft": 15,
+          "marginRight": 15,
+          "transform": Array [
+            Object {
+              "translateX": 0,
+            },
+          ],
+        }
+      }
+    >
+      <div
+        className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginBottom-p1pxzi rn-marginLeft-1ozfoo7 rn-marginRight-y3t9qe rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+        style={
+          Object {
+            "WebkitTransform": "translateX(0px)",
+            "transform": "translateX(0px)",
+          }
+        }
+      >
+        <TextInput
+          autoCapitalize="sentences"
+          autoComplete="on"
+          autoCorrect={true}
+          editable={true}
+          keyboardType="default"
+          multiline={false}
+          numberOfLines={2}
+          secureTextEntry={false}
+          style={
+            Array [
+              141,
+              Object {
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+        >
+          <input
+            autoCapitalize="sentences"
+            autoComplete="on"
+            autoCorrect="on"
+            className="rn-appearance-30o5oe rn-backgroundColor-wib322 rn-borderTopColor-kqr9px rn-borderRightColor-q0dj5p rn-borderBottomColor-1ah7hsa rn-borderLeftColor-137uh4u rn-borderTopLeftRadius-ou6ah9 rn-borderTopRightRadius-t12b5v rn-borderBottomRightRadius-zmljjp rn-borderBottomLeftRadius-pm2fo rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-zzr6i3 rn-font-1lw9tu2 rn-fontSize-1b43r93 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-resize-1dz5y72"
+            dir="auto"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onSelect={[Function]}
+            readOnly={false}
+            type="text"
+          />
+        </TextInput>
+      </div>
+    </View>
+  </AnimatedComponent>
+</FormInput>
+`;

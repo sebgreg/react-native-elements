@@ -8,7 +8,7 @@ describe('FormValidationMessage Component', () => {
     const component = shallow(<FormValidationMessage />);
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should show text from the FormValidationMessage children', () => {

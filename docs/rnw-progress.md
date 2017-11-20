@@ -72,3 +72,10 @@
   - src/config/ViewPropTypes.js split into .ios .android and .web
   - added "moduleNameMapper" to jest config in package.json
   - added module.resolve.extensions to webpack.config.js
+
+2017-11-20:
+
+quick update:
+
+Still a few days away from a PR... testing for web needs a slightly different setup than what's already there.
+All original tests are passing except for one.

@@ -8,7 +8,7 @@ describe('Avatar Component', () => {
     const component = shallow(<Avatar />);
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should render small avatar', () => {
@@ -26,7 +26,7 @@ describe('Avatar Component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should render medium avatar', () => {
@@ -43,7 +43,7 @@ describe('Avatar Component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should render large avatar', () => {
@@ -57,7 +57,7 @@ describe('Avatar Component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should render xlarge avatar', () => {
@@ -66,7 +66,7 @@ describe('Avatar Component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should render avatar without width', () => {
@@ -83,7 +83,7 @@ describe('Avatar Component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should render avatar without height', () => {
@@ -92,6 +92,6 @@ describe('Avatar Component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 });

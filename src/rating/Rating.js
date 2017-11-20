@@ -60,16 +60,19 @@ export default class Rating extends Component {
   constructor(props) {
     super(props);
 
+    this.state = { position: new Animated.ValueXY() };
+  }
+
+  componentWillMount() {
     const { onFinishRating, fractions } = this.props;
-
-    const position = new Animated.ValueXY();
-
-    const panResponder = PanResponder.create({
+    this.panResponder = PanResponder.create({
       onStartShouldSetPanResponder: () => true,
+      onPanResponderGrant: () => {
+        // this.state.position.extractOffset(); // available in later versions of RN
+        this.state.position.setValue({ x: 0, y: 0 });
+      },
       onPanResponderMove: (event, gesture) => {
-        const newPosition = new Animated.ValueXY();
-        newPosition.setValue({ x: gesture.dx, y: 0 });
-        this.setState({ position: newPosition, value: gesture.dx });
+        this.state.position.setValue({ x: gesture.dx, y: 0 });
       },
       onPanResponderRelease: () => {
         const rating = this.getCurrentRating();
@@ -80,8 +83,6 @@ export default class Rating extends Component {
         onFinishRating(rating);
       },
     });
-
-    this.state = { panResponder, position };
   }
 
   componentDidMount() {
@@ -144,14 +145,19 @@ export default class Rating extends Component {
     const { imageSize, ratingCount, type } = this.props;
     const source = TYPES[type].source;
 
-    return times(ratingCount, index =>
+    return times(ratingCount, index => (
       <View key={index} style={styles.starContainer}>
         <Image
           source={source}
-          style={{ width: imageSize, height: imageSize }}
+          style={{
+            width: imageSize,
+            height: imageSize,
+          }}
+          pointerEvents="none"
+          draggable={false}
         />
       </View>
-    );
+    ));
   }
 
   getCurrentRating() {
@@ -195,9 +201,7 @@ export default class Rating extends Component {
       value = 0;
     }
 
-    const newPosition = new Animated.ValueXY();
-    newPosition.setValue({ x: value, y: 0 });
-    this.setState({ position: newPosition, value });
+    this.state.position.setValue({ x: value, y: 0 });
   }
 
   displayCurrentRating() {
@@ -212,9 +216,7 @@ export default class Rating extends Component {
           <Text style={[styles.currentRatingText, { color }]}>
             {this.getCurrentRating()}
           </Text>
-          <Text style={styles.maxRatingText}>
-            /{ratingCount}
-          </Text>
+          <Text style={styles.maxRatingText}>/{ratingCount}</Text>
         </View>
         <View>
           {readonly && <Text style={styles.readonlyLabel}>(readonly)</Text>}
@@ -244,13 +246,10 @@ export default class Rating extends Component {
     }
 
     return (
-      <View pointerEvents={readonly ? 'none' : 'auto'} style={style}>
+      <View pointerEvents={readonly ? 'none' : 'box-none'} style={style}>
         {showRating && this.displayCurrentRating()}
-        <View
-          style={styles.starsWrapper}
-          {...this.state.panResponder.panHandlers}
-        >
-          <View style={styles.starsInsideWrapper}>
+        <View style={styles.starsWrapper} {...this.panResponder.panHandlers}>
+          <View style={styles.starsInsideWrapper} pointerEvents={'none'}>
             <Animated.View style={this.getPrimaryViewStyle()} />
             <Animated.View style={this.getSecondaryViewStyle()} />
           </View>

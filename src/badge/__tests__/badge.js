@@ -9,7 +9,7 @@ describe('Badge Component', () => {
     const component = shallow(<Badge />);
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should show error if value and child are included', () => {
@@ -20,7 +20,7 @@ describe('Badge Component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should render if element included', () => {
@@ -31,7 +31,7 @@ describe('Badge Component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
     expect(component.props().children.props.children.props.title).toBe('foo');
   });
 
@@ -39,14 +39,14 @@ describe('Badge Component', () => {
     const component = shallow(<Badge value="foo" />);
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should apply text style in the badge', () => {
     const component = shallow(<Badge textStyle={{ color: 'orange' }} />);
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should apply container style in the badge', () => {
@@ -55,20 +55,20 @@ describe('Badge Component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should allow adding custom element', () => {
     const component = shallow(<Badge element={<Text>Hello</Text>} />);
 
     expect(component.find('Text').props().children).toBe('Hello');
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should allow wrapper style', () => {
     const component = shallow(<Badge wrapperStyle={{}} />);
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 });

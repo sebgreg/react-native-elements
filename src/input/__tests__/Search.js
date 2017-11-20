@@ -8,7 +8,7 @@ describe('Search component', () => {
     const component = shallow(<Search />);
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should render with icons', () => {
@@ -28,7 +28,7 @@ describe('Search component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
   it('should call onTextChange when close icon is touched', () => {
     const onChangeTextMock = jest.fn();
@@ -45,6 +45,6 @@ describe('Search component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 });

@@ -8,7 +8,7 @@ describe('Slider component', () => {
     const component = shallow(<Slider />);
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should render with ThumbTouchRect', () => {
@@ -17,7 +17,7 @@ describe('Slider component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should call onValueChange', () => {

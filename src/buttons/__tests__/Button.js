@@ -9,7 +9,7 @@ describe('Button Component', () => {
     const component = shallow(<Button />);
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should show loading indicator', () => {
@@ -30,14 +30,20 @@ describe('Button Component', () => {
   it('should render primary color', () => {
     const component = shallow(<Button primary />);
 
-    expect(component.find('View').at(1).props().style[0].backgroundColor).toBe(
-      colors.primary
-    );
+    expect(
+      component
+        .find('View')
+        .at(1)
+        .props().style[0].backgroundColor
+    ).toBe(colors.primary);
   });
 
   it('should render primary1 color', () => {
     const component = shallow(<Button primary1 />);
-    const styles = component.find('View').at(1).props().style;
+    const styles = component
+      .find('View')
+      .at(1)
+      .props().style;
     let backgroundColorStyles = [];
     for (let i = 0; i < styles.length; i++) {
       if (styles[i] && styles[i].hasOwnProperty('backgroundColor')) {
@@ -50,7 +56,10 @@ describe('Button Component', () => {
 
   it('should render primary2 color', () => {
     const component = shallow(<Button primary2 />);
-    const styles = component.find('View').at(1).props().style;
+    const styles = component
+      .find('View')
+      .at(1)
+      .props().style;
     let backgroundColorStyles = [];
     for (let i = 0; i < styles.length; i++) {
       if (styles[i] && styles[i].hasOwnProperty('backgroundColor')) {
@@ -63,7 +72,10 @@ describe('Button Component', () => {
 
   it('should render secondary color', () => {
     const component = shallow(<Button secondary />);
-    const styles = component.find('View').at(1).props().style;
+    const styles = component
+      .find('View')
+      .at(1)
+      .props().style;
     let backgroundColorStyles = [];
     for (let i = 0; i < styles.length; i++) {
       if (styles[i] && styles[i].hasOwnProperty('backgroundColor')) {
@@ -76,7 +88,10 @@ describe('Button Component', () => {
 
   it('should render secondary2 color', () => {
     const component = shallow(<Button secondary2 />);
-    const styles = component.find('View').at(1).props().style;
+    const styles = component
+      .find('View')
+      .at(1)
+      .props().style;
     let backgroundColorStyles = [];
     for (let i = 0; i < styles.length; i++) {
       if (styles[i] && styles[i].hasOwnProperty('backgroundColor')) {
@@ -89,7 +104,10 @@ describe('Button Component', () => {
 
   it('should render secondary3 color', () => {
     const component = shallow(<Button secondary3 />);
-    const styles = component.find('View').at(1).props().style;
+    const styles = component
+      .find('View')
+      .at(1)
+      .props().style;
     let backgroundColorStyles = [];
     for (let i = 0; i < styles.length; i++) {
       if (styles[i] && styles[i].hasOwnProperty('backgroundColor')) {
@@ -102,7 +120,10 @@ describe('Button Component', () => {
 
   it('should render custom background color', () => {
     const component = shallow(<Button backgroundColor="#777" />);
-    const styles = component.find('View').at(1).props().style;
+    const styles = component
+      .find('View')
+      .at(1)
+      .props().style;
     let backgroundColorStyles = [];
     for (let i = 0; i < styles.length; i++) {
       if (styles[i] && styles[i].hasOwnProperty('backgroundColor')) {
@@ -117,7 +138,10 @@ describe('Button Component', () => {
     const component = shallow(<Button title="My Button" />);
 
     expect(
-      component.find('View').at(1).props().children[2].props.children
+      component
+        .find('View')
+        .at(1)
+        .props().children[2].props.children
     ).toBe('My Button');
   });
 
@@ -127,7 +151,7 @@ describe('Button Component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should render with default icon', () => {
@@ -143,7 +167,7 @@ describe('Button Component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should render with custom icon component', () => {
@@ -162,6 +186,6 @@ describe('Button Component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 });

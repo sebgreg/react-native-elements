@@ -8,7 +8,7 @@ describe('Icon component', () => {
     const component = shallow(<Icon name="wifi" />);
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should render with icon type', () => {
@@ -23,7 +23,7 @@ describe('Icon component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should have onPress event', () => {

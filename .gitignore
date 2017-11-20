@@ -6,5 +6,7 @@ coverage
 jsconfig.json
 .vscode/
 
-docs/styleguide/public
-docs/styleguide/build
+web-support/styleguide/public
+web-support/styleguide/build
+web-support/styleguide/scripts
+web-support/styleguide/examples

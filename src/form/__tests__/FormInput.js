@@ -8,7 +8,7 @@ describe('FormInput Component', () => {
     const component = shallow(<FormInput />);
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should have a TextInput component', () => {

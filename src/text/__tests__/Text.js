@@ -8,7 +8,7 @@ describe('Text Component', () => {
     const component = shallow(<Text />);
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should have font size of 50 when h1', () => {
@@ -81,6 +81,6 @@ describe('Text Component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 });

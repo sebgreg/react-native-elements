@@ -8,7 +8,7 @@ describe('FormLabel Component', () => {
     const component = shallow(<FormLabel />);
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should show text from the FormLabel children', () => {

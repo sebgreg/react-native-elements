@@ -8,7 +8,7 @@ describe('Tile component', () => {
     const component = shallow(<Tile imageSrc={{ url: 'http://google.com' }} />);
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should render featured tile', () => {
@@ -22,7 +22,7 @@ describe('Tile component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should render featured tile with icon', () => {
@@ -35,7 +35,7 @@ describe('Tile component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should render tile with icon', () => {
@@ -53,6 +53,6 @@ describe('Tile component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 });

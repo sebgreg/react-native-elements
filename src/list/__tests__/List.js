@@ -9,7 +9,7 @@ describe('List component', () => {
     const component = shallow(<List />);
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should render children', () => {

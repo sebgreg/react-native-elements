@@ -8,7 +8,7 @@ describe('Title Component', () => {
     const component = shallow(<Title />);
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should accept props', () => {

@@ -8,7 +8,7 @@ describe('SocialIcon component', () => {
     const component = shallow(<SocialIcon type="twitter" />);
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should show loading indicator', () => {
@@ -23,7 +23,7 @@ describe('SocialIcon component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should render social icon button', () => {
@@ -32,7 +32,7 @@ describe('SocialIcon component', () => {
     );
 
     expect(component.length).toBe(1);
-    expect(toJson(component)).toMatchSnapshot();
+    expect(toJson(component, { noKey: true })).toMatchSnapshot();
   });
 
   it('should have onPress event', () => {
