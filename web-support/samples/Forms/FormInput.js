@@ -1,93 +1,59 @@
 import React from 'react';
-import ReactNative, { Button, View } from 'react-native';
+import ReactNative, {
+  Button,
+  Text,
+  View,
+  TouchableHighlight,
+} from 'react-native';
+import times from 'lodash.times';
 import log from 'loglevel';
-import { FormInput as Component } from '../../../src';
+import buildSamples, { genRefId, assignRef } from '../samplesBuilder';
 
+import { FormInput as Component } from '../../../src';
 const COMP_NAME = 'FormInput';
 
 log.setLevel('debug');
 
-const counter = 0;
-const genRefId = () => {
-  return `uniqueRef${counter++}`;
-};
-const assignRef = refId => {
-  return Function('ref', `return ${refId} = ref`);
-};
-
 const propSamples = [
   {
-    p: 'containerStyle',
-    v: { backgroundColor: '#181818' },
+    p: ['containerStyle'],
+    v: [{ backgroundColor: '#181818' }],
   },
   {
-    p: 'inputStyle',
-    v: { color: '#989898' },
+    p: ['inputStyle'],
+    v: [{ color: '#222' }],
   },
   {
-    p: 'textInputRef',
-    v: assignRef(genRefId()),
+    p: ['textInputRef'],
+    v: [assignRef(genRefId())],
   },
   {
-    p: 'containerRef',
-    v: assignRef(genRefId()),
+    p: ['containerRef'],
+    v: [assignRef(genRefId())],
   },
   {
-    p: 'shake',
-    v: true,
+    p: ['shake'],
+    v: [true],
+    t: [5000],
+    noMnt: [true],
   },
 ];
 
 const methodSamples = [
   {
     m: 'shake',
-    script: 'const View = require("react-native").View;',
+  },
+  {
+    m: 'focus',
+    cd: 1000,
+  },
+  {
+    m: 'blur',
+    cd: 3000,
+  },
+  {
+    m: 'clearText',
   },
 ];
 
-const componentSamples = [];
-
-componentSamples.push({
-  title: 'FormInput',
-  skip: false,
-  chunks: [
-    {
-      name: 'no props',
-      jsx: React.createElement(Component),
-    },
-  ],
-});
-
-componentSamples.push({
-  title: 'FormInput:  All props',
-  skip: false,
-  chunks: propSamples.map(({ p, v }) => {
-    return {
-      name: 'prop:  '.concat(p),
-      jsx: React.createElement(Component, { [p]: v }),
-    };
-  }),
-});
-
-componentSamples.push({
-  title: 'FormInput:  All methods',
-  skip: false,
-  chunks: methodSamples.map(({ m, script }) => {
-    const refId = genRefId();
-    // const exec = Function('ref', 'm', `(${refId}.${m}()`);
-    const timerFunc = Function(`setTimeout(() => {${refId}.${m}();}, 3000)`);
-    const buttonTitle = `Start 3 sec countdown for: ${m}()`;
-    return {
-      name: 'method:  '.concat(m),
-      script,
-      jsx: (
-        <View>
-          <Button title={buttonTitle} onPress={timerFunc} />
-          {React.createElement(Component, { ref: assignRef(refId) })}
-        </View>
-      ),
-    };
-  }),
-});
-
-export default componentSamples;
+export default buildSamples(Component, COMP_NAME, propSamples, methodSamples);

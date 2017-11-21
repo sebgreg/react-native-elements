@@ -3,7 +3,7 @@
   "timers": "fake",
   "coverageDirectory": "./coverage/",
   "collectCoverageFrom": ["src/**/*.js", "!src/index.js", "!src/helpers/*.js"],
-  "collectCoverage": true,
+  "collectCoverage": false,
   "globals": {
     "__DEV__": true
   },
@@ -15,7 +15,7 @@
   },
   "modulePathIgnorePatterns": [
     "node_modules/react-native",
-    "<rootDir>/web-support/examples"
+    "<rootDir>/web-support/samples"
   ],
   "setupFiles": ["raf/polyfill"],
   "snapshotSerializers": ["enzyme-to-json/serializer"],

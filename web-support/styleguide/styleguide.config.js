@@ -30,7 +30,7 @@ module.exports = {
     '**/*.spec.jsx',
   ],
   template: './template.html',
-  styleguideDir: './',
+  styleguideDir: './build',
   getExampleFilename,
   webpackConfig: {
     module: {
