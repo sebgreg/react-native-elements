@@ -27,12 +27,12 @@ log.debug({
   EXAMPLES_DIR,
 });
 
-sampleSections.forEach(({ sectionName, componentSamples }) => {
+sampleSections.forEach(({ sectionName, sectionComponents }) => {
   log.info(`Processing Section: ${sectionName}`);
   const exampleBuilder = new StringBuilder();
   const sectionsBuilder = new StringBuilder();
 
-  componentSamples.forEach(component => {
+  sectionComponents.forEach(component => {
     const exampleFilename = path
       .join(EXAMPLES_DIR, component.name)
       .concat('.md');
@@ -44,7 +44,7 @@ sampleSections.forEach(({ sectionName, componentSamples }) => {
         exampleBuilder.appendLine('### ');
         exampleBuilder.append(sample.title);
 
-        sample.chunks.forEach(example => {
+        sample.attributes.forEach(example => {
           exampleBuilder.appendLine('#### ');
           exampleBuilder.append(example.name);
           exampleBuilder.appendLine('```js');

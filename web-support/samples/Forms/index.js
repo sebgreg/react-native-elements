@@ -1,8 +1,8 @@
 import FormInputSamples from './FormInput';
 
-export default [
-  {
-    name: 'FormInput',
-    samples: FormInputSamples,
-  },
-];
+// sectionComponents
+export default {
+  FormInput: FormInputSamples,
+  // FormLabel
+  // FormValidationMessage
+};

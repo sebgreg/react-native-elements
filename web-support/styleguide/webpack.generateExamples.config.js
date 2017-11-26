@@ -2,10 +2,10 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: path.resolve('./web-support/styleguide/generateExamples.js'),
+  entry: path.resolve('./web-support/sampleParser.js'),
   output: {
     path: path.resolve('./web-support/styleguide/scripts'),
-    filename: 'webpackedGenEx.js',
+    filename: 'genStyleguideExamples.js',
   },
   target: 'node',
   module: {
@@ -25,6 +25,9 @@ module.exports = {
               path.join('node_modules', 'react-native-elements', 'src')
             ) != -1
           )
+            return true;
+
+          if (fileName.indexOf(path.join('node_modules', 'cli')) != -1)
             return true;
 
           if (fileName.indexOf('node_modules') != -1) return false;

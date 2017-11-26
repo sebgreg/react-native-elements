@@ -63,7 +63,7 @@ export default class Rating extends Component {
   constructor(props) {
     super(props);
     this._position = new Animated.Value(0);
-    this.state = { value: 0 };
+    this.state = { value: 0 }; // TODO: add rating
   }
 
   componentWillMount() {

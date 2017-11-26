@@ -24,11 +24,11 @@
     "styleguide:generate:script":
       "webpack --config ./web-support/styleguide/webpack.generateExamples.config.js",
     "styleguide:generate:exec":
-      "node ./web-support/styleguide/scripts/webpackedGenEx",
+      "node ./web-support/styleguide/scripts/genStyleguideExamples -d",
     "styleguide:generate":
       "yarn styleguide:generate:script && yarn styleguide:generate:exec && yarn styleguide",
     "styleguide:build":
-      "styleguidist  --config ./docs/styleguide/styleguide.config.js build"
+      "styleguidist  --config ./web-support/styleguide/styleguide.config.js build"
   },
   "author": "Nader Dabit & Monte Thakkar",
   "license": "MIT",
@@ -51,6 +51,7 @@
   },
   "devDependencies": {
     "ajv": "^4.10.0",
+    "argparse": "^1.0.9",
     "babel": "^6.23.0",
     "babel-core": "^6.23.1",
     "babel-eslint": "^7.1.1",
@@ -70,7 +71,12 @@
     "image-webpack-loader": "^3.3.1",
     "jest": "^19.0.2",
     "lint-staged": "^3.4.0",
+    "lodash.foreach": "^4.5.0",
+    "lodash.mapkeys": "^4.6.0",
+    "lodash.mapvalues": "^4.6.0",
     "lodash.merge": "^4.6.0",
+    "lodash.uniqueid": "^4.0.1",
+    "mockdate": "^2.0.2",
     "prettier": "^1.7.4",
     "raf": "^3.4.0",
     "react": "^15.4.2",
@@ -82,6 +88,7 @@
     "react-native-web": "0.0.130",
     "react-styleguidist": "^6.0.33",
     "react-test-renderer": "15.4.2",
+    "sinon": "^4.1.2",
     "string-builder": "^0.1.4",
     "webpack": "^2.2.1"
   },
