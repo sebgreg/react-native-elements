@@ -1,55 +1,78 @@
 import uniqueId from 'lodash.uniqueid';
 import { mount, render, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import { assignRef, snapShot, snapAll, ensureCalled } from '../../sampleParser';
+import sinon from 'sinon';
 
 import { FormInput as Component } from '../../../src';
-const COMP_NAME = 'FormInput';
+
+export function assignRef(refId) {
+  return Function('ref', `return ${refId} = ref`);
+}
 
 // props
-const propTitle = COMP_NAME.concat(': prop: ');
+const snapShot = () => {
+  return (wrapper, title) => {
+    test(title, () => {
+      expect(toJson(wrapper)).toMatchSnapshot(title);
+    });
+  };
+};
 
 const noProps = {
   guide: {},
   props: {},
-  tests: snapAll(propTitle.concat('no props:')),
+  tests: {
+    shallow: { snapshot: snapShot() },
+    mount: { snapshot: snapShot() },
+    render: { snapshot: snapShot() },
+  },
 };
 const containerStyle = {
   guide: {},
   props: { containerStyle: { backgroundColor: '#181818' } },
-  tests: snapAll(propTitle.concat('containerStyle:')),
+  tests: {
+    shallow: { snapshot: snapShot() },
+    mount: { snapshot: snapShot() },
+    render: { snapshot: snapShot() },
+  },
 };
 const inputStyle = {
   guide: {},
   props: { inputStyle: { color: '#222' } },
-  tests: snapAll(propTitle.concat('inputStyle:')),
+  tests: {
+    shallow: { snapshot: snapShot() },
+    mount: { snapshot: snapShot() },
+    render: { snapshot: snapShot() },
+  },
 };
 const textInputRef = {
   guide: {},
   props: { textInputRef: () => assignRef(uniqueId('ref')) },
-  tests: snapAll(propTitle.concat('textInputRef:')),
+  tests: {
+    shallow: { snapshot: snapShot() },
+    mount: { snapshot: snapShot() },
+    render: { snapshot: snapShot() },
+  },
 };
 const containerRef = {
   guide: {},
   props: { containerRef: () => assignRef(uniqueId('ref')) },
-  tests: snapAll(propTitle.concat('containerRef:')),
+  tests: {
+    shallow: { snapshot: snapShot() },
+    mount: { snapshot: snapShot() },
+    render: { snapshot: snapShot() },
+  },
 };
 const shake = {
   guide: {},
   props: { shake: true },
   tests: {
-    shallow: {
-      snapshot: (wrapper, title) => {
-        test(title, () => {
-          expect(toJson(wrapper)).toMatchSnapshot(title);
-        });
-      },
-    },
+    shallow: { snapshot: snapShot() },
   },
 };
 
 const props = {
-  no_props: noProps,
+  'no props': noProps,
   containerStyle,
   inputStyle,
   textInputRef,
@@ -58,30 +81,47 @@ const props = {
 };
 
 // methods
-const methodTitle = COMP_NAME.concat(': method: ');
+const ensureCalled = () => {
+  return (wrapper, title, attrName) => {
+    test(title, () => {
+      const spy = sinon.spy(wrapper.instance(), attrName);
+      const func = Function('elem', `elem.${attrName}()`);
+      func(wrapper.instance());
+      expect(spy.calledOnce).toBe(true);
+    });
+  };
+};
 
 const shakeMeth = {
   guide: {},
   tests: {
-    shallow: ensureCalled(methodTitle, 'shake'),
+    shallow: {
+      'ensure called': ensureCalled(),
+    },
   },
 };
 const focus = {
   guide: { cd: 1000 },
   tests: {
-    shallow: ensureCalled(methodTitle, 'focus'),
+    shallow: {
+      'ensure called': ensureCalled(),
+    },
   },
 };
 const blur = {
   guide: { cd: 3000 },
   tests: {
-    shallow: ensureCalled(methodTitle, 'blur'),
+    shallow: {
+      'ensure called': ensureCalled(),
+    },
   },
 };
 const clearText = {
   guide: {},
   tests: {
-    shallow: ensureCalled(methodTitle, 'clearText'),
+    shallow: {
+      'ensure called': ensureCalled(),
+    },
   },
 };
 

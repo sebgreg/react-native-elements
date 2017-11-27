@@ -1,12 +1,11 @@
 import _forms from './Forms';
 // import _rating from './Rating';
 
-export const Forms = _forms;
-// export const Rating = _rating;
-
 // sections
 export default {
   Forms: {
+    title: 'Forms',
+    matcher: '../../src/form/[A-Z]*.js',
     sectionComponents: _forms,
   },
   // Rating: {

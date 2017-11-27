@@ -18,6 +18,7 @@
     "<rootDir>/web-support/samples"
   ],
   "setupFiles": ["raf/polyfill"],
+  "setupTestFrameworkScriptFile": "<rootDir>/web-support/testSetup.js",
   "snapshotSerializers": ["enzyme-to-json/serializer"],
   "testPathIgnorePatterns": ["<rootDir>/src"],
   "transformIgnorePatterns": [

@@ -1,4 +1,4 @@
 import { runTests } from '../../sampleParser';
-import { Forms as sectionComponents } from '../../samples';
+import sections from '../../samples';
 
-runTests({ title: 'Forms', sectionComponents });
+runTests(sections.Forms);

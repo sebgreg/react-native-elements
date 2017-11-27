@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: path.resolve('./web-support/sampleParser.js'),
+  entry: path.resolve('./web-support/styleguide/guideBuilder.js'),
   output: {
     path: path.resolve('./web-support/styleguide/scripts'),
     filename: 'genStyleguideExamples.js',
