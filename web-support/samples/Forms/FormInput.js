@@ -1,13 +1,9 @@
-import uniqueId from 'lodash.uniqueid';
 import { mount, render, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import sinon from 'sinon';
+import { assignRef, genRefId } from '../../sampleParser';
 
 import { FormInput as Component } from '../../../src';
-
-export function assignRef(refId) {
-  return Function('ref', `return ${refId} = ref`);
-}
 
 // props
 const snapShot = () => {
@@ -47,7 +43,7 @@ const inputStyle = {
 };
 const textInputRef = {
   guide: {},
-  props: { textInputRef: () => assignRef(uniqueId('ref')) },
+  props: { textInputRef: assignRef(genRefId()) },
   tests: {
     shallow: { snapshot: snapShot() },
     mount: { snapshot: snapShot() },
@@ -56,7 +52,7 @@ const textInputRef = {
 };
 const containerRef = {
   guide: {},
-  props: { containerRef: () => assignRef(uniqueId('ref')) },
+  props: { containerRef: assignRef(genRefId()) },
   tests: {
     shallow: { snapshot: snapShot() },
     mount: { snapshot: snapShot() },

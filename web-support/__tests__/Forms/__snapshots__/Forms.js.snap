@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Forms: FormInput: [ props: containerRef() ] enzyme-mount: snapshot 1`] = `
+exports[`Forms: FormInput: [ prop: containerRef ] enzyme-mount: snapshot 1`] = `
 <FormInput
   containerRef={[Function]}
   normalizeFontSize={true}
@@ -136,7 +136,7 @@ exports[`Forms: FormInput: [ props: containerRef() ] enzyme-mount: snapshot 1`] 
 </FormInput>
 `;
 
-exports[`Forms: FormInput: [ props: containerRef() ] enzyme-render: snapshot 1`] = `
+exports[`Forms: FormInput: [ prop: containerRef ] enzyme-render: snapshot 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginBottom-p1pxzi rn-marginLeft-1ozfoo7 rn-marginRight-y3t9qe rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
   style="transform:translateX(0px);-webkit-transform:translateX(0px);"
@@ -152,7 +152,7 @@ exports[`Forms: FormInput: [ props: containerRef() ] enzyme-render: snapshot 1`]
 </div>
 `;
 
-exports[`Forms: FormInput: [ props: containerRef() ] enzyme-shallow: snapshot 1`] = `
+exports[`Forms: FormInput: [ prop: containerRef ] enzyme-shallow: snapshot 1`] = `
 <AnimatedComponent
   style={
     Array [
@@ -201,7 +201,7 @@ exports[`Forms: FormInput: [ props: containerRef() ] enzyme-shallow: snapshot 1`
 </AnimatedComponent>
 `;
 
-exports[`Forms: FormInput: [ props: containerStyle() ] enzyme-mount: snapshot 1`] = `
+exports[`Forms: FormInput: [ prop: containerStyle ] enzyme-mount: snapshot 1`] = `
 <FormInput
   containerStyle={
     Object {
@@ -346,7 +346,7 @@ exports[`Forms: FormInput: [ props: containerStyle() ] enzyme-mount: snapshot 1`
 </FormInput>
 `;
 
-exports[`Forms: FormInput: [ props: containerStyle() ] enzyme-render: snapshot 1`] = `
+exports[`Forms: FormInput: [ prop: containerStyle ] enzyme-render: snapshot 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginBottom-p1pxzi rn-marginLeft-1ozfoo7 rn-marginRight-y3t9qe rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
   style="background-color:rgba(24,24,24,1);transform:translateX(0px);-webkit-transform:translateX(0px);"
@@ -362,7 +362,7 @@ exports[`Forms: FormInput: [ props: containerStyle() ] enzyme-render: snapshot 1
 </div>
 `;
 
-exports[`Forms: FormInput: [ props: containerStyle() ] enzyme-shallow: snapshot 1`] = `
+exports[`Forms: FormInput: [ prop: containerStyle ] enzyme-shallow: snapshot 1`] = `
 <AnimatedComponent
   style={
     Array [
@@ -413,7 +413,7 @@ exports[`Forms: FormInput: [ props: containerStyle() ] enzyme-shallow: snapshot 
 </AnimatedComponent>
 `;
 
-exports[`Forms: FormInput: [ props: inputStyle() ] enzyme-mount: snapshot 1`] = `
+exports[`Forms: FormInput: [ prop: inputStyle ] enzyme-mount: snapshot 1`] = `
 <FormInput
   inputStyle={
     Object {
@@ -562,7 +562,7 @@ exports[`Forms: FormInput: [ props: inputStyle() ] enzyme-mount: snapshot 1`] = 
 </FormInput>
 `;
 
-exports[`Forms: FormInput: [ props: inputStyle() ] enzyme-render: snapshot 1`] = `
+exports[`Forms: FormInput: [ prop: inputStyle ] enzyme-render: snapshot 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginBottom-p1pxzi rn-marginLeft-1ozfoo7 rn-marginRight-y3t9qe rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
   style="transform:translateX(0px);-webkit-transform:translateX(0px);"
@@ -579,7 +579,7 @@ exports[`Forms: FormInput: [ props: inputStyle() ] enzyme-render: snapshot 1`] =
 </div>
 `;
 
-exports[`Forms: FormInput: [ props: inputStyle() ] enzyme-shallow: snapshot 1`] = `
+exports[`Forms: FormInput: [ prop: inputStyle ] enzyme-shallow: snapshot 1`] = `
 <AnimatedComponent
   style={
     Array [
@@ -630,7 +630,7 @@ exports[`Forms: FormInput: [ props: inputStyle() ] enzyme-shallow: snapshot 1`] 
 </AnimatedComponent>
 `;
 
-exports[`Forms: FormInput: [ props: no_props() ] enzyme-mount: snapshot 1`] = `
+exports[`Forms: FormInput: [ prop: no props ] enzyme-mount: snapshot 1`] = `
 <FormInput
   normalizeFontSize={true}
 >
@@ -765,7 +765,7 @@ exports[`Forms: FormInput: [ props: no_props() ] enzyme-mount: snapshot 1`] = `
 </FormInput>
 `;
 
-exports[`Forms: FormInput: [ props: no_props() ] enzyme-render: snapshot 1`] = `
+exports[`Forms: FormInput: [ prop: no props ] enzyme-render: snapshot 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginBottom-p1pxzi rn-marginLeft-1ozfoo7 rn-marginRight-y3t9qe rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
   style="transform:translateX(0px);-webkit-transform:translateX(0px);"
@@ -781,7 +781,7 @@ exports[`Forms: FormInput: [ props: no_props() ] enzyme-render: snapshot 1`] = `
 </div>
 `;
 
-exports[`Forms: FormInput: [ props: no_props() ] enzyme-shallow: snapshot 1`] = `
+exports[`Forms: FormInput: [ prop: no props ] enzyme-shallow: snapshot 1`] = `
 <AnimatedComponent
   style={
     Array [
@@ -830,7 +830,7 @@ exports[`Forms: FormInput: [ props: no_props() ] enzyme-shallow: snapshot 1`] = 
 </AnimatedComponent>
 `;
 
-exports[`Forms: FormInput: [ props: shake() ] enzyme-shallow: snapshot 1`] = `
+exports[`Forms: FormInput: [ prop: shake ] enzyme-shallow: snapshot 1`] = `
 <AnimatedComponent
   style={
     Array [
@@ -892,7 +892,7 @@ exports[`Forms: FormInput: [ props: shake() ] enzyme-shallow: snapshot 1`] = `
 </AnimatedComponent>
 `;
 
-exports[`Forms: FormInput: [ props: textInputRef() ] enzyme-mount: snapshot 1`] = `
+exports[`Forms: FormInput: [ prop: textInputRef ] enzyme-mount: snapshot 1`] = `
 <FormInput
   normalizeFontSize={true}
   textInputRef={[Function]}
@@ -1028,7 +1028,7 @@ exports[`Forms: FormInput: [ props: textInputRef() ] enzyme-mount: snapshot 1`] 
 </FormInput>
 `;
 
-exports[`Forms: FormInput: [ props: textInputRef() ] enzyme-render: snapshot 1`] = `
+exports[`Forms: FormInput: [ prop: textInputRef ] enzyme-render: snapshot 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginBottom-p1pxzi rn-marginLeft-1ozfoo7 rn-marginRight-y3t9qe rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
   style="transform:translateX(0px);-webkit-transform:translateX(0px);"
@@ -1044,7 +1044,7 @@ exports[`Forms: FormInput: [ props: textInputRef() ] enzyme-render: snapshot 1`]
 </div>
 `;
 
-exports[`Forms: FormInput: [ props: textInputRef() ] enzyme-shallow: snapshot 1`] = `
+exports[`Forms: FormInput: [ prop: textInputRef ] enzyme-shallow: snapshot 1`] = `
 <AnimatedComponent
   style={
     Array [

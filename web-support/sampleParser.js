@@ -1,4 +1,5 @@
 import React from 'react';
+import { Text, TouchableHighlight, View } from 'react-native';
 import { mount, render, shallow } from 'enzyme';
 import capitalize from 'lodash.capitalize';
 import cloneDeep from 'lodash.clonedeep';
@@ -11,9 +12,26 @@ import fse from 'fs-extra';
 import StringBuilder from 'string-builder';
 import log from 'loglevel';
 
-const HEADER = '\n[//]: # (** auto-generated **)\n';
+const HEADER = `\n[//]: # (** auto-generated ${new Date().toISOString()} **)\n`;
+const METHODS = 'methods';
+const PROPS = 'props';
 
-log.setLevel(`DEBUG`);
+log.setLevel(`INFO`);
+
+export function assignRef(refId) {
+  return Function('ref', `return ${refId} = ref`);
+}
+
+function smallUUID(a) {
+  return a
+    ? (a ^ ((Math.random() * 16) >> (a / 4))).toString(16)
+    : ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, smallUUID);
+}
+
+export function genRefId() {
+  const id = smallUUID().replace(/-/g, '');
+  return `ref${id}`;
+}
 
 const buildCtxOptions = ctxArr => {
   let options = { context: {}, childContextTypes: {} };
@@ -59,10 +77,60 @@ const wrapJsx = (depthName, jsx, ctx) => {
   return wrapper;
 };
 
+// const StyleGuideMethodWrapper = (props, innerComponent) => {
+//   const { methodName, cd } = props;
+//   const refId = genRefId();
+//   const timerFunc = Function(
+//     `setTimeout(() => {${refId}.${methodName}();}, ${cd})`
+//   );
+//   const buttonTitle = cd
+//     ? `Start ${cd / 1000} sec countdown for: ${methodName}()`
+//     : `Execute ${methodName}()`;
+//   return (
+//     <View>
+//       <TouchableHighlight
+//         onPress={timerFunc}
+//         style={{ backgroundColor: '#aaa', padding: 10, marginBottom: 15 }}
+//       >
+//         <Text>{buttonTitle}</Text>
+//         {innerComponent}
+//       </TouchableHighlight>
+//     </View>
+//   );
+// };
+
 const _processAttribute = (opts, attr) => {
+  const buildJsx = (Component, attr, wrapMethodForGuide) => {
+    log.debug(wrapMethodForGuide);
+    if (wrapMethodForGuide) {
+      const refId = genRefId();
+      const timerFunc = Function(
+        `setTimeout(() => {${refId}.${opts.attrName}();}, ${attr.guide.cd})`
+      );
+      const buttonTitle = attr.guide.cd
+        ? `Start ${attr.guide.cd / 1000} sec countdown for: ${opts.attrName}()`
+        : `Execute ${opts.attrName}()`;
+      return (
+        <View>
+          <TouchableHighlight
+            onPress={timerFunc}
+            style={{ backgroundColor: '#aaa', padding: 10, marginBottom: 15 }}
+          >
+            <Text>{buttonTitle}</Text>
+          </TouchableHighlight>
+          {React.createElement(Component, {
+            ...attr.props,
+            ref: assignRef(refId),
+          })}
+        </View>
+      );
+    }
+    return React.createElement(Component, attr.props);
+  };
+
   log.debug({ opts, attr });
-  const jsx = React.createElement(opts.component, attr.props);
   if (opts.tests) {
+    const jsx = buildJsx(opts.component, attr, false);
     each(attr.tests, (depth, depthName) => {
       each(depth, (jestTest, testName) => {
         const title = opts.title.concat(' enzyme-', depthName, ': ', testName);
@@ -73,6 +141,7 @@ const _processAttribute = (opts, attr) => {
       });
     });
   } else if (opts.dev || opts.prod) {
+    const jsx = buildJsx(opts.component, attr, opts.attrType === METHODS);
     // if (example.script) opts.exampleBuilder.appendLine(example.script);
     // if (example.script) opts.exampleBuilder.appendLine();
     // if (example.styleExample) {
@@ -100,13 +169,14 @@ const _processComponent = (opts, component) => {
         each(attrDefs, (attr, attrName) => {
           log.debug({ attrName });
           const componentOpts = cloneDeep(opts);
-          opts.component = component.component;
-          opts.title = opts.title.concat(
+          componentOpts.component = component.component;
+          componentOpts.attrType = attrTypeName;
+          componentOpts.title = opts.title.concat(
             ' [ ',
-            attrTypeName,
+            attrTypeName.slice(0, -1),
             ': ',
             attrName,
-            '() ]'
+            attrTypeName === METHODS ? '() ]' : ' ]'
           );
           componentOpts.attrName = attrName;
           _processAttribute(componentOpts, attr);
@@ -119,28 +189,20 @@ const _processComponent = (opts, component) => {
         const componentOpts = cloneDeep(opts);
         componentOpts.component = component.component;
         componentOpts.attrName = attrName;
+        componentOpts.attrType = attrTypeName;
         fs.appendFileSync(opts.exampleFileName, '\n#### ' + attrName);
-        if (attrTypeName === 'methods')
+        if (attrTypeName === METHODS)
           fs.appendFileSync(opts.exampleFileName, '()');
         fs.appendFileSync(opts.exampleFileName, '\n```js\n');
+        fs.appendFileSync(
+          opts.exampleFileName,
+          'const View = RN.View;\nconst TouchableHighlight = RN.TouchableHighlight;\nconst Text = RN.Text;\n'
+        );
         _processAttribute(componentOpts, attr);
       });
     }
   });
 };
-
-// const _process = (opts, component) => {
-//   describe(opts.title.concat(' Props'), () => {
-//     each(component.samples.props, (prop, propName) => {
-//       log.debug({ propName });
-//       const propOpts = cloneDeep(opts);
-//       propOpts.component = component.component;
-//       propOpts.title = opts.title.concat(' [ prop: ', propName, ' ]');
-//       propOpts.attrName = propName;
-//       _processAttribute(propOpts, prop);
-//     });
-//   });
-// };
 
 const _processSection = (opts, section) => {
   log.debug({ section });
@@ -152,13 +214,9 @@ const _processSection = (opts, section) => {
         .join(opts.EXAMPLES_DIR, componentName)
         .concat('.md');
       fse.removeSync(clonedOpts.exampleFileName);
+      fs.appendFileSync(clonedOpts.exampleFileName, HEADER);
     }
-
     _processComponent(clonedOpts, component);
-    if (opts.dev || opts.prod) {
-      log.debug('will write to ' + clonedOpts.exampleFileName);
-      // fse.outputFileSync(clonedOpts.exampleFilename, HEADER);
-    }
   });
 };
 
@@ -190,7 +248,7 @@ export function runTests(section) {
 
 export function buildGuide(sections, opts) {
   each(sections, (section, sectionName) => {
-    log.info(`Processing Section: ${sectionName}`);
+    log.info(`Styleguide: processing Section: ${sectionName}`);
     log.debug({ opts });
     const sectionOpts = cloneDeep(opts);
 
