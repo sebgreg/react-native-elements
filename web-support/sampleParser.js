@@ -12,8 +12,6 @@ import fse from 'fs-extra';
 import StringBuilder from 'string-builder';
 import log from 'loglevel';
 
-import { FormInput } from '../src';
-
 const HEADER = `\n[//]: # (** auto-generated ${new Date().toISOString()} **)\n`;
 const METHODS = 'methods';
 const PROPS = 'props';
@@ -74,7 +72,8 @@ const _processAttribute = (attr, opts) => {
         }
       });
     });
-  } else if (opts.guide) {
+  }
+  if (opts.guide) {
     const jsx = attr.styleguidist.buildJsx
       ? attr.styleguidist.buildJsx(attr)
       : defaultBuildJsx(attr);
@@ -87,8 +86,12 @@ const _processAttribute = (attr, opts) => {
     );
     fs.appendFileSync(attr.exampleFileName, '\n```\n');
     exampleWritten = true;
-  }
-  if (opts.guide) {
+    fs.appendFileSync(attr.exampleFileName, '\n#### ' + attr.displayName);
+    fs.appendFileSync(attr.exampleFileName, '\n```js\n');
+    fs.appendFileSync(
+      attr.exampleFileName,
+      'const View = RN.View;\nconst TouchableHighlight = RN.TouchableHighlight;\nconst Text = RN.Text;\n\n'
+    );
     examplesTitle = attr.title + ' example file written';
     test(attr.title + ' example file written', () => {
       expect(exampleWritten).toBeTruthy();
@@ -100,54 +103,45 @@ const _processComponent = (compSect, opts) => {
   log.debug({ compSect });
   each(compSect.samples, (attrDefs, attrTypeName) => {
     log.debug({ attrTypeName });
-    const descTitle = compSect.title.concat(' ', capitalize(attrTypeName));
-    if (opts.enzyme) {
-      describe(descTitle, () => {
-        each(attrDefs, (attr, attrName) => {
-          attr.attrName = attrName;
-          attr.attrType = attrTypeName;
-          attr.title = compSect.title.concat(
-            ` [ ${attrTypeName.slice(0, -1)}: ${attrName}`
-          ); // remove "s"
-          if (attrTypeName === METHODS)
-            attr.title = attr.title.concat('() ]'); // add parens if method
-          else attr.title = attr.title.concat(' ]');
-          _processAttribute(attr, opts);
-        });
+    let descTitle = compSect.title.concat(' ', capitalize(attrTypeName));
+    if (opts.guide) descTitle = descTitle.concat(' Styleguide Examples');
+    describe(descTitle, () => {
+      each(attrDefs, (attr, attrName) => {
+        attr.attrType = attrTypeName;
+        attr.attrName = attrName;
+        attr.displayName = attrName.concat(
+          attrTypeName === METHODS ? '()' : ''
+        );
+        attr.title = compSect.title.concat(
+          ` [ ${attrTypeName.slice(0, -1)}:`,
+          ` ${attr.displayName}`,
+          ' ]'
+        );
+
+        if (opts.guide) {
+          attr.exampleFileName = compSect.exampleFileName;
+        }
+
+        _processAttribute(attr, opts);
       });
-    }
+    });
     if (opts.guide) {
       fs.appendFileSync(
         compSect.exampleFileName,
         '\n### ' + attrTypeName + '\n'
       );
-      describe('Styleguide Examples:', () => {
-        each(attrDefs, (attr, attrName) => {
-          attr.attrName = attrName;
-          attr.attrType = attrTypeName;
-          fs.appendFileSync(compSect.exampleFileName, '\n#### ' + attrName);
-          if (attrTypeName === METHODS)
-            fs.appendFileSync(compSect.exampleFileName, '()');
-          fs.appendFileSync(compSect.exampleFileName, '\n```js\n');
-          fs.appendFileSync(
-            compSect.exampleFileName,
-            'const View = RN.View;\nconst TouchableHighlight = RN.TouchableHighlight;\nconst Text = RN.Text;\n\n'
-          );
-          attr.exampleFileName = compSect.exampleFileName;
-          _processAttribute(attr, opts);
-        });
-      });
+      each(attrDefs, (attr, attrName) => {});
     }
   });
 };
 
 const _processSection = (section, opts) => {
   log.debug({ section });
-  each(section.sectionComponents, (compSect, componentName) => {
-    compSect.title = section.title.concat(': ', componentName, ':');
+  each(section.sectionComponents, (compSect, name) => {
+    compSect.title = section.title.concat(': ', name, ':');
     if (opts.guide) {
       compSect.exampleFileName = path
-        .join(opts.EXAMPLES_DIR, componentName)
+        .join(opts.EXAMPLES_DIR, name)
         .concat('.md');
       fse.removeSync(compSect.exampleFileName);
       fs.appendFileSync(compSect.exampleFileName, HEADER);
