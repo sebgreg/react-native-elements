@@ -1,7 +1,7 @@
 import path from 'path';
 import { mount, render, shallow } from 'enzyme';
 import merge from 'lodash.merge';
-import parseSamples from '../../sampleParser';
+import parseSamples from 'enzyme-styleguidist-sample-parser';
 import sections from '../../samples';
 
 const EXAMPLES_DIR = path.resolve(
@@ -53,13 +53,40 @@ const createWrapperWithContext = (depth, jsx, ctx) => {
   return wrapper;
 };
 
+// * not yet working
+//
+// const travelInTime = (ms, step = 100) => {
+//   const tickTravel = v => {
+//     jest.runTimersToTime(v);
+//     const now = Date.now();
+//     MockDate.set(new Date(now + v));
+//   };
+
+//   let done = 0;
+//   while (ms - done > step) {
+//     tickTravel(step);
+//     done += step;
+//   }
+//   tickTravel(ms - done);
+// };
+
 const opts = {
+  mocks: () => {
+    Date.now = jest.fn(() => -3580994563);
+  },
+  log: 'WARN',
   enzyme: {
     run: true,
     createWrapper: createWrapperWithContext,
   },
-  guide: true,
-  EXAMPLES_DIR,
+  guide: {
+    build: true,
+    script:
+      'const View = RN.View;\n' +
+      'const TouchableHighlight = RN.TouchableHighlight;\n' +
+      'const Text = RN.Text;\n\n',
+    examplesDir: EXAMPLES_DIR,
+  },
 };
 
 parseSamples({ Forms: sections.Forms }, opts);

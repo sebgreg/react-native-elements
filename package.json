@@ -8,7 +8,12 @@
     "type": "git",
     "url": "git+ssh://git@github.com/dabit3/React-Native-Elements.git"
   },
-  "keywords": ["react-native", "reactjs", "reactnative", "bootstrap"],
+  "keywords": [
+    "react-native",
+    "reactjs",
+    "reactnative",
+    "bootstrap"
+  ],
   "scripts": {
     "build": "rm -rf build; webpack",
     "test": "jest",
@@ -19,19 +24,15 @@
     "lint": "eslint src/",
     "precommit": "lint-staged && npm test",
     "prettify": "prettier --write 'src/**/*.js'",
-    "styleguide":
-      "styleguidist --config ./web-support/styleguide/styleguide.config.js server",
-    "styleguide:build":
-      "styleguidist  --config ./web-support/styleguide/styleguide.config.js build"
+    "styleguide": "styleguidist --config ./web-support/styleguide/styleguide.config.js server",
+    "styleguide:build": "styleguidist  --config ./web-support/styleguide/styleguide.config.js build"
   },
   "author": "Nader Dabit & Monte Thakkar",
   "license": "MIT",
   "bugs": {
-    "url":
-      "https://github.com/react-native-training/react-native-elements/issues"
+    "url": "https://github.com/react-native-training/react-native-elements/issues"
   },
-  "homepage":
-    "https://github.com/react-native-training/react-native-elements#readme",
+  "homepage": "https://github.com/react-native-training/react-native-elements#readme",
   "collective": {
     "type": "opencollective",
     "url": "https://opencollective.com/react-native-elements",
@@ -45,7 +46,6 @@
   },
   "devDependencies": {
     "ajv": "^4.10.0",
-    "argparse": "^1.0.9",
     "babel": "^6.23.0",
     "babel-core": "^6.23.1",
     "babel-eslint": "^7.1.1",
@@ -56,6 +56,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "codecov": "^2.1.0",
     "enzyme": "^2.9.1",
+    "enzyme-styleguidist-sample-parser": "^0.1.2",
     "enzyme-to-json": "^1.5.0",
     "eslint": "^3.17.1",
     "eslint-plugin-react": "^6.10.0",
@@ -69,9 +70,7 @@
     "lodash.clonedeep": "^4.5.0",
     "lodash.foreach": "^4.5.0",
     "lodash.mapkeys": "^4.6.0",
-    "lodash.mapvalues": "^4.6.0",
     "lodash.merge": "^4.6.0",
-    "lodash.uniqueid": "^4.0.1",
     "prettier": "^1.7.4",
     "raf": "^3.4.0",
     "react": "^15.4.2",
@@ -84,7 +83,6 @@
     "react-styleguidist": "^6.0.33",
     "react-test-renderer": "15.4.2",
     "sinon": "^4.1.2",
-    "string-builder": "^0.1.4",
     "webpack": "^2.2.1"
   },
   "peerDependencies": {

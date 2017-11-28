@@ -1,9 +1,8 @@
 import React from 'react';
 import { Text, TouchableHighlight, View } from 'react-native';
-import { mount, render, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import sinon from 'sinon';
-import { assignRef, genRefId } from '../../sampleParser';
+import { assignRef, genRefId } from 'enzyme-styleguidist-sample-parser';
 
 import { FormInput as Component } from '../../../src';
 
@@ -83,7 +82,6 @@ const textInputRef = {
   styleguidist: {
     buildJsx: () => {
       const refId = genRefId();
-
       return (
         <View>
           <Component textInputRef={assignRef(refId)} />
@@ -141,7 +139,7 @@ const ensureCalled = () => {
   };
 };
 
-const justEnsureItsCalled = {
+const onlyEnsureCalled = {
   tests: { shallow: { 'ensure called': ensureCalled() } },
 };
 
@@ -151,7 +149,7 @@ const shakeMeth = {
   styleguidist: {
     buildJsx: buildJsxForGuideMethod,
   },
-  enzyme: justEnsureItsCalled,
+  enzyme: onlyEnsureCalled,
 };
 const focus = {
   component: Component,
