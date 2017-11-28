@@ -205,7 +205,7 @@ exports[`Forms: FormInput: [ prop: containerStyle ] enzyme-mount: snapshot 1`] =
 <FormInput
   containerStyle={
     Object {
-      "backgroundColor": "#181818",
+      "backgroundColor": "#071",
     }
   }
   normalizeFontSize={true}
@@ -215,7 +215,7 @@ exports[`Forms: FormInput: [ prop: containerStyle ] enzyme-mount: snapshot 1`] =
       Array [
         140,
         Object {
-          "backgroundColor": "#181818",
+          "backgroundColor": "#071",
         },
         Object {
           "transform": Array [
@@ -253,7 +253,7 @@ exports[`Forms: FormInput: [ prop: containerStyle ] enzyme-mount: snapshot 1`] =
                           },
                         ],
                         "_style": Object {
-                          "backgroundColor": "#181818",
+                          "backgroundColor": "#071",
                           "marginLeft": 15,
                           "marginRight": 15,
                           "transform": [Circular],
@@ -284,7 +284,7 @@ exports[`Forms: FormInput: [ prop: containerStyle ] enzyme-mount: snapshot 1`] =
     <View
       style={
         Object {
-          "backgroundColor": "#181818",
+          "backgroundColor": "#071",
           "marginLeft": 15,
           "marginRight": 15,
           "transform": Array [
@@ -300,7 +300,7 @@ exports[`Forms: FormInput: [ prop: containerStyle ] enzyme-mount: snapshot 1`] =
         style={
           Object {
             "WebkitTransform": "translateX(0px)",
-            "backgroundColor": "rgba(24,24,24,1)",
+            "backgroundColor": "rgba(0,119,17,1)",
             "transform": "translateX(0px)",
           }
         }
@@ -349,7 +349,7 @@ exports[`Forms: FormInput: [ prop: containerStyle ] enzyme-mount: snapshot 1`] =
 exports[`Forms: FormInput: [ prop: containerStyle ] enzyme-render: snapshot 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginBottom-p1pxzi rn-marginLeft-1ozfoo7 rn-marginRight-y3t9qe rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
-  style="background-color:rgba(24,24,24,1);transform:translateX(0px);-webkit-transform:translateX(0px);"
+  style="background-color:rgba(0,119,17,1);transform:translateX(0px);-webkit-transform:translateX(0px);"
 >
   <input
     autocapitalize="sentences"
@@ -368,7 +368,7 @@ exports[`Forms: FormInput: [ prop: containerStyle ] enzyme-shallow: snapshot 1`]
     Array [
       140,
       Object {
-        "backgroundColor": "#181818",
+        "backgroundColor": "#071",
       },
       Object {
         "transform": Array [
@@ -417,7 +417,7 @@ exports[`Forms: FormInput: [ prop: inputStyle ] enzyme-mount: snapshot 1`] = `
 <FormInput
   inputStyle={
     Object {
-      "color": "#222",
+      "color": "#071",
     }
   }
   normalizeFontSize={true}
@@ -455,7 +455,7 @@ exports[`Forms: FormInput: [ prop: inputStyle ] enzyme-mount: snapshot 1`] = `
                                                                                       "fontSize": 14,
                                                                                     },
                                                                                     Object {
-                                                                                      "color": "#222",
+                                                                                      "color": "#071",
                                                                                     },
                                                                                   ]
                                 }
@@ -530,7 +530,7 @@ exports[`Forms: FormInput: [ prop: inputStyle ] enzyme-mount: snapshot 1`] = `
                 "fontSize": 14,
               },
               Object {
-                "color": "#222",
+                "color": "#071",
               },
             ]
           }
@@ -550,7 +550,7 @@ exports[`Forms: FormInput: [ prop: inputStyle ] enzyme-mount: snapshot 1`] = `
             readOnly={false}
             style={
               Object {
-                "color": "rgba(34,34,34,1)",
+                "color": "rgba(0,119,17,1)",
               }
             }
             type="text"
@@ -573,7 +573,7 @@ exports[`Forms: FormInput: [ prop: inputStyle ] enzyme-render: snapshot 1`] = `
     autocorrect="on"
     class="rn-appearance-30o5oe rn-backgroundColor-wib322 rn-borderTopColor-kqr9px rn-borderRightColor-q0dj5p rn-borderBottomColor-1ah7hsa rn-borderLeftColor-137uh4u rn-borderTopLeftRadius-ou6ah9 rn-borderTopRightRadius-t12b5v rn-borderBottomRightRadius-zmljjp rn-borderBottomLeftRadius-pm2fo rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-font-1lw9tu2 rn-fontSize-1b43r93 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-resize-1dz5y72"
     dir="auto"
-    style="color:rgba(34,34,34,1);"
+    style="color:rgba(0,119,17,1);"
     type="text"
   />
 </div>
@@ -622,7 +622,7 @@ exports[`Forms: FormInput: [ prop: inputStyle ] enzyme-shallow: snapshot 1`] = `
           "fontSize": 14,
         },
         Object {
-          "color": "#222",
+          "color": "#071",
         },
       ]
     }

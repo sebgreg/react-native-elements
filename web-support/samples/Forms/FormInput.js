@@ -1,3 +1,5 @@
+import React from 'react';
+import { Text, TouchableHighlight, View } from 'react-native';
 import { mount, render, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import sinon from 'sinon';
@@ -14,56 +16,107 @@ const snapShot = () => {
   };
 };
 
+const buildJsxForGuideMethod = attr => {
+  const refId = genRefId();
+  const timerFunc = Function(
+    `setTimeout(() => {${refId}.${attr.attrName}();}, ${attr.styleguidist.cd})`
+  );
+  const buttonTitle = attr.styleguidist.cd
+    ? `Start ${attr.styleguidist.cd /
+        1000} sec countdown for: ${attr.attrName}()`
+    : `Execute ${attr.attrName}()`;
+  return (
+    <View>
+      <TouchableHighlight
+        onPress={timerFunc}
+        style={{ backgroundColor: '#aaa', padding: 10, marginBottom: 15 }}
+      >
+        <Text>{buttonTitle}</Text>
+      </TouchableHighlight>
+      {React.createElement(Component, {
+        ...attr.props,
+        ref: assignRef(refId),
+      })}
+    </View>
+  );
+};
+
 const noProps = {
-  guide: {},
+  component: Component,
   props: {},
-  tests: {
-    shallow: { snapshot: snapShot() },
-    mount: { snapshot: snapShot() },
-    render: { snapshot: snapShot() },
+  styleguidist: {},
+  enzyme: {
+    tests: {
+      shallow: { snapshot: snapShot() },
+      mount: { snapshot: snapShot() },
+      render: { snapshot: snapShot() },
+    },
   },
 };
 const containerStyle = {
-  guide: {},
-  props: { containerStyle: { backgroundColor: '#181818' } },
-  tests: {
-    shallow: { snapshot: snapShot() },
-    mount: { snapshot: snapShot() },
-    render: { snapshot: snapShot() },
+  component: Component,
+  props: { containerStyle: { backgroundColor: '#071' } },
+  styleguidist: {},
+  enzyme: {
+    tests: {
+      shallow: { snapshot: snapShot() },
+      mount: { snapshot: snapShot() },
+      render: { snapshot: snapShot() },
+    },
   },
 };
 const inputStyle = {
-  guide: {},
-  props: { inputStyle: { color: '#222' } },
-  tests: {
-    shallow: { snapshot: snapShot() },
-    mount: { snapshot: snapShot() },
-    render: { snapshot: snapShot() },
+  component: Component,
+  props: { inputStyle: { color: '#071' } },
+  styleguidist: {},
+  enzyme: {
+    tests: {
+      shallow: { snapshot: snapShot() },
+      mount: { snapshot: snapShot() },
+      render: { snapshot: snapShot() },
+    },
   },
 };
 const textInputRef = {
-  guide: {},
+  component: Component,
   props: { textInputRef: assignRef(genRefId()) },
-  tests: {
-    shallow: { snapshot: snapShot() },
-    mount: { snapshot: snapShot() },
-    render: { snapshot: snapShot() },
+  styleguidist: {
+    buildJsx: () => {
+      const refId = genRefId();
+
+      return (
+        <View>
+          <Component textInputRef={assignRef(refId)} />
+        </View>
+      );
+    },
+  },
+  enzyme: {
+    tests: {
+      shallow: { snapshot: snapShot() },
+      mount: { snapshot: snapShot() },
+      render: { snapshot: snapShot() },
+    },
   },
 };
 const containerRef = {
-  guide: {},
+  component: Component,
   props: { containerRef: assignRef(genRefId()) },
-  tests: {
-    shallow: { snapshot: snapShot() },
-    mount: { snapshot: snapShot() },
-    render: { snapshot: snapShot() },
+  styleguidist: {},
+  enzyme: {
+    tests: {
+      shallow: { snapshot: snapShot() },
+      mount: { snapshot: snapShot() },
+      render: { snapshot: snapShot() },
+    },
   },
 };
 const shake = {
-  guide: {},
+  component: Component,
   props: { shake: true },
-  tests: {
-    shallow: { snapshot: snapShot() },
+  styleguidist: {},
+  enzyme: {
+    tests: { shallow: { snapshot: snapShot() } },
   },
 };
 
@@ -88,35 +141,59 @@ const ensureCalled = () => {
   };
 };
 
+const justEnsureItsCalled = {
+  tests: { shallow: { 'ensure called': ensureCalled() } },
+};
+
 const shakeMeth = {
-  guide: {},
-  tests: {
-    shallow: {
-      'ensure called': ensureCalled(),
-    },
+  component: Component,
+  props: { defaultValue: 'text to shake' },
+  styleguidist: {
+    buildJsx: buildJsxForGuideMethod,
   },
+  enzyme: justEnsureItsCalled,
 };
 const focus = {
-  guide: { cd: 1000 },
-  tests: {
-    shallow: {
-      'ensure called': ensureCalled(),
+  component: Component,
+  props: { defaultValue: 'cursor will appear' },
+  styleguidist: {
+    cd: 1000,
+    buildJsx: buildJsxForGuideMethod,
+  },
+  enzyme: {
+    tests: {
+      shallow: {
+        'ensure called': ensureCalled(),
+      },
     },
   },
 };
 const blur = {
-  guide: { cd: 3000 },
-  tests: {
-    shallow: {
-      'ensure called': ensureCalled(),
+  component: Component,
+  props: { defaultValue: 'place cursor here and watch it be removed' },
+  styleguidist: {
+    cd: 3000,
+    buildJsx: buildJsxForGuideMethod,
+  },
+  enzyme: {
+    tests: {
+      shallow: {
+        'ensure called': ensureCalled(),
+      },
     },
   },
 };
 const clearText = {
-  guide: {},
-  tests: {
-    shallow: {
-      'ensure called': ensureCalled(),
+  component: Component,
+  props: { defaultValue: 'text to clear' },
+  styleguidist: {
+    buildJsx: buildJsxForGuideMethod,
+  },
+  enzyme: {
+    tests: {
+      shallow: {
+        'ensure called': ensureCalled(),
+      },
     },
   },
 };
@@ -129,7 +206,6 @@ const methods = {
 };
 
 export default {
-  component: Component,
   samples: {
     props,
     methods,

@@ -12,6 +12,8 @@ import fse from 'fs-extra';
 import StringBuilder from 'string-builder';
 import log from 'loglevel';
 
+import { FormInput } from '../src';
+
 const HEADER = `\n[//]: # (** auto-generated ${new Date().toISOString()} **)\n`;
 const METHODS = 'methods';
 const PROPS = 'props';
@@ -33,41 +35,14 @@ export function genRefId() {
   return `ref${id}`;
 }
 
-const buildCtxOptions = ctxArr => {
-  let options = { context: {}, childContextTypes: {} };
-  ctxArr.forEach(ctx => {
-    if (ctx.type && ctx.type === 'func') {
-      const mockFunc = jest.fn();
-      mockFunc.mockReturnValue(ctx.value);
-      options = merge(options, {
-        context: { [ctx.name]: mockFunc },
-        childContextTypes: { [ctx.name]: toPropType(ctx.type) },
-      });
-    }
-  });
-  return options;
-};
-
-const toPropType = typeId => {
-  switch (typeId) {
-    case 'func':
-      return PropTypes.func;
-    default:
-      return null;
-  }
-};
-
-const wrapJsx = (depthName, jsx, ctx) => {
+const createWrapper = (depth, jsx) => {
   let wrapper;
-  let ctxOpts = {};
-  if (ctx) ctxOpts = buildCtxOptions(ctx);
-  switch (depthName) {
+  switch (depth) {
     case 'mount':
-      wrapper = mount(jsx, ctxOpts);
+      wrapper = mount(jsx);
       break;
     case 'shallow':
-      delete ctxOpts.childContextTypes;
-      wrapper = shallow(jsx, ctxOpts);
+      wrapper = shallow(jsx);
       break;
     case 'render':
       wrapper = render(jsx);
@@ -77,157 +52,115 @@ const wrapJsx = (depthName, jsx, ctx) => {
   return wrapper;
 };
 
-// const StyleGuideMethodWrapper = (props, innerComponent) => {
-//   const { methodName, cd } = props;
-//   const refId = genRefId();
-//   const timerFunc = Function(
-//     `setTimeout(() => {${refId}.${methodName}();}, ${cd})`
-//   );
-//   const buttonTitle = cd
-//     ? `Start ${cd / 1000} sec countdown for: ${methodName}()`
-//     : `Execute ${methodName}()`;
-//   return (
-//     <View>
-//       <TouchableHighlight
-//         onPress={timerFunc}
-//         style={{ backgroundColor: '#aaa', padding: 10, marginBottom: 15 }}
-//       >
-//         <Text>{buttonTitle}</Text>
-//         {innerComponent}
-//       </TouchableHighlight>
-//     </View>
-//   );
-// };
+const defaultBuildJsx = attr => {
+  const jsx = React.createElement(attr.component, attr.props);
+  return jsx;
+};
 
-const _processAttribute = (opts, attr) => {
-  const buildJsx = (Component, attr, wrapMethodForGuide) => {
-    log.debug(wrapMethodForGuide);
-    if (wrapMethodForGuide) {
-      const refId = genRefId();
-      const timerFunc = Function(
-        `setTimeout(() => {${refId}.${opts.attrName}();}, ${attr.guide.cd})`
-      );
-      const buttonTitle = attr.guide.cd
-        ? `Start ${attr.guide.cd / 1000} sec countdown for: ${opts.attrName}()`
-        : `Execute ${opts.attrName}()`;
-      return (
-        <View>
-          <TouchableHighlight
-            onPress={timerFunc}
-            style={{ backgroundColor: '#aaa', padding: 10, marginBottom: 15 }}
-          >
-            <Text>{buttonTitle}</Text>
-          </TouchableHighlight>
-          {React.createElement(Component, {
-            ...attr.props,
-            ref: assignRef(refId),
-          })}
-        </View>
-      );
-    }
-    return React.createElement(Component, attr.props);
-  };
-
-  log.debug({ opts, attr });
-  if (opts.tests) {
-    const jsx = buildJsx(opts.component, attr, false);
-    each(attr.tests, (depth, depthName) => {
+const _processAttribute = (attr, opts) => {
+  let exampleWritten = false;
+  if (opts.enzyme) {
+    const jsx = attr.enzyme.buildJsx
+      ? attr.enzyme.buildJsx(attr)
+      : defaultBuildJsx(attr);
+    each(attr.enzyme.tests, (depth, depthName) => {
       each(depth, (jestTest, testName) => {
-        const title = opts.title.concat(' enzyme-', depthName, ': ', testName);
-        if (opts.tests) {
-          const wrapper = wrapJsx(depthName, jsx);
-          jestTest(wrapper, title, opts.attrName);
+        const title = attr.title.concat(' enzyme-', depthName, ': ', testName);
+        if (opts.enzyme) {
+          const wrapper = opts.enzyme.createWrapper
+            ? opts.enzyme.createWrapper(depthName, jsx)
+            : createWrapper(depthName, jsx);
+          jestTest(wrapper, title, attr.attrName);
         }
       });
     });
-  } else if (opts.dev || opts.prod) {
-    const jsx = buildJsx(opts.component, attr, opts.attrType === METHODS);
-    // if (example.script) opts.exampleBuilder.appendLine(example.script);
-    // if (example.script) opts.exampleBuilder.appendLine();
-    // if (example.styleExample) {
-    //   opts.exampleBuilder.appendLine(example.styleExample);
-    // } else {
-
+  } else if (opts.guide) {
+    const jsx = attr.styleguidist.buildJsx
+      ? attr.styleguidist.buildJsx(attr)
+      : defaultBuildJsx(attr);
     fs.appendFileSync(
-      opts.exampleFileName,
+      attr.exampleFileName,
       jsxToString(jsx, {
         showFunctions: true,
         showDefaultProps: false,
       })
     );
-    fs.appendFileSync(opts.exampleFileName, '\n```\n');
+    fs.appendFileSync(attr.exampleFileName, '\n```\n');
+    exampleWritten = true;
   }
-  // }
+  if (opts.guide) {
+    examplesTitle = attr.title + ' example file written';
+    test(attr.title + ' example file written', () => {
+      expect(exampleWritten).toBeTruthy();
+    });
+  }
 };
 
-const _processComponent = (opts, component) => {
-  log.debug({ component });
-  each(component.samples, (attrDefs, attrTypeName) => {
+const _processComponent = (compSect, opts) => {
+  log.debug({ compSect });
+  each(compSect.samples, (attrDefs, attrTypeName) => {
     log.debug({ attrTypeName });
-    if (opts.tests) {
-      describe(opts.title.concat(' ', capitalize(attrTypeName)), () => {
+    const descTitle = compSect.title.concat(' ', capitalize(attrTypeName));
+    if (opts.enzyme) {
+      describe(descTitle, () => {
         each(attrDefs, (attr, attrName) => {
-          log.debug({ attrName });
-          const componentOpts = cloneDeep(opts);
-          componentOpts.component = component.component;
-          componentOpts.attrType = attrTypeName;
-          componentOpts.title = opts.title.concat(
-            ' [ ',
-            attrTypeName.slice(0, -1),
-            ': ',
-            attrName,
-            attrTypeName === METHODS ? '() ]' : ' ]'
-          );
-          componentOpts.attrName = attrName;
-          _processAttribute(componentOpts, attr);
+          attr.attrName = attrName;
+          attr.attrType = attrTypeName;
+          attr.title = compSect.title.concat(
+            ` [ ${attrTypeName.slice(0, -1)}: ${attrName}`
+          ); // remove "s"
+          if (attrTypeName === METHODS)
+            attr.title = attr.title.concat('() ]'); // add parens if method
+          else attr.title = attr.title.concat(' ]');
+          _processAttribute(attr, opts);
         });
       });
-    } else if (opts.dev || opts.prod) {
-      fs.appendFileSync(opts.exampleFileName, '\n### ' + attrTypeName + '\n');
-      each(attrDefs, (attr, attrName) => {
-        log.debug({ attrName });
-        const componentOpts = cloneDeep(opts);
-        componentOpts.component = component.component;
-        componentOpts.attrName = attrName;
-        componentOpts.attrType = attrTypeName;
-        fs.appendFileSync(opts.exampleFileName, '\n#### ' + attrName);
-        if (attrTypeName === METHODS)
-          fs.appendFileSync(opts.exampleFileName, '()');
-        fs.appendFileSync(opts.exampleFileName, '\n```js\n');
-        fs.appendFileSync(
-          opts.exampleFileName,
-          'const View = RN.View;\nconst TouchableHighlight = RN.TouchableHighlight;\nconst Text = RN.Text;\n'
-        );
-        _processAttribute(componentOpts, attr);
+    }
+    if (opts.guide) {
+      fs.appendFileSync(
+        compSect.exampleFileName,
+        '\n### ' + attrTypeName + '\n'
+      );
+      describe('Styleguide Examples:', () => {
+        each(attrDefs, (attr, attrName) => {
+          attr.attrName = attrName;
+          attr.attrType = attrTypeName;
+          fs.appendFileSync(compSect.exampleFileName, '\n#### ' + attrName);
+          if (attrTypeName === METHODS)
+            fs.appendFileSync(compSect.exampleFileName, '()');
+          fs.appendFileSync(compSect.exampleFileName, '\n```js\n');
+          fs.appendFileSync(
+            compSect.exampleFileName,
+            'const View = RN.View;\nconst TouchableHighlight = RN.TouchableHighlight;\nconst Text = RN.Text;\n\n'
+          );
+          attr.exampleFileName = compSect.exampleFileName;
+          _processAttribute(attr, opts);
+        });
       });
     }
   });
 };
 
-const _processSection = (opts, section) => {
+const _processSection = (section, opts) => {
   log.debug({ section });
-  each(section.sectionComponents, (component, componentName) => {
-    let clonedOpts = cloneDeep(opts);
-    clonedOpts.title = section.title.concat(': ', componentName, ':');
-    if (opts.dev || opts.prod) {
-      clonedOpts.exampleFileName = path
+  each(section.sectionComponents, (compSect, componentName) => {
+    compSect.title = section.title.concat(': ', componentName, ':');
+    if (opts.guide) {
+      compSect.exampleFileName = path
         .join(opts.EXAMPLES_DIR, componentName)
         .concat('.md');
-      fse.removeSync(clonedOpts.exampleFileName);
-      fs.appendFileSync(clonedOpts.exampleFileName, HEADER);
+      fse.removeSync(compSect.exampleFileName);
+      fs.appendFileSync(compSect.exampleFileName, HEADER);
     }
-    _processComponent(clonedOpts, component);
+    _processComponent(compSect, opts);
   });
 };
 
-export function runTests(section) {
-  log.debug({ section });
-  const testOpts = { tests: true };
-
+export function runTests(section, opts) {
   // mocking
-  Date.now = jest.fn(() => -3580994563);
 
-  // not yet working
+  // * not yet working
+  //
   // const travelInTime = (ms, step = 100) => {
   //   const tickTravel = v => {
   //     jest.runTimersToTime(v);
@@ -243,15 +176,33 @@ export function runTests(section) {
   //   tickTravel(ms - done);
   // };
 
-  _processSection(testOpts, section);
+  Date.now = jest.fn(() => -3580994563);
+  _processSection(section, opts);
 }
 
-export function buildGuide(sections, opts) {
-  each(sections, (section, sectionName) => {
-    log.info(`Styleguide: processing Section: ${sectionName}`);
-    log.debug({ opts });
-    const sectionOpts = cloneDeep(opts);
+export function buildGuide(section, opts) {
+  log.info(`Styleguide: processing Section: ${sectionName}`);
+  const sectionOpts = cloneDeep(opts);
 
-    _processSection(sectionOpts, section);
+  _processSection(section, opts);
+}
+
+export default function parseSamples(sections, options) {
+  log.debug({ options });
+  each(sections, (section, sectionKey) => {
+    // guide first to avoid the mocks
+    if (options.guide) {
+      const guideOpts = cloneDeep(options);
+      delete guideOpts.enzyme;
+      log.info(`Styleguide: processing Section: ${sectionKey}`);
+      debugger;
+      _processSection(section, guideOpts);
+    }
+
+    if (options.enzyme && options.enzyme.run) {
+      const testOpts = cloneDeep(options);
+      delete testOpts.guide;
+      runTests(section, testOpts);
+    }
   });
 }
