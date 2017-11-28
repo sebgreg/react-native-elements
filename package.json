@@ -8,12 +8,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/dabit3/React-Native-Elements.git"
   },
-  "keywords": [
-    "react-native",
-    "reactjs",
-    "reactnative",
-    "bootstrap"
-  ],
+  "keywords": ["react-native", "reactjs", "reactnative", "bootstrap"],
   "scripts": {
     "build": "rm -rf build; webpack",
     "test": "jest",
@@ -24,19 +19,19 @@
     "lint": "eslint src/",
     "precommit": "lint-staged && npm test",
     "prettify": "prettier --write 'src/**/*.js'",
-    "styleguide": "styleguidist --config ./web-support/styleguide/styleguide.config.js server",
-    "styleguide:generate:script": "webpack --config ./web-support/styleguide/webpack.guideBuilder.config.js",
-    "styleguide:execute:script": "node ./web-support/styleguide/scripts/genStyleguideExamples -d",
-    "styleguide:debug": "node --nolazy --inspect-brk=9229 ./web-support/styleguide/scripts/genStyleguideExamples -d",
-    "styleguide:dev": "yarn styleguide:generate:script && yarn styleguide:execute:script && yarn styleguide",
-    "styleguide:build:prod": "styleguidist  --config ./web-support/styleguide/styleguide.config.js build"
+    "styleguide":
+      "styleguidist --config ./web-support/styleguide/styleguide.config.js server",
+    "styleguide:build":
+      "styleguidist  --config ./web-support/styleguide/styleguide.config.js build"
   },
   "author": "Nader Dabit & Monte Thakkar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/react-native-training/react-native-elements/issues"
+    "url":
+      "https://github.com/react-native-training/react-native-elements/issues"
   },
-  "homepage": "https://github.com/react-native-training/react-native-elements#readme",
+  "homepage":
+    "https://github.com/react-native-training/react-native-elements#readme",
   "collective": {
     "type": "opencollective",
     "url": "https://opencollective.com/react-native-elements",
