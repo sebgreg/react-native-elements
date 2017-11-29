@@ -19,7 +19,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:web-support": "jest --config=./web-support/jest.config.json",
+    "test:web": "jest --config=./web-support/jest.config.json",
     "postinstall": "opencollective postinstall",
     "lint": "eslint src/",
     "precommit": "lint-staged && npm test",
@@ -39,6 +39,7 @@
     "logo": "https://opencollective.com/react-native-elements/logo.txt"
   },
   "dependencies": {
+    "enzyme-styleguidist-sample-parser": "^0.1.7",
     "lodash.isempty": "^4.4.0",
     "lodash.times": "^4.3.2",
     "opencollective": "^1.0.3",
@@ -56,7 +57,6 @@
     "babel-preset-stage-0": "^6.24.1",
     "codecov": "^2.1.0",
     "enzyme": "^2.9.1",
-    "enzyme-styleguidist-sample-parser": "^0.1.2",
     "enzyme-to-json": "^1.5.0",
     "eslint": "^3.17.1",
     "eslint-plugin-react": "^6.10.0",
