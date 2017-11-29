@@ -2980,14 +2980,15 @@ entities@^1.1.1, entities@~1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0"
 
-enzyme-styleguidist-sample-parser@^0.1.7:
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/enzyme-styleguidist-sample-parser/-/enzyme-styleguidist-sample-parser-0.1.7.tgz#497394f4a034cd6415f1ec5801d8d7a37b1299d5"
+enzyme-styleguidist-sample-parser@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/enzyme-styleguidist-sample-parser/-/enzyme-styleguidist-sample-parser-0.1.8.tgz#dcea04c19141fb41ad1a8acc5af05fb397050426"
   dependencies:
     fs-extra "^4.0.2"
     lodash.capitalize "^4.2.1"
     lodash.clonedeep "^4.5.0"
     lodash.foreach "^4.5.0"
+    lodash.get "^4.4.2"
     lodash.merge "^4.6.0"
     log "^1.4.0"
     react-element-to-jsx-string "^13.1.0"

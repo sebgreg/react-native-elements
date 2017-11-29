@@ -42,11 +42,16 @@ const buildJsxForGuideMethod = attr => {
 
 const noProps = {
   component: Component,
-  props: {},
-  styleguidist: {},
   enzyme: {
     tests: {
-      shallow: { snapshot: snapShot() },
+      shallow: {
+        snapshot: snapShot(),
+        oneTextInput: (wrapper, title) => {
+          test(title, () => {
+            expect(wrapper.find('TextInput').length).toBe(1);
+          });
+        },
+      },
       mount: { snapshot: snapShot() },
       render: { snapshot: snapShot() },
     },
@@ -78,18 +83,18 @@ const inputStyle = {
 };
 const textInputRef = {
   component: Component,
-  props: { textInputRef: assignRef(genRefId()) },
+  // props: { textInputRef: assignRef(genRefId()) },
   styleguidist: {
     buildJsx: () => {
       const refId = genRefId();
-      return (
-        <View>
-          <Component textInputRef={assignRef(refId)} />
-        </View>
-      );
+      return <Component textInputRef={assignRef(refId)} />;
     },
   },
   enzyme: {
+    buildJsx: () => {
+      const refId = genRefId();
+      return <Component textInputRef={assignRef(refId)} />;
+    },
     tests: {
       shallow: { snapshot: snapShot() },
       mount: { snapshot: snapShot() },
@@ -114,7 +119,14 @@ const shake = {
   props: { shake: true },
   styleguidist: {},
   enzyme: {
-    tests: { shallow: { snapshot: snapShot() } },
+    tests: {
+      shallow: {
+        snapshot: snapShot(),
+        changeShake: (wrapper, title) => {
+          wrapper.setProps({ shake: false });
+        },
+      },
+    },
   },
 };
 
