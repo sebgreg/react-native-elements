@@ -1,15 +1,14 @@
-import Forms from './Forms';
-import Rating from './Rating';
+import _forms from './Forms';
+// import _rating from './Rating';
 
-export default [
-  {
-    sectionName: 'Forms',
-    dir: 'Forms',
-    componentSamples: Forms,
+// sections
+export default {
+  Forms: {
+    title: 'Forms',
+    matcher: '../../src/form/[A-Z]*.js',
+    sectionComponents: _forms,
   },
-  {
-    sectionName: 'Rating',
-    dir: 'Rating',
-    componentSamples: Rating,
-  },
-];
+  // Rating: {
+  //   sectionComponents: _rating,
+  // },
+};

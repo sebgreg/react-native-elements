@@ -2,8 +2,8 @@
 
 ## Component Progress
 
-| Component    | initial check | estimated effort            | add tests | final |
-| ------------ | ------------- | --------------------------- | --------- | ----- |
+| Component    | initial check | estimated effort            | add tests  | final |
+| ------------ | ------------- | --------------------------- | ---------- | ----- |
 | Avatar       | 2017-11-08    | [med](#avatar-changes)      |
 | Badge        | 2017-11-10    | [med](#badge-changes)       |
 | Button Group | 2017-11-11    | [low](#buttongroup-changes) |
@@ -16,7 +16,7 @@
 | Icon         | 2017-11-07    | [med](#icon-changes)        |
 | Lists        | 2017-11-11    | no changes                  |
 | Pricing      | 2017-11-11    | no changes                  |
-| Rating       | 2017-11-11    | [med](#rating-changes)      |
+| Rating       | 2017-11-11    | [med](#rating-changes)      | 2017-11-21 |
 | SearchBar    | 2017-11-12    | [low](#search-changes)      |
 | Slider       | 2017-11-08    | [low](#slider-changes)      |
 | Social Icons | 2017-11-11    | no changes                  |
@@ -47,6 +47,10 @@
 
 ### Rating changes
 - Keep images from being dragged
+  - solution:
+    - modified props to Views:
+      - added draggable={false}
+      - changed pointerEvents; "box-none" for parent View, "none" for Image
 - mouseclick & mousemove seem off from displayed position
 
 ### SearchBar changes

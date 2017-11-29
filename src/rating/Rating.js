@@ -47,6 +47,9 @@ const TYPES = {
 };
 
 export default class Rating extends Component {
+  _panResponder;
+  _position;
+
   static defaultProps = {
     type: 'star',
     ratingImage: require('./images/star.png'),
@@ -59,17 +62,23 @@ export default class Rating extends Component {
 
   constructor(props) {
     super(props);
+    this._position = new Animated.Value(0);
+    this.state = { value: 0 }; // TODO: add rating
+  }
 
+  componentWillMount() {
     const { onFinishRating, fractions } = this.props;
-
-    const position = new Animated.ValueXY();
-
-    const panResponder = PanResponder.create({
+    this._panResponder = PanResponder.create({
       onStartShouldSetPanResponder: () => true,
-      onPanResponderMove: (event, gesture) => {
-        const newPosition = new Animated.ValueXY();
-        newPosition.setValue({ x: gesture.dx, y: 0 });
-        this.setState({ position: newPosition, value: gesture.dx });
+      // onPanResponderGrant: () => {
+      //   extractOffset() is available in later versions of RN
+      //   this._position.extractOffset();
+      // },
+      onPanResponderMove: (event, { dx }) => {
+        this._position.setValue(dx);
+        this.setState(prevState => {
+          return { value: dx };
+        });
       },
       onPanResponderRelease: () => {
         const rating = this.getCurrentRating();
@@ -80,8 +89,6 @@ export default class Rating extends Component {
         onFinishRating(rating);
       },
     });
-
-    this.state = { panResponder, position };
   }
 
   componentDidMount() {
@@ -89,19 +96,16 @@ export default class Rating extends Component {
   }
 
   getPrimaryViewStyle() {
-    const { position } = this.state;
     const { imageSize, ratingCount, type } = this.props;
 
     const color = TYPES[type].color;
 
-    const width = position.x.interpolate(
+    const halfFull = ratingCount * imageSize / 2;
+
+    const width = this._position.interpolate(
       {
-        inputRange: [
-          -ratingCount * (imageSize / 2),
-          0,
-          ratingCount * (imageSize / 2),
-        ],
-        outputRange: [0, ratingCount * imageSize / 2, ratingCount * imageSize],
+        inputRange: [-halfFull, halfFull],
+        outputRange: [0, ratingCount * imageSize],
         extrapolate: 'clamp',
       },
       { useNativeDriver: true }
@@ -115,19 +119,16 @@ export default class Rating extends Component {
   }
 
   getSecondaryViewStyle() {
-    const { position } = this.state;
     const { imageSize, ratingCount, type } = this.props;
 
     const backgroundColor = TYPES[type].backgroundColor;
 
-    const width = position.x.interpolate(
+    const halfFull = ratingCount * imageSize / 2;
+
+    const width = this._position.interpolate(
       {
-        inputRange: [
-          -ratingCount * (imageSize / 2),
-          0,
-          ratingCount * (imageSize / 2),
-        ],
-        outputRange: [ratingCount * imageSize, ratingCount * imageSize / 2, 0],
+        inputRange: [-halfFull, halfFull],
+        outputRange: [ratingCount * imageSize, 0],
         extrapolate: 'clamp',
       },
       { useNativeDriver: true }
@@ -144,14 +145,16 @@ export default class Rating extends Component {
     const { imageSize, ratingCount, type } = this.props;
     const source = TYPES[type].source;
 
-    return times(ratingCount, index =>
+    return times(ratingCount, index => (
       <View key={index} style={styles.starContainer}>
         <Image
           source={source}
           style={{ width: imageSize, height: imageSize }}
+          pointerEvents="none"
+          draggable={false}
         />
       </View>
-    );
+    ));
   }
 
   getCurrentRating() {
@@ -174,12 +177,13 @@ export default class Rating extends Component {
         ? Math.ceil(startingValue)
         : +startingValue.toFixed(fractions);
     }
-
+    // console.log({ currentRating });
     return currentRating;
   }
 
   setCurrentRating(rating) {
     const { imageSize, ratingCount } = this.props;
+    // console.log({ rating });
     // `initialRating` corresponds to `startingValue` in the getter. Naming it
     // differently here avoids confusion with `value` below.
     const initialRating = ratingCount / 2;
@@ -195,9 +199,7 @@ export default class Rating extends Component {
       value = 0;
     }
 
-    const newPosition = new Animated.ValueXY();
-    newPosition.setValue({ x: value, y: 0 });
-    this.setState({ position: newPosition, value });
+    this._position.setValue(value);
   }
 
   displayCurrentRating() {
@@ -212,9 +214,7 @@ export default class Rating extends Component {
           <Text style={[styles.currentRatingText, { color }]}>
             {this.getCurrentRating()}
           </Text>
-          <Text style={styles.maxRatingText}>
-            /{ratingCount}
-          </Text>
+          <Text style={styles.maxRatingText}>/{ratingCount}</Text>
         </View>
         <View>
           {readonly && <Text style={styles.readonlyLabel}>(readonly)</Text>}
@@ -244,13 +244,10 @@ export default class Rating extends Component {
     }
 
     return (
-      <View pointerEvents={readonly ? 'none' : 'auto'} style={style}>
+      <View pointerEvents={readonly ? 'none' : 'box-none'} style={style}>
         {showRating && this.displayCurrentRating()}
-        <View
-          style={styles.starsWrapper}
-          {...this.state.panResponder.panHandlers}
-        >
-          <View style={styles.starsInsideWrapper}>
+        <View style={styles.starsWrapper} {...this._panResponder.panHandlers}>
+          <View style={styles.starsInsideWrapper} pointerEvents="none">
             <Animated.View style={this.getPrimaryViewStyle()} />
             <Animated.View style={this.getSecondaryViewStyle()} />
           </View>

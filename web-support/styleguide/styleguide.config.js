@@ -12,6 +12,7 @@ const getExampleFilename = componentPath => {
 module.exports = {
   verbose: false,
   serverPort: 6061,
+  assetsDir: '../samples/assets',
   context: {
     RN: 'react-native',
   },
@@ -30,7 +31,7 @@ module.exports = {
     '**/*.spec.jsx',
   ],
   template: './template.html',
-  styleguideDir: './',
+  styleguideDir: './build',
   getExampleFilename,
   webpackConfig: {
     module: {

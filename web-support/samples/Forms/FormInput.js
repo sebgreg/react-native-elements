@@ -1,93 +1,211 @@
 import React from 'react';
-import ReactNative, { Button, View } from 'react-native';
-import log from 'loglevel';
+import { Text, TouchableHighlight, View } from 'react-native';
+import toJson from 'enzyme-to-json';
+import sinon from 'sinon';
+import { assignRef, genRefId } from 'enzyme-styleguidist-sample-parser';
+
 import { FormInput as Component } from '../../../src';
 
-const COMP_NAME = 'FormInput';
-
-log.setLevel('debug');
-
-const counter = 0;
-const genRefId = () => {
-  return `uniqueRef${counter++}`;
-};
-const assignRef = refId => {
-  return Function('ref', `return ${refId} = ref`);
+// props
+const snapShot = () => {
+  return (wrapper, title) => {
+    test(title, () => {
+      expect(toJson(wrapper)).toMatchSnapshot(title);
+    });
+  };
 };
 
-const propSamples = [
-  {
-    p: 'containerStyle',
-    v: { backgroundColor: '#181818' },
-  },
-  {
-    p: 'inputStyle',
-    v: { color: '#989898' },
-  },
-  {
-    p: 'textInputRef',
-    v: assignRef(genRefId()),
-  },
-  {
-    p: 'containerRef',
-    v: assignRef(genRefId()),
-  },
-  {
-    p: 'shake',
-    v: true,
-  },
-];
+const buildJsxForGuideMethod = attr => {
+  const refId = genRefId();
+  const timerFunc = Function(
+    `setTimeout(() => {${refId}.${attr.attrName}();}, ${attr.styleguidist.cd})`
+  );
+  const buttonTitle = attr.styleguidist.cd
+    ? `Start ${attr.styleguidist.cd /
+        1000} sec countdown for: ${attr.attrName}()`
+    : `Execute ${attr.attrName}()`;
+  return (
+    <View>
+      <TouchableHighlight
+        onPress={timerFunc}
+        style={{ backgroundColor: '#aaa', padding: 10, marginBottom: 15 }}
+      >
+        <Text>{buttonTitle}</Text>
+      </TouchableHighlight>
+      {React.createElement(Component, {
+        ...attr.props,
+        ref: assignRef(refId),
+      })}
+    </View>
+  );
+};
 
-const methodSamples = [
-  {
-    m: 'shake',
-    script: 'const View = require("react-native").View;',
-  },
-];
-
-const componentSamples = [];
-
-componentSamples.push({
-  title: 'FormInput',
-  skip: false,
-  chunks: [
-    {
-      name: 'no props',
-      jsx: React.createElement(Component),
+const noProps = {
+  component: Component,
+  props: {},
+  styleguidist: {},
+  enzyme: {
+    tests: {
+      shallow: { snapshot: snapShot() },
+      mount: { snapshot: snapShot() },
+      render: { snapshot: snapShot() },
     },
-  ],
-});
-
-componentSamples.push({
-  title: 'FormInput:  All props',
-  skip: false,
-  chunks: propSamples.map(({ p, v }) => {
-    return {
-      name: 'prop:  '.concat(p),
-      jsx: React.createElement(Component, { [p]: v }),
-    };
-  }),
-});
-
-componentSamples.push({
-  title: 'FormInput:  All methods',
-  skip: false,
-  chunks: methodSamples.map(({ m, script }) => {
-    const refId = genRefId();
-    // const exec = Function('ref', 'm', `(${refId}.${m}()`);
-    const timerFunc = Function(`setTimeout(() => {${refId}.${m}();}, 3000)`);
-    const buttonTitle = `Start 3 sec countdown for: ${m}()`;
-    return {
-      name: 'method:  '.concat(m),
-      script,
-      jsx: (
+  },
+};
+const containerStyle = {
+  component: Component,
+  props: { containerStyle: { backgroundColor: '#071' } },
+  styleguidist: {},
+  enzyme: {
+    tests: {
+      shallow: { snapshot: snapShot() },
+      mount: { snapshot: snapShot() },
+      render: { snapshot: snapShot() },
+    },
+  },
+};
+const inputStyle = {
+  component: Component,
+  props: { inputStyle: { color: '#071' } },
+  styleguidist: {},
+  enzyme: {
+    tests: {
+      shallow: { snapshot: snapShot() },
+      mount: { snapshot: snapShot() },
+      render: { snapshot: snapShot() },
+    },
+  },
+};
+const textInputRef = {
+  component: Component,
+  props: { textInputRef: assignRef(genRefId()) },
+  styleguidist: {
+    buildJsx: () => {
+      const refId = genRefId();
+      return (
         <View>
-          <Button title={buttonTitle} onPress={timerFunc} />
-          {React.createElement(Component, { ref: assignRef(refId) })}
+          <Component textInputRef={assignRef(refId)} />
         </View>
-      ),
-    };
-  }),
-});
+      );
+    },
+  },
+  enzyme: {
+    tests: {
+      shallow: { snapshot: snapShot() },
+      mount: { snapshot: snapShot() },
+      render: { snapshot: snapShot() },
+    },
+  },
+};
+const containerRef = {
+  component: Component,
+  props: { containerRef: assignRef(genRefId()) },
+  styleguidist: {},
+  enzyme: {
+    tests: {
+      shallow: { snapshot: snapShot() },
+      mount: { snapshot: snapShot() },
+      render: { snapshot: snapShot() },
+    },
+  },
+};
+const shake = {
+  component: Component,
+  props: { shake: true },
+  styleguidist: {},
+  enzyme: {
+    tests: { shallow: { snapshot: snapShot() } },
+  },
+};
 
-export default componentSamples;
+const props = {
+  'no props': noProps,
+  containerStyle,
+  inputStyle,
+  textInputRef,
+  containerRef,
+  shake,
+};
+
+// methods
+const ensureCalled = () => {
+  return (wrapper, title, attrName) => {
+    test(title, () => {
+      const spy = sinon.spy(wrapper.instance(), attrName);
+      const func = Function('elem', `elem.${attrName}()`);
+      func(wrapper.instance());
+      expect(spy.calledOnce).toBe(true);
+    });
+  };
+};
+
+const onlyEnsureCalled = {
+  tests: { shallow: { 'ensure called': ensureCalled() } },
+};
+
+const shakeMeth = {
+  component: Component,
+  props: { defaultValue: 'text to shake' },
+  styleguidist: {
+    buildJsx: buildJsxForGuideMethod,
+  },
+  enzyme: onlyEnsureCalled,
+};
+const focus = {
+  component: Component,
+  props: { defaultValue: 'cursor will appear' },
+  styleguidist: {
+    cd: 1000,
+    buildJsx: buildJsxForGuideMethod,
+  },
+  enzyme: {
+    tests: {
+      shallow: {
+        'ensure called': ensureCalled(),
+      },
+    },
+  },
+};
+const blur = {
+  component: Component,
+  props: { defaultValue: 'place cursor here and watch it be removed' },
+  styleguidist: {
+    cd: 3000,
+    buildJsx: buildJsxForGuideMethod,
+  },
+  enzyme: {
+    tests: {
+      shallow: {
+        'ensure called': ensureCalled(),
+      },
+    },
+  },
+};
+const clearText = {
+  component: Component,
+  props: { defaultValue: 'text to clear' },
+  styleguidist: {
+    buildJsx: buildJsxForGuideMethod,
+  },
+  enzyme: {
+    tests: {
+      shallow: {
+        'ensure called': ensureCalled(),
+      },
+    },
+  },
+};
+
+const methods = {
+  shake: shakeMeth,
+  focus,
+  blur,
+  clearText,
+};
+
+export default {
+  samples: {
+    props,
+    methods,
+  },
+};
