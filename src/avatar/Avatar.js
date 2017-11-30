@@ -121,19 +121,18 @@ const Avatar = props => {
             avatarStyle && avatarStyle,
           ]}
           source={source}
+          draggable={false}
           {...imageProps}
         />
       );
     } else if (title) {
       return (
-        <Text style={[styles.title, titleStyle && titleStyle]}>
-          {title}
-        </Text>
+        <Text style={[styles.title, titleStyle && titleStyle]}>{title}</Text>
       );
     } else if (icon) {
       return (
         <Icon
-          style={iconStyle && iconStyle}
+          iconStyle={iconStyle && iconStyle}
           color={icon.color || 'white'}
           name={icon.name || 'user'}
           size={icon.size || iconSize}
@@ -234,14 +233,20 @@ const defaultProps = {
   },
 };
 
+// react-styleguidist didn't like this:
+
+// component: PropTypes.oneOf([
+//   View,
+//   TouchableOpacity,
+//   TouchableHighlight,
+//   TouchableNativeFeedback,
+//   TouchableWithoutFeedback,
+// ]),
+
+// could use react-element-proptypes
+
 Avatar.propTypes = {
-  component: PropTypes.oneOf([
-    View,
-    TouchableOpacity,
-    TouchableHighlight,
-    TouchableNativeFeedback,
-    TouchableWithoutFeedback,
-  ]),
+  component: PropTypes.func,
   width: PropTypes.number,
   height: PropTypes.number,
   onPress: PropTypes.func,

@@ -1,8 +1,10 @@
-import FormInputSamples from './FormInput';
+import FormInput from './FormInput';
+import FormLabel from './FormLabel';
+import FormValidationMessage from './FormValidationMessage';
 
 // sectionComponents
 export default {
-  FormInput: FormInputSamples,
-  // FormLabel
-  // FormValidationMessage
+  FormInput,
+  FormLabel,
+  FormValidationMessage,
 };

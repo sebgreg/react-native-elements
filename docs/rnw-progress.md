@@ -4,14 +4,14 @@
 
 | Component    | initial check | estimated effort            | add tests  | final |
 | ------------ | ------------- | --------------------------- | ---------- | ----- |
-| Avatar       | 2017-11-08    | [med](#avatar-changes)      |
+| Avatar       | 2017-11-08    | [med](#avatar-changes)      | 2017-11-29 |
 | Badge        | 2017-11-10    | [med](#badge-changes)       |
 | Button Group | 2017-11-11    | [low](#buttongroup-changes) | 2017-11-29 |
 | Buttons      | 2017-11-09    | [low](#button-changes)      | 2017-11-29 |
 | Card         | 2017-11-10    | no changes                  |
 | Checkbox     | 2017-11-10    | no changes                  |
 | Divider      | 2017-11-10    | no changes                  |
-| Forms        | 2017-11-11    | [low](#form-changes)        |
+| Forms        | 2017-11-11    | [low](#form-changes)        | 2017-11-29 |
 | Header       | 2017-11-07    | no changes                  |
 | Icon         | 2017-11-07    | [med](#icon-changes)        |
 | Lists        | 2017-11-11    | no changes                  |
@@ -27,6 +27,7 @@
 
 ### Avatar changes
 - seems to work ok, but need to investigate why styleguidist can't parse
+  - changed component proptype from .oneOf([...components]) to .any
 
 ### Badge changes
 - set width instead of 100%
@@ -38,13 +39,14 @@
 ### ButtonGroup changes
 - avoid dom prop warnings
 - add units to numberic props
-- containerBorderRadius has no effect on web, source shows a workaround
+- containerBorderRadius has no effect on web, source shows a workaround in place
 
 ### Form changes
 - avoid dom prop warnings
 
 ### Icon changes
 - avoid dom prop warnings
+- fixed bug: iconStyle not being passed to Icon
 - doc example for icon font injection
 
 ### Rating changes

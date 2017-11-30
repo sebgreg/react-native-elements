@@ -99,6 +99,7 @@ exports[`Avatar Component should render avatar without width 1`] = `
     }
   >
     <Image
+      draggable={false}
       source={
         Object {
           "uri": "https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg",
@@ -220,6 +221,7 @@ exports[`Avatar Component should render medium avatar 1`] = `
     }
   >
     <Image
+      draggable={false}
       source={
         Object {
           "uri": "https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg",
@@ -285,6 +287,7 @@ exports[`Avatar Component should render small avatar 1`] = `
     }
   >
     <Image
+      draggable={false}
       source={
         Object {
           "uri": "https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg",
