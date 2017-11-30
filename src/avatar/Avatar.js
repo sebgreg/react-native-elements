@@ -70,7 +70,12 @@ const Avatar = props => {
   let titleSize = width / 2;
   let iconSize = width / 2;
 
-  let Component = onPress || onLongPress ? TouchableOpacity : View;
+  let touchableProps = {};
+  let Component = View;
+  if (onPress || onLongPress) {
+    Component = TouchableOpacity;
+    touchableProps = { onPress, onLongPress, activeOpacity };
+  }
   if (component) {
     Component = component;
   }
@@ -142,6 +147,9 @@ const Avatar = props => {
     }
   };
 
+  const penumbraOpacity = 0.14;
+  const umbraOpacity = 0.2;
+
   const styles = StyleSheet.create({
     container: {
       paddingTop: 10,
@@ -190,6 +198,12 @@ const Avatar = props => {
         android: {
           elevation: 1,
         },
+        web: {
+          boxShadow: `
+          0 2px 2px 0px rgba(0, 0, 0, ${penumbraOpacity}),
+          0 3px 1px -2px rgba(0, 0, 0, ${umbraOpacity})
+        `,
+        },
       }),
     },
   });
@@ -197,9 +211,7 @@ const Avatar = props => {
   return (
     <Component
       {...attributes}
-      onPress={onPress}
-      onLongPress={onLongPress}
-      activeOpacity={activeOpacity}
+      {...touchableProps}
       style={[
         styles.container,
         rounded && { borderRadius: width / 2 },

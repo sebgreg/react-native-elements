@@ -13,19 +13,21 @@
 | Divider      | 2017-11-10    | no changes                  |
 | Forms        | 2017-11-11    | [low](#form-changes)        | 2017-11-29 |
 | Header       | 2017-11-07    | no changes                  |
-| Icon         | 2017-11-07    | [med](#icon-changes)        |
+| Icon         | 2017-11-07    | [med](#icon-changes)        | 2017-11-30 |
 | Lists        | 2017-11-11    | no changes                  |
 | Pricing      | 2017-11-11    | no changes                  |
 | Rating       | 2017-11-11    | [med](#rating-changes)      | 2017-11-21 |
 | SearchBar    | 2017-11-12    | [low](#search-changes)      |
 | Slider       | 2017-11-08    | [low](#slider-changes)      |
-| Social Icons | 2017-11-11    | no changes                  |
+| Social Icons | 2017-11-11    | no changes                  | 2017-11-30 |
 | Text         | 2017-11-12    | [low](#text-changes)        |
 | Tiles        | 2017-11-12    | [med](#tile-changes)        |
 
 ## Component Changes
 
 ### Avatar changes
+- avoid dom prop warnings
+  - using "touchableProps" object, empty if View, then added via {...touchableProps}
 - seems to work ok, but need to investigate why styleguidist can't parse
   - changed component proptype from .oneOf([...components]) to .any
 
@@ -34,20 +36,27 @@
 
 ### Button changes
 - add support for raised
-- note: prop actitityIndicatorStyle has no effect on web
+- "leftIcon" and "rightIcon" cause React.createElement errors during run, but produce acceptable snapshots
 
 ### ButtonGroup changes
 - avoid dom prop warnings
-- add units to numberic props
-- containerBorderRadius has no effect on web, source shows a workaround in place
+  - use {...opacityProps} and {...highlightProps}
+  - add defaultProps: {underlayColor: '#ffffff'} to keep orig behaviour
+- add units to numeric props
+- "containerBorderRadius" has no effect on web, source shows a workaround in place
+  - ? suggestions ?
 
 ### Form changes
 - avoid dom prop warnings
 
 ### Icon changes
 - avoid dom prop warnings
-- fixed bug: iconStyle not being passed to Icon
-- doc example for icon font injection
+  - use {...touchableProps}
+- fix: "iconStyle" was not being passed to Icon
+  - I think this is what's intended ?
+- change: applied "borderRadius", "height", and "width" to all, not just reverse or raised
+  - I think this is what's intended ?
+- TODO: doc example for icon font injection
 
 ### Rating changes
 - Keep images from being dragged
@@ -75,7 +84,7 @@
 - images not showing
 
 ## Other Changes
-- rnw does not export ViewPropTypes from the same place
+- rnw does not export "ViewPropTypes" from the same place
 - to resolve:
   - src/config/ViewPropTypes.js split into .ios .android and .web
   - added "moduleNameMapper" to jest config in package.json

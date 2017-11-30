@@ -45,9 +45,8 @@ const props = {
       getJsxString: () => {
         return (
           'const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;\n' +
-          "<Button title='button title'\n" +
+          '<Button \n' +
           '  Component={TouchableWithoutFeedback}\n' +
-          "  onPress={() => alert('pressed')}\n" +
           '/>'
         );
       },
@@ -105,9 +104,40 @@ const props = {
       },
     },
     enzyme: {
+      // buildJsx: attr => {
+      //   console.warn('leftIcon.enzyme.buildJsx');
+      //   try {
+      //     const jsx = React.createElement(Button, {
+      //       title: 'button title',
+      //       leftIcon: {
+      //         name: 'gamepad',
+      //         color: 'red',
+      //         size: 50,
+      //         type: 'font-awesome',
+      //       },
+      //     });
+      //     return jsx;
+      //   } catch (err) {
+      //     console.error(err);
+      //   }
+      // },
       tests: { shallow: { snapshot: snapShot() } },
     },
-    styleguidist: {},
+    styleguidist: {
+      // getJsxString: () => {
+      //   return (
+      //     '<Button\n' +
+      //     '  leftIcon={{\n' +
+      //     "    name: 'gamepad'," +
+      //     "    color: 'blue',\n" +
+      //     '    size: 50,' +
+      //     "    type: 'font-awesome'" +
+      //     '  }}\n' +
+      //     '  title="button title"\n' +
+      //     '/>;'
+      //   );
+      // },
+    },
   },
   rightIcon: {
     component: Button,
@@ -164,7 +194,7 @@ const props = {
       },
     },
     enzyme: {
-      tests: onlySnapshots,
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -176,7 +206,7 @@ const props = {
       },
     },
     enzyme: {
-      tests: onlySnapshots,
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -190,7 +220,7 @@ const props = {
   },
   borderRadius: {
     component: Button,
-    props: { borderRadius: 5 },
+    props: { borderRadius: 10 },
     enzyme: {
       tests: onlySnapshots,
     },
@@ -246,7 +276,7 @@ const props = {
   },
   disabledStyle: {
     component: Button,
-    props: { disabledStyle: { backgroundColor: 'black' }, disabled: true },
+    props: { disabledStyle: { backgroundColor: '#555' }, disabled: true },
     enzyme: {
       tests: onlySnapshots,
     },
@@ -260,11 +290,11 @@ const props = {
     },
     styleguidist: {},
   },
-  activityInidcatorStyle: {
+  activityIndicatorStyle: {
     component: Button,
     props: {
       title: 'button title',
-      activityInidcatorStyle: { color: 'red' },
+      activityIndicatorStyle: { marginRight: 50, opacity: 0.2 },
       loading: true,
     },
     enzyme: {

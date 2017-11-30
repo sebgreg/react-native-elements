@@ -9,6 +9,7 @@ export {
 } from './common';
 import _avatar from './Avatar';
 import _buttons from './Buttons';
+import _icons from './Icons';
 import _forms from './Forms';
 import _rating from './Rating';
 
@@ -20,6 +21,10 @@ export default {
   Buttons: {
     title: 'Buttons',
     sectionComponents: _buttons,
+  },
+  Icons: {
+    title: 'Icons',
+    sectionComponents: _icons,
   },
   Forms: {
     title: 'Forms',

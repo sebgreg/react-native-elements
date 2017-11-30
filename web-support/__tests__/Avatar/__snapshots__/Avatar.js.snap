@@ -1,91 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Avatar: Avatar: [ prop: activeOpacity ] enzyme-mount: snapshot 1`] = `
-<Avatar
-  activeOpacity={0.5}
-  editButton={
-    Object {
-      "iconColor": "#fff",
-      "iconName": "mode-edit",
-      "iconType": "material",
-      "size": null,
-      "style": null,
-      "underlayColor": "#000",
-    }
-  }
-  onEditPress={null}
-  showEditButton={false}
->
-  <View
-    activeOpacity={0.5}
-    style={
-      Array [
-        354,
-        undefined,
-        undefined,
-      ]
-    }
-  >
-    <div
-      activeOpacity={0.5}
-      className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-zx9znk rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingLeft-gy4na3 rn-paddingBottom-1mi0q7o rn-paddingRight-1qfoi16 rn-paddingTop-m611by rn-position-bnwqim rn-width-5orghg"
-    >
-      <View
-        style={
-          Array [
-            356,
-            undefined,
-            undefined,
-          ]
-        }
-      >
-        <div
-          className="rn-alignItems-1awozwy rn-alignSelf-1pz39u2 rn-backgroundColor-i5wyxj rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af"
-        />
-      </View>
-    </div>
-  </View>
-</Avatar>
-`;
-
-exports[`Avatar: Avatar: [ prop: activeOpacity ] enzyme-render: snapshot 1`] = `
-<div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-zx9znk rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingLeft-gy4na3 rn-paddingBottom-1mi0q7o rn-paddingRight-1qfoi16 rn-paddingTop-m611by rn-position-bnwqim rn-width-5orghg"
->
-  <div
-    class="rn-alignItems-1awozwy rn-alignSelf-1pz39u2 rn-backgroundColor-i5wyxj rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af"
-  />
-</div>
-`;
-
-exports[`Avatar: Avatar: [ prop: activeOpacity ] enzyme-shallow: snapshot 1`] = `
-<View
-  activeOpacity={0.5}
-  style={
-    Array [
-      349,
-      undefined,
-      undefined,
-    ]
-  }
->
-  <View
-    style={
-      Array [
-        351,
-        undefined,
-        undefined,
-      ]
-    }
-  />
-</View>
-`;
-
 exports[`Avatar: Avatar: [ prop: avatarStyle ] enzyme-mount: snapshot 1`] = `
 <Avatar
   avatarStyle={
     Object {
-      "padding": 50,
+      "transform": Array [
+        Object {
+          "rotateZ": "-45deg",
+        },
+      ],
     }
   }
   editButton={
@@ -100,11 +23,12 @@ exports[`Avatar: Avatar: [ prop: avatarStyle ] enzyme-mount: snapshot 1`] = `
   }
   onEditPress={null}
   showEditButton={false}
+  source="hero.jpg"
 >
   <View
     style={
       Array [
-        264,
+        219,
         undefined,
         undefined,
       ]
@@ -116,7 +40,7 @@ exports[`Avatar: Avatar: [ prop: avatarStyle ] enzyme-mount: snapshot 1`] = `
       <View
         style={
           Array [
-            266,
+            221,
             undefined,
             undefined,
           ]
@@ -124,7 +48,54 @@ exports[`Avatar: Avatar: [ prop: avatarStyle ] enzyme-mount: snapshot 1`] = `
       >
         <div
           className="rn-alignItems-1awozwy rn-alignSelf-1pz39u2 rn-backgroundColor-i5wyxj rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af"
-        />
+        >
+          <Image
+            draggable={false}
+            source="hero.jpg"
+            style={
+              Array [
+                220,
+                undefined,
+                Object {
+                  "transform": Array [
+                    Object {
+                      "rotateZ": "-45deg",
+                    },
+                  ],
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                  "backgroundPosition": "center",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundSize": "cover",
+                  "height": 34,
+                  "transform": Array [
+                    Object {
+                      "rotateZ": "-45deg",
+                    },
+                  ],
+                  "width": 34,
+                  "zIndex": 0,
+                }
+              }
+            >
+              <div
+                className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-backgroundPosition-vvn4in rn-backgroundRepeat-u6sd8q rn-backgroundSize-4gszlv rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-zx9znk rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-width-5orghg rn-zIndex-1lgpqti"
+                style={
+                  Object {
+                    "WebkitTransform": "rotateZ(-45deg)",
+                    "transform": "rotateZ(-45deg)",
+                  }
+                }
+              />
+            </View>
+          </Image>
+        </div>
       </View>
     </div>
   </View>
@@ -137,7 +108,12 @@ exports[`Avatar: Avatar: [ prop: avatarStyle ] enzyme-render: snapshot 1`] = `
 >
   <div
     class="rn-alignItems-1awozwy rn-alignSelf-1pz39u2 rn-backgroundColor-i5wyxj rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af"
-  />
+  >
+    <div
+      class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-backgroundPosition-vvn4in rn-backgroundRepeat-u6sd8q rn-backgroundSize-4gszlv rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-zx9znk rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-width-5orghg rn-zIndex-1lgpqti"
+      style="transform:rotateZ(-45deg);-webkit-transform:rotateZ(-45deg);"
+    />
+  </div>
 </div>
 `;
 
@@ -145,7 +121,7 @@ exports[`Avatar: Avatar: [ prop: avatarStyle ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
-      259,
+      214,
       undefined,
       undefined,
     ]
@@ -154,12 +130,30 @@ exports[`Avatar: Avatar: [ prop: avatarStyle ] enzyme-shallow: snapshot 1`] = `
   <View
     style={
       Array [
-        261,
+        216,
         undefined,
         undefined,
       ]
     }
-  />
+  >
+    <Image
+      draggable={false}
+      source="hero.jpg"
+      style={
+        Array [
+          215,
+          undefined,
+          Object {
+            "transform": Array [
+              Object {
+                "rotateZ": "-45deg",
+              },
+            ],
+          },
+        ]
+      }
+    />
+  </View>
 </View>
 `;
 
@@ -186,7 +180,7 @@ exports[`Avatar: Avatar: [ prop: containerStyle ] enzyme-mount: snapshot 1`] = `
   <View
     style={
       Array [
-        234,
+        189,
         undefined,
         Object {
           "padding": 50,
@@ -205,7 +199,7 @@ exports[`Avatar: Avatar: [ prop: containerStyle ] enzyme-mount: snapshot 1`] = `
       <View
         style={
           Array [
-            236,
+            191,
             undefined,
             undefined,
           ]
@@ -235,7 +229,7 @@ exports[`Avatar: Avatar: [ prop: containerStyle ] enzyme-shallow: snapshot 1`] =
 <View
   style={
     Array [
-      229,
+      184,
       undefined,
       Object {
         "padding": 50,
@@ -246,127 +240,12 @@ exports[`Avatar: Avatar: [ prop: containerStyle ] enzyme-shallow: snapshot 1`] =
   <View
     style={
       Array [
-        231,
-        undefined,
-        undefined,
-      ]
-    }
-  />
-</View>
-`;
-
-exports[`Avatar: Avatar: [ prop: height ] enzyme-mount: snapshot 1`] = `
-<Avatar
-  editButton={
-    Object {
-      "iconColor": "#fff",
-      "iconName": "mode-edit",
-      "iconType": "material",
-      "size": null,
-      "style": null,
-      "underlayColor": "#000",
-    }
-  }
-  onEditPress={null}
-  showEditButton={false}
-  width={68}
->
-  <View
-    style={
-      Array [
-        189,
-        undefined,
-        undefined,
-      ]
-    }
-    width={68}
-  >
-    <div
-      className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-98c09q rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingLeft-gy4na3 rn-paddingBottom-1mi0q7o rn-paddingRight-1qfoi16 rn-paddingTop-m611by rn-position-bnwqim rn-width-1gymjhz"
-      width={68}
-    >
-      <View
-        style={
-          Array [
-            191,
-            undefined,
-            undefined,
-          ]
-        }
-      >
-        <div
-          className="rn-alignItems-1awozwy rn-alignSelf-1pz39u2 rn-backgroundColor-i5wyxj rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af"
-        />
-      </View>
-    </div>
-  </View>
-</Avatar>
-`;
-
-exports[`Avatar: Avatar: [ prop: height ] enzyme-render: snapshot 1`] = `
-<div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-98c09q rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingLeft-gy4na3 rn-paddingBottom-1mi0q7o rn-paddingRight-1qfoi16 rn-paddingTop-m611by rn-position-bnwqim rn-width-1gymjhz"
-  width="68"
->
-  <div
-    class="rn-alignItems-1awozwy rn-alignSelf-1pz39u2 rn-backgroundColor-i5wyxj rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af"
-  />
-</div>
-`;
-
-exports[`Avatar: Avatar: [ prop: height ] enzyme-shallow: snapshot 1`] = `
-<View
-  style={
-    Array [
-      184,
-      undefined,
-      undefined,
-    ]
-  }
-  width={68}
->
-  <View
-    style={
-      Array [
         186,
         undefined,
         undefined,
       ]
     }
   />
-</View>
-`;
-
-exports[`Avatar: Avatar: [ prop: icon ] enzyme-shallow: snapshot 1`] = `
-<View
-  style={
-    Array [
-      364,
-      undefined,
-      undefined,
-    ]
-  }
->
-  <View
-    style={
-      Array [
-        366,
-        undefined,
-        undefined,
-      ]
-    }
-  >
-    <Icon
-      color="#071"
-      name="gear"
-      raised={false}
-      reverse={false}
-      reverseColor="white"
-      size={50}
-      type="octicon"
-      underlayColor="white"
-    />
-  </View>
 </View>
 `;
 
@@ -390,26 +269,26 @@ exports[`Avatar: Avatar: [ prop: imageProps ] enzyme-mount: snapshot 1`] = `
   onEditPress={null}
   showEditButton={false}
   source="hero.jpg"
-  width={100}
+  width={250}
 >
   <View
     style={
       Array [
-        279,
+        234,
         undefined,
         undefined,
       ]
     }
-    width={100}
+    width={250}
   >
     <div
-      className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-o52ifk rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingLeft-gy4na3 rn-paddingBottom-1mi0q7o rn-paddingRight-1qfoi16 rn-paddingTop-m611by rn-position-bnwqim rn-width-b8lwoo"
-      width={100}
+      className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-1kl1mp1 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingLeft-gy4na3 rn-paddingBottom-1mi0q7o rn-paddingRight-1qfoi16 rn-paddingTop-m611by rn-position-bnwqim rn-width-sgscqh"
+      width={250}
     >
       <View
         style={
           Array [
-            281,
+            236,
             undefined,
             undefined,
           ]
@@ -419,11 +298,12 @@ exports[`Avatar: Avatar: [ prop: imageProps ] enzyme-mount: snapshot 1`] = `
           className="rn-alignItems-1awozwy rn-alignSelf-1pz39u2 rn-backgroundColor-i5wyxj rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af"
         >
           <Image
+            draggable={false}
             resizeMode="center"
             source="hero.jpg"
             style={
               Array [
-                280,
+                235,
                 undefined,
                 undefined,
               ]
@@ -436,14 +316,14 @@ exports[`Avatar: Avatar: [ prop: imageProps ] enzyme-mount: snapshot 1`] = `
                   "backgroundPosition": "center",
                   "backgroundRepeat": "no-repeat",
                   "backgroundSize": "auto",
-                  "height": 100,
-                  "width": 100,
+                  "height": 250,
+                  "width": 250,
                   "zIndex": 0,
                 }
               }
             >
               <div
-                className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-backgroundPosition-vvn4in rn-backgroundRepeat-u6sd8q rn-backgroundSize-1sxrcry rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-o52ifk rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-width-b8lwoo rn-zIndex-1lgpqti"
+                className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-backgroundPosition-vvn4in rn-backgroundRepeat-u6sd8q rn-backgroundSize-1sxrcry rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-1kl1mp1 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-width-sgscqh rn-zIndex-1lgpqti"
               />
             </View>
           </Image>
@@ -456,14 +336,14 @@ exports[`Avatar: Avatar: [ prop: imageProps ] enzyme-mount: snapshot 1`] = `
 
 exports[`Avatar: Avatar: [ prop: imageProps ] enzyme-render: snapshot 1`] = `
 <div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-o52ifk rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingLeft-gy4na3 rn-paddingBottom-1mi0q7o rn-paddingRight-1qfoi16 rn-paddingTop-m611by rn-position-bnwqim rn-width-b8lwoo"
-  width="100"
+  class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-1kl1mp1 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingLeft-gy4na3 rn-paddingBottom-1mi0q7o rn-paddingRight-1qfoi16 rn-paddingTop-m611by rn-position-bnwqim rn-width-sgscqh"
+  width="250"
 >
   <div
     class="rn-alignItems-1awozwy rn-alignSelf-1pz39u2 rn-backgroundColor-i5wyxj rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af"
   >
     <div
-      class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-backgroundPosition-vvn4in rn-backgroundRepeat-u6sd8q rn-backgroundSize-1sxrcry rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-o52ifk rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-width-b8lwoo rn-zIndex-1lgpqti"
+      class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-backgroundPosition-vvn4in rn-backgroundRepeat-u6sd8q rn-backgroundSize-1sxrcry rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-1kl1mp1 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-width-sgscqh rn-zIndex-1lgpqti"
     />
   </div>
 </div>
@@ -473,28 +353,29 @@ exports[`Avatar: Avatar: [ prop: imageProps ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
-      274,
+      229,
       undefined,
       undefined,
     ]
   }
-  width={100}
+  width={250}
 >
   <View
     style={
       Array [
-        276,
+        231,
         undefined,
         undefined,
       ]
     }
   >
     <Image
+      draggable={false}
       resizeMode="center"
       source="hero.jpg"
       style={
         Array [
-          275,
+          230,
           undefined,
           undefined,
         ]
@@ -523,7 +404,7 @@ exports[`Avatar: Avatar: [ prop: large ] enzyme-mount: snapshot 1`] = `
   <View
     style={
       Array [
-        369,
+        339,
         undefined,
         undefined,
       ]
@@ -535,7 +416,7 @@ exports[`Avatar: Avatar: [ prop: large ] enzyme-mount: snapshot 1`] = `
       <View
         style={
           Array [
-            371,
+            341,
             undefined,
             undefined,
           ]
@@ -564,7 +445,7 @@ exports[`Avatar: Avatar: [ prop: large ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
-      364,
+      334,
       undefined,
       undefined,
     ]
@@ -573,7 +454,7 @@ exports[`Avatar: Avatar: [ prop: large ] enzyme-shallow: snapshot 1`] = `
   <View
     style={
       Array [
-        366,
+        336,
         undefined,
         undefined,
       ]
@@ -601,7 +482,7 @@ exports[`Avatar: Avatar: [ prop: medium ] enzyme-mount: snapshot 1`] = `
   <View
     style={
       Array [
-        354,
+        324,
         undefined,
         undefined,
       ]
@@ -613,7 +494,7 @@ exports[`Avatar: Avatar: [ prop: medium ] enzyme-mount: snapshot 1`] = `
       <View
         style={
           Array [
-            356,
+            326,
             undefined,
             undefined,
           ]
@@ -642,7 +523,7 @@ exports[`Avatar: Avatar: [ prop: medium ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
-      349,
+      319,
       undefined,
       undefined,
     ]
@@ -651,7 +532,7 @@ exports[`Avatar: Avatar: [ prop: medium ] enzyme-shallow: snapshot 1`] = `
   <View
     style={
       Array [
-        351,
+        321,
         undefined,
         undefined,
       ]
@@ -737,240 +618,6 @@ exports[`Avatar: Avatar: [ prop: noProps ] enzyme-shallow: snapshot 1`] = `
 </View>
 `;
 
-exports[`Avatar: Avatar: [ prop: onLongPress ] enzyme-mount: snapshot 1`] = `
-<Avatar
-  editButton={
-    Object {
-      "iconColor": "#fff",
-      "iconName": "mode-edit",
-      "iconType": "material",
-      "size": null,
-      "style": null,
-      "underlayColor": "#000",
-    }
-  }
-  onEditPress={null}
-  onLongPress={[Function]}
-  showEditButton={false}
->
-  <TouchableOpacity
-    activeOpacity={0.2}
-    focusedOpacity={0.7}
-    onLongPress={[Function]}
-    style={
-      Array [
-        219,
-        undefined,
-        undefined,
-      ]
-    }
-  >
-    <View
-      accessible={true}
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Array [
-          41,
-          42,
-          Array [
-            219,
-            undefined,
-            undefined,
-          ],
-        ]
-      }
-    >
-      <div
-        className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-cursor-1loqt21 rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-zx9znk rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingLeft-gy4na3 rn-paddingBottom-1mi0q7o rn-paddingRight-1qfoi16 rn-paddingTop-m611by rn-position-bnwqim rn-touchAction-1gvxusu rn-transitionDuration-eafdt9 rn-transitionProperty-1i6wzkk rn-userSelect-lrvibr rn-width-5orghg"
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        tabIndex="0"
-      >
-        <View
-          style={
-            Array [
-              221,
-              undefined,
-              undefined,
-            ]
-          }
-        >
-          <div
-            className="rn-alignItems-1awozwy rn-alignSelf-1pz39u2 rn-backgroundColor-i5wyxj rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af"
-          />
-        </View>
-      </div>
-    </View>
-  </TouchableOpacity>
-</Avatar>
-`;
-
-exports[`Avatar: Avatar: [ prop: onLongPress ] enzyme-render: snapshot 1`] = `
-<div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-cursor-1loqt21 rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-zx9znk rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingLeft-gy4na3 rn-paddingBottom-1mi0q7o rn-paddingRight-1qfoi16 rn-paddingTop-m611by rn-position-bnwqim rn-touchAction-1gvxusu rn-transitionDuration-eafdt9 rn-transitionProperty-1i6wzkk rn-userSelect-lrvibr rn-width-5orghg"
-  tabindex="0"
->
-  <div
-    class="rn-alignItems-1awozwy rn-alignSelf-1pz39u2 rn-backgroundColor-i5wyxj rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af"
-  />
-</div>
-`;
-
-exports[`Avatar: Avatar: [ prop: onLongPress ] enzyme-shallow: snapshot 1`] = `
-<TouchableOpacity
-  activeOpacity={0.2}
-  focusedOpacity={0.7}
-  onLongPress={[Function]}
-  style={
-    Array [
-      214,
-      undefined,
-      undefined,
-    ]
-  }
->
-  <View
-    style={
-      Array [
-        216,
-        undefined,
-        undefined,
-      ]
-    }
-  />
-</TouchableOpacity>
-`;
-
-exports[`Avatar: Avatar: [ prop: onPress ] enzyme-mount: snapshot 1`] = `
-<Avatar
-  editButton={
-    Object {
-      "iconColor": "#fff",
-      "iconName": "mode-edit",
-      "iconType": "material",
-      "size": null,
-      "style": null,
-      "underlayColor": "#000",
-    }
-  }
-  onEditPress={null}
-  onPress={[Function]}
-  showEditButton={false}
->
-  <TouchableOpacity
-    activeOpacity={0.2}
-    focusedOpacity={0.7}
-    onPress={[Function]}
-    style={
-      Array [
-        204,
-        undefined,
-        undefined,
-      ]
-    }
-  >
-    <View
-      accessible={true}
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Array [
-          41,
-          42,
-          Array [
-            204,
-            undefined,
-            undefined,
-          ],
-        ]
-      }
-    >
-      <div
-        className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-cursor-1loqt21 rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-zx9znk rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingLeft-gy4na3 rn-paddingBottom-1mi0q7o rn-paddingRight-1qfoi16 rn-paddingTop-m611by rn-position-bnwqim rn-touchAction-1gvxusu rn-transitionDuration-eafdt9 rn-transitionProperty-1i6wzkk rn-userSelect-lrvibr rn-width-5orghg"
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        tabIndex="0"
-      >
-        <View
-          style={
-            Array [
-              206,
-              undefined,
-              undefined,
-            ]
-          }
-        >
-          <div
-            className="rn-alignItems-1awozwy rn-alignSelf-1pz39u2 rn-backgroundColor-i5wyxj rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af"
-          />
-        </View>
-      </div>
-    </View>
-  </TouchableOpacity>
-</Avatar>
-`;
-
-exports[`Avatar: Avatar: [ prop: onPress ] enzyme-render: snapshot 1`] = `
-<div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-cursor-1loqt21 rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-zx9znk rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingLeft-gy4na3 rn-paddingBottom-1mi0q7o rn-paddingRight-1qfoi16 rn-paddingTop-m611by rn-position-bnwqim rn-touchAction-1gvxusu rn-transitionDuration-eafdt9 rn-transitionProperty-1i6wzkk rn-userSelect-lrvibr rn-width-5orghg"
-  tabindex="0"
->
-  <div
-    class="rn-alignItems-1awozwy rn-alignSelf-1pz39u2 rn-backgroundColor-i5wyxj rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af"
-  />
-</div>
-`;
-
-exports[`Avatar: Avatar: [ prop: onPress ] enzyme-shallow: snapshot 1`] = `
-<TouchableOpacity
-  activeOpacity={0.2}
-  focusedOpacity={0.7}
-  onPress={[Function]}
-  style={
-    Array [
-      199,
-      undefined,
-      undefined,
-    ]
-  }
->
-  <View
-    style={
-      Array [
-        201,
-        undefined,
-        undefined,
-      ]
-    }
-  />
-</TouchableOpacity>
-`;
-
 exports[`Avatar: Avatar: [ prop: overlayContainerStyle ] enzyme-mount: snapshot 1`] = `
 <Avatar
   editButton={
@@ -994,7 +641,7 @@ exports[`Avatar: Avatar: [ prop: overlayContainerStyle ] enzyme-mount: snapshot 
   <View
     style={
       Array [
-        339,
+        294,
         undefined,
         undefined,
       ]
@@ -1006,7 +653,7 @@ exports[`Avatar: Avatar: [ prop: overlayContainerStyle ] enzyme-mount: snapshot 
       <View
         style={
           Array [
-            341,
+            296,
             undefined,
             Object {
               "borderWidth": 5,
@@ -1046,7 +693,7 @@ exports[`Avatar: Avatar: [ prop: overlayContainerStyle ] enzyme-shallow: snapsho
 <View
   style={
     Array [
-      334,
+      289,
       undefined,
       undefined,
     ]
@@ -1055,7 +702,7 @@ exports[`Avatar: Avatar: [ prop: overlayContainerStyle ] enzyme-shallow: snapsho
   <View
     style={
       Array [
-        336,
+        291,
         undefined,
         Object {
           "borderWidth": 5,
@@ -1085,7 +732,7 @@ exports[`Avatar: Avatar: [ prop: rounded ] enzyme-mount: snapshot 1`] = `
   <View
     style={
       Array [
-        294,
+        249,
         Object {
           "borderRadius": 17,
         },
@@ -1107,7 +754,7 @@ exports[`Avatar: Avatar: [ prop: rounded ] enzyme-mount: snapshot 1`] = `
       <View
         style={
           Array [
-            296,
+            251,
             Object {
               "borderRadius": 17,
             },
@@ -1148,7 +795,7 @@ exports[`Avatar: Avatar: [ prop: rounded ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
-      289,
+      244,
       Object {
         "borderRadius": 17,
       },
@@ -1159,7 +806,7 @@ exports[`Avatar: Avatar: [ prop: rounded ] enzyme-shallow: snapshot 1`] = `
   <View
     style={
       Array [
-        291,
+        246,
         Object {
           "borderRadius": 17,
         },
@@ -1167,57 +814,6 @@ exports[`Avatar: Avatar: [ prop: rounded ] enzyme-shallow: snapshot 1`] = `
       ]
     }
   />
-</View>
-`;
-
-exports[`Avatar: Avatar: [ prop: showEditButton ] enzyme-shallow: snapshot 1`] = `
-<View
-  style={
-    Array [
-      394,
-      undefined,
-      undefined,
-    ]
-  }
->
-  <View
-    style={
-      Array [
-        396,
-        undefined,
-        undefined,
-      ]
-    }
-  />
-  <TouchableHighlight
-    activeOpacity={0.85}
-    onPress={null}
-    style={
-      Array [
-        398,
-        Object {
-          "borderRadius": 5.666666666666667,
-          "height": 11.333333333333334,
-          "width": 11.333333333333334,
-        },
-        null,
-      ]
-    }
-    underlayColor="#000"
-  >
-    <View>
-      <Icon
-        color="#fff"
-        name="mode-edit"
-        raised={false}
-        reverse={false}
-        reverseColor="white"
-        size={9.066666666666668}
-        type="material"
-        underlayColor="white"
-      />
-    </View>
-  </TouchableHighlight>
 </View>
 `;
 
@@ -1240,7 +836,7 @@ exports[`Avatar: Avatar: [ prop: small ] enzyme-mount: snapshot 1`] = `
   <View
     style={
       Array [
-        339,
+        309,
         undefined,
         undefined,
       ]
@@ -1252,7 +848,7 @@ exports[`Avatar: Avatar: [ prop: small ] enzyme-mount: snapshot 1`] = `
       <View
         style={
           Array [
-            341,
+            311,
             undefined,
             undefined,
           ]
@@ -1281,7 +877,7 @@ exports[`Avatar: Avatar: [ prop: small ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
-      334,
+      304,
       undefined,
       undefined,
     ]
@@ -1290,7 +886,7 @@ exports[`Avatar: Avatar: [ prop: small ] enzyme-shallow: snapshot 1`] = `
   <View
     style={
       Array [
-        336,
+        306,
         undefined,
         undefined,
       ]
@@ -1314,23 +910,26 @@ exports[`Avatar: Avatar: [ prop: source ] enzyme-mount: snapshot 1`] = `
   onEditPress={null}
   showEditButton={false}
   source="hero.jpg"
+  width={250}
 >
   <View
     style={
       Array [
-        249,
+        204,
         undefined,
         undefined,
       ]
     }
+    width={250}
   >
     <div
-      className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-zx9znk rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingLeft-gy4na3 rn-paddingBottom-1mi0q7o rn-paddingRight-1qfoi16 rn-paddingTop-m611by rn-position-bnwqim rn-width-5orghg"
+      className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-1kl1mp1 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingLeft-gy4na3 rn-paddingBottom-1mi0q7o rn-paddingRight-1qfoi16 rn-paddingTop-m611by rn-position-bnwqim rn-width-sgscqh"
+      width={250}
     >
       <View
         style={
           Array [
-            251,
+            206,
             undefined,
             undefined,
           ]
@@ -1340,10 +939,11 @@ exports[`Avatar: Avatar: [ prop: source ] enzyme-mount: snapshot 1`] = `
           className="rn-alignItems-1awozwy rn-alignSelf-1pz39u2 rn-backgroundColor-i5wyxj rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af"
         >
           <Image
+            draggable={false}
             source="hero.jpg"
             style={
               Array [
-                250,
+                205,
                 undefined,
                 undefined,
               ]
@@ -1356,14 +956,14 @@ exports[`Avatar: Avatar: [ prop: source ] enzyme-mount: snapshot 1`] = `
                   "backgroundPosition": "center",
                   "backgroundRepeat": "no-repeat",
                   "backgroundSize": "cover",
-                  "height": 34,
-                  "width": 34,
+                  "height": 250,
+                  "width": 250,
                   "zIndex": 0,
                 }
               }
             >
               <div
-                className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-backgroundPosition-vvn4in rn-backgroundRepeat-u6sd8q rn-backgroundSize-4gszlv rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-zx9znk rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-width-5orghg rn-zIndex-1lgpqti"
+                className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-backgroundPosition-vvn4in rn-backgroundRepeat-u6sd8q rn-backgroundSize-4gszlv rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-1kl1mp1 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-width-sgscqh rn-zIndex-1lgpqti"
               />
             </View>
           </Image>
@@ -1376,13 +976,14 @@ exports[`Avatar: Avatar: [ prop: source ] enzyme-mount: snapshot 1`] = `
 
 exports[`Avatar: Avatar: [ prop: source ] enzyme-render: snapshot 1`] = `
 <div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-zx9znk rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingLeft-gy4na3 rn-paddingBottom-1mi0q7o rn-paddingRight-1qfoi16 rn-paddingTop-m611by rn-position-bnwqim rn-width-5orghg"
+  class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-1kl1mp1 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingLeft-gy4na3 rn-paddingBottom-1mi0q7o rn-paddingRight-1qfoi16 rn-paddingTop-m611by rn-position-bnwqim rn-width-sgscqh"
+  width="250"
 >
   <div
     class="rn-alignItems-1awozwy rn-alignSelf-1pz39u2 rn-backgroundColor-i5wyxj rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af"
   >
     <div
-      class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-backgroundPosition-vvn4in rn-backgroundRepeat-u6sd8q rn-backgroundSize-4gszlv rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-zx9znk rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-width-5orghg rn-zIndex-1lgpqti"
+      class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-backgroundPosition-vvn4in rn-backgroundRepeat-u6sd8q rn-backgroundSize-4gszlv rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-1kl1mp1 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-width-sgscqh rn-zIndex-1lgpqti"
     />
   </div>
 </div>
@@ -1392,26 +993,28 @@ exports[`Avatar: Avatar: [ prop: source ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
-      244,
+      199,
       undefined,
       undefined,
     ]
   }
+  width={250}
 >
   <View
     style={
       Array [
-        246,
+        201,
         undefined,
         undefined,
       ]
     }
   >
     <Image
+      draggable={false}
       source="hero.jpg"
       style={
         Array [
-          245,
+          200,
           undefined,
           undefined,
         ]
@@ -1440,7 +1043,7 @@ exports[`Avatar: Avatar: [ prop: title ] enzyme-mount: snapshot 1`] = `
   <View
     style={
       Array [
-        309,
+        264,
         undefined,
         undefined,
       ]
@@ -1452,7 +1055,7 @@ exports[`Avatar: Avatar: [ prop: title ] enzyme-mount: snapshot 1`] = `
       <View
         style={
           Array [
-            311,
+            266,
             undefined,
             undefined,
           ]
@@ -1464,7 +1067,7 @@ exports[`Avatar: Avatar: [ prop: title ] enzyme-mount: snapshot 1`] = `
           <TextElement
             style={
               Array [
-                312,
+                267,
                 undefined,
               ]
             }
@@ -1483,7 +1086,7 @@ exports[`Avatar: Avatar: [ prop: title ] enzyme-mount: snapshot 1`] = `
                   undefined,
                   undefined,
                   Array [
-                    312,
+                    267,
                     undefined,
                   ],
                 ]
@@ -1525,7 +1128,7 @@ exports[`Avatar: Avatar: [ prop: title ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
-      304,
+      259,
       undefined,
       undefined,
     ]
@@ -1534,7 +1137,7 @@ exports[`Avatar: Avatar: [ prop: title ] enzyme-shallow: snapshot 1`] = `
   <View
     style={
       Array [
-        306,
+        261,
         undefined,
         undefined,
       ]
@@ -1543,7 +1146,7 @@ exports[`Avatar: Avatar: [ prop: title ] enzyme-shallow: snapshot 1`] = `
     <TextElement
       style={
         Array [
-          307,
+          262,
           undefined,
         ]
       }
@@ -1578,7 +1181,7 @@ exports[`Avatar: Avatar: [ prop: titleStyle ] enzyme-mount: snapshot 1`] = `
   <View
     style={
       Array [
-        324,
+        279,
         undefined,
         undefined,
       ]
@@ -1590,7 +1193,7 @@ exports[`Avatar: Avatar: [ prop: titleStyle ] enzyme-mount: snapshot 1`] = `
       <View
         style={
           Array [
-            326,
+            281,
             undefined,
             undefined,
           ]
@@ -1602,7 +1205,7 @@ exports[`Avatar: Avatar: [ prop: titleStyle ] enzyme-mount: snapshot 1`] = `
           <TextElement
             style={
               Array [
-                327,
+                282,
                 Object {
                   "fontWeight": "bold",
                 },
@@ -1623,7 +1226,7 @@ exports[`Avatar: Avatar: [ prop: titleStyle ] enzyme-mount: snapshot 1`] = `
                   undefined,
                   undefined,
                   Array [
-                    327,
+                    282,
                     Object {
                       "fontWeight": "bold",
                     },
@@ -1673,7 +1276,7 @@ exports[`Avatar: Avatar: [ prop: titleStyle ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
-      319,
+      274,
       undefined,
       undefined,
     ]
@@ -1682,7 +1285,7 @@ exports[`Avatar: Avatar: [ prop: titleStyle ] enzyme-shallow: snapshot 1`] = `
   <View
     style={
       Array [
-        321,
+        276,
         undefined,
         undefined,
       ]
@@ -1691,7 +1294,7 @@ exports[`Avatar: Avatar: [ prop: titleStyle ] enzyme-shallow: snapshot 1`] = `
     <TextElement
       style={
         Array [
-          322,
+          277,
           Object {
             "fontWeight": "bold",
           },
@@ -1791,88 +1394,6 @@ exports[`Avatar: Avatar: [ prop: width & height ] enzyme-shallow: snapshot 1`] =
 </View>
 `;
 
-exports[`Avatar: Avatar: [ prop: width ] enzyme-mount: snapshot 1`] = `
-<Avatar
-  editButton={
-    Object {
-      "iconColor": "#fff",
-      "iconName": "mode-edit",
-      "iconType": "material",
-      "size": null,
-      "style": null,
-      "underlayColor": "#000",
-    }
-  }
-  onEditPress={null}
-  showEditButton={false}
-  width={68}
->
-  <View
-    style={
-      Array [
-        174,
-        undefined,
-        undefined,
-      ]
-    }
-    width={68}
-  >
-    <div
-      className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-98c09q rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingLeft-gy4na3 rn-paddingBottom-1mi0q7o rn-paddingRight-1qfoi16 rn-paddingTop-m611by rn-position-bnwqim rn-width-1gymjhz"
-      width={68}
-    >
-      <View
-        style={
-          Array [
-            176,
-            undefined,
-            undefined,
-          ]
-        }
-      >
-        <div
-          className="rn-alignItems-1awozwy rn-alignSelf-1pz39u2 rn-backgroundColor-i5wyxj rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af"
-        />
-      </View>
-    </div>
-  </View>
-</Avatar>
-`;
-
-exports[`Avatar: Avatar: [ prop: width ] enzyme-render: snapshot 1`] = `
-<div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-98c09q rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingLeft-gy4na3 rn-paddingBottom-1mi0q7o rn-paddingRight-1qfoi16 rn-paddingTop-m611by rn-position-bnwqim rn-width-1gymjhz"
-  width="68"
->
-  <div
-    class="rn-alignItems-1awozwy rn-alignSelf-1pz39u2 rn-backgroundColor-i5wyxj rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af"
-  />
-</div>
-`;
-
-exports[`Avatar: Avatar: [ prop: width ] enzyme-shallow: snapshot 1`] = `
-<View
-  style={
-    Array [
-      169,
-      undefined,
-      undefined,
-    ]
-  }
-  width={68}
->
-  <View
-    style={
-      Array [
-        171,
-        undefined,
-        undefined,
-      ]
-    }
-  />
-</View>
-`;
-
 exports[`Avatar: Avatar: [ prop: xlarge ] enzyme-mount: snapshot 1`] = `
 <Avatar
   editButton={
@@ -1892,7 +1413,7 @@ exports[`Avatar: Avatar: [ prop: xlarge ] enzyme-mount: snapshot 1`] = `
   <View
     style={
       Array [
-        384,
+        354,
         undefined,
         undefined,
       ]
@@ -1904,7 +1425,7 @@ exports[`Avatar: Avatar: [ prop: xlarge ] enzyme-mount: snapshot 1`] = `
       <View
         style={
           Array [
-            386,
+            356,
             undefined,
             undefined,
           ]
@@ -1933,7 +1454,7 @@ exports[`Avatar: Avatar: [ prop: xlarge ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
-      379,
+      349,
       undefined,
       undefined,
     ]
@@ -1942,7 +1463,7 @@ exports[`Avatar: Avatar: [ prop: xlarge ] enzyme-shallow: snapshot 1`] = `
   <View
     style={
       Array [
-        381,
+        351,
         undefined,
         undefined,
       ]
