@@ -1,0 +1,161 @@
+import React from 'react';
+import {
+  Text,
+  TextStatic,
+  TouchableHighlight,
+  TouchableOpacity,
+  View,
+  TouchableWithoutFeedback,
+} from 'react-native';
+import { assignRef, genRefId } from 'enzyme-styleguidist-sample-parser';
+import {
+  snapShot,
+  buildJsxForGuideMethod,
+  ensureCalled,
+  onlyEnsureCalled,
+  onlySnapshots,
+} from '../';
+import { ButtonGroup as Component } from '../../../src';
+
+const buttons = ['button one', 'button two', 'button three'];
+
+const props = {
+  // noProps: {
+  //   component: Component,
+  //   enzyme: {
+  //     tests: onlySnapshots,
+  //   },
+  //   styleguidist: {},
+  // },
+  selectedIndex: {
+    component: Component,
+    props: { buttons, selectedIndex: 1 },
+    enzyme: {
+      tests: onlySnapshots,
+    },
+    styleguidist: {},
+  },
+  onPress: {
+    component: Component,
+    props: {
+      buttons,
+      onPress: idx => {
+        alert('pressed: ' + idx);
+      },
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  buttons: {
+    component: Component,
+    props: { buttons },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  component: {
+    component: Component,
+    props: { buttons, component: TouchableWithoutFeedback },
+    enzyme: {
+      tests: onlySnapshots,
+    },
+    styleguidist: {
+      getJsxString: () => {
+        return (
+          'const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;\n' +
+          "<ButtonGroup buttons={['button one', 'button two', 'button three']}\n" +
+          '  component={TouchableWithoutFeedback}\n' +
+          '/>'
+        );
+      },
+    },
+  },
+  containerStyle: {
+    component: Component,
+    props: { buttons, containerStyle: { backgroundColor: '#071' } },
+    enzyme: {
+      tests: onlySnapshots,
+    },
+    styleguidist: {},
+  },
+  buttonStyle: {
+    component: Component,
+    props: { buttons, buttonStyle: { marginTop: -15 } },
+    enzyme: {
+      tests: onlySnapshots,
+    },
+    styleguidist: {},
+  },
+  selectedBackgroundColor: {
+    component: Component,
+    props: { buttons, selectedBackgroundColor: '#071', selectedIndex: 1 },
+    enzyme: {
+      tests: onlySnapshots,
+    },
+    styleguidist: {},
+  },
+  containerBorderRadius: {
+    component: Component,
+    props: { buttons, containerBorderRadius: 20 },
+    enzyme: {
+      tests: onlySnapshots,
+    },
+    styleguidist: {},
+  },
+  textStyle: {
+    component: Component,
+    props: { buttons, textStyle: { backgroundColor: '#071' } },
+    enzyme: {
+      tests: onlySnapshots,
+    },
+    styleguidist: {},
+  },
+  selectedTextStyle: {
+    component: Component,
+    props: {
+      buttons,
+      selectedTextStyle: { backgroundColor: '#071' },
+      selectedIndex: 1,
+    },
+    enzyme: {
+      tests: onlySnapshots,
+    },
+    styleguidist: {},
+  },
+  innerBorderStyle: {
+    component: Component,
+    props: { buttons, innerBorderStyle: { width: 10, color: '#071' } },
+    enzyme: {
+      tests: onlySnapshots,
+    },
+    styleguidist: {},
+  },
+  underlayColor: {
+    component: Component,
+    props: { buttons, underlayColor: 'yellow' },
+    enzyme: {
+      tests: onlySnapshots,
+    },
+    styleguidist: {},
+  },
+  disableSelected: {
+    component: Component,
+    props: { buttons, disableSelected: true, selectedIndex: 1 },
+    enzyme: {
+      tests: onlySnapshots,
+    },
+    styleguidist: {},
+  },
+};
+
+const methods = {};
+
+export default {
+  samples: {
+    props,
+    methods,
+  },
+};

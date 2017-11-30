@@ -60,6 +60,10 @@ const Button = props => {
     allowFontScaling,
     ...attributes
   } = props;
+  delete attributes.Component;
+  delete attributes.rightIcon;
+  delete attributes.leftIcon;
+
   let { Component, rightIcon, leftIcon } = props;
 
   let leftIconElement;

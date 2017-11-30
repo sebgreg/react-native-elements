@@ -32,6 +32,9 @@ module.exports = {
   ],
   template: './template.html',
   styleguideDir: './build',
+  styleguideComponents: {
+    Wrapper: path.join(__dirname, './Wrapper'),
+  },
   getExampleFilename,
   webpackConfig: {
     module: {

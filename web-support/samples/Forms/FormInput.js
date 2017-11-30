@@ -1,45 +1,16 @@
 import React from 'react';
 import { Text, TouchableHighlight, View } from 'react-native';
-import toJson from 'enzyme-to-json';
-import sinon from 'sinon';
 import { assignRef, genRefId } from 'enzyme-styleguidist-sample-parser';
-
+import {
+  snapShot,
+  buildJsxForGuideMethod,
+  ensureCalled,
+  onlyEnsureCalled,
+  onlySnapshots,
+} from '../';
 import { FormInput as Component } from '../../../src';
 
 // props
-const snapShot = () => {
-  return (wrapper, title) => {
-    test(title, () => {
-      expect(toJson(wrapper)).toMatchSnapshot(title);
-    });
-  };
-};
-
-const buildJsxForGuideMethod = attr => {
-  const refId = genRefId();
-  const timerFunc = Function(
-    `setTimeout(() => {${refId}.${attr.attrName}();}, ${attr.styleguidist.cd})`
-  );
-  const buttonTitle = attr.styleguidist.cd
-    ? `Start ${attr.styleguidist.cd /
-        1000} sec countdown for: ${attr.attrName}()`
-    : `Execute ${attr.attrName}()`;
-  return (
-    <View>
-      <TouchableHighlight
-        onPress={timerFunc}
-        style={{ backgroundColor: '#aaa', padding: 10, marginBottom: 15 }}
-      >
-        <Text>{buttonTitle}</Text>
-      </TouchableHighlight>
-      {React.createElement(Component, {
-        ...attr.props,
-        ref: assignRef(refId),
-      })}
-    </View>
-  );
-};
-
 const noProps = {
   component: Component,
   enzyme: {
@@ -140,20 +111,6 @@ const props = {
 };
 
 // methods
-const ensureCalled = () => {
-  return (wrapper, title, attrName) => {
-    test(title, () => {
-      const spy = sinon.spy(wrapper.instance(), attrName);
-      const func = Function('elem', `elem.${attrName}()`);
-      func(wrapper.instance());
-      expect(spy.calledOnce).toBe(true);
-    });
-  };
-};
-
-const onlyEnsureCalled = {
-  tests: { shallow: { 'ensure called': ensureCalled() } },
-};
 
 const shakeMeth = {
   component: Component,

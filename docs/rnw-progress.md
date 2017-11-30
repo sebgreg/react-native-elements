@@ -6,8 +6,8 @@
 | ------------ | ------------- | --------------------------- | ---------- | ----- |
 | Avatar       | 2017-11-08    | [med](#avatar-changes)      |
 | Badge        | 2017-11-10    | [med](#badge-changes)       |
-| Button Group | 2017-11-11    | [low](#buttongroup-changes) |
-| Buttons      | 2017-11-09    | [low](#button-changes)      |
+| Button Group | 2017-11-11    | [low](#buttongroup-changes) | 2017-11-29 |
+| Buttons      | 2017-11-09    | [low](#button-changes)      | 2017-11-29 |
 | Card         | 2017-11-10    | no changes                  |
 | Checkbox     | 2017-11-10    | no changes                  |
 | Divider      | 2017-11-10    | no changes                  |
@@ -33,10 +33,12 @@
 
 ### Button changes
 - add support for raised
+- note: prop actitityIndicatorStyle has no effect on web
 
 ### ButtonGroup changes
 - avoid dom prop warnings
 - add units to numberic props
+- containerBorderRadius has no effect on web, source shows a workaround
 
 ### Form changes
 - avoid dom prop warnings
