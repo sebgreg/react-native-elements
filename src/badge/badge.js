@@ -22,9 +22,7 @@ const Badge = props => {
 
   let Component = View;
   let childElement = (
-    <Text style={[styles.text, textStyle && textStyle]}>
-      {value}
-    </Text>
+    <Text style={[styles.text, textStyle && textStyle]}>{value}</Text>
   );
 
   if (children) {
@@ -39,9 +37,7 @@ const Badge = props => {
     Component = TouchableOpacity;
   }
 
-  if (React.isValidElement(component)) {
-    Component = component;
-  }
+  if (component) Component = component;
 
   return (
     <View style={[styles.container && wrapperStyle && wrapperStyle]}>
