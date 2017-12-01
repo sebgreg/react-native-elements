@@ -895,7 +895,6 @@ exports[`Forms: FormInput: [ prop: shake ] enzyme-shallow: snapshot 1`] = `
 exports[`Forms: FormInput: [ prop: textInputRef ] enzyme-mount: snapshot 1`] = `
 <FormInput
   normalizeFontSize={true}
-  textInputRef={[Function]}
 >
   <AnimatedComponent
     style={

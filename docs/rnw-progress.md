@@ -27,7 +27,7 @@
 
 ### Avatar changes
 - avoid dom prop warnings
-  - using "touchableProps" object, empty if View, then added via {...touchableProps}
+  - using `touchableProps` object, empty if View, then added via {...touchableProps}
 - seems to work ok, but need to investigate why styleguidist can't parse
   - changed component proptype from .oneOf([...components]) to .any
 
@@ -36,15 +36,14 @@
 
 ### Button changes
 - add support for raised
-- "leftIcon" and "rightIcon" cause React.createElement errors during run, but produce acceptable snapshots
+- `leftIcon` and `rightIcon` cause React.createElement errors during run, but produce acceptable snapshots
 
 ### ButtonGroup changes
 - avoid dom prop warnings
   - use {...opacityProps} and {...highlightProps}
   - add defaultProps: {underlayColor: '#ffffff'} to keep orig behaviour
 - add units to numeric props
-- "containerBorderRadius" has no effect on web, source shows a workaround in place
-  - ? suggestions ?
+- prop: `containerBorderRadius` - see [below](#outstanding)
 
 ### Form changes
 - avoid dom prop warnings
@@ -52,10 +51,8 @@
 ### Icon changes
 - avoid dom prop warnings
   - use {...touchableProps}
-- fix: "iconStyle" was not being passed to Icon
-  - I think this is what's intended ?
-- change: applied "borderRadius", "height", and "width" to all, not just reverse or raised
-  - I think this is what's intended ?
+- fix: `iconStyle` was not being passed to Icon - see [below](#outstanding)
+- change: applied `borderRadius`, `height`, and `width` to all, not just reverse or raised - see [below](#outstanding)
 - TODO: doc example for icon font injection
 
 ### Rating changes
@@ -63,29 +60,56 @@
   - solution:
     - modified props to Views:
       - added draggable={false}
-      - changed pointerEvents; "box-none" for parent View, "none" for Image
+      - changed pointerEvents; `box-none` for parent View, `none` for Image
 - mouseclick & mousemove seem off from displayed position
 
 ### SearchBar changes
 - for styleguidist:
-  - rename class from "Search" to "SearchBar"
+  - rename class from `Search` to `SearchBar`
 
 ### Slider changes
 - avoid dom prop warnings
-- small fix for "minimumTrackStyle" margin
+- small fix for `minimumTrackStyle` margin
 
 ### Text changes
 - for styleguidist:
-  - rename function from "TextElement" to "Text"
-  - rename import from "Text" to "NativeText"
+  - rename function from `TextElement` to `Text`
+  - rename import from `Text` to `NativeText`
 
 ### Tile changes
 - avoid dom prop warnings
 - images not showing
 
 ## Other Changes
-- rnw does not export "ViewPropTypes" from the same place
+- rnw does not export `ViewPropTypes` from the same place
 - to resolve:
   - src/config/ViewPropTypes.js split into .ios .android and .web
-  - added "moduleNameMapper" to jest config in package.json
+  - added `moduleNameMapper` to jest config in package.json
   - added module.resolve.extensions to webpack.config.js
+
+
+## Outstanding
+
+### Badge:
+**suggestion**:  new prop to set Text node's `selectable` prop, defaults to false
+
+**suggestion**:  default value for `wrapperStyle` prop - set  to `alignSelf: 'flex-start'`, which sets width to fit content
+
+**confirm**:  ok to disable validElement check for `control` prop?
+
+### ButtonGroup:
+**question**:  `containerBorderRadius` prop has no effect on web.  current source is labelled as a workaround.  implement a workaround for web or chang the whole thing?
+
+### Icon:
+**suggestion**:  new prop to set Text node's `selectable` prop, defaults to false
+
+**suggestion**: default value for `containerStyle` prop - set  to `alignSelf: 'flex-start'`, which sets width to fit content
+
+**confirm**:  are changes to `iconStyle` prop ok?
+
+**confirm**:  are chagnes to `borderRadius`, `height`, and `width` ok?
+
+### Raing
+**suggestion**: check for existance of `extractOffset` function and use it if available
+  - mouseclick & mousemove seem off from displayed position (more obvious on web)
+  - later versions of react-native support `extractOffset` to make this behave better

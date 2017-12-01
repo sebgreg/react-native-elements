@@ -21,128 +21,129 @@ const props = {
   noProps: {
     component: Component,
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
   title: {
     component: Component,
-    props: { type: 'github', title: 'gith U.B.', button: true },
+    props: { type: 'medium', title: 'medium', button: true },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   type: {
     component: Component,
-    props: { type: 'github' },
+    props: { type: 'medium' },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   raised: {
     component: Component,
-    props: { type: 'github', raised: true },
+    props: { type: 'medium', raised: false },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   button: {
     component: Component,
-    props: { type: 'github', button: true },
+    props: { type: 'medium', button: true },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   onPress: {
     component: Component,
     props: {
-      type: 'github',
+      type: 'medium',
       onPress: () => {
         alert('pressed');
       },
     },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   onLongPress: {
     component: Component,
     props: {
-      type: 'github',
+      type: 'medium',
       onLongPress: () => {
         alert('pressed, long');
       },
     },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   light: {
     component: Component,
-    props: { type: 'github', light: true },
+    props: { type: 'medium', light: true },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
+    styleguidist: {},
   },
   iconStyle: {
     component: Component,
     props: {
-      type: 'github',
+      type: 'medium',
+      button: true,
       iconStyle: { transform: [{ rotateZ: '-45deg' }] },
     },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   style: {
     component: Component,
     props: {
-      type: 'github',
-      style: { transform: [{ rotateZ: '-45deg' }] },
+      type: 'medium',
+      button: true,
+      style: { width: 120, transform: [{ rotateZ: '-45deg' }] },
     },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   iconColor: {
     component: Component,
-    props: { type: 'github', iconColor: '#071' },
+    props: { type: 'medium', iconColor: '#071' },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   underlayColor: {
     component: Component,
     props: {
-      type: 'github',
-      onPress: () => {
-        alert('pressed');
-      },
+      type: 'medium',
+      onPress: () => {},
       underlayColor: 'yellow',
     },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   iconSize: {
     component: Component,
-    props: { type: 'github', iconSize: 50 },
+    props: { type: 'medium', iconSize: 40 },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   component: {
     component: Component,
-    props: { type: 'github', component: TouchableWithoutFeedback },
+    props: { type: 'medium', component: TouchableWithoutFeedback },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {
       getJsxString: () => {
         return (
           'const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;\n' +
           '<SocialIcon \n' +
-          "  type='github'" +
+          "  type='medium'" +
           '  component={TouchableWithoutFeedback}\n' +
           '/>'
         );
@@ -152,51 +153,51 @@ const props = {
   fontFamily: {
     component: Component,
     props: {
-      type: 'github',
+      type: 'medium',
       fontFamily: 'Courier New',
-      title: 'gith U.B.',
+      title: 'medium',
       button: true,
     },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   fontWeight: {
     component: Component,
     props: {
-      type: 'github',
+      type: 'medium',
       fontWeight: 'bold',
-      title: 'gith U.B.',
+      title: 'medium',
       button: true,
     },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   fontStyle: {
     component: Component,
     props: {
-      type: 'github',
+      type: 'medium',
       fontStyle: { padding: 50 },
-      title: 'gith U.B.',
+      title: 'medium',
       button: true,
     },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   disabled: {
     component: Component,
-    props: { type: 'github', disabled: true },
+    props: { type: 'medium', disabled: true },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   loading: {
     component: Component,
-    props: { type: 'github', loading: true, title: 'gith U.B.', button: true },
+    props: { type: 'medium', loading: true, title: 'medium', button: true },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
 };

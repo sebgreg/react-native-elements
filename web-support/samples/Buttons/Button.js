@@ -54,7 +54,7 @@ const props = {
   },
   buttonStyle: {
     component: Button,
-    props: { buttonStyle: { padding: 50 } },
+    props: { buttonStyle: { alignSelf: 'flex-start' } },
     enzyme: {
       tests: onlySnapshots,
     },

@@ -1,0 +1,128 @@
+import React from 'react';
+import {
+  Text,
+  TextStatic,
+  TouchableHighlight,
+  TouchableOpacity,
+  View,
+  TouchableWithoutFeedback,
+} from 'react-native';
+import { assignRef, genRefId } from 'enzyme-styleguidist-sample-parser';
+import {
+  snapShot,
+  buildJsxForGuideMethod,
+  ensureCalled,
+  onlyEnsureCalled,
+  onlySnapshots,
+} from '../';
+import { Badge as Component } from '../../../src';
+
+const props = {
+  noProps: {
+    component: Component,
+    enzyme: {
+      tests: onlySnapshots,
+    },
+    styleguidist: {},
+  },
+  value: {
+    component: Component,
+    props: { value: 7 },
+    enzyme: {
+      tests: onlySnapshots,
+    },
+    styleguidist: {},
+  },
+  containerStyle: {
+    component: Component,
+    props: { value: 'seven', containerStyle: { backgroundColor: '#071' } },
+    enzyme: {
+      tests: onlySnapshots,
+    },
+    styleguidist: {},
+  },
+  wrapperStyle: {
+    component: Component,
+    props: { value: 'seven', wrapperStyle: { alignSelf: 'flex-start' } },
+    enzyme: {
+      tests: onlySnapshots,
+    },
+    styleguidist: {},
+  },
+  textStyle: {
+    component: Component,
+    props: {
+      value: 'seven',
+      textStyle: { fontSize: 30 },
+    },
+    enzyme: {
+      tests: onlySnapshots,
+    },
+    styleguidist: {},
+  },
+  children: {
+    component: Component,
+    props: { value: 'seven' },
+    enzyme: {
+      buildJsx: attr => {
+        return (
+          <Badge>
+            <Text>a text node</Text>
+          </Badge>
+        );
+      },
+      tests: onlySnapshots,
+    },
+    getJsxString: () => {
+      return (
+        'const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;\n' +
+        '<Badge \n' +
+        '  component={TouchableWithoutFeedback}\n' +
+        "  onPress={() => alert('pressed')}\n" +
+        '/>'
+      );
+    },
+  },
+  onPress: {
+    component: Component,
+    props: {
+      value: 'press',
+      onPress: () => {
+        alert('pressed');
+      },
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  component: {
+    component: Component,
+    props: { component: TouchableOpacity },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {
+      getJsxString: () => {
+        return (
+          'const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;\n' +
+          '<Badge \n' +
+          "  value='TouchableWithoutFeedback'\n" +
+          '  component={TouchableWithoutFeedback}\n' +
+          "  textStyle={{ color: '#071'}}\n" +
+          "  onPress={() => alert('pressed')}\n" +
+          '/>'
+        );
+      },
+    },
+  },
+};
+
+const methods = {};
+
+export default {
+  samples: {
+    props,
+    methods,
+  },
+};

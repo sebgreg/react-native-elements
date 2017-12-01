@@ -29,6 +29,7 @@
   },
   {
     "name": "misc",
-    "components": "../../src/+(avatar|badge|divider|header|text)/[A-Z]*.js"
+    "components":
+      "../../src/+(avatar|badge|divider|header|text)/+(badge|[A-Z])*.js"
   }
 ]

@@ -8,6 +8,7 @@ export {
   onlySnapshots,
 } from './common';
 import _avatar from './Avatar';
+import _badge from './Badge';
 import _buttons from './Buttons';
 import _icons from './Icons';
 import _forms from './Forms';
@@ -17,6 +18,10 @@ export default {
   Avatar: {
     title: 'Avatar',
     sectionComponents: _avatar,
+  },
+  Badge: {
+    title: 'Badge',
+    sectionComponents: _badge,
   },
   Buttons: {
     title: 'Buttons',

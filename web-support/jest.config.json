@@ -1,5 +1,5 @@
 {
-  "verbose": false,
+  "verbose": true,
   "timers": "fake",
   "coverageDirectory": "./coverage/",
   "collectCoverageFrom": ["src/**/*.js", "!src/index.js", "!src/helpers/*.js"],

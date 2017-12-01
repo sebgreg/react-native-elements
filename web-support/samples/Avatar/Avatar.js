@@ -29,7 +29,7 @@ const props = {
     component: Component,
     props: { component: TouchableOpacity },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {
       getJsxString: () => {
@@ -59,7 +59,7 @@ const props = {
       },
     },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -71,7 +71,7 @@ const props = {
       },
     },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -156,7 +156,7 @@ const props = {
       activeOpacity: 0.5,
     },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -166,7 +166,7 @@ const props = {
       icon: { name: 'sms', color: '#071', size: 35, type: 'octicons' },
     },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -177,7 +177,7 @@ const props = {
       iconStyle: { transform: [{ rotateZ: '-45deg' }] },
     },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -217,7 +217,7 @@ const props = {
     component: Component,
     props: { showEditButton: true },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -230,7 +230,7 @@ const props = {
       },
     },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -249,7 +249,7 @@ const props = {
       },
     },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },

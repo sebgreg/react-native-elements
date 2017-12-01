@@ -877,7 +877,7 @@ exports[`Buttons: Button: [ prop: buttonStyle ] enzyme-mount: snapshot 1`] = `
 <Button
   buttonStyle={
     Object {
-      "padding": 50,
+      "alignSelf": "flex-start",
     }
   }
 >
@@ -952,7 +952,7 @@ exports[`Buttons: Button: [ prop: buttonStyle ] enzyme-mount: snapshot 1`] = `
                   undefined,
                   undefined,
                   Object {
-                    "padding": 50,
+                    "alignSelf": "flex-start",
                   },
                   undefined,
                   undefined,
@@ -960,15 +960,7 @@ exports[`Buttons: Button: [ prop: buttonStyle ] enzyme-mount: snapshot 1`] = `
               }
             >
               <div
-                className="rn-alignItems-1awozwy rn-backgroundColor-1e87vtn rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-justifyContent-1777fci rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-pointerEvents-ah5dr5 rn-position-bnwqim"
-                style={
-                  Object {
-                    "paddingBottom": "50px",
-                    "paddingLeft": "50px",
-                    "paddingRight": "50px",
-                    "paddingTop": "50px",
-                  }
-                }
+                className="rn-alignItems-1awozwy rn-alignSelf-k200y rn-backgroundColor-1e87vtn rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-justifyContent-1777fci rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-ttdzmv rn-paddingRight-j2kj52 rn-paddingBottom-kzbkwu rn-paddingLeft-f727ji rn-pointerEvents-ah5dr5 rn-position-bnwqim"
               >
                 <TextElement
                   style={
@@ -1033,8 +1025,7 @@ exports[`Buttons: Button: [ prop: buttonStyle ] enzyme-render: snapshot 1`] = `
     tabindex="0"
   >
     <div
-      class="rn-alignItems-1awozwy rn-backgroundColor-1e87vtn rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-justifyContent-1777fci rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-pointerEvents-ah5dr5 rn-position-bnwqim"
-      style="padding-top:50px;padding-right:50px;padding-bottom:50px;padding-left:50px;"
+      class="rn-alignItems-1awozwy rn-alignSelf-k200y rn-backgroundColor-1e87vtn rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-justifyContent-1777fci rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-ttdzmv rn-paddingRight-j2kj52 rn-paddingBottom-kzbkwu rn-paddingLeft-f727ji rn-pointerEvents-ah5dr5 rn-position-bnwqim"
     >
       <div
         class="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-13p8erv rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
@@ -1079,7 +1070,7 @@ exports[`Buttons: Button: [ prop: buttonStyle ] enzyme-shallow: snapshot 1`] = `
           undefined,
           undefined,
           Object {
-            "padding": 50,
+            "alignSelf": "flex-start",
           },
           undefined,
           undefined,
@@ -5072,11 +5063,12 @@ exports[`Buttons: Button: [ prop: underlayColor ] enzyme-shallow: snapshot 1`] =
 </View>
 `;
 
-exports[`Buttons: ButtonGroup: [ prop: buttonStyle ] enzyme-mount: snapshot 1`] = `
+exports[`Buttons: ButtonGroup: [ prop: buttonStyle & containerStyle ] enzyme-mount: snapshot 1`] = `
 <ButtonGroup
   buttonStyle={
     Object {
-      "marginTop": -15,
+      "backgroundColor": "#aaa",
+      "width": 150,
     }
   }
   buttons={
@@ -5086,18 +5078,25 @@ exports[`Buttons: ButtonGroup: [ prop: buttonStyle ] enzyme-mount: snapshot 1`] 
       "button three",
     ]
   }
+  containerStyle={
+    Object {
+      "alignSelf": "flex-start",
+    }
+  }
   underlayColor="#ffffff"
 >
   <View
     style={
       Array [
         113,
-        undefined,
+        Object {
+          "alignSelf": "flex-start",
+        },
       ]
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-backgroundColor-okrdqk rn-borderTopColor-10zesd1 rn-borderRightColor-uzbo9q rn-borderBottomColor-l6mxfb rn-borderLeftColor-1vgp64i rn-borderTopLeftRadius-3v92ek rn-borderTopRightRadius-fm6ini rn-borderBottomRightRadius-x4nnad rn-borderBottomLeftRadius-1rz6xei rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-height-eu3ka rn-marginBottom-d0pm55 rn-marginLeft-1n0xq6e rn-marginRight-zso239 rn-marginTop-1g94qm0 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-overflowX-11yh6sk rn-overflowY-buy8e9 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+      className="rn-alignItems-1oszu61 rn-alignSelf-k200y rn-backgroundColor-okrdqk rn-borderTopColor-10zesd1 rn-borderRightColor-uzbo9q rn-borderBottomColor-l6mxfb rn-borderLeftColor-1vgp64i rn-borderTopLeftRadius-3v92ek rn-borderTopRightRadius-fm6ini rn-borderBottomRightRadius-x4nnad rn-borderBottomLeftRadius-1rz6xei rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-height-eu3ka rn-marginBottom-d0pm55 rn-marginLeft-1n0xq6e rn-marginRight-zso239 rn-marginTop-1g94qm0 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-overflowX-11yh6sk rn-overflowY-buy8e9 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
     >
       <TouchableHighlight
         activeOpacity={0.85}
@@ -5179,16 +5178,18 @@ exports[`Buttons: ButtonGroup: [ prop: buttonStyle ] enzyme-mount: snapshot 1`] 
                 Array [
                   112,
                   Object {
-                    "marginTop": -15,
+                    "backgroundColor": "#aaa",
+                    "width": 150,
                   },
                 ]
               }
             >
               <div
-                className="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+                className="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
                 style={
                   Object {
-                    "marginTop": "-15px",
+                    "backgroundColor": "rgba(170,170,170,1)",
+                    "width": "150px",
                   }
                 }
               >
@@ -5318,16 +5319,18 @@ exports[`Buttons: ButtonGroup: [ prop: buttonStyle ] enzyme-mount: snapshot 1`] 
                 Array [
                   112,
                   Object {
-                    "marginTop": -15,
+                    "backgroundColor": "#aaa",
+                    "width": 150,
                   },
                 ]
               }
             >
               <div
-                className="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+                className="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
                 style={
                   Object {
-                    "marginTop": "-15px",
+                    "backgroundColor": "rgba(170,170,170,1)",
+                    "width": "150px",
                   }
                 }
               >
@@ -5445,16 +5448,670 @@ exports[`Buttons: ButtonGroup: [ prop: buttonStyle ] enzyme-mount: snapshot 1`] 
                 Array [
                   112,
                   Object {
-                    "marginTop": -15,
+                    "backgroundColor": "#aaa",
+                    "width": 150,
                   },
                 ]
               }
             >
               <div
-                className="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+                className="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
                 style={
                   Object {
-                    "marginTop": "-15px",
+                    "backgroundColor": "rgba(170,170,170,1)",
+                    "width": "150px",
+                  }
+                }
+              >
+                <TextElement
+                  style={
+                    Array [
+                      114,
+                      undefined,
+                      false,
+                      false,
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        64,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        Array [
+                          114,
+                          undefined,
+                          false,
+                          false,
+                        ],
+                      ]
+                    }
+                  >
+                    <div
+                      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-dqm38q rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+                      dir="auto"
+                    >
+                      button three
+                    </div>
+                  </Text>
+                </TextElement>
+              </div>
+            </View>
+          </div>
+        </View>
+      </TouchableHighlight>
+    </div>
+  </View>
+</ButtonGroup>
+`;
+
+exports[`Buttons: ButtonGroup: [ prop: buttonStyle & containerStyle ] enzyme-render: snapshot 1`] = `
+<div
+  class="rn-alignItems-1oszu61 rn-alignSelf-k200y rn-backgroundColor-okrdqk rn-borderTopColor-10zesd1 rn-borderRightColor-uzbo9q rn-borderBottomColor-l6mxfb rn-borderLeftColor-1vgp64i rn-borderTopLeftRadius-3v92ek rn-borderTopRightRadius-fm6ini rn-borderBottomRightRadius-x4nnad rn-borderBottomLeftRadius-1rz6xei rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-height-eu3ka rn-marginBottom-d0pm55 rn-marginLeft-1n0xq6e rn-marginRight-zso239 rn-marginTop-1g94qm0 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-overflowX-11yh6sk rn-overflowY-buy8e9 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+>
+  <div
+    class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderBottomLeftRadius-1rz6xei rn-borderRightWidth-fnigne rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopLeftRadius-3v92ek rn-borderTopWidth-13yce4e rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-cursor-1loqt21 rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-touchAction-1gvxusu rn-userSelect-lrvibr"
+    style="border-right-color:rgba(189,198,207,1);"
+    tabindex="0"
+  >
+    <div
+      class="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+      style="background-color:rgba(170,170,170,1);width:150px;"
+    >
+      <div
+        class="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-dqm38q rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+        dir="auto"
+      >
+        button one
+      </div>
+    </div>
+  </div>
+  <div
+    class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderLeftWidth-1ljd8xs rn-borderRightWidth-13l2t4g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderBottomWidth-ndvcnb rn-boxSizing-deolkf rn-cursor-1loqt21 rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-touchAction-1gvxusu rn-userSelect-lrvibr"
+    style="border-left-color:rgba(189,198,207,1);border-right-color:rgba(189,198,207,1);"
+    tabindex="0"
+  >
+    <div
+      class="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+      style="background-color:rgba(170,170,170,1);width:150px;"
+    >
+      <div
+        class="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-dqm38q rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+        dir="auto"
+      >
+        button two
+      </div>
+    </div>
+  </div>
+  <div
+    class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderBottomRightRadius-x4nnad rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopRightRadius-fm6ini rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-cursor-1loqt21 rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-touchAction-1gvxusu rn-userSelect-lrvibr"
+    tabindex="0"
+  >
+    <div
+      class="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+      style="background-color:rgba(170,170,170,1);width:150px;"
+    >
+      <div
+        class="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-dqm38q rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+        dir="auto"
+      >
+        button three
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Buttons: ButtonGroup: [ prop: buttonStyle & containerStyle ] enzyme-shallow: snapshot 1`] = `
+<View
+  style={
+    Array [
+      113,
+      Object {
+        "alignSelf": "flex-start",
+      },
+    ]
+  }
+>
+  <TouchableHighlight
+    activeOpacity={0.85}
+    disabled={false}
+    onPress={[Function]}
+    style={
+      Array [
+        111,
+        Object {
+          "borderRightColor": "#bdc6cf",
+          "borderRightWidth": 0,
+        },
+        false,
+        false,
+        Object {
+          "borderBottomLeftRadius": 3,
+          "borderTopLeftRadius": 3,
+        },
+        false,
+      ]
+    }
+    underlayColor="#ffffff"
+  >
+    <View
+      style={
+        Array [
+          112,
+          Object {
+            "backgroundColor": "#aaa",
+            "width": 150,
+          },
+        ]
+      }
+    >
+      <TextElement
+        style={
+          Array [
+            114,
+            undefined,
+            false,
+            false,
+          ]
+        }
+      >
+        button one
+      </TextElement>
+    </View>
+  </TouchableHighlight>
+  <TouchableHighlight
+    activeOpacity={0.85}
+    disabled={false}
+    onPress={[Function]}
+    style={
+      Array [
+        111,
+        Object {
+          "borderRightColor": "#bdc6cf",
+          "borderRightWidth": 1,
+        },
+        Object {
+          "borderLeftColor": "#bdc6cf",
+          "borderLeftWidth": 1,
+        },
+        false,
+        false,
+        false,
+      ]
+    }
+    underlayColor="#ffffff"
+  >
+    <View
+      style={
+        Array [
+          112,
+          Object {
+            "backgroundColor": "#aaa",
+            "width": 150,
+          },
+        ]
+      }
+    >
+      <TextElement
+        style={
+          Array [
+            114,
+            undefined,
+            false,
+            false,
+          ]
+        }
+      >
+        button two
+      </TextElement>
+    </View>
+  </TouchableHighlight>
+  <TouchableHighlight
+    activeOpacity={0.85}
+    disabled={false}
+    onPress={[Function]}
+    style={
+      Array [
+        111,
+        false,
+        false,
+        Object {
+          "borderBottomRightRadius": 3,
+          "borderTopRightRadius": 3,
+        },
+        false,
+        false,
+      ]
+    }
+    underlayColor="#ffffff"
+  >
+    <View
+      style={
+        Array [
+          112,
+          Object {
+            "backgroundColor": "#aaa",
+            "width": 150,
+          },
+        ]
+      }
+    >
+      <TextElement
+        style={
+          Array [
+            114,
+            undefined,
+            false,
+            false,
+          ]
+        }
+      >
+        button three
+      </TextElement>
+    </View>
+  </TouchableHighlight>
+</View>
+`;
+
+exports[`Buttons: ButtonGroup: [ prop: buttonStyle ] enzyme-mount: snapshot 1`] = `
+<ButtonGroup
+  buttonStyle={
+    Object {
+      "backgroundColor": "#aaa",
+      "width": 150,
+    }
+  }
+  buttons={
+    Array [
+      "button one",
+      "button two",
+      "button three",
+    ]
+  }
+  underlayColor="#ffffff"
+>
+  <View
+    style={
+      Array [
+        113,
+        undefined,
+      ]
+    }
+  >
+    <div
+      className="rn-alignItems-1oszu61 rn-backgroundColor-okrdqk rn-borderTopColor-10zesd1 rn-borderRightColor-uzbo9q rn-borderBottomColor-l6mxfb rn-borderLeftColor-1vgp64i rn-borderTopLeftRadius-3v92ek rn-borderTopRightRadius-fm6ini rn-borderBottomRightRadius-x4nnad rn-borderBottomLeftRadius-1rz6xei rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-height-eu3ka rn-marginBottom-d0pm55 rn-marginLeft-1n0xq6e rn-marginRight-zso239 rn-marginTop-1g94qm0 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-overflowX-11yh6sk rn-overflowY-buy8e9 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+    >
+      <TouchableHighlight
+        activeOpacity={0.85}
+        disabled={false}
+        onPress={[Function]}
+        style={
+          Array [
+            111,
+            Object {
+              "borderRightColor": "#bdc6cf",
+              "borderRightWidth": 0,
+            },
+            false,
+            false,
+            Object {
+              "borderBottomLeftRadius": 3,
+              "borderTopLeftRadius": 3,
+            },
+            false,
+          ]
+        }
+        underlayColor="#ffffff"
+      >
+        <View
+          accessible={true}
+          disabled={false}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Array [
+              62,
+              63,
+              Array [
+                61,
+                Array [
+                  111,
+                  Object {
+                    "borderRightColor": "#bdc6cf",
+                    "borderRightWidth": 0,
+                  },
+                  false,
+                  false,
+                  Object {
+                    "borderBottomLeftRadius": 3,
+                    "borderTopLeftRadius": 3,
+                  },
+                  false,
+                ],
+              ],
+            ]
+          }
+        >
+          <div
+            className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderBottomLeftRadius-1rz6xei rn-borderRightWidth-fnigne rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopLeftRadius-3v92ek rn-borderTopWidth-13yce4e rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-cursor-1loqt21 rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-touchAction-1gvxusu rn-userSelect-lrvibr"
+            disabled={false}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "borderRightColor": "rgba(189,198,207,1)",
+              }
+            }
+            tabIndex="0"
+          >
+            <View
+              style={
+                Array [
+                  112,
+                  Object {
+                    "backgroundColor": "#aaa",
+                    "width": 150,
+                  },
+                ]
+              }
+            >
+              <div
+                className="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(170,170,170,1)",
+                    "width": "150px",
+                  }
+                }
+              >
+                <TextElement
+                  style={
+                    Array [
+                      114,
+                      undefined,
+                      false,
+                      false,
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        64,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        Array [
+                          114,
+                          undefined,
+                          false,
+                          false,
+                        ],
+                      ]
+                    }
+                  >
+                    <div
+                      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-dqm38q rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+                      dir="auto"
+                    >
+                      button one
+                    </div>
+                  </Text>
+                </TextElement>
+              </div>
+            </View>
+          </div>
+        </View>
+      </TouchableHighlight>
+      <TouchableHighlight
+        activeOpacity={0.85}
+        disabled={false}
+        onPress={[Function]}
+        style={
+          Array [
+            111,
+            Object {
+              "borderRightColor": "#bdc6cf",
+              "borderRightWidth": 1,
+            },
+            Object {
+              "borderLeftColor": "#bdc6cf",
+              "borderLeftWidth": 1,
+            },
+            false,
+            false,
+            false,
+          ]
+        }
+        underlayColor="#ffffff"
+      >
+        <View
+          accessible={true}
+          disabled={false}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Array [
+              62,
+              63,
+              Array [
+                61,
+                Array [
+                  111,
+                  Object {
+                    "borderRightColor": "#bdc6cf",
+                    "borderRightWidth": 1,
+                  },
+                  Object {
+                    "borderLeftColor": "#bdc6cf",
+                    "borderLeftWidth": 1,
+                  },
+                  false,
+                  false,
+                  false,
+                ],
+              ],
+            ]
+          }
+        >
+          <div
+            className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderLeftWidth-1ljd8xs rn-borderRightWidth-13l2t4g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderBottomWidth-ndvcnb rn-boxSizing-deolkf rn-cursor-1loqt21 rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-touchAction-1gvxusu rn-userSelect-lrvibr"
+            disabled={false}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "borderLeftColor": "rgba(189,198,207,1)",
+                "borderRightColor": "rgba(189,198,207,1)",
+              }
+            }
+            tabIndex="0"
+          >
+            <View
+              style={
+                Array [
+                  112,
+                  Object {
+                    "backgroundColor": "#aaa",
+                    "width": 150,
+                  },
+                ]
+              }
+            >
+              <div
+                className="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(170,170,170,1)",
+                    "width": "150px",
+                  }
+                }
+              >
+                <TextElement
+                  style={
+                    Array [
+                      114,
+                      undefined,
+                      false,
+                      false,
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        64,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        undefined,
+                        Array [
+                          114,
+                          undefined,
+                          false,
+                          false,
+                        ],
+                      ]
+                    }
+                  >
+                    <div
+                      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-dqm38q rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+                      dir="auto"
+                    >
+                      button two
+                    </div>
+                  </Text>
+                </TextElement>
+              </div>
+            </View>
+          </div>
+        </View>
+      </TouchableHighlight>
+      <TouchableHighlight
+        activeOpacity={0.85}
+        disabled={false}
+        onPress={[Function]}
+        style={
+          Array [
+            111,
+            false,
+            false,
+            Object {
+              "borderBottomRightRadius": 3,
+              "borderTopRightRadius": 3,
+            },
+            false,
+            false,
+          ]
+        }
+        underlayColor="#ffffff"
+      >
+        <View
+          accessible={true}
+          disabled={false}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Array [
+              62,
+              63,
+              Array [
+                61,
+                Array [
+                  111,
+                  false,
+                  false,
+                  Object {
+                    "borderBottomRightRadius": 3,
+                    "borderTopRightRadius": 3,
+                  },
+                  false,
+                  false,
+                ],
+              ],
+            ]
+          }
+        >
+          <div
+            className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderBottomRightRadius-x4nnad rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopRightRadius-fm6ini rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-cursor-1loqt21 rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-touchAction-1gvxusu rn-userSelect-lrvibr"
+            disabled={false}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            tabIndex="0"
+          >
+            <View
+              style={
+                Array [
+                  112,
+                  Object {
+                    "backgroundColor": "#aaa",
+                    "width": 150,
+                  },
+                ]
+              }
+            >
+              <div
+                className="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(170,170,170,1)",
+                    "width": "150px",
                   }
                 }
               >
@@ -5518,8 +6175,8 @@ exports[`Buttons: ButtonGroup: [ prop: buttonStyle ] enzyme-render: snapshot 1`]
     tabindex="0"
   >
     <div
-      class="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
-      style="margin-top:-15px;"
+      class="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+      style="background-color:rgba(170,170,170,1);width:150px;"
     >
       <div
         class="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-dqm38q rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
@@ -5535,8 +6192,8 @@ exports[`Buttons: ButtonGroup: [ prop: buttonStyle ] enzyme-render: snapshot 1`]
     tabindex="0"
   >
     <div
-      class="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
-      style="margin-top:-15px;"
+      class="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+      style="background-color:rgba(170,170,170,1);width:150px;"
     >
       <div
         class="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-dqm38q rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
@@ -5551,8 +6208,8 @@ exports[`Buttons: ButtonGroup: [ prop: buttonStyle ] enzyme-render: snapshot 1`]
     tabindex="0"
   >
     <div
-      class="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
-      style="margin-top:-15px;"
+      class="rn-alignItems-1awozwy rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+      style="background-color:rgba(170,170,170,1);width:150px;"
     >
       <div
         class="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-dqm38q rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-n6v787 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
@@ -5601,7 +6258,8 @@ exports[`Buttons: ButtonGroup: [ prop: buttonStyle ] enzyme-shallow: snapshot 1`
         Array [
           112,
           Object {
-            "marginTop": -15,
+            "backgroundColor": "#aaa",
+            "width": 150,
           },
         ]
       }
@@ -5647,7 +6305,8 @@ exports[`Buttons: ButtonGroup: [ prop: buttonStyle ] enzyme-shallow: snapshot 1`
         Array [
           112,
           Object {
-            "marginTop": -15,
+            "backgroundColor": "#aaa",
+            "width": 150,
           },
         ]
       }
@@ -5690,7 +6349,8 @@ exports[`Buttons: ButtonGroup: [ prop: buttonStyle ] enzyme-shallow: snapshot 1`
         Array [
           112,
           Object {
-            "marginTop": -15,
+            "backgroundColor": "#aaa",
+            "width": 150,
           },
         ]
       }
@@ -6961,7 +7621,7 @@ exports[`Buttons: ButtonGroup: [ prop: containerStyle ] enzyme-mount: snapshot 1
   }
   containerStyle={
     Object {
-      "backgroundColor": "#071",
+      "alignSelf": "flex-start",
     }
   }
   underlayColor="#ffffff"
@@ -6971,18 +7631,13 @@ exports[`Buttons: ButtonGroup: [ prop: containerStyle ] enzyme-mount: snapshot 1
       Array [
         113,
         Object {
-          "backgroundColor": "#071",
+          "alignSelf": "flex-start",
         },
       ]
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-borderTopColor-10zesd1 rn-borderRightColor-uzbo9q rn-borderBottomColor-l6mxfb rn-borderLeftColor-1vgp64i rn-borderTopLeftRadius-3v92ek rn-borderTopRightRadius-fm6ini rn-borderBottomRightRadius-x4nnad rn-borderBottomLeftRadius-1rz6xei rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-height-eu3ka rn-marginBottom-d0pm55 rn-marginLeft-1n0xq6e rn-marginRight-zso239 rn-marginTop-1g94qm0 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-overflowX-11yh6sk rn-overflowY-buy8e9 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
-      style={
-        Object {
-          "backgroundColor": "rgba(0,119,17,1)",
-        }
-      }
+      className="rn-alignItems-1oszu61 rn-alignSelf-k200y rn-backgroundColor-okrdqk rn-borderTopColor-10zesd1 rn-borderRightColor-uzbo9q rn-borderBottomColor-l6mxfb rn-borderLeftColor-1vgp64i rn-borderTopLeftRadius-3v92ek rn-borderTopRightRadius-fm6ini rn-borderBottomRightRadius-x4nnad rn-borderBottomLeftRadius-1rz6xei rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-height-eu3ka rn-marginBottom-d0pm55 rn-marginLeft-1n0xq6e rn-marginRight-zso239 rn-marginTop-1g94qm0 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-overflowX-11yh6sk rn-overflowY-buy8e9 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
     >
       <TouchableHighlight
         activeOpacity={0.85}
@@ -7374,8 +8029,7 @@ exports[`Buttons: ButtonGroup: [ prop: containerStyle ] enzyme-mount: snapshot 1
 
 exports[`Buttons: ButtonGroup: [ prop: containerStyle ] enzyme-render: snapshot 1`] = `
 <div
-  class="rn-alignItems-1oszu61 rn-borderTopColor-10zesd1 rn-borderRightColor-uzbo9q rn-borderBottomColor-l6mxfb rn-borderLeftColor-1vgp64i rn-borderTopLeftRadius-3v92ek rn-borderTopRightRadius-fm6ini rn-borderBottomRightRadius-x4nnad rn-borderBottomLeftRadius-1rz6xei rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-height-eu3ka rn-marginBottom-d0pm55 rn-marginLeft-1n0xq6e rn-marginRight-zso239 rn-marginTop-1g94qm0 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-overflowX-11yh6sk rn-overflowY-buy8e9 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
-  style="background-color:rgba(0,119,17,1);"
+  class="rn-alignItems-1oszu61 rn-alignSelf-k200y rn-backgroundColor-okrdqk rn-borderTopColor-10zesd1 rn-borderRightColor-uzbo9q rn-borderBottomColor-l6mxfb rn-borderLeftColor-1vgp64i rn-borderTopLeftRadius-3v92ek rn-borderTopRightRadius-fm6ini rn-borderBottomRightRadius-x4nnad rn-borderBottomLeftRadius-1rz6xei rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-height-eu3ka rn-marginBottom-d0pm55 rn-marginLeft-1n0xq6e rn-marginRight-zso239 rn-marginTop-1g94qm0 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-overflowX-11yh6sk rn-overflowY-buy8e9 rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
 >
   <div
     class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderBottomLeftRadius-1rz6xei rn-borderRightWidth-fnigne rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopLeftRadius-3v92ek rn-borderTopWidth-13yce4e rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-cursor-1loqt21 rn-display-6koalj rn-flex-13awgt0 rn-flexGrow-1m1wadx rn-flexShrink-1awmn5t rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-touchAction-1gvxusu rn-userSelect-lrvibr"
@@ -7433,7 +8087,7 @@ exports[`Buttons: ButtonGroup: [ prop: containerStyle ] enzyme-shallow: snapshot
     Array [
       113,
       Object {
-        "backgroundColor": "#071",
+        "alignSelf": "flex-start",
       },
     ]
   }

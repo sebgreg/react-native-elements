@@ -75,7 +75,7 @@ const props = {
   },
   containerStyle: {
     component: Component,
-    props: { buttons, containerStyle: { backgroundColor: '#071' } },
+    props: { buttons, containerStyle: { alignSelf: 'flex-start' } },
     enzyme: {
       tests: onlySnapshots,
     },
@@ -83,7 +83,28 @@ const props = {
   },
   buttonStyle: {
     component: Component,
-    props: { buttons, buttonStyle: { marginTop: -15 } },
+    props: {
+      buttons,
+      buttonStyle: {
+        width: 150,
+        backgroundColor: '#aaa',
+      },
+    },
+    enzyme: {
+      tests: onlySnapshots,
+    },
+    styleguidist: {},
+  },
+  'buttonStyle & containerStyle': {
+    component: Component,
+    props: {
+      buttons,
+      buttonStyle: {
+        width: 150,
+        backgroundColor: '#aaa',
+      },
+      containerStyle: { alignSelf: 'flex-start' },
+    },
     enzyme: {
       tests: onlySnapshots,
     },

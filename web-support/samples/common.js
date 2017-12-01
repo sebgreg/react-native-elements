@@ -133,7 +133,7 @@ export default {
   mocks: () => {
     Date.now = jest.fn(() => -3580994563);
   },
-  log: 'INFO',
+  log: 'WARN',
   enzyme: {
     run: true,
     createWrapper: createWrapperWithContext,

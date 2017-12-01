@@ -21,7 +21,7 @@ const props = {
   noProps: {
     component: Component,
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -29,7 +29,7 @@ const props = {
     component: Component,
     props: { name: 'pets' },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -37,35 +37,35 @@ const props = {
     component: Component,
     props: { name: 'sms', type: 'octicons' },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   size: {
     component: Component,
     props: { name: 'pets', size: 50 },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   color: {
     component: Component,
     props: { name: 'pets', color: '#071' },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   iconStyle: {
     component: Component,
     props: { name: 'pets', iconStyle: { transform: [{ rotateZ: '-45deg' }] } },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   component: {
     component: Component,
     props: { name: 'pets', component: TouchableWithoutFeedback },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {
       getJsxString: () => {
@@ -88,7 +88,7 @@ const props = {
       },
     },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   onLongPress: {
@@ -100,7 +100,7 @@ const props = {
       },
     },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   underlayColor: {
@@ -113,35 +113,35 @@ const props = {
       underlayColor: 'yellow',
     },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   reverse: {
     component: Component,
     props: { name: 'pets', reverse: true },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   raised: {
     component: Component,
     props: { name: 'pets', raised: true },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   containerStyle: {
     component: Component,
     props: { name: 'pets', containerStyle: { padding: 50 } },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
   reverseColor: {
     component: Component,
     props: { name: 'pets', reverse: true, reverseColor: '#071' },
     enzyme: {
-      tests: { shallow: snapShot() },
+      tests: { shallow: { snapshot: snapShot() } },
     },
   },
 };
