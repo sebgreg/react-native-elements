@@ -523,8 +523,6 @@ exports[`Icons: Icon: [ prop: underlayColor ] enzyme-shallow: snapshot 1`] = `
 exports[`Icons: SocialIcon: [ prop: button ] enzyme-shallow: snapshot 1`] = `
 <View
   disabled={false}
-  onLongPress={[Function]}
-  onPress={[Function]}
   style={
     Array [
       97,
@@ -539,7 +537,6 @@ exports[`Icons: SocialIcon: [ prop: button ] enzyme-shallow: snapshot 1`] = `
       undefined,
     ]
   }
-  underlayColor="#02b875"
 >
   <View
     style={98}
@@ -561,8 +558,6 @@ exports[`Icons: SocialIcon: [ prop: button ] enzyme-shallow: snapshot 1`] = `
 exports[`Icons: SocialIcon: [ prop: component ] enzyme-shallow: snapshot 1`] = `
 <View
   disabled={false}
-  onLongPress={[Function]}
-  onPress={[Function]}
   style={
     Array [
       97,
@@ -577,7 +572,6 @@ exports[`Icons: SocialIcon: [ prop: component ] enzyme-shallow: snapshot 1`] = `
       undefined,
     ]
   }
-  underlayColor="#02b875"
 >
   <View
     style={98}
@@ -599,8 +593,6 @@ exports[`Icons: SocialIcon: [ prop: component ] enzyme-shallow: snapshot 1`] = `
 exports[`Icons: SocialIcon: [ prop: disabled ] enzyme-shallow: snapshot 1`] = `
 <View
   disabled={true}
-  onLongPress={null}
-  onPress={[Function]}
   style={
     Array [
       97,
@@ -615,7 +607,6 @@ exports[`Icons: SocialIcon: [ prop: disabled ] enzyme-shallow: snapshot 1`] = `
       undefined,
     ]
   }
-  underlayColor="#02b875"
 >
   <View
     style={98}
@@ -637,8 +628,6 @@ exports[`Icons: SocialIcon: [ prop: disabled ] enzyme-shallow: snapshot 1`] = `
 exports[`Icons: SocialIcon: [ prop: fontFamily ] enzyme-shallow: snapshot 1`] = `
 <View
   disabled={false}
-  onLongPress={[Function]}
-  onPress={[Function]}
   style={
     Array [
       97,
@@ -653,7 +642,6 @@ exports[`Icons: SocialIcon: [ prop: fontFamily ] enzyme-shallow: snapshot 1`] = 
       undefined,
     ]
   }
-  underlayColor="#02b875"
 >
   <View
     style={98}
@@ -690,8 +678,6 @@ exports[`Icons: SocialIcon: [ prop: fontFamily ] enzyme-shallow: snapshot 1`] = 
 exports[`Icons: SocialIcon: [ prop: fontStyle ] enzyme-shallow: snapshot 1`] = `
 <View
   disabled={false}
-  onLongPress={[Function]}
-  onPress={[Function]}
   style={
     Array [
       97,
@@ -706,7 +692,6 @@ exports[`Icons: SocialIcon: [ prop: fontStyle ] enzyme-shallow: snapshot 1`] = `
       undefined,
     ]
   }
-  underlayColor="#02b875"
 >
   <View
     style={98}
@@ -743,8 +728,6 @@ exports[`Icons: SocialIcon: [ prop: fontStyle ] enzyme-shallow: snapshot 1`] = `
 exports[`Icons: SocialIcon: [ prop: fontWeight ] enzyme-shallow: snapshot 1`] = `
 <View
   disabled={false}
-  onLongPress={[Function]}
-  onPress={[Function]}
   style={
     Array [
       97,
@@ -759,7 +742,6 @@ exports[`Icons: SocialIcon: [ prop: fontWeight ] enzyme-shallow: snapshot 1`] = 
       undefined,
     ]
   }
-  underlayColor="#02b875"
 >
   <View
     style={98}
@@ -796,8 +778,6 @@ exports[`Icons: SocialIcon: [ prop: fontWeight ] enzyme-shallow: snapshot 1`] = 
 exports[`Icons: SocialIcon: [ prop: iconColor ] enzyme-shallow: snapshot 1`] = `
 <View
   disabled={false}
-  onLongPress={[Function]}
-  onPress={[Function]}
   style={
     Array [
       97,
@@ -812,7 +792,6 @@ exports[`Icons: SocialIcon: [ prop: iconColor ] enzyme-shallow: snapshot 1`] = `
       undefined,
     ]
   }
-  underlayColor="#02b875"
 >
   <View
     style={98}
@@ -834,8 +813,6 @@ exports[`Icons: SocialIcon: [ prop: iconColor ] enzyme-shallow: snapshot 1`] = `
 exports[`Icons: SocialIcon: [ prop: iconSize ] enzyme-shallow: snapshot 1`] = `
 <View
   disabled={false}
-  onLongPress={[Function]}
-  onPress={[Function]}
   style={
     Array [
       97,
@@ -850,7 +827,6 @@ exports[`Icons: SocialIcon: [ prop: iconSize ] enzyme-shallow: snapshot 1`] = `
       undefined,
     ]
   }
-  underlayColor="#02b875"
 >
   <View
     style={98}
@@ -872,8 +848,6 @@ exports[`Icons: SocialIcon: [ prop: iconSize ] enzyme-shallow: snapshot 1`] = `
 exports[`Icons: SocialIcon: [ prop: iconStyle ] enzyme-shallow: snapshot 1`] = `
 <View
   disabled={false}
-  onLongPress={[Function]}
-  onPress={[Function]}
   style={
     Array [
       97,
@@ -888,7 +862,6 @@ exports[`Icons: SocialIcon: [ prop: iconStyle ] enzyme-shallow: snapshot 1`] = `
       undefined,
     ]
   }
-  underlayColor="#02b875"
 >
   <View
     style={98}
@@ -916,8 +889,6 @@ exports[`Icons: SocialIcon: [ prop: iconStyle ] enzyme-shallow: snapshot 1`] = `
 exports[`Icons: SocialIcon: [ prop: light ] enzyme-shallow: snapshot 1`] = `
 <View
   disabled={false}
-  onLongPress={[Function]}
-  onPress={[Function]}
   style={
     Array [
       97,
@@ -934,7 +905,6 @@ exports[`Icons: SocialIcon: [ prop: light ] enzyme-shallow: snapshot 1`] = `
       undefined,
     ]
   }
-  underlayColor="white"
 >
   <View
     style={98}
@@ -956,8 +926,6 @@ exports[`Icons: SocialIcon: [ prop: light ] enzyme-shallow: snapshot 1`] = `
 exports[`Icons: SocialIcon: [ prop: loading ] enzyme-shallow: snapshot 1`] = `
 <View
   disabled={false}
-  onLongPress={[Function]}
-  onPress={[Function]}
   style={
     Array [
       97,
@@ -972,7 +940,6 @@ exports[`Icons: SocialIcon: [ prop: loading ] enzyme-shallow: snapshot 1`] = `
       undefined,
     ]
   }
-  underlayColor="#02b875"
 >
   <View
     style={98}
@@ -1019,8 +986,6 @@ exports[`Icons: SocialIcon: [ prop: loading ] enzyme-shallow: snapshot 1`] = `
 exports[`Icons: SocialIcon: [ prop: noProps ] enzyme-shallow: snapshot 1`] = `
 <View
   disabled={false}
-  onLongPress={[Function]}
-  onPress={[Function]}
   style={
     Array [
       97,
@@ -1072,7 +1037,7 @@ exports[`Icons: SocialIcon: [ prop: onLongPress ] enzyme-shallow: snapshot 1`] =
       undefined,
     ]
   }
-  underlayColor="#02b875"
+  underlayColor="black"
 >
   <View
     style={98}
@@ -1111,7 +1076,7 @@ exports[`Icons: SocialIcon: [ prop: onPress ] enzyme-shallow: snapshot 1`] = `
       undefined,
     ]
   }
-  underlayColor="#02b875"
+  underlayColor="black"
 >
   <View
     style={98}
@@ -1133,8 +1098,6 @@ exports[`Icons: SocialIcon: [ prop: onPress ] enzyme-shallow: snapshot 1`] = `
 exports[`Icons: SocialIcon: [ prop: raised ] enzyme-shallow: snapshot 1`] = `
 <View
   disabled={false}
-  onLongPress={[Function]}
-  onPress={[Function]}
   style={
     Array [
       false,
@@ -1153,7 +1116,6 @@ exports[`Icons: SocialIcon: [ prop: raised ] enzyme-shallow: snapshot 1`] = `
       undefined,
     ]
   }
-  underlayColor="#02b875"
 >
   <View
     style={98}
@@ -1175,8 +1137,6 @@ exports[`Icons: SocialIcon: [ prop: raised ] enzyme-shallow: snapshot 1`] = `
 exports[`Icons: SocialIcon: [ prop: style ] enzyme-shallow: snapshot 1`] = `
 <View
   disabled={false}
-  onLongPress={[Function]}
-  onPress={[Function]}
   style={
     Array [
       97,
@@ -1198,7 +1158,6 @@ exports[`Icons: SocialIcon: [ prop: style ] enzyme-shallow: snapshot 1`] = `
       },
     ]
   }
-  underlayColor="#02b875"
 >
   <View
     style={98}
@@ -1220,8 +1179,6 @@ exports[`Icons: SocialIcon: [ prop: style ] enzyme-shallow: snapshot 1`] = `
 exports[`Icons: SocialIcon: [ prop: title ] enzyme-shallow: snapshot 1`] = `
 <View
   disabled={false}
-  onLongPress={[Function]}
-  onPress={[Function]}
   style={
     Array [
       97,
@@ -1236,7 +1193,6 @@ exports[`Icons: SocialIcon: [ prop: title ] enzyme-shallow: snapshot 1`] = `
       undefined,
     ]
   }
-  underlayColor="#02b875"
 >
   <View
     style={98}
@@ -1271,8 +1227,6 @@ exports[`Icons: SocialIcon: [ prop: title ] enzyme-shallow: snapshot 1`] = `
 exports[`Icons: SocialIcon: [ prop: type ] enzyme-shallow: snapshot 1`] = `
 <View
   disabled={false}
-  onLongPress={[Function]}
-  onPress={[Function]}
   style={
     Array [
       97,
@@ -1287,7 +1241,6 @@ exports[`Icons: SocialIcon: [ prop: type ] enzyme-shallow: snapshot 1`] = `
       undefined,
     ]
   }
-  underlayColor="#02b875"
 >
   <View
     style={98}
@@ -1326,7 +1279,7 @@ exports[`Icons: SocialIcon: [ prop: underlayColor ] enzyme-shallow: snapshot 1`]
       undefined,
     ]
   }
-  underlayColor="yellow"
+  underlayColor="black"
 >
   <View
     style={98}

@@ -62,26 +62,14 @@ const props = {
   },
   children: {
     component: Component,
-    props: { value: 'seven' },
+    children: [
+      <Text style={{ color: 'white' }}>a text node</Text>,
+      <Text style={{ color: 'white' }}>a text node</Text>,
+    ],
     enzyme: {
-      buildJsx: attr => {
-        return (
-          <Badge>
-            <Text>a text node</Text>
-          </Badge>
-        );
-      },
       tests: onlySnapshots,
     },
-    getJsxString: () => {
-      return (
-        'const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;\n' +
-        '<Badge \n' +
-        '  component={TouchableWithoutFeedback}\n' +
-        "  onPress={() => alert('pressed')}\n" +
-        '/>'
-      );
-    },
+    styleguidist: {},
   },
   onPress: {
     component: Component,

@@ -189,7 +189,7 @@ exports[`Card: Card: [ prop: dividerStyle ] enzyme-mount: snapshot 1`] = `
 <Card
   dividerStyle={
     Object {
-      "color": "#4b5",
+      "backgroundColor": "#4b5",
       "height": 5,
     }
   }
@@ -268,7 +268,7 @@ exports[`Card: Card: [ prop: dividerStyle ] enzyme-mount: snapshot 1`] = `
                   Array [
                     119,
                     Object {
-                      "color": "#4b5",
+                      "backgroundColor": "#4b5",
                       "height": 5,
                     },
                   ]
@@ -281,7 +281,7 @@ exports[`Card: Card: [ prop: dividerStyle ] enzyme-mount: snapshot 1`] = `
                       Array [
                         119,
                         Object {
-                          "color": "#4b5",
+                          "backgroundColor": "#4b5",
                           "height": 5,
                         },
                       ],
@@ -289,10 +289,10 @@ exports[`Card: Card: [ prop: dividerStyle ] enzyme-mount: snapshot 1`] = `
                   }
                 >
                   <div
-                    className="rn-alignItems-1oszu61 rn-backgroundColor-lq4czt rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-4v7adb rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-ku1wi2 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+                    className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-4v7adb rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-ku1wi2 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
                     style={
                       Object {
-                        "color": "rgba(68,187,85,1)",
+                        "backgroundColor": "rgba(68,187,85,1)",
                       }
                     }
                   />
@@ -384,8 +384,8 @@ exports[`Card: Card: [ prop: dividerStyle ] enzyme-render: snapshot 1`] = `
         Current Events
       </div>
       <div
-        class="rn-alignItems-1oszu61 rn-backgroundColor-lq4czt rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-4v7adb rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-ku1wi2 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
-        style="color:rgba(68,187,85,1);"
+        class="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-4v7adb rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginLeft-11wrixw rn-marginBottom-ku1wi2 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+        style="background-color:rgba(68,187,85,1);"
       />
     </div>
     <div
@@ -441,7 +441,7 @@ exports[`Card: Card: [ prop: dividerStyle ] enzyme-shallow: snapshot 1`] = `
           Array [
             119,
             Object {
-              "color": "#4b5",
+              "backgroundColor": "#4b5",
               "height": 5,
             },
           ]

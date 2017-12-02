@@ -10,7 +10,7 @@
 | Buttons      | 2017-11-09    | [low](#button-changes)      | 2017-11-29 |
 | Card         | 2017-11-10    | no changes                  | 2017-12-01 |
 | Checkbox     | 2017-11-10    | no changes                  |
-| Divider      | 2017-11-10    | no changes                  |
+| Divider      | 2017-11-10    | no changes                  | 2017-12-02 |
 | Forms        | 2017-11-11    | [low](#form-changes)        | 2017-11-29 |
 | Header       | 2017-11-07    | no changes                  |
 | Icon         | 2017-11-07    | [med](#icon-changes)        | 2017-11-30 |
@@ -104,9 +104,6 @@ note: "dom prop warnings" refer to console.warn messages which alert the develop
 
 ### ButtonGroup:
 **question**:  `containerBorderRadius` prop has no effect on web.  current source is labelled as a workaround.  implement a workaround for web or chang the whole thing?
-
-### Card:
-**note**:  `imageWrapperStyle` prop does not appear to affect the correct View
 
 ### Icon:
 **suggestion**:  new prop to set Text node's `selectable` prop, defaults to false

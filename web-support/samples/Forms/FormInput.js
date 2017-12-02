@@ -68,8 +68,6 @@ const textInputRef = {
     },
     tests: {
       shallow: { snapshot: snapShot() },
-      mount: { snapshot: snapShot() },
-      render: { snapshot: snapShot() },
     },
   },
 };
@@ -80,8 +78,6 @@ const containerRef = {
   enzyme: {
     tests: {
       shallow: { snapshot: snapShot() },
-      mount: { snapshot: snapShot() },
-      render: { snapshot: snapShot() },
     },
   },
 };

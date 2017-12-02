@@ -11,6 +11,8 @@ import _avatar from './Avatar';
 import _badge from './Badge';
 import _buttons from './Buttons';
 import _card from './Card';
+import _checkbox from './CheckBox';
+import _divider from './Divider';
 import _icons from './Icons';
 import _forms from './Forms';
 import _rating from './Rating';
@@ -31,6 +33,14 @@ export default {
   Card: {
     title: 'Card',
     sectionComponents: _card,
+  },
+  CheckBox: {
+    title: 'CheckBox',
+    sectionComponents: _checkbox,
+  },
+  Divider: {
+    title: 'Divider',
+    sectionComponents: _divider,
   },
   Icons: {
     title: 'Icons',

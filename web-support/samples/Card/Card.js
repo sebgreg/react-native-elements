@@ -129,7 +129,7 @@ const props = {
     component: Component,
     props: {
       title: 'Current Events',
-      dividerStyle: { color: '#4b5', height: 5 },
+      dividerStyle: { backgroundColor: '#4b5', height: 5 },
     },
     children,
     enzyme: {
