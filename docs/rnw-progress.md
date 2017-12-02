@@ -5,10 +5,10 @@
 | Component    | initial check | estimated effort            | add tests  | final |
 | ------------ | ------------- | --------------------------- | ---------- | ----- |
 | Avatar       | 2017-11-08    | [med](#avatar-changes)      | 2017-11-29 |
-| Badge        | 2017-11-10    | [med](#badge-changes)       |
+| Badge        | 2017-11-10    | [med](#badge-changes)       | 2017-12-01 |
 | Button Group | 2017-11-11    | [low](#buttongroup-changes) | 2017-11-29 |
 | Buttons      | 2017-11-09    | [low](#button-changes)      | 2017-11-29 |
-| Card         | 2017-11-10    | no changes                  |
+| Card         | 2017-11-10    | no changes                  | 2017-12-01 |
 | Checkbox     | 2017-11-10    | no changes                  |
 | Divider      | 2017-11-10    | no changes                  |
 | Forms        | 2017-11-11    | [low](#form-changes)        | 2017-11-29 |
@@ -24,55 +24,54 @@
 | Tiles        | 2017-11-12    | [med](#tile-changes)        |
 
 ## Component Changes
+note: "dom prop warnings" refer to console.warn messages which alert the developer that a dom element has been passed props it connot recognize
 
 ### Avatar changes
-- avoid dom prop warnings
-  - using `touchableProps` object, empty if View, then added via {...touchableProps}
-- seems to work ok, but need to investigate why styleguidist can't parse
-  - changed component proptype from .oneOf([...components]) to .any
+- fix: for `onPress`, `onLongPress`, and `activeOpactiy`: utilize `touchableProps` object, empty if View, then added via `"{...touchableProps}"` - to avoid dom prop warnings
+- fix: `iconStyle` was not being passed to Icon - see [below](#outstanding)
+- fix: set `draggable` to false for Image
+- fix: changed `component` proptype from `.oneOf([...components])` to `.any` to make styleguide (react-docgen) happy
+- fix: added web support for `raised` prop
 
 ### Badge changes
-- set width instead of 100%
+- fix: removed isValidElement check for `control` prop
 
 ### Button changes
-- add support for raised
-- `leftIcon` and `rightIcon` cause React.createElement errors during run, but produce acceptable snapshots
+- fix: add web support for raised
+- fix: for `Component`, `leftIcon`, and `rightIcon`: delete from `attributes`- to avoid dom prop warnings
 
 ### ButtonGroup changes
-- avoid dom prop warnings
-  - use {...opacityProps} and {...highlightProps}
-  - add defaultProps: {underlayColor: '#ffffff'} to keep orig behaviour
-- add units to numeric props
-- prop: `containerBorderRadius` - see [below](#outstanding)
+- fix: for `activeOpacity`, `setOpactityTo`: introduce `{...opacityProps}` and for `onHideUnderlay`, `onShowUnderlay`, `underlayColor`: `{...highlightProps}` - to avoid dom prop warnings
+- fix: add defaultProps: `{underlayColor: '#ffffff'}` to keep orig behaviour
 
-### Form changes
-- avoid dom prop warnings
+### FormInput changes
+- fix: `shake` and `textInputRef` added to props destructuring to avoid dom prop warnings
 
 ### Icon changes
-- avoid dom prop warnings
-  - use {...touchableProps}
-- fix: `iconStyle` was not being passed to Icon - see [below](#outstanding)
-- change: applied `borderRadius`, `height`, and `width` to all, not just reverse or raised - see [below](#outstanding)
-- TODO: doc example for icon font injection
+- fix: for `onPress`, `onLongPress`, `underlayColor` use `{...touchableProps}` to avoid dom prop warnings
+- fix: applied `borderRadius`, `height`, and `width` to all, not just reverse or raised - see [below](#outstanding)
+- fix: added web support for `raised` prop
 
 ### Rating changes
-- Keep images from being dragged
-  - solution:
-    - modified props to Views:
-      - added draggable={false}
-      - changed pointerEvents; `box-none` for parent View, `none` for Image
-- mouseclick & mousemove seem off from displayed position
+- fix: added `draggable={false}` to keep Image elements from dragging instead of chaning the rating
+- fix: changed pointerEvents; `box-none` for parent View, `none` for Image
+- fix: changed the way Animated was being used:
+  - switched from ValueXY to Value - only need X
+  - keep one instance-wide Animated.Value instead of creating new.  Change value via SetValue()
+  - simplified interpolations
 
 ### SearchBar changes
-- for styleguidist:
-  - rename class from `Search` to `SearchBar`
+- change: renamed class from `Search` to `SearchBar` for styleguidist
 
 ### Slider changes
-- avoid dom prop warnings
-- small fix for `minimumTrackStyle` margin
+- fix: `thumbTouchSize`, `animationType`, `animateTransitions`: added to props destructuring to avoid dom prop warnings
+- fix: removed `marginTop` from `minimumTrackStyle`.  No negative effect on android
+
+### SocialIcon changes
+- fix: added web support for `raised` prop
 
 ### Text changes
-- for styleguidist:
+- change: for styleguidist:
   - rename function from `TextElement` to `Text`
   - rename import from `Text` to `NativeText`
 
@@ -90,6 +89,9 @@
 
 ## Outstanding
 
+### Themes & Styles:
+**note**:  planning to handle this with documentation and examples
+
 ### Badge:
 **suggestion**:  new prop to set Text node's `selectable` prop, defaults to false
 
@@ -97,8 +99,14 @@
 
 **confirm**:  ok to disable validElement check for `control` prop?
 
+### Button
+**note**: `leftIcon` and `rightIcon` cause React.createElement errors during run, but produce acceptable snapshots
+
 ### ButtonGroup:
 **question**:  `containerBorderRadius` prop has no effect on web.  current source is labelled as a workaround.  implement a workaround for web or chang the whole thing?
+
+### Card:
+**note**:  `imageWrapperStyle` prop does not appear to affect the correct View
 
 ### Icon:
 **suggestion**:  new prop to set Text node's `selectable` prop, defaults to false
@@ -107,9 +115,9 @@
 
 **confirm**:  are changes to `iconStyle` prop ok?
 
-**confirm**:  are chagnes to `borderRadius`, `height`, and `width` ok?
+**confirm**:  are channges to `borderRadius`, `height`, and `width` ok?
 
-### Raing
+### Rating
 **suggestion**: check for existance of `extractOffset` function and use it if available
   - mouseclick & mousemove seem off from displayed position (more obvious on web)
   - later versions of react-native support `extractOffset` to make this behave better

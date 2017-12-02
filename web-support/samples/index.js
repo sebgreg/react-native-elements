@@ -10,6 +10,7 @@ export {
 import _avatar from './Avatar';
 import _badge from './Badge';
 import _buttons from './Buttons';
+import _card from './Card';
 import _icons from './Icons';
 import _forms from './Forms';
 import _rating from './Rating';
@@ -26,6 +27,10 @@ export default {
   Buttons: {
     title: 'Buttons',
     sectionComponents: _buttons,
+  },
+  Card: {
+    title: 'Card',
+    sectionComponents: _card,
   },
   Icons: {
     title: 'Icons',
