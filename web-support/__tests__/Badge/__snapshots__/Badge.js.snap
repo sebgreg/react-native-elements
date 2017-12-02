@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Badge: Badge: [ prop: children ] enzyme-mount: snapshot 1`] = `
-<Badge
-  value="seven"
->
+<Badge>
   <View
     style={
       Array [
@@ -27,17 +25,30 @@ exports[`Badge: Badge: [ prop: children ] enzyme-mount: snapshot 1`] = `
         >
           <Text
             style={
-              Array [
-                80,
-                undefined,
-              ]
+              Object {
+                "color": "white",
+              }
             }
           >
             <div
               className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-13p8erv rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
               dir="auto"
             >
-              seven
+              a text node
+            </div>
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "white",
+              }
+            }
+          >
+            <div
+              className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-13p8erv rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+              dir="auto"
+            >
+              a text node
             </div>
           </Text>
         </div>
@@ -58,7 +69,13 @@ exports[`Badge: Badge: [ prop: children ] enzyme-render: snapshot 1`] = `
       class="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-13p8erv rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
       dir="auto"
     >
-      seven
+      a text node
+    </div>
+    <div
+      class="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-color-13p8erv rn-display-1471scf rn-font-1lw9tu2 rn-fontFamily-10u92zi rn-fontSize-1b43r93 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+      dir="auto"
+    >
+      a text node
     </div>
   </div>
 </div>
@@ -82,13 +99,21 @@ exports[`Badge: Badge: [ prop: children ] enzyme-shallow: snapshot 1`] = `
   >
     <Text
       style={
-        Array [
-          80,
-          undefined,
-        ]
+        Object {
+          "color": "white",
+        }
       }
     >
-      seven
+      a text node
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "white",
+        }
+      }
+    >
+      a text node
     </Text>
   </View>
 </View>

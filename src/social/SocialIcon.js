@@ -5,6 +5,7 @@ import {
   StyleSheet,
   Platform,
   TouchableHighlight,
+  TouchableOpacity,
   ActivityIndicator,
   Text as NativeText,
 } from 'react-native';
@@ -66,8 +67,21 @@ const SocialIcon = props => {
     ...attributes
   } = props;
 
-  const Component =
-    onPress || onLongPress ? component || TouchableHighlight : View;
+  let touchableProps = {};
+  let opacityProps = {};
+  let Component = View;
+  if (onPress || onLongPress) {
+    touchableProps = {
+      onPress: (!disabled || log) && (onPress || log),
+      onLongPress: disabled ? null : onLongPress || log,
+    };
+    Component = component || TouchableHighlight;
+  }
+  if (Component == TouchableOpacity) {
+    opacityProps = {
+      underlayColor: light ? 'white' : underlayColor || colors[type],
+    };
+  }
   let loadingElement;
   if (loading) {
     loadingElement = (
@@ -82,9 +96,8 @@ const SocialIcon = props => {
   return (
     <Component
       {...attributes}
-      underlayColor={light ? 'white' : underlayColor || colors[type]}
-      onLongPress={disabled ? null : onLongPress || log}
-      onPress={(!disabled || log) && (onPress || log)}
+      {...touchableProps}
+      {...opacityProps}
       disabled={disabled || false}
       style={[
         raised && styles.raised,

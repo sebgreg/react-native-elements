@@ -131,6 +131,10 @@ const Button = props => {
     Component = TouchableHighlight;
   }
 
+  let highlightProps = {};
+  if (Component == TouchableHighlight)
+    highlightProps = { underlayColor: underlayColor || 'transparent' };
+
   if (Platform.OS === 'android' && (borderRadius && !attributes.background)) {
     if (Platform.Version >= 21) {
       attributes.background = TouchableNativeFeedback.Ripple(
@@ -170,7 +174,7 @@ const Button = props => {
     >
       <Component
         {...attributes}
-        underlayColor={underlayColor || 'transparent'}
+        {...highlightProps}
         onPress={onPress || log}
         disabled={disabled || false}
       >

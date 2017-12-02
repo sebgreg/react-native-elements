@@ -33,8 +33,10 @@ const Badge = props => {
     console.error('Badge can only contain either child element or value');
   }
 
+  let touchableProps = {};
   if (!component && onPress) {
     Component = TouchableOpacity;
+    touchableProps = { onPress };
   }
 
   if (component) Component = component;
@@ -44,7 +46,7 @@ const Badge = props => {
       <Component
         {...attributes}
         style={[styles.badge, containerStyle && containerStyle]}
-        onPress={onPress}
+        {...touchableProps}
       >
         {childElement}
       </Component>
