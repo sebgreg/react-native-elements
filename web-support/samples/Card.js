@@ -14,8 +14,8 @@ import {
   ensureCalled,
   onlyEnsureCalled,
   onlySnapshots,
-} from '../';
-import { Card as Component } from '../../../src';
+} from './';
+import { Card as Component } from '../../src';
 
 const children = [
   <View key="v0" style={{ width: 50, height: 50, backgroundColor: '#071' }} />,

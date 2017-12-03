@@ -14,8 +14,8 @@ import {
   ensureCalled,
   onlyEnsureCalled,
   onlySnapshots,
-} from '../';
-import { CheckBox as Component } from '../../../src';
+} from './';
+import { CheckBox as Component } from '../../src';
 
 const props = {
   noProps: {
@@ -151,7 +151,131 @@ const props = {
   'onLongPress, title, checked, & onIconPress': {
     component: Component,
     props: {
-      right: true,
+      title: 'title',
+      checked: true,
+      onIconPress: () => {
+        let x = 7;
+      },
+      onLongPress: () => {
+        let y = 8;
+      },
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {
+      script: `initialState = { checked: false };`,
+      getJsxString: () =>
+        `<CheckBox\n` +
+        `  title="title"\n` +
+        `  checked={state.checked}\n` +
+        `  onIconPress={() => {\n` +
+        `    setState({ checked: !state.checked });\n` +
+        `  }}\n` +
+        `  onLongPress={() => {\n` +
+        `    alert("pressed, long");\n` +
+        `  }}\n` +
+        `/>`,
+    },
+  },
+  'onLongIconPress, title, checked, & onIconPress': {
+    component: Component,
+    props: {
+      title: 'title',
+      checked: true,
+      onIconPress: () => {
+        let x = 7;
+      },
+      onLongPress: () => {
+        let y = 8;
+      },
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {
+      script:
+        `// onLongIconPress is not working on web platform\nq` +
+        `initialState = { checked: false };`,
+      getJsxString: () =>
+        `<CheckBox\n` +
+        `  title="title"\n` +
+        `  checked={state.checked}\n` +
+        `  onIconPress={() => {\n` +
+        `    setState({ checked: !state.checked });\n` +
+        `  }}\n` +
+        `  onLongIconPress={() => {\n` +
+        `    alert("pressed, long");\n` +
+        `  }}\n` +
+        `/>`,
+    },
+  },
+  'onPress, title, checked, & onIconPress': {
+    component: Component,
+    props: {
+      title: 'title',
+      checked: true,
+      onIconPress: () => {
+        let x = 7;
+      },
+      onPress: () => {
+        let y = 8;
+      },
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {
+      script: `initialState = { checked: false };`,
+      getJsxString: () =>
+        `<CheckBox\n` +
+        `  title="title"\n` +
+        `  checked={state.checked}\n` +
+        `  onIconPress={() => {\n` +
+        `    setState({ checked: !state.checked });\n` +
+        `  }}\n` +
+        `  onPress={() => {\n` +
+        `    setState({ checked: !state.checked });\n` +
+        `  }}\n` +
+        `/>`,
+    },
+  },
+  checkedIcon: {
+    component: Component,
+    props: { checked: true, checkedIcon: 'bell-o' },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  uncheckedIcon: {
+    component: Component,
+    props: { uncheckedIcon: 'bell-slash-o' },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  checkedColor: {
+    component: Component,
+    props: { checked: true, checkedColor: '#22d' },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  uncheckedColor: {
+    component: Component,
+    props: { uncheckedColor: '#d22' },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  'checkedTitle, title, checked, & onIconPress': {
+    component: Component,
+    props: {
+      checkedTitle: 'title - is checked',
       title: 'title',
       checked: true,
       onIconPress: () => {
@@ -165,7 +289,7 @@ const props = {
       script: `initialState = { checked: false };`,
       getJsxString: () =>
         `<CheckBox\n` +
-        `  right\n` +
+        `  checkedTitle="title - is checked"\n` +
         `  title="title"\n` +
         `  checked={state.checked}\n` +
         `  onIconPress={() => {\n` +
@@ -173,6 +297,14 @@ const props = {
         `  }}\n` +
         `/>`,
     },
+  },
+  fontFamily: {
+    component: Component,
+    props: { title: 'title', fontFamily: 'Courier New' },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
   },
 };
 

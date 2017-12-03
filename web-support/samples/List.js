@@ -14,22 +14,31 @@ import {
   ensureCalled,
   onlyEnsureCalled,
   onlySnapshots,
-} from '../';
-import { Divider as Component } from '../../../src';
+} from './';
+import { List as Component, ListItem } from '../../src';
+
+const children = [
+  <ListItem key="v0" title="item 1" />,
+  <ListItem key="v1" title="item 2" />,
+  <ListItem key="v2" title="item 3" />,
+];
 
 const props = {
-  noProps: {
+  'no props': {
     component: Component,
     enzyme: {
       tests: onlySnapshots,
     },
     styleguidist: {},
   },
-  style: {
+  containerStyle: {
     component: Component,
-    props: { style: { backgroundColor: '#071', height: 5 } },
+    children,
+    props: {
+      containerStyle: { borderWidth: 5 },
+    },
     enzyme: {
-      tests: onlySnapshots,
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },

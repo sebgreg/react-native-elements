@@ -14,8 +14,8 @@ import {
   ensureCalled,
   onlyEnsureCalled,
   onlySnapshots,
-} from '../';
-import { Badge as Component } from '../../../src';
+} from './';
+import { Badge as Component } from '../../src';
 
 const props = {
   noProps: {

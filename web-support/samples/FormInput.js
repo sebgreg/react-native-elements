@@ -7,8 +7,8 @@ import {
   ensureCalled,
   onlyEnsureCalled,
   onlySnapshots,
-} from '../';
-import { FormInput as Component } from '../../../src';
+} from './';
+import { FormInput as Component } from '../../src';
 
 // props
 const noProps = {
