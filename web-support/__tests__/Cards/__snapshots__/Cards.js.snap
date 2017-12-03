@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card: Card: [ prop: containerStyle ] enzyme-mount: snapshot 1`] = `
+exports[`Cards: Card: [ prop: containerStyle ] enzyme-mount: snapshot 1`] = `
 <Card
   containerStyle={
     Object {
@@ -109,7 +109,7 @@ exports[`Card: Card: [ prop: containerStyle ] enzyme-mount: snapshot 1`] = `
 </Card>
 `;
 
-exports[`Card: Card: [ prop: containerStyle ] enzyme-render: snapshot 1`] = `
+exports[`Cards: Card: [ prop: containerStyle ] enzyme-render: snapshot 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim"
   style="border-top-width:5px;border-right-width:5px;border-bottom-width:5px;border-left-width:5px;"
@@ -133,7 +133,7 @@ exports[`Card: Card: [ prop: containerStyle ] enzyme-render: snapshot 1`] = `
 </div>
 `;
 
-exports[`Card: Card: [ prop: containerStyle ] enzyme-shallow: snapshot 1`] = `
+exports[`Cards: Card: [ prop: containerStyle ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
@@ -185,7 +185,7 @@ exports[`Card: Card: [ prop: containerStyle ] enzyme-shallow: snapshot 1`] = `
 </View>
 `;
 
-exports[`Card: Card: [ prop: dividerStyle ] enzyme-mount: snapshot 1`] = `
+exports[`Cards: Card: [ prop: dividerStyle ] enzyme-mount: snapshot 1`] = `
 <Card
   dividerStyle={
     Object {
@@ -367,7 +367,7 @@ exports[`Card: Card: [ prop: dividerStyle ] enzyme-mount: snapshot 1`] = `
 </Card>
 `;
 
-exports[`Card: Card: [ prop: dividerStyle ] enzyme-render: snapshot 1`] = `
+exports[`Cards: Card: [ prop: dividerStyle ] enzyme-render: snapshot 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim"
 >
@@ -404,7 +404,7 @@ exports[`Card: Card: [ prop: dividerStyle ] enzyme-render: snapshot 1`] = `
 </div>
 `;
 
-exports[`Card: Card: [ prop: dividerStyle ] enzyme-shallow: snapshot 1`] = `
+exports[`Cards: Card: [ prop: dividerStyle ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
@@ -479,7 +479,7 @@ exports[`Card: Card: [ prop: dividerStyle ] enzyme-shallow: snapshot 1`] = `
 </View>
 `;
 
-exports[`Card: Card: [ prop: featuredSubtitle ] enzyme-mount: snapshot 1`] = `
+exports[`Cards: Card: [ prop: featuredSubtitle ] enzyme-mount: snapshot 1`] = `
 <Card
   featuredSubtitle="something"
   featuredTitle="Current Events"
@@ -716,7 +716,7 @@ exports[`Card: Card: [ prop: featuredSubtitle ] enzyme-mount: snapshot 1`] = `
 </Card>
 `;
 
-exports[`Card: Card: [ prop: featuredSubtitle ] enzyme-render: snapshot 1`] = `
+exports[`Cards: Card: [ prop: featuredSubtitle ] enzyme-render: snapshot 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
 >
@@ -768,7 +768,7 @@ exports[`Card: Card: [ prop: featuredSubtitle ] enzyme-render: snapshot 1`] = `
 </div>
 `;
 
-exports[`Card: Card: [ prop: featuredSubtitle ] enzyme-shallow: snapshot 1`] = `
+exports[`Cards: Card: [ prop: featuredSubtitle ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
@@ -871,7 +871,7 @@ exports[`Card: Card: [ prop: featuredSubtitle ] enzyme-shallow: snapshot 1`] = `
 </View>
 `;
 
-exports[`Card: Card: [ prop: featuredSubtitleStyle ] enzyme-mount: snapshot 1`] = `
+exports[`Cards: Card: [ prop: featuredSubtitleStyle ] enzyme-mount: snapshot 1`] = `
 <Card
   featuredSubtitle="something"
   featuredSubtitleStyle={
@@ -1122,7 +1122,7 @@ exports[`Card: Card: [ prop: featuredSubtitleStyle ] enzyme-mount: snapshot 1`] 
 </Card>
 `;
 
-exports[`Card: Card: [ prop: featuredSubtitleStyle ] enzyme-render: snapshot 1`] = `
+exports[`Cards: Card: [ prop: featuredSubtitleStyle ] enzyme-render: snapshot 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
 >
@@ -1175,7 +1175,7 @@ exports[`Card: Card: [ prop: featuredSubtitleStyle ] enzyme-render: snapshot 1`]
 </div>
 `;
 
-exports[`Card: Card: [ prop: featuredSubtitleStyle ] enzyme-shallow: snapshot 1`] = `
+exports[`Cards: Card: [ prop: featuredSubtitleStyle ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
@@ -1280,7 +1280,7 @@ exports[`Card: Card: [ prop: featuredSubtitleStyle ] enzyme-shallow: snapshot 1`
 </View>
 `;
 
-exports[`Card: Card: [ prop: featuredTitle ] enzyme-mount: snapshot 1`] = `
+exports[`Cards: Card: [ prop: featuredTitle ] enzyme-mount: snapshot 1`] = `
 <Card
   featuredTitle="Current Events"
   image="hero.jpg"
@@ -1480,7 +1480,7 @@ exports[`Card: Card: [ prop: featuredTitle ] enzyme-mount: snapshot 1`] = `
 </Card>
 `;
 
-exports[`Card: Card: [ prop: featuredTitle ] enzyme-render: snapshot 1`] = `
+exports[`Cards: Card: [ prop: featuredTitle ] enzyme-render: snapshot 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
 >
@@ -1526,7 +1526,7 @@ exports[`Card: Card: [ prop: featuredTitle ] enzyme-render: snapshot 1`] = `
 </div>
 `;
 
-exports[`Card: Card: [ prop: featuredTitle ] enzyme-shallow: snapshot 1`] = `
+exports[`Cards: Card: [ prop: featuredTitle ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
@@ -1619,7 +1619,7 @@ exports[`Card: Card: [ prop: featuredTitle ] enzyme-shallow: snapshot 1`] = `
 </View>
 `;
 
-exports[`Card: Card: [ prop: featuredTitleStyle ] enzyme-mount: snapshot 1`] = `
+exports[`Cards: Card: [ prop: featuredTitleStyle ] enzyme-mount: snapshot 1`] = `
 <Card
   featuredTitle="Current Events"
   featuredTitleStyle={
@@ -1833,7 +1833,7 @@ exports[`Card: Card: [ prop: featuredTitleStyle ] enzyme-mount: snapshot 1`] = `
 </Card>
 `;
 
-exports[`Card: Card: [ prop: featuredTitleStyle ] enzyme-render: snapshot 1`] = `
+exports[`Cards: Card: [ prop: featuredTitleStyle ] enzyme-render: snapshot 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
 >
@@ -1880,7 +1880,7 @@ exports[`Card: Card: [ prop: featuredTitleStyle ] enzyme-render: snapshot 1`] = 
 </div>
 `;
 
-exports[`Card: Card: [ prop: featuredTitleStyle ] enzyme-shallow: snapshot 1`] = `
+exports[`Cards: Card: [ prop: featuredTitleStyle ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
@@ -1975,7 +1975,7 @@ exports[`Card: Card: [ prop: featuredTitleStyle ] enzyme-shallow: snapshot 1`] =
 </View>
 `;
 
-exports[`Card: Card: [ prop: flexDirection ] enzyme-mount: snapshot 1`] = `
+exports[`Cards: Card: [ prop: flexDirection ] enzyme-mount: snapshot 1`] = `
 <Card
   flexDirection="row"
 >
@@ -2072,7 +2072,7 @@ exports[`Card: Card: [ prop: flexDirection ] enzyme-mount: snapshot 1`] = `
 </Card>
 `;
 
-exports[`Card: Card: [ prop: flexDirection ] enzyme-render: snapshot 1`] = `
+exports[`Cards: Card: [ prop: flexDirection ] enzyme-render: snapshot 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim"
 >
@@ -2095,7 +2095,7 @@ exports[`Card: Card: [ prop: flexDirection ] enzyme-render: snapshot 1`] = `
 </div>
 `;
 
-exports[`Card: Card: [ prop: flexDirection ] enzyme-shallow: snapshot 1`] = `
+exports[`Cards: Card: [ prop: flexDirection ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
@@ -2147,7 +2147,7 @@ exports[`Card: Card: [ prop: flexDirection ] enzyme-shallow: snapshot 1`] = `
 </View>
 `;
 
-exports[`Card: Card: [ prop: fontFamily ] enzyme-mount: snapshot 1`] = `
+exports[`Cards: Card: [ prop: fontFamily ] enzyme-mount: snapshot 1`] = `
 <Card
   fontFamily="Courier New"
   title="Current Events"
@@ -2322,7 +2322,7 @@ exports[`Card: Card: [ prop: fontFamily ] enzyme-mount: snapshot 1`] = `
 </Card>
 `;
 
-exports[`Card: Card: [ prop: fontFamily ] enzyme-render: snapshot 1`] = `
+exports[`Cards: Card: [ prop: fontFamily ] enzyme-render: snapshot 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim"
 >
@@ -2359,7 +2359,7 @@ exports[`Card: Card: [ prop: fontFamily ] enzyme-render: snapshot 1`] = `
 </div>
 `;
 
-exports[`Card: Card: [ prop: fontFamily ] enzyme-shallow: snapshot 1`] = `
+exports[`Cards: Card: [ prop: fontFamily ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
@@ -2433,7 +2433,7 @@ exports[`Card: Card: [ prop: fontFamily ] enzyme-shallow: snapshot 1`] = `
 </View>
 `;
 
-exports[`Card: Card: [ prop: imageProps ] enzyme-mount: snapshot 1`] = `
+exports[`Cards: Card: [ prop: imageProps ] enzyme-mount: snapshot 1`] = `
 <Card
   image="hero.jpg"
   imageProps={
@@ -2592,7 +2592,7 @@ exports[`Card: Card: [ prop: imageProps ] enzyme-mount: snapshot 1`] = `
 </Card>
 `;
 
-exports[`Card: Card: [ prop: imageProps ] enzyme-render: snapshot 1`] = `
+exports[`Cards: Card: [ prop: imageProps ] enzyme-render: snapshot 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
 >
@@ -2627,7 +2627,7 @@ exports[`Card: Card: [ prop: imageProps ] enzyme-render: snapshot 1`] = `
 </div>
 `;
 
-exports[`Card: Card: [ prop: imageProps ] enzyme-shallow: snapshot 1`] = `
+exports[`Cards: Card: [ prop: imageProps ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
@@ -2705,7 +2705,7 @@ exports[`Card: Card: [ prop: imageProps ] enzyme-shallow: snapshot 1`] = `
 </View>
 `;
 
-exports[`Card: Card: [ prop: imageStyle ] enzyme-mount: snapshot 1`] = `
+exports[`Cards: Card: [ prop: imageStyle ] enzyme-mount: snapshot 1`] = `
 <Card
   image="hero.jpg"
   imageStyle={
@@ -2868,7 +2868,7 @@ exports[`Card: Card: [ prop: imageStyle ] enzyme-mount: snapshot 1`] = `
 </Card>
 `;
 
-exports[`Card: Card: [ prop: imageStyle ] enzyme-render: snapshot 1`] = `
+exports[`Cards: Card: [ prop: imageStyle ] enzyme-render: snapshot 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
 >
@@ -2903,7 +2903,7 @@ exports[`Card: Card: [ prop: imageStyle ] enzyme-render: snapshot 1`] = `
 </div>
 `;
 
-exports[`Card: Card: [ prop: imageStyle ] enzyme-shallow: snapshot 1`] = `
+exports[`Cards: Card: [ prop: imageStyle ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
@@ -2983,7 +2983,7 @@ exports[`Card: Card: [ prop: imageStyle ] enzyme-shallow: snapshot 1`] = `
 </View>
 `;
 
-exports[`Card: Card: [ prop: imageWrapperStyle ] enzyme-mount: snapshot 1`] = `
+exports[`Cards: Card: [ prop: imageWrapperStyle ] enzyme-mount: snapshot 1`] = `
 <Card
   image="hero.jpg"
   imageWrapperStyle={
@@ -3156,7 +3156,7 @@ exports[`Card: Card: [ prop: imageWrapperStyle ] enzyme-mount: snapshot 1`] = `
 </Card>
 `;
 
-exports[`Card: Card: [ prop: imageWrapperStyle ] enzyme-render: snapshot 1`] = `
+exports[`Cards: Card: [ prop: imageWrapperStyle ] enzyme-render: snapshot 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
 >
@@ -3192,7 +3192,7 @@ exports[`Card: Card: [ prop: imageWrapperStyle ] enzyme-render: snapshot 1`] = `
 </div>
 `;
 
-exports[`Card: Card: [ prop: imageWrapperStyle ] enzyme-shallow: snapshot 1`] = `
+exports[`Cards: Card: [ prop: imageWrapperStyle ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
@@ -3276,7 +3276,7 @@ exports[`Card: Card: [ prop: imageWrapperStyle ] enzyme-shallow: snapshot 1`] = 
 </View>
 `;
 
-exports[`Card: Card: [ prop: noProps ] enzyme-mount: snapshot 1`] = `
+exports[`Cards: Card: [ prop: noProps ] enzyme-mount: snapshot 1`] = `
 <Card>
   <View
     style={
@@ -3308,7 +3308,7 @@ exports[`Card: Card: [ prop: noProps ] enzyme-mount: snapshot 1`] = `
 </Card>
 `;
 
-exports[`Card: Card: [ prop: noProps ] enzyme-render: snapshot 1`] = `
+exports[`Cards: Card: [ prop: noProps ] enzyme-render: snapshot 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim"
 >
@@ -3318,7 +3318,7 @@ exports[`Card: Card: [ prop: noProps ] enzyme-render: snapshot 1`] = `
 </div>
 `;
 
-exports[`Card: Card: [ prop: noProps ] enzyme-shallow: snapshot 1`] = `
+exports[`Cards: Card: [ prop: noProps ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
@@ -3340,7 +3340,7 @@ exports[`Card: Card: [ prop: noProps ] enzyme-shallow: snapshot 1`] = `
 </View>
 `;
 
-exports[`Card: Card: [ prop: title ] enzyme-mount: snapshot 1`] = `
+exports[`Cards: Card: [ prop: title ] enzyme-mount: snapshot 1`] = `
 <Card
   title="Current Events"
 >
@@ -3505,7 +3505,7 @@ exports[`Card: Card: [ prop: title ] enzyme-mount: snapshot 1`] = `
 </Card>
 `;
 
-exports[`Card: Card: [ prop: title ] enzyme-render: snapshot 1`] = `
+exports[`Cards: Card: [ prop: title ] enzyme-render: snapshot 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim"
 >
@@ -3541,7 +3541,7 @@ exports[`Card: Card: [ prop: title ] enzyme-render: snapshot 1`] = `
 </div>
 `;
 
-exports[`Card: Card: [ prop: title ] enzyme-shallow: snapshot 1`] = `
+exports[`Cards: Card: [ prop: title ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
@@ -3613,7 +3613,7 @@ exports[`Card: Card: [ prop: title ] enzyme-shallow: snapshot 1`] = `
 </View>
 `;
 
-exports[`Card: Card: [ prop: titleStyle ] enzyme-mount: snapshot 1`] = `
+exports[`Cards: Card: [ prop: titleStyle ] enzyme-mount: snapshot 1`] = `
 <Card
   title="Current Events"
   titleStyle={
@@ -3795,7 +3795,7 @@ exports[`Card: Card: [ prop: titleStyle ] enzyme-mount: snapshot 1`] = `
 </Card>
 `;
 
-exports[`Card: Card: [ prop: titleStyle ] enzyme-render: snapshot 1`] = `
+exports[`Cards: Card: [ prop: titleStyle ] enzyme-render: snapshot 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim"
 >
@@ -3832,7 +3832,7 @@ exports[`Card: Card: [ prop: titleStyle ] enzyme-render: snapshot 1`] = `
 </div>
 `;
 
-exports[`Card: Card: [ prop: titleStyle ] enzyme-shallow: snapshot 1`] = `
+exports[`Cards: Card: [ prop: titleStyle ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
@@ -3906,7 +3906,7 @@ exports[`Card: Card: [ prop: titleStyle ] enzyme-shallow: snapshot 1`] = `
 </View>
 `;
 
-exports[`Card: Card: [ prop: wrapperStyle ] enzyme-mount: snapshot 1`] = `
+exports[`Cards: Card: [ prop: wrapperStyle ] enzyme-mount: snapshot 1`] = `
 <Card
   wrapperStyle={
     Object {
@@ -4015,7 +4015,7 @@ exports[`Card: Card: [ prop: wrapperStyle ] enzyme-mount: snapshot 1`] = `
 </Card>
 `;
 
-exports[`Card: Card: [ prop: wrapperStyle ] enzyme-render: snapshot 1`] = `
+exports[`Cards: Card: [ prop: wrapperStyle ] enzyme-render: snapshot 1`] = `
 <div
   class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim"
 >
@@ -4039,7 +4039,7 @@ exports[`Card: Card: [ prop: wrapperStyle ] enzyme-render: snapshot 1`] = `
 </div>
 `;
 
-exports[`Card: Card: [ prop: wrapperStyle ] enzyme-shallow: snapshot 1`] = `
+exports[`Cards: Card: [ prop: wrapperStyle ] enzyme-shallow: snapshot 1`] = `
 <View
   style={
     Array [
@@ -4086,6 +4086,684 @@ exports[`Card: Card: [ prop: wrapperStyle ] enzyme-shallow: snapshot 1`] = `
           "width": 50,
         }
       }
+    />
+  </View>
+</View>
+`;
+
+exports[`Cards: PricingCard: [ prop: buttonFont & required props ] enzyme-shallow: snapshot 1`] = `
+<View
+  style={
+    Array [
+      134,
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        135,
+        undefined,
+      ]
+    }
+  >
+    <TextElement
+      style={
+        Array [
+          136,
+          Object {
+            "color": "#071",
+          },
+          undefined,
+        ]
+      }
+    >
+      title
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          137,
+          undefined,
+        ]
+      }
+    >
+      price
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          138,
+          undefined,
+        ]
+      }
+    >
+      info0
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          138,
+          undefined,
+        ]
+      }
+    >
+      info1
+    </TextElement>
+    <Button
+      buttonStyle={
+        Array [
+          139,
+          Object {
+            "borderWidth": 2,
+          },
+          Object {
+            "backgroundColor": "#071",
+          },
+        ]
+      }
+      fontFamily="Courier New"
+      icon={
+        Object {
+          "name": "pets",
+        }
+      }
+      title="buttonTitle"
+    />
+  </View>
+</View>
+`;
+
+exports[`Cards: PricingCard: [ prop: containerStyle & required props ] enzyme-shallow: snapshot 1`] = `
+<View
+  style={
+    Array [
+      134,
+      Object {
+        "borderWidth": 5,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        135,
+        undefined,
+      ]
+    }
+  >
+    <TextElement
+      style={
+        Array [
+          136,
+          Object {
+            "color": "#071",
+          },
+          undefined,
+        ]
+      }
+    >
+      title
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          137,
+          undefined,
+        ]
+      }
+    >
+      price
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          138,
+          undefined,
+        ]
+      }
+    >
+      info0
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          138,
+          undefined,
+        ]
+      }
+    >
+      info1
+    </TextElement>
+    <Button
+      buttonStyle={
+        Array [
+          139,
+          Object {
+            "borderWidth": 2,
+          },
+          Object {
+            "backgroundColor": "#071",
+          },
+        ]
+      }
+      icon={
+        Object {
+          "name": "pets",
+        }
+      }
+      title="buttonTitle"
+    />
+  </View>
+</View>
+`;
+
+exports[`Cards: PricingCard: [ prop: infoFont & required props ] enzyme-shallow: snapshot 1`] = `
+<View
+  style={
+    Array [
+      134,
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        135,
+        undefined,
+      ]
+    }
+  >
+    <TextElement
+      style={
+        Array [
+          136,
+          Object {
+            "color": "#071",
+          },
+          undefined,
+        ]
+      }
+    >
+      title
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          137,
+          undefined,
+        ]
+      }
+    >
+      price
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          138,
+          Object {
+            "fontFamily": "Courier New",
+          },
+        ]
+      }
+    >
+      info0
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          138,
+          Object {
+            "fontFamily": "Courier New",
+          },
+        ]
+      }
+    >
+      info1
+    </TextElement>
+    <Button
+      buttonStyle={
+        Array [
+          139,
+          Object {
+            "borderWidth": 2,
+          },
+          Object {
+            "backgroundColor": "#071",
+          },
+        ]
+      }
+      icon={
+        Object {
+          "name": "pets",
+        }
+      }
+      title="buttonTitle"
+    />
+  </View>
+</View>
+`;
+
+exports[`Cards: PricingCard: [ prop: onButtonPress & required props ] enzyme-shallow: snapshot 1`] = `
+<View
+  style={
+    Array [
+      134,
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        135,
+        undefined,
+      ]
+    }
+  >
+    <TextElement
+      style={
+        Array [
+          136,
+          Object {
+            "color": "#071",
+          },
+          undefined,
+        ]
+      }
+    >
+      title
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          137,
+          undefined,
+        ]
+      }
+    >
+      price
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          138,
+          undefined,
+        ]
+      }
+    >
+      info0
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          138,
+          undefined,
+        ]
+      }
+    >
+      info1
+    </TextElement>
+    <Button
+      buttonStyle={
+        Array [
+          139,
+          Object {
+            "borderWidth": 2,
+          },
+          Object {
+            "backgroundColor": "#071",
+          },
+        ]
+      }
+      icon={
+        Object {
+          "name": "pets",
+        }
+      }
+      onPress={[Function]}
+      title="buttonTitle"
+    />
+  </View>
+</View>
+`;
+
+exports[`Cards: PricingCard: [ prop: pricingFont & required props ] enzyme-shallow: snapshot 1`] = `
+<View
+  style={
+    Array [
+      134,
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        135,
+        undefined,
+      ]
+    }
+  >
+    <TextElement
+      style={
+        Array [
+          136,
+          Object {
+            "color": "#071",
+          },
+          undefined,
+        ]
+      }
+    >
+      title
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          137,
+          Object {
+            "fontFamily": "Courier New",
+          },
+        ]
+      }
+    >
+      price
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          138,
+          undefined,
+        ]
+      }
+    >
+      info0
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          138,
+          undefined,
+        ]
+      }
+    >
+      info1
+    </TextElement>
+    <Button
+      buttonStyle={
+        Array [
+          139,
+          Object {
+            "borderWidth": 2,
+          },
+          Object {
+            "backgroundColor": "#071",
+          },
+        ]
+      }
+      icon={
+        Object {
+          "name": "pets",
+        }
+      }
+      title="buttonTitle"
+    />
+  </View>
+</View>
+`;
+
+exports[`Cards: PricingCard: [ prop: required props: title, price, color, button, & info ] enzyme-shallow: snapshot 1`] = `
+<View
+  style={
+    Array [
+      134,
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        135,
+        undefined,
+      ]
+    }
+  >
+    <TextElement
+      style={
+        Array [
+          136,
+          Object {
+            "color": "#071",
+          },
+          undefined,
+        ]
+      }
+    >
+      title
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          137,
+          undefined,
+        ]
+      }
+    >
+      price
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          138,
+          undefined,
+        ]
+      }
+    >
+      info0
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          138,
+          undefined,
+        ]
+      }
+    >
+      info1
+    </TextElement>
+    <Button
+      buttonStyle={
+        Array [
+          139,
+          Object {
+            "borderWidth": 2,
+          },
+          Object {
+            "backgroundColor": "#071",
+          },
+        ]
+      }
+      icon={
+        Object {
+          "name": "pets",
+        }
+      }
+      title="buttonTitle"
+    />
+  </View>
+</View>
+`;
+
+exports[`Cards: PricingCard: [ prop: titleFont & required props ] enzyme-shallow: snapshot 1`] = `
+<View
+  style={
+    Array [
+      134,
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        135,
+        undefined,
+      ]
+    }
+  >
+    <TextElement
+      style={
+        Array [
+          136,
+          Object {
+            "color": "#071",
+          },
+          Object {
+            "fontFamily": "Courier New",
+          },
+        ]
+      }
+    >
+      title
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          137,
+          undefined,
+        ]
+      }
+    >
+      price
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          138,
+          undefined,
+        ]
+      }
+    >
+      info0
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          138,
+          undefined,
+        ]
+      }
+    >
+      info1
+    </TextElement>
+    <Button
+      buttonStyle={
+        Array [
+          139,
+          Object {
+            "borderWidth": 2,
+          },
+          Object {
+            "backgroundColor": "#071",
+          },
+        ]
+      }
+      icon={
+        Object {
+          "name": "pets",
+        }
+      }
+      title="buttonTitle"
+    />
+  </View>
+</View>
+`;
+
+exports[`Cards: PricingCard: [ prop: wrapperStyle & required props ] enzyme-shallow: snapshot 1`] = `
+<View
+  style={
+    Array [
+      134,
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        135,
+        Object {
+          "borderWidth": 5,
+        },
+      ]
+    }
+  >
+    <TextElement
+      style={
+        Array [
+          136,
+          Object {
+            "color": "#071",
+          },
+          undefined,
+        ]
+      }
+    >
+      title
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          137,
+          undefined,
+        ]
+      }
+    >
+      price
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          138,
+          undefined,
+        ]
+      }
+    >
+      info0
+    </TextElement>
+    <TextElement
+      style={
+        Array [
+          138,
+          undefined,
+        ]
+      }
+    >
+      info1
+    </TextElement>
+    <Button
+      buttonStyle={
+        Array [
+          139,
+          Object {
+            "borderWidth": 2,
+          },
+          Object {
+            "backgroundColor": "#071",
+          },
+        ]
+      }
+      icon={
+        Object {
+          "name": "pets",
+        }
+      }
+      title="buttonTitle"
     />
   </View>
 </View>

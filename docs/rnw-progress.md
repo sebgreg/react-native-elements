@@ -15,7 +15,7 @@
 | Header       | 2017-11-07    | no changes                  | 2017-12-02 |
 | Icon         | 2017-11-07    | [med](#icon-changes)        | 2017-11-30 |
 | Lists        | 2017-11-11    | [low](#listitem-changes)       | 2017-12-03 |
-| Pricing      | 2017-11-11    | no changes                |
+| Pricing      | 2017-11-11    | [low](#pricing-changes)   | 2017-12-03 |
 | Rating       | 2017-11-11    | [med](#rating-changes)      | 2017-11-21 |
 | SearchBar    | 2017-11-12    | [low](#search-changes)      |
 | Slider       | 2017-11-08    | [low](#slider-changes)      |
@@ -71,7 +71,16 @@ note: "dom prop warnings" refer to console.warn messages which alert the develop
   -  `leftIconOnPress`,
   -  `leftIconOnLongPress`,
   -  `leftIconUnderlayColor`
-- change: add web support for default styles
+- fix: set `title` and `subtitle` default font sizes larger for web
+- fix: add "alignItems: 'center'" to default `wrapperStyle` for web
+
+### Pricing changes
+- change: added 'isRequired' to propTypes for:
+  - `title`
+  - `price`
+  - `info`
+  - `button`
+  - `color`
 
 ### Rating changes
 - fix: added `draggable={false}` to keep Image elements from dragging instead of chaning the rating
@@ -138,13 +147,14 @@ note: "dom prop warnings" refer to console.warn messages which alert the develop
 - **confirm**:  are changes to `iconStyle` prop ok?
 
 ### ListItem:
-- **fix**: set `title` and `subtitle` default font sizes larger for web
-- **fix**: add "alignItems: 'center'" to default `wrapperStyle`
 - **note**: the following props have no effect on web:
   - `textInputAutoCapitalize` (does work in Chrome and iOS Safari)
   - `textInputAutoCorrect` (does work in iOS Safari)
   - `textInputReturnKeyType`
 
+### PricingCard:
+- **note**: `info` prop should be marked as required in the api docs
+ 
 ### Rating
 - **suggestion**: check for existance of `extractOffset` function and use it if available
   - mouseclick & mousemove seem off from displayed position (more obvious on web)

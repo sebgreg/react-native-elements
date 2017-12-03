@@ -19,9 +19,10 @@ import FormLabel from './FormLabel';
 import FormValidationMessage from './FormValidationMessage';
 import Header from './Header';
 import Icon from './Icon';
+import SocialIcon from './SocialIcon';
 import List from './List';
 import ListItem from './ListItem';
-import SocialIcon from './SocialIcon';
+import PricingCard from './PricingCard';
 import Rating from './Rating';
 
 export default {
@@ -37,9 +38,9 @@ export default {
     title: 'Buttons',
     sectionComponents: { Button, ButtonGroup },
   },
-  Card: {
-    title: 'Card',
-    sectionComponents: { Card },
+  Cards: {
+    title: 'Cards',
+    sectionComponents: { Card, PricingCard },
   },
   CheckBox: {
     title: 'CheckBox',
