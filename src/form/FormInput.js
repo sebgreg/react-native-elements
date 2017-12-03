@@ -154,6 +154,10 @@ const styles = StyleSheet.create({
         minHeight: 36,
         width: width,
       },
+      web: {
+        minHeight: 36,
+        width: width,
+      },
     }),
     // breaks tests - fix before release
     // Invariant Violation: Invalid undefined `width` of type `string`
