@@ -8,18 +8,18 @@
 | Badge        | 2017-11-10    | [med](#badge-changes)       | 2017-12-01 |
 | Button Group | 2017-11-11    | [low](#buttongroup-changes) | 2017-11-29 |
 | Buttons      | 2017-11-09    | [low](#button-changes)      | 2017-11-29 |
-| Card         | 2017-11-10    | no changes                  | 2017-12-01 |
-| Checkbox     | 2017-11-10    | no changes                  | 2017-12-02 |
-| Divider      | 2017-11-10    | no changes                  | 2017-12-02 |
+| Card         | 2017-11-10    | [low](#card-changes)   | 2017-12-01 |
+| Checkbox     | 2017-11-10    | [low](#checkbox-changes)   | 2017-12-02 |
+| Divider      | 2017-11-10    | no changes                | 2017-12-02 |
 | Forms        | 2017-11-11    | [low](#form-changes)        | 2017-11-29 |
 | Header       | 2017-11-07    | no changes                  | 2017-12-02 |
 | Icon         | 2017-11-07    | [med](#icon-changes)        | 2017-11-30 |
-| Lists        | 2017-11-11    | no changes                  |
-| Pricing      | 2017-11-11    | no changes                  |
+| Lists        | 2017-11-11    | [low](#listitem-changes)       | 2017-12-03 |
+| Pricing      | 2017-11-11    | no changes                |
 | Rating       | 2017-11-11    | [med](#rating-changes)      | 2017-11-21 |
 | SearchBar    | 2017-11-12    | [low](#search-changes)      |
 | Slider       | 2017-11-08    | [low](#slider-changes)      |
-| Social Icons | 2017-11-11    | no changes                  | 2017-11-30 |
+| Social Icons | 2017-11-11    | [low](#socialicon-changes)   | 2017-11-30 |
 | Text         | 2017-11-12    | [low](#text-changes)        |
 | Tiles        | 2017-11-12    | [med](#tile-changes)        |
 
