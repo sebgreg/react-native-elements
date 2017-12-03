@@ -99,9 +99,9 @@ const ListItem = props => {
   if (leftIconOnPress || leftIconOnLongPress) {
     LeftIconWrapper = TouchableHighlight;
     leftIconHighlightProps = {
-      leftIconOnPress,
-      leftIconOnLongPress,
-      leftIconUnderlayColor,
+      onPress: leftIconOnPress,
+      onLongPress: leftIconOnLongPress,
+      underlayColor: leftIconUnderlayColor,
     };
   }
 
@@ -401,6 +401,11 @@ const styles = StyleSheet.create({
   wrapper: {
     flexDirection: 'row',
     marginLeft: 10,
+    ...Platform.select({
+      web: {
+        alignItems: `center`,
+      },
+    }),
   },
   iconStyle: {
     justifyContent: 'center',
@@ -410,21 +415,33 @@ const styles = StyleSheet.create({
     marginRight: 8,
   },
   title: {
-    fontSize: normalize(14),
     color: colors.grey1,
+    ...Platform.select({
+      ios: {
+        fontSize: normalize(14),
+      },
+      android: {
+        fontSize: normalize(14),
+      },
+      web: {
+        fontSize: normalize(16),
+      },
+    }),
   },
   subtitle: {
     color: colors.grey3,
-    fontSize: normalize(12),
     marginTop: 1,
     ...Platform.select({
       ios: {
+        fontSize: normalize(12),
         fontWeight: '600',
       },
       android: {
+        fontSize: normalize(12),
         ...fonts.android.bold,
       },
       web: {
+        fontSize: normalize(14),
         fontWeight: '600',
       },
     }),
