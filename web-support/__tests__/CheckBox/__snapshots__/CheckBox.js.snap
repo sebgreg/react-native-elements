@@ -43,6 +43,123 @@ exports[`CheckBox: CheckBox: [ prop: center, title, checked, & onIconPress ] enz
 </TouchableOpacity>
 `;
 
+exports[`CheckBox: CheckBox: [ prop: checkedColor ] enzyme-shallow: snapshot 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  focusedOpacity={0.7}
+  style={
+    Array [
+      103,
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        102,
+        false,
+        false,
+      ]
+    }
+  >
+    <[object Object]
+      color="#22d"
+      name="check-square-o"
+      size={24}
+    />
+    <TextElement
+      style={
+        Array [
+          104,
+          undefined,
+          undefined,
+        ]
+      }
+    />
+  </View>
+</TouchableOpacity>
+`;
+
+exports[`CheckBox: CheckBox: [ prop: checkedIcon ] enzyme-shallow: snapshot 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  focusedOpacity={0.7}
+  style={
+    Array [
+      103,
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        102,
+        false,
+        false,
+      ]
+    }
+  >
+    <[object Object]
+      color="green"
+      name="bell-o"
+      size={24}
+    />
+    <TextElement
+      style={
+        Array [
+          104,
+          undefined,
+          undefined,
+        ]
+      }
+    />
+  </View>
+</TouchableOpacity>
+`;
+
+exports[`CheckBox: CheckBox: [ prop: checkedTitle, title, checked, & onIconPress ] enzyme-shallow: snapshot 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  focusedOpacity={0.7}
+  style={
+    Array [
+      103,
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        102,
+        false,
+        false,
+      ]
+    }
+  >
+    <[object Object]
+      color="green"
+      name="check-square-o"
+      onPress={[Function]}
+      size={24}
+    />
+    <TextElement
+      style={
+        Array [
+          104,
+          undefined,
+          undefined,
+        ]
+      }
+    >
+      title - is checked
+    </TextElement>
+  </View>
+</TouchableOpacity>
+`;
+
 exports[`CheckBox: CheckBox: [ prop: component, title, checked, & onIconPress ] enzyme-shallow: snapshot 1`] = `
 <TouchableWithoutFeedback
   style={
@@ -118,6 +235,48 @@ exports[`CheckBox: CheckBox: [ prop: containerStyle ] enzyme-shallow: snapshot 1
         ]
       }
     />
+  </View>
+</TouchableOpacity>
+`;
+
+exports[`CheckBox: CheckBox: [ prop: fontFamily ] enzyme-shallow: snapshot 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  focusedOpacity={0.7}
+  style={
+    Array [
+      103,
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        102,
+        false,
+        false,
+      ]
+    }
+  >
+    <[object Object]
+      color="#bfbfbf"
+      name="square-o"
+      size={24}
+    />
+    <TextElement
+      style={
+        Array [
+          104,
+          undefined,
+          Object {
+            "fontFamily": "Courier New",
+          },
+        ]
+      }
+    >
+      title
+    </TextElement>
   </View>
 </TouchableOpacity>
 `;
@@ -201,10 +360,11 @@ exports[`CheckBox: CheckBox: [ prop: noProps ] enzyme-shallow: snapshot 1`] = `
 </TouchableOpacity>
 `;
 
-exports[`CheckBox: CheckBox: [ prop: onLongPress, title, checked, & onIconPress ] enzyme-shallow: snapshot 1`] = `
+exports[`CheckBox: CheckBox: [ prop: onLongIconPress, title, checked, & onIconPress ] enzyme-shallow: snapshot 1`] = `
 <TouchableOpacity
   activeOpacity={0.2}
   focusedOpacity={0.7}
+  onLongPress={[Function]}
   style={
     Array [
       103,
@@ -216,9 +376,91 @@ exports[`CheckBox: CheckBox: [ prop: onLongPress, title, checked, & onIconPress 
     style={
       Array [
         102,
-        Object {
-          "justifyContent": "flex-end",
-        },
+        false,
+        false,
+      ]
+    }
+  >
+    <[object Object]
+      color="green"
+      name="check-square-o"
+      onPress={[Function]}
+      size={24}
+    />
+    <TextElement
+      style={
+        Array [
+          104,
+          undefined,
+          undefined,
+        ]
+      }
+    >
+      title
+    </TextElement>
+  </View>
+</TouchableOpacity>
+`;
+
+exports[`CheckBox: CheckBox: [ prop: onLongPress, title, checked, & onIconPress ] enzyme-shallow: snapshot 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  focusedOpacity={0.7}
+  onLongPress={[Function]}
+  style={
+    Array [
+      103,
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        102,
+        false,
+        false,
+      ]
+    }
+  >
+    <[object Object]
+      color="green"
+      name="check-square-o"
+      onPress={[Function]}
+      size={24}
+    />
+    <TextElement
+      style={
+        Array [
+          104,
+          undefined,
+          undefined,
+        ]
+      }
+    >
+      title
+    </TextElement>
+  </View>
+</TouchableOpacity>
+`;
+
+exports[`CheckBox: CheckBox: [ prop: onPress, title, checked, & onIconPress ] enzyme-shallow: snapshot 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  focusedOpacity={0.7}
+  onPress={[Function]}
+  style={
+    Array [
+      103,
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        102,
+        false,
         false,
       ]
     }
@@ -325,6 +567,82 @@ exports[`CheckBox: CheckBox: [ prop: textStyle & title ] enzyme-shallow: snapsho
     >
       title
     </TextElement>
+  </View>
+</TouchableOpacity>
+`;
+
+exports[`CheckBox: CheckBox: [ prop: uncheckedColor ] enzyme-shallow: snapshot 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  focusedOpacity={0.7}
+  style={
+    Array [
+      103,
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        102,
+        false,
+        false,
+      ]
+    }
+  >
+    <[object Object]
+      color="#d22"
+      name="square-o"
+      size={24}
+    />
+    <TextElement
+      style={
+        Array [
+          104,
+          undefined,
+          undefined,
+        ]
+      }
+    />
+  </View>
+</TouchableOpacity>
+`;
+
+exports[`CheckBox: CheckBox: [ prop: uncheckedIcon ] enzyme-shallow: snapshot 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  focusedOpacity={0.7}
+  style={
+    Array [
+      103,
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        102,
+        false,
+        false,
+      ]
+    }
+  >
+    <[object Object]
+      color="#bfbfbf"
+      name="bell-slash-o"
+      size={24}
+    />
+    <TextElement
+      style={
+        Array [
+          104,
+          undefined,
+          undefined,
+        ]
+      }
+    />
   </View>
 </TouchableOpacity>
 `;

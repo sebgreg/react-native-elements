@@ -1,0 +1,2280 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Lists: List: [ prop: containerStyle ] enzyme-shallow: snapshot 1`] = `
+<View
+  style={
+    Array [
+      77,
+      Object {
+        "borderWidth": 5,
+      },
+    ]
+  }
+>
+  <ListItem
+    chevronColor="#bdc6cf"
+    disabled={false}
+    hideChevron={false}
+    leftIconUnderlayColor="white"
+    rightIcon={
+      Object {
+        "name": "chevron-right",
+      }
+    }
+    rightTitleNumberOfLines={1}
+    roundAvatar={false}
+    subtitleNumberOfLines={1}
+    switchButton={false}
+    textInputEditable={true}
+    title="item 1"
+    titleNumberOfLines={1}
+    underlayColor="white"
+  />
+  <ListItem
+    chevronColor="#bdc6cf"
+    disabled={false}
+    hideChevron={false}
+    leftIconUnderlayColor="white"
+    rightIcon={
+      Object {
+        "name": "chevron-right",
+      }
+    }
+    rightTitleNumberOfLines={1}
+    roundAvatar={false}
+    subtitleNumberOfLines={1}
+    switchButton={false}
+    textInputEditable={true}
+    title="item 2"
+    titleNumberOfLines={1}
+    underlayColor="white"
+  />
+  <ListItem
+    chevronColor="#bdc6cf"
+    disabled={false}
+    hideChevron={false}
+    leftIconUnderlayColor="white"
+    rightIcon={
+      Object {
+        "name": "chevron-right",
+      }
+    }
+    rightTitleNumberOfLines={1}
+    roundAvatar={false}
+    subtitleNumberOfLines={1}
+    switchButton={false}
+    textInputEditable={true}
+    title="item 3"
+    titleNumberOfLines={1}
+    underlayColor="white"
+  />
+</View>
+`;
+
+exports[`Lists: List: [ prop: no props ] enzyme-mount: snapshot 1`] = `
+<List>
+  <View
+    style={
+      Array [
+        77,
+        undefined,
+      ]
+    }
+  >
+    <div
+      className="rn-alignItems-1oszu61 rn-backgroundColor-44z8sh rn-borderTopColor-gv7t1l rn-borderRightColor-1itbhdy rn-borderBottomColor-1u5ghgs rn-borderLeftColor-592z09 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-marginTop-1x0uki6 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+    />
+  </View>
+</List>
+`;
+
+exports[`Lists: List: [ prop: no props ] enzyme-render: snapshot 1`] = `
+<div
+  class="rn-alignItems-1oszu61 rn-backgroundColor-44z8sh rn-borderTopColor-gv7t1l rn-borderRightColor-1itbhdy rn-borderBottomColor-1u5ghgs rn-borderLeftColor-592z09 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-marginTop-1x0uki6 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+/>
+`;
+
+exports[`Lists: List: [ prop: no props ] enzyme-shallow: snapshot 1`] = `
+<View
+  style={
+    Array [
+      77,
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`Lists: ListItem: [ prop: avatar ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <Avatar
+      editButton={
+        Object {
+          "iconColor": "#fff",
+          "iconName": "mode-edit",
+          "iconType": "material",
+          "size": null,
+          "style": null,
+          "underlayColor": "#000",
+        }
+      }
+      onEditPress={null}
+      rounded={false}
+      showEditButton={false}
+      source={
+        Object {
+          "uri": "hero.jpg",
+        }
+      }
+    />
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: avatarContainerStyle ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <Avatar
+      containerStyle={
+        Object {
+          "padding": 50,
+        }
+      }
+      editButton={
+        Object {
+          "iconColor": "#fff",
+          "iconName": "mode-edit",
+          "iconType": "material",
+          "size": null,
+          "style": null,
+          "underlayColor": "#000",
+        }
+      }
+      onEditPress={null}
+      rounded={false}
+      showEditButton={false}
+      source={
+        Object {
+          "uri": "hero.jpg",
+        }
+      }
+    />
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: avatarOverlayContainerStyle ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <Avatar
+      editButton={
+        Object {
+          "iconColor": "#fff",
+          "iconName": "mode-edit",
+          "iconType": "material",
+          "size": null,
+          "style": null,
+          "underlayColor": "#000",
+        }
+      }
+      onEditPress={null}
+      overlayContainerStyle={
+        Object {
+          "padding": 25,
+        }
+      }
+      rounded={false}
+      showEditButton={false}
+      source={
+        Object {
+          "uri": "hero.jpg",
+        }
+      }
+    />
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: avatarStyle ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <Avatar
+      avatarStyle={
+        Object {
+          "transform": Array [
+            Object {
+              "rotateZ": "-45deg",
+            },
+          ],
+        }
+      }
+      editButton={
+        Object {
+          "iconColor": "#fff",
+          "iconName": "mode-edit",
+          "iconType": "material",
+          "size": null,
+          "style": null,
+          "underlayColor": "#000",
+        }
+      }
+      onEditPress={null}
+      rounded={false}
+      showEditButton={false}
+      source={
+        Object {
+          "uri": "hero.jpg",
+        }
+      }
+    />
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: chevronColor ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#071"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: component ] enzyme-shallow: snapshot 1`] = `
+<TouchableWithoutFeedback
+  disabled={false}
+  onPress={[Function]}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</TouchableWithoutFeedback>
+`;
+
+exports[`Lists: ListItem: [ prop: containerStyle ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      Object {
+        "borderWidth": 5,
+      },
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: fontFamily ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              Object {
+                "fontFamily": "Courier New",
+              },
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: hideChevron ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: label ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <Avatar
+      editButton={
+        Object {
+          "iconColor": "#fff",
+          "iconName": "mode-edit",
+          "iconType": "material",
+          "size": null,
+          "style": null,
+          "underlayColor": "#000",
+        }
+      }
+      onEditPress={null}
+      rounded={false}
+      showEditButton={false}
+      source={
+        Object {
+          "uri": "hero.jpg",
+        }
+      }
+    />
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+    <Text>
+      label
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: leftIcon ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <View
+      disabled={false}
+      style={
+        Array [
+          83,
+          undefined,
+        ]
+      }
+    >
+      <View>
+        <Icon
+          color="#071"
+          iconStyle={
+            Array [
+              84,
+              undefined,
+            ]
+          }
+          name="pets"
+          raised={false}
+          reverse={false}
+          reverseColor="white"
+          size={24}
+          underlayColor="white"
+        />
+      </View>
+    </View>
+    <Avatar
+      editButton={
+        Object {
+          "iconColor": "#fff",
+          "iconName": "mode-edit",
+          "iconType": "material",
+          "size": null,
+          "style": null,
+          "underlayColor": "#000",
+        }
+      }
+      onEditPress={null}
+      rounded={false}
+      showEditButton={false}
+      source={
+        Object {
+          "uri": "hero.jpg",
+        }
+      }
+    />
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              false,
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: no props ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={87}
+    >
+      <View>
+        <View />
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: onLongPress ] enzyme-shallow: snapshot 1`] = `
+<TouchableHighlight
+  activeOpacity={0.85}
+  disabled={false}
+  onLongPress={[Function]}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+  underlayColor="white"
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</TouchableHighlight>
+`;
+
+exports[`Lists: ListItem: [ prop: rightTitle ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          90,
+          undefined,
+        ]
+      }
+    >
+      <TextElement
+        numberOfLines={1}
+        style={
+          Array [
+            91,
+            undefined,
+          ]
+        }
+      >
+        rightTitle
+      </TextElement>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: rightTitleContainerStyle ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <Avatar
+      editButton={
+        Object {
+          "iconColor": "#fff",
+          "iconName": "mode-edit",
+          "iconType": "material",
+          "size": null,
+          "style": null,
+          "underlayColor": "#000",
+        }
+      }
+      onEditPress={null}
+      rounded={false}
+      showEditButton={false}
+      source={
+        Object {
+          "uri": "hero.jpg",
+        }
+      }
+    />
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          90,
+          Object {
+            "borderWidth": 5,
+          },
+        ]
+      }
+    >
+      <TextElement
+        numberOfLines={1}
+        style={
+          Array [
+            91,
+            undefined,
+          ]
+        }
+      >
+        rightTitle
+      </TextElement>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: rightTitleNumberOfLines ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          90,
+          undefined,
+        ]
+      }
+    >
+      <TextElement
+        numberOfLines={3}
+        style={
+          Array [
+            91,
+            undefined,
+          ]
+        }
+      >
+        line1\\nline2\\nline3
+      </TextElement>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: rightTitleStyle ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <Avatar
+      editButton={
+        Object {
+          "iconColor": "#fff",
+          "iconName": "mode-edit",
+          "iconType": "material",
+          "size": null,
+          "style": null,
+          "underlayColor": "#000",
+        }
+      }
+      onEditPress={null}
+      rounded={false}
+      showEditButton={false}
+      source={
+        Object {
+          "uri": "hero.jpg",
+        }
+      }
+    />
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          90,
+          undefined,
+        ]
+      }
+    >
+      <TextElement
+        numberOfLines={1}
+        style={
+          Array [
+            91,
+            Object {
+              "color": "#071",
+            },
+          ]
+        }
+      >
+        rightTitle
+      </TextElement>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: roundAvatar ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <Avatar
+      editButton={
+        Object {
+          "iconColor": "#fff",
+          "iconName": "mode-edit",
+          "iconType": "material",
+          "size": null,
+          "style": null,
+          "underlayColor": "#000",
+        }
+      }
+      onEditPress={null}
+      rounded={true}
+      showEditButton={false}
+      source={
+        Object {
+          "uri": "hero.jpg",
+        }
+      }
+    />
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: subtitle ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              86,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          subtitle
+        </TextElement>
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: subtitleContainerStyle ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <Avatar
+      editButton={
+        Object {
+          "iconColor": "#fff",
+          "iconName": "mode-edit",
+          "iconType": "material",
+          "size": null,
+          "style": null,
+          "underlayColor": "#000",
+        }
+      }
+      onEditPress={null}
+      rounded={false}
+      showEditButton={false}
+      source={
+        Object {
+          "uri": "hero.jpg",
+        }
+      }
+    />
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View
+        style={
+          Object {
+            "borderWidth": 5,
+          }
+        }
+      >
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              86,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          subtitle
+        </TextElement>
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: subtitleNumberOfLines ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <TextElement
+          numberOfLines={3}
+          style={
+            Array [
+              86,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          line1\\nline2\\nline3
+        </TextElement>
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: subtitleStyle ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <Avatar
+      editButton={
+        Object {
+          "iconColor": "#fff",
+          "iconName": "mode-edit",
+          "iconType": "material",
+          "size": null,
+          "style": null,
+          "underlayColor": "#000",
+        }
+      }
+      onEditPress={null}
+      rounded={false}
+      showEditButton={false}
+      source={
+        Object {
+          "uri": "hero.jpg",
+        }
+      }
+    />
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              86,
+              Object {
+                "marginLeft": 10,
+              },
+              Object {
+                "color": "#071",
+              },
+              undefined,
+            ]
+          }
+        >
+          subtitle
+        </TextElement>
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: titleContainerStyle ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <Avatar
+      editButton={
+        Object {
+          "iconColor": "#fff",
+          "iconName": "mode-edit",
+          "iconType": "material",
+          "size": null,
+          "style": null,
+          "underlayColor": "#000",
+        }
+      }
+      onEditPress={null}
+      rounded={false}
+      showEditButton={false}
+      source={
+        Object {
+          "uri": "hero.jpg",
+        }
+      }
+    />
+    <View
+      style={87}
+    >
+      <View
+        style={
+          Object {
+            "borderWidth": 5,
+          }
+        }
+      >
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: titleNumberOfLines ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={3}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          line1\\nline2\\nline3
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: titleStyle ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <Avatar
+      editButton={
+        Object {
+          "iconColor": "#fff",
+          "iconName": "mode-edit",
+          "iconType": "material",
+          "size": null,
+          "style": null,
+          "underlayColor": "#000",
+        }
+      }
+      onEditPress={null}
+      rounded={false}
+      showEditButton={false}
+      source={
+        Object {
+          "uri": "hero.jpg",
+        }
+      }
+    />
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              Object {
+                "marginTop": -25,
+              },
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
+
+exports[`Lists: ListItem: [ prop: underlayColor & onPress ] enzyme-shallow: snapshot 1`] = `
+<TouchableHighlight
+  activeOpacity={0.85}
+  disabled={false}
+  onPress={[Function]}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+  underlayColor="yellow"
+>
+  <View
+    style={
+      Array [
+        82,
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</TouchableHighlight>
+`;
+
+exports[`Lists: ListItem: [ prop: wrapperStyle ] enzyme-shallow: snapshot 1`] = `
+<View
+  disabled={false}
+  style={
+    Array [
+      81,
+      undefined,
+      false,
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        82,
+        Object {
+          "borderWidth": 5,
+        },
+      ]
+    }
+  >
+    <View
+      style={87}
+    >
+      <View>
+        <TextElement
+          numberOfLines={1}
+          style={
+            Array [
+              85,
+              Object {
+                "marginLeft": 10,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+        >
+          title
+        </TextElement>
+      </View>
+      <View>
+        <View />
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      disabled={true}
+      focusedOpacity={0.7}
+      style={88}
+    >
+      <Icon
+        color="#bdc6cf"
+        name="chevron-right"
+        raised={false}
+        reverse={false}
+        reverseColor="white"
+        size={28}
+        underlayColor="white"
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;
