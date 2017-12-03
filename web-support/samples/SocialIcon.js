@@ -58,7 +58,7 @@ const props = {
     props: {
       type: 'medium',
       onPress: () => {
-        alert('pressed');
+        console.log('pressed');
       },
     },
     enzyme: {
@@ -70,7 +70,7 @@ const props = {
     props: {
       type: 'medium',
       onLongPress: () => {
-        alert('pressed, long');
+        console.log('pressed, long');
       },
     },
     enzyme: {
@@ -140,13 +140,11 @@ const props = {
     },
     styleguidist: {
       getJsxString: () => {
-        return (
-          'const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;\n' +
-          '<SocialIcon \n' +
-          "  type='medium'" +
-          '  component={TouchableWithoutFeedback}\n' +
-          '/>'
-        );
+        return `const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;
+  <SocialIcon
+    type='medium'
+    component={TouchableWithoutFeedback}
+  />`;
       },
     },
   },

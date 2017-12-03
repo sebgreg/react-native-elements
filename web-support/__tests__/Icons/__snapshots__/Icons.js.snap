@@ -5,11 +5,7 @@ exports[`Icons: Icon: [ prop: color ] enzyme-shallow: snapshot 1`] = `
   style={
     Array [
       false,
-      Object {
-        "borderRadius": 28,
-        "height": 52,
-        "width": 52,
-      },
+      false,
       false,
       Object {
         "alignItems": "center",
@@ -41,11 +37,7 @@ exports[`Icons: Icon: [ prop: component ] enzyme-shallow: snapshot 1`] = `
   style={
     Array [
       false,
-      Object {
-        "borderRadius": 28,
-        "height": 52,
-        "width": 52,
-      },
+      false,
       false,
       Object {
         "alignItems": "center",
@@ -77,11 +69,7 @@ exports[`Icons: Icon: [ prop: containerStyle ] enzyme-shallow: snapshot 1`] = `
   style={
     Array [
       false,
-      Object {
-        "borderRadius": 28,
-        "height": 52,
-        "width": 52,
-      },
+      false,
       false,
       Object {
         "alignItems": "center",
@@ -115,11 +103,7 @@ exports[`Icons: Icon: [ prop: iconStyle ] enzyme-shallow: snapshot 1`] = `
   style={
     Array [
       false,
-      Object {
-        "borderRadius": 28,
-        "height": 52,
-        "width": 52,
-      },
+      false,
       false,
       Object {
         "alignItems": "center",
@@ -157,11 +141,7 @@ exports[`Icons: Icon: [ prop: name ] enzyme-shallow: snapshot 1`] = `
   style={
     Array [
       false,
-      Object {
-        "borderRadius": 28,
-        "height": 52,
-        "width": 52,
-      },
+      false,
       false,
       Object {
         "alignItems": "center",
@@ -193,11 +173,7 @@ exports[`Icons: Icon: [ prop: noProps ] enzyme-shallow: snapshot 1`] = `
   style={
     Array [
       false,
-      Object {
-        "borderRadius": 28,
-        "height": 52,
-        "width": 52,
-      },
+      false,
       false,
       Object {
         "alignItems": "center",
@@ -230,11 +206,7 @@ exports[`Icons: Icon: [ prop: onLongPress ] enzyme-shallow: snapshot 1`] = `
   style={
     Array [
       false,
-      Object {
-        "borderRadius": 28,
-        "height": 52,
-        "width": 52,
-      },
+      false,
       false,
       Object {
         "alignItems": "center",
@@ -269,11 +241,7 @@ exports[`Icons: Icon: [ prop: onPress ] enzyme-shallow: snapshot 1`] = `
   style={
     Array [
       false,
-      Object {
-        "borderRadius": 28,
-        "height": 52,
-        "width": 52,
-      },
+      false,
       false,
       Object {
         "alignItems": "center",
@@ -414,11 +382,7 @@ exports[`Icons: Icon: [ prop: size ] enzyme-shallow: snapshot 1`] = `
   style={
     Array [
       false,
-      Object {
-        "borderRadius": 54,
-        "height": 104,
-        "width": 104,
-      },
+      false,
       false,
       Object {
         "alignItems": "center",
@@ -450,11 +414,7 @@ exports[`Icons: Icon: [ prop: type ] enzyme-shallow: snapshot 1`] = `
   style={
     Array [
       false,
-      Object {
-        "borderRadius": 28,
-        "height": 52,
-        "width": 52,
-      },
+      false,
       false,
       Object {
         "alignItems": "center",
@@ -488,11 +448,7 @@ exports[`Icons: Icon: [ prop: underlayColor ] enzyme-shallow: snapshot 1`] = `
   style={
     Array [
       false,
-      Object {
-        "borderRadius": 28,
-        "height": 52,
-        "width": 52,
-      },
+      false,
       false,
       Object {
         "alignItems": "center",

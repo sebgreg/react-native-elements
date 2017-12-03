@@ -33,13 +33,11 @@ const props = {
     },
     styleguidist: {
       getJsxString: () => {
-        return (
-          'const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;\n' +
-          '<Avatar \n' +
-          '  component={TouchableWithoutFeedback}\n' +
-          "  onPress={() => alert('pressed')}\n" +
-          '/>'
-        );
+        return `const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;
+  <Avatar 
+    component={TouchableWithoutFeedback}
+    onPress={() => console.log('pressed')}
+  />`;
       },
     },
   },
@@ -55,7 +53,7 @@ const props = {
     component: Component,
     props: {
       onPress: () => {
-        alert('pressed');
+        console.log('pressed');
       },
     },
     enzyme: {
@@ -67,7 +65,7 @@ const props = {
     component: Component,
     props: {
       onLongPress: () => {
-        alert('pressed, long');
+        console.log('pressed, long');
       },
     },
     enzyme: {
@@ -226,7 +224,7 @@ const props = {
     props: {
       showEditButton: true,
       onEditPress: () => {
-        alert('edit pressed');
+        console.log('edit pressed');
       },
     },
     enzyme: {

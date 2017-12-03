@@ -69,13 +69,11 @@ const props = {
     },
     styleguidist: {
       getJsxString: () => {
-        return (
-          'const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;\n' +
-          '<Icon \n' +
-          "  name='pets'" +
-          '  component={TouchableWithoutFeedback}\n' +
-          '/>'
-        );
+        return `  const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;
+  <Icon 
+  name='pets'
+    component={TouchableWithoutFeedback}
+  />`;
       },
     },
   },
@@ -84,7 +82,7 @@ const props = {
     props: {
       name: 'pets',
       onPress: () => {
-        alert('pressed');
+        console.log('pressed');
       },
     },
     enzyme: {
@@ -96,7 +94,7 @@ const props = {
     props: {
       name: 'pets',
       onLongPress: () => {
-        alert('pressed, long');
+        console.log('pressed, long');
       },
     },
     enzyme: {
@@ -108,7 +106,7 @@ const props = {
     props: {
       name: 'pets',
       onPress: () => {
-        alert('pressed');
+        console.log('pressed');
       },
       underlayColor: 'yellow',
     },

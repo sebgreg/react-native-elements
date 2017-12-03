@@ -43,12 +43,10 @@ const props = {
     },
     styleguidist: {
       getJsxString: () => {
-        return (
-          'const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;\n' +
-          '<Button \n' +
-          '  Component={TouchableWithoutFeedback}\n' +
-          '/>'
-        );
+        return `const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;
+  <Button 
+    Component={TouchableWithoutFeedback}
+  />`;
       },
     },
   },
@@ -104,40 +102,9 @@ const props = {
       },
     },
     enzyme: {
-      // buildJsx: attr => {
-      //   console.warn('leftIcon.enzyme.buildJsx');
-      //   try {
-      //     const jsx = React.createElement(Button, {
-      //       title: 'button title',
-      //       leftIcon: {
-      //         name: 'gamepad',
-      //         color: 'red',
-      //         size: 50,
-      //         type: 'font-awesome',
-      //       },
-      //     });
-      //     return jsx;
-      //   } catch (err) {
-      //     console.error(err);
-      //   }
-      // },
       tests: { shallow: { snapshot: snapShot() } },
     },
-    styleguidist: {
-      // getJsxString: () => {
-      //   return (
-      //     '<Button\n' +
-      //     '  leftIcon={{\n' +
-      //     "    name: 'gamepad'," +
-      //     "    color: 'blue',\n" +
-      //     '    size: 50,' +
-      //     "    type: 'font-awesome'" +
-      //     '  }}\n' +
-      //     '  title="button title"\n' +
-      //     '/>;'
-      //   );
-      // },
-    },
+    styleguidist: {},
   },
   rightIcon: {
     component: Button,
@@ -174,15 +141,13 @@ const props = {
     },
     styleguidist: {
       getJsxString: () => {
-        return (
-          '<Button\n' +
-          '  iconComponent={props => { return <Text>{props.color} </Text> }}\n' +
-          '  leftIcon={{\n' +
-          "    color: 'blue',\n" +
-          '  }}\n' +
-          '  title="button title"\n' +
-          '/>;'
-        );
+        return `<Button
+    iconComponent={props => { return <Text>{props.color} </Text> }}
+    leftIcon={{
+      color: 'blue',
+    }}
+    title="button title"
+  />;`;
       },
     },
   },
@@ -190,7 +155,7 @@ const props = {
     component: Button,
     props: {
       onPress: () => {
-        alert('pressed');
+        console.log('pressed');
       },
     },
     enzyme: {
@@ -202,7 +167,7 @@ const props = {
     component: Button,
     props: {
       onLongPress: () => {
-        alert('pressed, long');
+        console.log('pressed, long');
       },
     },
     enzyme: {

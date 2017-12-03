@@ -21,7 +21,7 @@ const onFinishRating = {
   component: Component,
   props: {
     onFinishRating: rating => {
-      alert(rating);
+      console.log(rating);
     },
   },
   enzyme: {

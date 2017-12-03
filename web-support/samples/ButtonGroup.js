@@ -40,7 +40,7 @@ const props = {
     props: {
       buttons,
       onPress: idx => {
-        alert('pressed: ' + idx);
+        console.log('pressed: ' + idx);
       },
     },
     enzyme: {
@@ -64,12 +64,10 @@ const props = {
     },
     styleguidist: {
       getJsxString: () => {
-        return (
-          'const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;\n' +
-          "<ButtonGroup buttons={['button one', 'button two', 'button three']}\n" +
-          '  component={TouchableWithoutFeedback}\n' +
-          '/>'
-        );
+        return `const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;
+  <ButtonGroup buttons={['button one', 'button two', 'button three']}
+    component={TouchableWithoutFeedback}
+  />`;
       },
     },
   },

@@ -46,11 +46,7 @@ exports[`Icon component should render without issues 1`] = `
   style={
     Array [
       false,
-      Object {
-        "borderRadius": 28,
-        "height": 52,
-        "width": 52,
-      },
+      false,
       false,
       Object {
         "alignItems": "center",

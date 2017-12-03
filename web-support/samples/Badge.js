@@ -76,7 +76,7 @@ const props = {
     props: {
       value: 'press',
       onPress: () => {
-        alert('pressed');
+        console.log('pressed');
       },
     },
     enzyme: {
@@ -92,15 +92,13 @@ const props = {
     },
     styleguidist: {
       getJsxString: () => {
-        return (
-          'const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;\n' +
-          '<Badge \n' +
-          "  value='TouchableWithoutFeedback'\n" +
-          '  component={TouchableWithoutFeedback}\n' +
-          "  textStyle={{ color: '#071'}}\n" +
-          "  onPress={() => alert('pressed')}\n" +
-          '/>'
-        );
+        return `const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;
+  <Badge 
+    value='TouchableWithoutFeedback'
+    component={TouchableWithoutFeedback}
+    textStyle={{ color: '#071'}}
+    onPress={() => console.log('pressed')}
+  />`;
       },
     },
   },

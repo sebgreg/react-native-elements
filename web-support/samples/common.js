@@ -69,12 +69,11 @@ export const snapShot = () => {
 export const buildJsxForGuideMethod = attr => {
   const refId = genRefId();
   const timerFunc = Function(
-    `setTimeout(() => {${refId}.${attr.attrName}();}, ${attr.styleguidist.cd})`
+    `setTimeout(() => {${refId}.${attr.name}();}, ${attr.styleguidist.cd})`
   );
   const buttonTitle = attr.styleguidist.cd
-    ? `Start ${attr.styleguidist.cd /
-        1000} sec countdown for: ${attr.attrName}()`
-    : `Execute ${attr.attrName}()`;
+    ? `Start ${attr.styleguidist.cd / 1000} sec countdown for: ${attr.name}()`
+    : `Execute ${attr.name}()`;
   return (
     <View>
       <TouchableHighlight
@@ -140,10 +139,9 @@ export default {
   },
   styleguidist: {
     build: true,
-    script:
-      'const View = RN.View;\n' +
-      'const TouchableHighlight = RN.TouchableHighlight;\n' +
-      'const Text = RN.Text;\n\n',
+    script: `const View = RN.View;
+  const TouchableHighlight = RN.TouchableHighlight;
+  const Text = RN.Text;`,
     examplesDir: EXAMPLES_DIR,
   },
 };

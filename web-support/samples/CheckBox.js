@@ -40,17 +40,15 @@ const props = {
     },
     styleguidist: {
       getJsxString: () => {
-        return (
-          'const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;\n' +
-          '<CheckBox \n' +
-          '  component={TouchableWithoutFeedback}\n' +
-          `  title="title"\n` +
-          `  checked={state.checked}\n` +
-          `  onIconPress={() => {\n` +
-          `    setState({ checked: !state.checked });\n` +
-          `  }}\n` +
-          '/>'
-        );
+        return `const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;
+  <CheckBox 
+    component={TouchableWithoutFeedback}
+    title="title"
+    checked={state.checked}
+    onIconPress={() => {
+      setState({ checked: !state.checked });
+    }}
+  />`;
       },
     },
   },
@@ -69,15 +67,16 @@ const props = {
     },
     styleguidist: {
       script: `initialState = { checked: false };`,
-      getJsxString: () =>
-        `<CheckBox\n` +
-        `  iconRight\n` +
-        `  title="title"\n` +
-        `  checked={state.checked}\n` +
-        `  onIconPress={() => {\n` +
-        `    setState({ checked: !state.checked });\n` +
-        `  }}\n` +
-        `/>`,
+      getJsxString: () => {
+        return `<CheckBox
+    iconRight
+    title="title"
+    checked={state.checked}
+    onIconPress={() => {
+      setState({ checked: !state.checked });
+    }}
+  />`;
+      },
     },
   },
   'right, title, checked, & onIconPress': {
@@ -95,15 +94,16 @@ const props = {
     },
     styleguidist: {
       script: `initialState = { checked: false };`,
-      getJsxString: () =>
-        `<CheckBox\n` +
-        `  right\n` +
-        `  title="title"\n` +
-        `  checked={state.checked}\n` +
-        `  onIconPress={() => {\n` +
-        `    setState({ checked: !state.checked });\n` +
-        `  }}\n` +
-        `/>`,
+      getJsxString: () => {
+        return `<CheckBox
+  right
+  title="title"
+  checked={state.checked}
+  onIconPress={() => {
+    setState({ checked: !state.checked });
+  }}
+/>`;
+      },
     },
   },
   'center, title, checked, & onIconPress': {
@@ -121,15 +121,16 @@ const props = {
     },
     styleguidist: {
       script: `initialState = { checked: false };`,
-      getJsxString: () =>
-        `<CheckBox\n` +
-        `  center\n` +
-        `  title="title"\n` +
-        `  checked={state.checked}\n` +
-        `  onIconPress={() => {\n` +
-        `    setState({ checked: !state.checked });\n` +
-        `  }}\n` +
-        `/>`,
+      getJsxString: () => {
+        return `<CheckBox
+    center
+    title="title"
+    checked={state.checked}
+    onIconPress={() => {
+      setState({ checked: !state.checked });
+    }}
+  />`;
+      },
     },
   },
   containerStyle: {
@@ -165,17 +166,18 @@ const props = {
     },
     styleguidist: {
       script: `initialState = { checked: false };`,
-      getJsxString: () =>
-        `<CheckBox\n` +
-        `  title="title"\n` +
-        `  checked={state.checked}\n` +
-        `  onIconPress={() => {\n` +
-        `    setState({ checked: !state.checked });\n` +
-        `  }}\n` +
-        `  onLongPress={() => {\n` +
-        `    alert("pressed, long");\n` +
-        `  }}\n` +
-        `/>`,
+      getJsxString: () => {
+        return `<CheckBox
+    title="title"
+    checked={state.checked}
+    onIconPress={() => {
+      setState({ checked: !state.checked });
+    }}
+    onLongPress={() => {
+      console.log("pressed, long");
+    }}
+  />`;
+      },
     },
   },
   'onLongIconPress, title, checked, & onIconPress': {
@@ -194,20 +196,19 @@ const props = {
       tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {
-      script:
-        `// onLongIconPress is not working on web platform\nq` +
-        `initialState = { checked: false };`,
-      getJsxString: () =>
-        `<CheckBox\n` +
-        `  title="title"\n` +
-        `  checked={state.checked}\n` +
-        `  onIconPress={() => {\n` +
-        `    setState({ checked: !state.checked });\n` +
-        `  }}\n` +
-        `  onLongIconPress={() => {\n` +
-        `    alert("pressed, long");\n` +
-        `  }}\n` +
-        `/>`,
+      script: `initialState = { checked: false };`,
+      getJsxString: () => {
+        return `<CheckBox
+    title="title"
+    checked={state.checked}
+    onIconPress={() => {
+      setState({ checked: !state.checked });
+    }}
+    onLongIconPress={() => {
+      console.log("pressed, long");
+    }}
+  />`;
+      },
     },
   },
   'onPress, title, checked, & onIconPress': {
@@ -227,17 +228,18 @@ const props = {
     },
     styleguidist: {
       script: `initialState = { checked: false };`,
-      getJsxString: () =>
-        `<CheckBox\n` +
-        `  title="title"\n` +
-        `  checked={state.checked}\n` +
-        `  onIconPress={() => {\n` +
-        `    setState({ checked: !state.checked });\n` +
-        `  }}\n` +
-        `  onPress={() => {\n` +
-        `    setState({ checked: !state.checked });\n` +
-        `  }}\n` +
-        `/>`,
+      getJsxString: () => {
+        return `<CheckBox
+    title="title"
+    checked={state.checked}
+    onIconPress={() => {
+      setState({ checked: !state.checked });
+    }}
+    onPress={() => {
+      setState({ checked: !state.checked });
+    }}
+  />`;
+      },
     },
   },
   checkedIcon: {
@@ -287,15 +289,16 @@ const props = {
     },
     styleguidist: {
       script: `initialState = { checked: false };`,
-      getJsxString: () =>
-        `<CheckBox\n` +
-        `  checkedTitle="title - is checked"\n` +
-        `  title="title"\n` +
-        `  checked={state.checked}\n` +
-        `  onIconPress={() => {\n` +
-        `    setState({ checked: !state.checked });\n` +
-        `  }}\n` +
-        `/>`,
+      getJsxString: () => {
+        return `<CheckBox
+    checkedTitle="title - is checked"
+    title="title"
+    checked={state.checked}
+    onIconPress={() => {
+      setState({ checked: !state.checked });
+    }}
+  />`;
+      },
     },
   },
   fontFamily: {

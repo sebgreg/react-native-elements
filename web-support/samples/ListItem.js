@@ -82,7 +82,7 @@ const props = {
     props: {
       title: 'title',
       onPress: () => {
-        alert('pressed');
+        console.log('pressed');
       },
       component: TouchableWithoutFeedback,
     },
@@ -91,16 +91,14 @@ const props = {
     },
     styleguidist: {
       getJsxString: () => {
-        return (
-          'const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;\n' +
-          '<ListItem \n' +
-          '  title="title" \n' +
-          '  onPress={ () => {\n' +
-          '    alert("pressed");\n' +
-          '  }}\n' +
-          '  component={TouchableWithoutFeedback}\n' +
-          '/>'
-        );
+        return `const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;
+  <ListItem 
+    title="title"
+    onPress={ () => {
+      console.log("pressed");
+    }}
+    component={TouchableWithoutFeedback}
+  />`;
       },
     },
   },
@@ -126,7 +124,7 @@ const props = {
       title: 'title',
       underlayColor: 'yellow',
       onPress: () => {
-        alert('pressed');
+        console.log('pressed');
       },
     },
     enzyme: {
@@ -155,7 +153,7 @@ const props = {
     props: {
       title: 'title',
       onLongPress: () => {
-        alert('pressed, long');
+        console.log('pressed, long');
       },
     },
     enzyme: {
@@ -313,6 +311,460 @@ const props = {
       title: 'title',
       avatar: 'hero.jpg',
       leftIcon: { name: 'pets', color: '#071' },
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  leftIconOnPress: {
+    component: Component,
+    props: {
+      title: 'title',
+      leftIcon: { name: 'pets', color: '#071' },
+      leftIconOnPress: () => {
+        console.log('leftIcon pressed');
+      },
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  leftIconOnLongPress: {
+    component: Component,
+    props: {
+      title: 'title',
+      avatar: 'hero.jpg',
+      leftIcon: { name: 'pets', color: '#071' },
+      leftIconOnLongPress: () => {
+        console.log('leftIcon pressed, long');
+      },
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  leftIconUnderlayColor: {
+    component: Component,
+    props: {
+      title: 'title',
+      avatar: 'hero.jpg',
+      leftIcon: { name: 'pets', color: '#071' },
+      leftIconOnPress: () => {
+        console.log('leftIcon pressed');
+      },
+      leftIconUnderlayColor: 'yellow',
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  rightIcon: {
+    component: Component,
+    props: {
+      title: 'title',
+      avatar: 'hero.jpg',
+      rightIcon: { name: 'pets', color: '#071' },
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  onPressRightIcon: {
+    component: Component,
+    props: {
+      title: 'title',
+      rightIcon: { name: 'pets', color: '#071' },
+      onPressRightIcon: () => {
+        console.log('rightIcon pressed');
+      },
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  switchButton: {
+    component: Component,
+    props: {
+      title: 'title',
+      hideChevron: true,
+      switchButton: true,
+      onSwitch: () => {},
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {
+      script: `initialState = { switchedOn: false };`,
+      getJsxString: attr => {
+        return `<ListItem
+  title={'title'}
+  hideChevron={true}
+  switchButton={true}
+  switched={state.switchedOn}
+  onSwitch={() => {setState({switchedOn: !state.switchedOn})}}
+/>`;
+      },
+    },
+  },
+  switchDisabled: {
+    component: Component,
+    props: {
+      title: 'title',
+      hideChevron: true,
+      switchButton: true,
+      switchDisabled: true,
+      onSwitch: () => {},
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  switchOnTintColor: {
+    component: Component,
+    props: {
+      title: 'title',
+      hideChevron: true,
+      switchButton: true,
+      onSwitch: () => {},
+      switchOnTintColor: '#071',
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {
+      script: `initialState = { switchedOn: false };`,
+      getJsxString: attr => {
+        return `<ListItem
+  title={'title'}
+  hideChevron={true}
+  switchButton={true}
+  switched={state.switchedOn}
+  onSwitch={() => {setState({switchedOn: !state.switchedOn})}}
+  switchOnTintColor="#071"
+/>`;
+      },
+    },
+  },
+  switchThumbTintColor: {
+    component: Component,
+    props: {
+      title: 'title',
+      hideChevron: true,
+      switchButton: true,
+      onSwitch: () => {},
+      switchThumbTintColor: '#071',
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {
+      script: `initialState = { switchedOn: false };`,
+      getJsxString: attr => {
+        return `<ListItem
+  title={'title'}
+  hideChevron={true}
+  switchButton={true}
+  switched={state.switchedOn}
+  onSwitch={() => {setState({switchedOn: !state.switchedOn})}}
+  switchThumbTintColor="#071"
+  />`;
+      },
+    },
+  },
+  switchTintColor: {
+    component: Component,
+    props: {
+      title: 'title',
+      hideChevron: true,
+      switchButton: true,
+      onSwitch: () => {},
+      switchTintColor: '#071',
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {
+      script: `initialState = { switchedOn: false };`,
+      getJsxString: attr => {
+        return `<ListItem
+  title={'title'}
+  hideChevron={true}
+  switchButton={true}
+  switched={state.switchedOn}
+  onSwitch={() => {setState({switchedOn: !state.switchedOn})}}
+  switchTintColor="#071"
+  />`;
+      },
+    },
+  },
+  textInput: {
+    component: Component,
+    props: {
+      title: 'title',
+      textInput: true,
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  textInputAutoCapitalize: {
+    component: Component,
+    props: {
+      title: 'title',
+      textInput: true,
+      textInputAutoCapitalize: 'characters',
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  textInputAutoCorrect: {
+    component: Component,
+    props: {
+      title: 'title',
+      textInput: true,
+      textInputAutoCorrect: true,
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  textInputAutoFocus: {
+    component: Component,
+    props: {
+      title: 'title',
+      textInput: true,
+      textInputAutoFocus: true,
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  'textInputEditable & textInputValue': {
+    component: Component,
+    props: {
+      title: 'title',
+      textInput: true,
+      textInputEditable: false,
+      textInputValue: 'example text',
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  keyboardType: {
+    component: Component,
+    props: {
+      title: 'title',
+      textInput: true,
+      keyboardType: 'numeric',
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  textInputMaxLength: {
+    component: Component,
+    props: {
+      title: 'title',
+      textInput: true,
+      textInputMaxLength: 7,
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  textInputMultiline: {
+    component: Component,
+    props: {
+      title: 'title',
+      textInput: true,
+      textInputMultiline: true,
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  textInputOnChangeText: {
+    component: Component,
+    props: {
+      title: 'title',
+      textInput: true,
+      textInputOnChangeText: text => {
+        console.log(text);
+      },
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  textInputOnFocus: {
+    component: Component,
+    props: {
+      title: 'title',
+      textInput: true,
+      textInputOnFocus: () => {
+        console.log('ListItem: textInputOnFocus');
+      },
+    },
+    enzyme: {
+      tests: {
+        shallow: { snapshot: snapShot() },
+      },
+    },
+    styleguidist: {},
+  },
+  textInputSecure: {
+    component: Component,
+    props: {
+      title: 'title',
+      textInput: true,
+      textInputSecure: true,
+      textInputOnChangeText: text => {
+        console.log(text);
+      },
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  textInputStyle: {
+    component: Component,
+    props: {
+      title: 'title',
+      textInput: true,
+      textInputStyle: { color: '#071' },
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  textInputContainerStyle: {
+    component: Component,
+    props: {
+      title: 'title',
+      textInput: true,
+      textInputContainerStyle: { borderWidth: 5 },
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  textInputPlaceholder: {
+    component: Component,
+    props: {
+      title: 'title',
+      textInput: true,
+      textInputPlaceholder: 'placeholder',
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  textInputOnBlur: {
+    component: Component,
+    props: {
+      title: 'title',
+      textInput: true,
+      textInputOnBlur: () => {
+        console.log('ListItem: textInputOnBlur');
+      },
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  textInputSelectTextOnFocus: {
+    component: Component,
+    props: {
+      title: 'title',
+      textInput: true,
+      textInputValue: 'selectable text',
+      textInputSelectTextOnFocus: true,
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  textInputReturnKeyType: {
+    component: Component,
+    props: {
+      title: 'title',
+      textInput: true,
+      textInputValue: 'selectable text',
+      textInputReturnKeyType: 'go',
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  disabled: {
+    component: Component,
+    props: {
+      title: 'title',
+      textInput: true,
+      textInputValue: 'selectable text',
+      disabled: true,
+      leftIcon: { name: 'pets', color: '#071' },
+      leftIconOnPress: () => {
+        console.log('leftIcon pressed');
+      },
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  disabledStyle: {
+    component: Component,
+    props: {
+      title: 'title',
+      textInput: true,
+      textInputValue: 'selectable text',
+      disabled: true,
+      disabledStyle: { borderWidth: 5 },
+      leftIcon: { name: 'pets', color: '#071' },
+      leftIconOnPress: () => {
+        console.log('leftIcon pressed');
+      },
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  badge: {
+    component: Component,
+    props: {
+      title: 'title',
+      badge: {
+        value: '7',
+        containerStyle: { borderWidth: 2, borderColor: '#4b5' },
+        textStyle: { color: '#4b5' },
+      },
     },
     enzyme: {
       tests: { shallow: { snapshot: snapShot() } },
