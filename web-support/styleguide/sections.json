@@ -30,6 +30,6 @@
   {
     "name": "misc",
     "components":
-      "../../src/+(avatar|badge|divider|header|text)/+(badge|[A-Z])*.js"
+      "../../src/+(animtest|avatar|badge|divider|header|text)/+(badge|[A-Z])*.js"
   }
 ]

@@ -13,7 +13,7 @@ const getExampleFilename = componentPath => {
 module.exports = {
   verbose: false,
   serverPort: 6061,
-  assetsDir: '../samples/assets',
+  assetsDir: './assets',
   context: {
     RN: 'react-native',
   },
