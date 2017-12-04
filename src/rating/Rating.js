@@ -47,6 +47,8 @@ const TYPES = {
 };
 
 export default class Rating extends Component {
+  _animListener = null;
+
   static defaultProps = {
     type: 'star',
     ratingImage: require('./images/star.png'),
@@ -59,43 +61,46 @@ export default class Rating extends Component {
 
   constructor(props) {
     super(props);
+    const initialRatingPct = props.startingValue
+      ? props.startingValue / props.ratingCount
+      : 0.5;
     this.state = {
       panResponder: null,
-      positionAnim: new Animated.Value(0),
-      value: 0,
-    }; // TODO: add rating
+      rating: initialRatingPct * props.ratingCount,
+      ratingPosAnim: new Animated.Value(
+        initialRatingPct * props.imageSize * props.ratingCount
+      ),
+    };
   }
 
   componentWillMount() {
-    const { onFinishRating, fractions } = this.props;
+    const { imageSize, onFinishRating, fractions } = this.props;
+    this._animListener = this.state.ratingPosAnim.addListener(({ value }) => {
+      this.updateRating(value);
+    });
+    const panResponder = PanResponder.create({
+      onStartShouldSetPanResponder: () => true,
+      onPanResponderGrant: () => {
+        // extractOffset() is available in later versions of RN
+        this.state.ratingPosAnim.setOffset(this.state.rating * imageSize);
+      },
+      onPanResponderMove: Animated.event([
+        null,
+        { dx: this.state.ratingPosAnim },
+      ]),
+      onPanResponderRelease: (e, gestureState) => {
+        this.state.ratingPosAnim.flattenOffset();
+        this.updatePosition(this.state.rating);
+        onFinishRating(this.state.rating);
+      },
+    });
     this.setState(prevState => {
-      const panResponder = PanResponder.create({
-        onStartShouldSetPanResponder: () => true,
-        // onPanResponderGrant: () => {
-        //   extractOffset() is available in later versions of RN
-        //   this.state.positionAnim.extractOffset();
-        // },
-        onPanResponderMove: (event, { dx }) => {
-          this.state.positionAnim.setValue(dx);
-          this.setState(prevState => {
-            return { value: dx };
-          });
-        },
-        onPanResponderRelease: () => {
-          const rating = this.getCurrentRating();
-          if (!fractions) {
-            // "round up" to the nearest star/rocket/whatever
-            this.setCurrentRating(rating);
-          }
-          onFinishRating(rating);
-        },
-      });
       return { ...prevState, panResponder };
     });
   }
 
-  componentDidMount() {
-    this.setCurrentRating(this.props.startingValue);
+  componentWillUnmount() {
+    this.state.ratingPosAnim.removeListener(this._animListener);
   }
 
   getPrimaryViewStyle() {
@@ -103,12 +108,12 @@ export default class Rating extends Component {
 
     const color = TYPES[type].color;
 
-    const halfFull = ratingCount * imageSize / 2;
+    const fullWidth = ratingCount * imageSize;
 
-    const width = this.state.positionAnim.interpolate(
+    const width = this.state.ratingPosAnim.interpolate(
       {
-        inputRange: [-halfFull, halfFull],
-        outputRange: [0, ratingCount * imageSize],
+        inputRange: [0, fullWidth],
+        outputRange: [0, fullWidth],
         extrapolate: 'clamp',
       },
       { useNativeDriver: true }
@@ -126,12 +131,12 @@ export default class Rating extends Component {
 
     const backgroundColor = TYPES[type].backgroundColor;
 
-    const halfFull = ratingCount * imageSize / 2;
+    const fullWidth = ratingCount * imageSize;
 
-    const width = this.state.positionAnim.interpolate(
+    const width = this.state.ratingPosAnim.interpolate(
       {
-        inputRange: [-halfFull, halfFull],
-        outputRange: [ratingCount * imageSize, 0],
+        inputRange: [0, fullWidth],
+        outputRange: [fullWidth, 0],
         extrapolate: 'clamp',
       },
       { useNativeDriver: true }
@@ -149,7 +154,7 @@ export default class Rating extends Component {
     const source = TYPES[type].source;
 
     return times(ratingCount, index => (
-      <View key={index} style={styles.starContainer}>
+      <View key={index} style={styles.starContainer} pointerEvents="none">
         <Image
           source={source}
           style={{ width: imageSize, height: imageSize }}
@@ -160,49 +165,28 @@ export default class Rating extends Component {
     ));
   }
 
-  getCurrentRating() {
-    const { value } = this.state;
+  updatePosition(rating) {
     const { fractions, imageSize, ratingCount } = this.props;
-    const startingValue = ratingCount / 2;
-    let currentRating = 0;
-
-    if (value > ratingCount * imageSize / 2) {
-      currentRating = ratingCount;
-    } else if (value < -ratingCount * imageSize / 2) {
-      currentRating = 0;
-    } else if (value < imageSize || value > imageSize) {
-      currentRating = startingValue + value / imageSize;
-      currentRating = !fractions
-        ? Math.ceil(currentRating)
-        : +currentRating.toFixed(fractions);
-    } else {
-      currentRating = !fractions
-        ? Math.ceil(startingValue)
-        : +startingValue.toFixed(fractions);
-    }
-    // console.log({ currentRating });
-    return currentRating;
+    const ratingPos = rating * imageSize;
+    this.state.ratingPosAnim.setValue(ratingPos);
   }
 
-  setCurrentRating(rating) {
-    const { imageSize, ratingCount } = this.props;
-    // console.log({ rating });
-    // `initialRating` corresponds to `startingValue` in the getter. Naming it
-    // differently here avoids confusion with `value` below.
-    const initialRating = ratingCount / 2;
-    let value = null;
+  updateRating(pos) {
+    const { fractions, imageSize, ratingCount } = this.props;
+    let rating = pos / imageSize;
 
     if (rating > ratingCount) {
-      value = ratingCount * imageSize / 2;
+      rating = ratingCount;
     } else if (rating < 0) {
-      value = -ratingCount * imageSize / 2;
-    } else if (rating < ratingCount / 2 || rating > ratingCount / 2) {
-      value = (rating - initialRating) * imageSize;
-    } else {
-      value = 0;
+      rating = 0;
     }
-
-    this.state.positionAnim.setValue(value);
+    rating = !fractions ? Math.ceil(rating) : +rating.toFixed(fractions);
+    this.setState(prevState => {
+      return {
+        ...prevState,
+        rating,
+      };
+    });
   }
 
   displayCurrentRating() {
@@ -215,7 +199,7 @@ export default class Rating extends Component {
         <View style={styles.ratingView}>
           <Text style={styles.ratingText}>Rating: </Text>
           <Text style={[styles.currentRatingText, { color }]}>
-            {this.getCurrentRating()}
+            {this.state.rating}
           </Text>
           <Text style={styles.maxRatingText}>/{ratingCount}</Text>
         </View>
