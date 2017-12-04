@@ -47,9 +47,6 @@ const TYPES = {
 };
 
 export default class Rating extends Component {
-  _panResponder;
-  _position;
-
   static defaultProps = {
     type: 'star',
     ratingImage: require('./images/star.png'),
@@ -62,32 +59,38 @@ export default class Rating extends Component {
 
   constructor(props) {
     super(props);
-    this._position = new Animated.Value(0);
-    this.state = { value: 0 }; // TODO: add rating
+    this.state = {
+      panResponder: null,
+      positionAnim: new Animated.Value(0),
+      value: 0,
+    }; // TODO: add rating
   }
 
   componentWillMount() {
     const { onFinishRating, fractions } = this.props;
-    this._panResponder = PanResponder.create({
-      onStartShouldSetPanResponder: () => true,
-      // onPanResponderGrant: () => {
-      //   extractOffset() is available in later versions of RN
-      //   this._position.extractOffset();
-      // },
-      onPanResponderMove: (event, { dx }) => {
-        this._position.setValue(dx);
-        this.setState(prevState => {
-          return { value: dx };
-        });
-      },
-      onPanResponderRelease: () => {
-        const rating = this.getCurrentRating();
-        if (!fractions) {
-          // "round up" to the nearest star/rocket/whatever
-          this.setCurrentRating(rating);
-        }
-        onFinishRating(rating);
-      },
+    this.setState(prevState => {
+      const panResponder = PanResponder.create({
+        onStartShouldSetPanResponder: () => true,
+        // onPanResponderGrant: () => {
+        //   extractOffset() is available in later versions of RN
+        //   this.state.positionAnim.extractOffset();
+        // },
+        onPanResponderMove: (event, { dx }) => {
+          this.state.positionAnim.setValue(dx);
+          this.setState(prevState => {
+            return { value: dx };
+          });
+        },
+        onPanResponderRelease: () => {
+          const rating = this.getCurrentRating();
+          if (!fractions) {
+            // "round up" to the nearest star/rocket/whatever
+            this.setCurrentRating(rating);
+          }
+          onFinishRating(rating);
+        },
+      });
+      return { ...prevState, panResponder };
     });
   }
 
@@ -102,7 +105,7 @@ export default class Rating extends Component {
 
     const halfFull = ratingCount * imageSize / 2;
 
-    const width = this._position.interpolate(
+    const width = this.state.positionAnim.interpolate(
       {
         inputRange: [-halfFull, halfFull],
         outputRange: [0, ratingCount * imageSize],
@@ -125,7 +128,7 @@ export default class Rating extends Component {
 
     const halfFull = ratingCount * imageSize / 2;
 
-    const width = this._position.interpolate(
+    const width = this.state.positionAnim.interpolate(
       {
         inputRange: [-halfFull, halfFull],
         outputRange: [ratingCount * imageSize, 0],
@@ -199,7 +202,7 @@ export default class Rating extends Component {
       value = 0;
     }
 
-    this._position.setValue(value);
+    this.state.positionAnim.setValue(value);
   }
 
   displayCurrentRating() {
@@ -246,7 +249,10 @@ export default class Rating extends Component {
     return (
       <View pointerEvents={readonly ? 'none' : 'box-none'} style={style}>
         {showRating && this.displayCurrentRating()}
-        <View style={styles.starsWrapper} {...this._panResponder.panHandlers}>
+        <View
+          style={styles.starsWrapper}
+          {...this.state.panResponder.panHandlers}
+        >
           <View style={styles.starsInsideWrapper} pointerEvents="none">
             <Animated.View style={this.getPrimaryViewStyle()} />
             <Animated.View style={this.getSecondaryViewStyle()} />
