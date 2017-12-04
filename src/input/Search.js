@@ -60,6 +60,7 @@ class SearchBar extends Component {
       clearIcon,
       containerRef,
       underlineColorAndroid,
+      onClearText,
       ...attributes
     } = this.props;
     return (
@@ -116,7 +117,7 @@ class SearchBar extends Component {
               loadingIcon.style && loadingIcon.style,
               clearIcon && { right: 35 },
             ]}
-            color={icon.color || colors.grey3}
+            color={loadingIcon.color || colors.grey3}
           />
         )}
       </View>
@@ -174,6 +175,9 @@ const styles = StyleSheet.create({
       android: {
         top: 20,
       },
+      web: {
+        top: 19,
+      },
     }),
   },
   loadingIcon: {
@@ -183,6 +187,9 @@ const styles = StyleSheet.create({
     top: 13,
     ...Platform.select({
       android: {
+        top: 18,
+      },
+      web: {
         top: 18,
       },
     }),
