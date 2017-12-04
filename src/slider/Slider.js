@@ -348,8 +348,11 @@ export default class Slider extends Component {
       thumbStyle,
       debugTouchArea,
       thumbTouchSize,
+      onSlidingStart,
+      onSlidingComplete,
       animationType,
       animateTransitions,
+      animationConfig,
       ...other
     } = this.props;
 
