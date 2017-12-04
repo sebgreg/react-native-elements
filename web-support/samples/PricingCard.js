@@ -173,11 +173,8 @@ const props = {
   },
 };
 
-const methods = {};
-
 export default {
   samples: {
     props,
-    methods,
   },
 };

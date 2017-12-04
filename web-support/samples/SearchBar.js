@@ -15,187 +15,198 @@ import {
   onlyEnsureCalled,
   onlySnapshots,
 } from './';
-import { SocialIcon as Component } from '../../src';
+import { SearchBar as Component } from '../../src';
 
 const props = {
-  noProps: {
+  'no props': {
     component: Component,
     enzyme: {
       tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
-  title: {
-    component: Component,
-    props: { type: 'medium', title: 'medium', button: true },
-    enzyme: {
-      tests: { shallow: { snapshot: snapShot() } },
-    },
-  },
-  type: {
-    component: Component,
-    props: { type: 'medium' },
-    enzyme: {
-      tests: { shallow: { snapshot: snapShot() } },
-    },
-  },
-  raised: {
-    component: Component,
-    props: { type: 'medium', raised: false },
-    enzyme: {
-      tests: { shallow: { snapshot: snapShot() } },
-    },
-  },
-  button: {
-    component: Component,
-    props: { type: 'medium', button: true },
-    enzyme: {
-      tests: { shallow: { snapshot: snapShot() } },
-    },
-  },
-  onPress: {
+  containerStyle: {
     component: Component,
     props: {
-      type: 'medium',
-      onPress: () => {
-        console.log('pressed');
-      },
+      containerStyle: { borderWidth: 5, borderColor: '#071' },
     },
-    enzyme: {
-      tests: { shallow: { snapshot: snapShot() } },
-    },
-  },
-  onLongPress: {
-    component: Component,
-    props: {
-      type: 'medium',
-      onLongPress: () => {
-        console.log('pressed, long');
-      },
-    },
-    enzyme: {
-      tests: { shallow: { snapshot: snapShot() } },
-    },
-  },
-  light: {
-    component: Component,
-    props: { type: 'medium', light: true },
     enzyme: {
       tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
-  iconStyle: {
+  inputStyle: {
     component: Component,
     props: {
-      type: 'medium',
-      button: true,
-      iconStyle: { transform: [{ rotateZ: '-45deg' }] },
+      inputStyle: { borderWidth: 5, borderColor: '#071' },
     },
     enzyme: {
       tests: { shallow: { snapshot: snapShot() } },
     },
+    styleguidist: {},
   },
-  style: {
+  icon: {
     component: Component,
     props: {
-      type: 'medium',
-      button: true,
-      style: { width: 120, transform: [{ rotateZ: '-45deg' }] },
+      icon: { name: 'pets', color: '#071' },
     },
     enzyme: {
       tests: { shallow: { snapshot: snapShot() } },
     },
+    styleguidist: {},
   },
-  iconColor: {
-    component: Component,
-    props: { type: 'medium', iconColor: '#071' },
-    enzyme: {
-      tests: { shallow: { snapshot: snapShot() } },
-    },
-  },
-  underlayColor: {
+  noIcon: {
     component: Component,
     props: {
-      type: 'medium',
-      onPress: () => {},
-      underlayColor: 'yellow',
+      noIcon: true,
     },
     enzyme: {
       tests: { shallow: { snapshot: snapShot() } },
     },
+    styleguidist: {},
   },
-  iconSize: {
+  lightTheme: {
     component: Component,
-    props: { type: 'medium', iconSize: 40 },
+    props: {
+      lightTheme: true,
+    },
     enzyme: {
       tests: { shallow: { snapshot: snapShot() } },
     },
+    styleguidist: {},
   },
-  component: {
+  round: {
     component: Component,
-    props: { type: 'medium', component: TouchableWithoutFeedback },
+    props: {
+      round: true,
+    },
     enzyme: {
       tests: { shallow: { snapshot: snapShot() } },
     },
+    styleguidist: {},
+  },
+  underlineColorAndroid: {
+    component: Component,
+    props: {
+      underlineColorAndroid: '#071',
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  loadingIcon: {
+    component: Component,
+    props: {
+      showLoadingIcon: true,
+      loadingIcon: { color: '#071' },
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  placeholder: {
+    component: Component,
+    props: {
+      placeholder: 'placeholder',
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  placeholderTextColor: {
+    component: Component,
+    props: {
+      placeholder: 'placeholder',
+      placeholderTextColor: '#071',
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  onChangeText: {
+    component: Component,
+    props: {
+      onChangeText: text => {
+        console.log(text);
+      },
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  onClearText: {
+    component: Component,
+    props: {
+      onClearText: () => {
+        console.log('onClearText');
+      },
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+  clearIcon: {
+    component: Component,
+    props: {
+      showLoadingIcon: true,
+      clearIcon: { name: 'clear', color: '#071' },
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+    },
+    styleguidist: {},
+  },
+};
+
+const methods = {
+  focus: {
+    component: Component,
+    props: { defaultValue: 'cursor will appear' },
     styleguidist: {
-      getJsxString: () => {
-        return `const TouchableWithoutFeedback = RN.TouchableWithoutFeedback;
-  <SocialIcon
-    type='medium'
-    component={TouchableWithoutFeedback}
-  />`;
+      cd: 1000,
+      buildJsx: buildJsxForGuideMethod,
+    },
+    enzyme: {
+      tests: {
+        shallow: {
+          'ensure called': ensureCalled(),
+        },
       },
     },
   },
-  fontFamily: {
+  blur: {
     component: Component,
-    props: {
-      type: 'medium',
-      fontFamily: 'Courier New',
-      title: 'medium',
-      button: true,
+    props: { defaultValue: 'place cursor here and watch it be removed' },
+    styleguidist: {
+      cd: 3000,
+      buildJsx: buildJsxForGuideMethod,
     },
     enzyme: {
-      tests: { shallow: { snapshot: snapShot() } },
+      tests: {
+        shallow: {
+          'ensure called': ensureCalled(),
+        },
+      },
     },
   },
-  fontWeight: {
+  clearText: {
     component: Component,
-    props: {
-      type: 'medium',
-      fontWeight: 'bold',
-      title: 'medium',
-      button: true,
+    props: { defaultValue: 'text to clear' },
+    styleguidist: {
+      buildJsx: buildJsxForGuideMethod,
     },
     enzyme: {
-      tests: { shallow: { snapshot: snapShot() } },
-    },
-  },
-  fontStyle: {
-    component: Component,
-    props: {
-      type: 'medium',
-      fontStyle: { padding: 50 },
-      title: 'medium',
-      button: true,
-    },
-    enzyme: {
-      tests: { shallow: { snapshot: snapShot() } },
-    },
-  },
-  disabled: {
-    component: Component,
-    props: { type: 'medium', disabled: true },
-    enzyme: {
-      tests: { shallow: { snapshot: snapShot() } },
-    },
-  },
-  loading: {
-    component: Component,
-    props: { type: 'medium', loading: true, title: 'medium', button: true },
-    enzyme: {
-      tests: { shallow: { snapshot: snapShot() } },
+      tests: {
+        shallow: {
+          'ensure called': ensureCalled(),
+        },
+      },
     },
   },
 };
@@ -203,5 +214,6 @@ const props = {
 export default {
   samples: {
     props,
+    methods,
   },
 };

@@ -24,6 +24,7 @@ import List from './List';
 import ListItem from './ListItem';
 import PricingCard from './PricingCard';
 import Rating from './Rating';
+import SearchBar from './SearchBar';
 
 export default {
   Avatar: {
@@ -69,5 +70,9 @@ export default {
   Rating: {
     title: 'Rating',
     sectionComponents: { Rating },
+  },
+  SearchBar: {
+    title: 'SearchBar',
+    sectionComponents: { SearchBar },
   },
 };

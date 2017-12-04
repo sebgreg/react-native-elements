@@ -17,7 +17,7 @@
   },
   {
     "name": "Inputs",
-    "components": "../../src/+(checkbox|rating|slider)/[A-Z]*.js"
+    "components": "../../src/+(input|checkbox|rating|slider)/[A-Z]*.js"
   },
   {
     "name": "Lists",

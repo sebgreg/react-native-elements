@@ -5,6 +5,7 @@ const sections = require('./sections.json');
 
 const getExampleFilename = componentPath => {
   let baseName = path.basename(componentPath).replace(/\.jsx?$/, '.md');
+  if (baseName === 'Search.md') baseName = 'SearchBar.md';
   const fullPath = path.resolve(`web-support/styleguide/examples/${baseName}`);
   return fullPath;
 };
