@@ -32,7 +32,7 @@ module.exports = {
     '**/*.spec.jsx',
   ],
   template: './template.html',
-  styleguideDir: './build',
+  styleguideDir: './public',
   styleguideComponents: {
     Wrapper: path.join(__dirname, './Wrapper'),
   },

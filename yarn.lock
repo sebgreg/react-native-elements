@@ -2337,7 +2337,14 @@ create-react-class@^15.6.0:
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
 
-cross-spawn@5.1.0, cross-spawn@^5.0.1:
+cross-env@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-5.1.1.tgz#b6d8ab97f304c0f71dae7277b75fe424c08dfa74"
+  dependencies:
+    cross-spawn "^5.1.0"
+    is-windows "^1.0.0"
+
+cross-spawn@5.1.0, cross-spawn@^5.0.1, cross-spawn@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
   dependencies:
@@ -2980,9 +2987,9 @@ entities@^1.1.1, entities@~1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0"
 
-enzyme-styleguidist-sample-parser@^0.1.8:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/enzyme-styleguidist-sample-parser/-/enzyme-styleguidist-sample-parser-0.1.8.tgz#dcea04c19141fb41ad1a8acc5af05fb397050426"
+enzyme-styleguidist-sample-parser@^0.1.11:
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/enzyme-styleguidist-sample-parser/-/enzyme-styleguidist-sample-parser-0.1.11.tgz#28462b2074c91ccebacfaf77ae103ba142b616c9"
   dependencies:
     fs-extra "^4.0.2"
     lodash.capitalize "^4.2.1"
@@ -4935,7 +4942,7 @@ is-whitespace-character@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/is-whitespace-character/-/is-whitespace-character-1.0.1.tgz#9ae0176f3282b65457a1992cdb084f8a5f833e3b"
 
-is-windows@^1.0.1:
+is-windows@^1.0.0, is-windows@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/is-windows/-/is-windows-1.0.1.tgz#310db70f742d259a16a369202b51af84233310d9"
 
