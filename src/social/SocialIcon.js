@@ -68,7 +68,7 @@ const SocialIcon = props => {
   } = props;
 
   let touchableProps = {};
-  let opacityProps = {};
+  let highlightProps = {};
   let Component = View;
   if (onPress || onLongPress) {
     touchableProps = {
@@ -77,8 +77,8 @@ const SocialIcon = props => {
     };
     Component = component || TouchableHighlight;
   }
-  if (Component == TouchableOpacity) {
-    opacityProps = {
+  if (Component == TouchableHighlight) {
+    highlightProps = {
       underlayColor: light ? 'white' : underlayColor || colors[type],
     };
   }
@@ -97,7 +97,7 @@ const SocialIcon = props => {
     <Component
       {...attributes}
       {...touchableProps}
-      {...opacityProps}
+      {...highlightProps}
       disabled={disabled || false}
       style={[
         raised && styles.raised,
