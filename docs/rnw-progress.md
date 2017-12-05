@@ -18,13 +18,13 @@
 | Pricing      | 2017-11-11    | [low](#pricing-changes)      | 2017-12-03 |
 | Rating       | 2017-11-11    | [med](#rating-changes)      | 2017-11-21 |
 | SearchBar    | 2017-11-12    | [low](#search-changes)     | 2017-12-03 |
-| Slider       | 2017-11-08    | [low](#slider-changes)       |
+| Slider       | 2017-11-08    | [low](#slider-changes)       | 2017-12-04 |
 | Social Icons | 2017-11-11    | [low](#socialicon-changes) | 2017-11-30 |
 | Text         | 2017-11-12    | [low](#text-changes)         |
 | Tiles        | 2017-11-12    | [med](#tile-changes)         |
 
 ## Component Changes
-note: "dom prop warnings" refer to console.warn messages which alert the developer that a dom element has been passed props it connot recognize
+**note**: "dom prop warnings" refer to console.warn messages which alert the developer that a dom element has been passed props it connot recognize
 
 ### Avatar changes
 - fix: for `onPress`, `onLongPress`, and `activeOpactiy`: utilize `touchableProps` object, empty if View, then added via `"{...touchableProps}"` - to avoid dom prop warnings
@@ -87,7 +87,7 @@ note: "dom prop warnings" refer to console.warn messages which alert the develop
 - fix: changed pointerEvents; `box-none` for parent View, `none` for Image
 - fix: changed the way Animated was being used:
   - switched from ValueXY to Value - only need X
-  - keep one instance-wide Animated.Value instead of creating new.  Change value via SetValue()
+  - keep one Animated.Value instead of creating new.  Change value via Animated.event()
   - simplified interpolations
 
 ### SearchBar changes
@@ -162,3 +162,6 @@ note: "dom prop warnings" refer to console.warn messages which alert the develop
 - **suggestion**: check for existance of `extractOffset` function and use it if available
   - mouseclick & mousemove seem off from displayed position (more obvious on web)
   - later versions of react-native support `extractOffset` to make this behave better
+
+### Slider
+- **note**: keeping `onValueChange` from propagating to dom elements causes test: "should call onValueChange" to fail, even though the function does get called in practical testing.  Left the warning for now

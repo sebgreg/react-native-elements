@@ -16,7 +16,7 @@ import { Rating as Component } from '../../src';
 const props = {
   'development testing': {
     component: Component,
-    props: { showRating: true, fractions: true, startingValue: 3.7 },
+    props: { showRating: true, fractions: 2, startingValue: 3.7 },
     enzyme: {
       tests: onlySnapshots,
     },

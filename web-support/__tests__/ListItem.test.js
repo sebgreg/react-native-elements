@@ -540,18 +540,18 @@ const props = {
     },
     styleguidist: {},
   },
-  textInputAutoFocus: {
-    component: Component,
-    props: {
-      title: 'title',
-      textInput: true,
-      textInputAutoFocus: true,
-    },
-    enzyme: {
-      tests: { shallow: { snapshot: snapShot() } },
-    },
-    styleguidist: {},
-  },
+  // textInputAutoFocus: {
+  //   component: Component,
+  //   props: {
+  //     title: 'title',
+  //     textInput: true,
+  //     textInputAutoFocus: true,
+  //   },
+  //   enzyme: {
+  //     tests: { shallow: { snapshot: snapShot() } },
+  //   },
+  //   styleguidist: {},
+  // },
   'textInputEditable & textInputValue': {
     component: Component,
     props: {
