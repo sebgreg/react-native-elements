@@ -14,13 +14,6 @@ import options, {
 import { Tile as Component } from '../../src';
 
 const props = {
-  'no props': {
-    component: Component,
-    enzyme: {
-      tests: onlySnapshots,
-    },
-    styleguidist: {},
-  },
   imageSrc: {
     component: Component,
     props: {
@@ -211,7 +204,7 @@ const samples = {
 
 parseSamples(
   {
-    Tile: { sectionComponents: { Tile: { samples } } },
+    Misc: { sectionComponents: { Tile: { samples } } },
   },
   options
 );

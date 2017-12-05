@@ -488,6 +488,7 @@ exports[`Input: SearchBar: [ prop: onClearText ] enzyme-shallow: snapshot 1`] = 
     autoCapitalize="sentences"
     autoComplete="on"
     autoCorrect={true}
+    defaultValue="text to clear"
     editable={true}
     keyboardType="default"
     multiline={false}
@@ -501,8 +502,10 @@ exports[`Input: SearchBar: [ prop: onClearText ] enzyme-shallow: snapshot 1`] = 
         false,
         false,
         undefined,
-        undefined,
         false,
+        Object {
+          "paddingRight": 30,
+        },
       ]
     }
     underlineColorAndroid="transparent"
@@ -515,6 +518,19 @@ exports[`Input: SearchBar: [ prop: onClearText ] enzyme-shallow: snapshot 1`] = 
       Array [
         148,
         152,
+        undefined,
+      ]
+    }
+  />
+  <[object Object]
+    color="#86939e"
+    name="clear"
+    onPress={[Function]}
+    size={16}
+    style={
+      Array [
+        148,
+        153,
         undefined,
       ]
     }

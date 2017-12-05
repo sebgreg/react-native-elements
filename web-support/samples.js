@@ -139,9 +139,6 @@ export default {
   },
   styleguidist: {
     build: true,
-    script: `const View = RN.View;
-  const TouchableHighlight = RN.TouchableHighlight;
-  const Text = RN.Text;`,
     examplesDir: EXAMPLES_DIR,
   },
 };

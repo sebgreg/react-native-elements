@@ -2,7 +2,7 @@
 
 exports[`Misc: Avatar: [ prop: activeOpacity ] enzyme-shallow: snapshot 1`] = `
 <TouchableOpacity
-  activeOpacity={0.5}
+  activeOpacity={0.71}
   focusedOpacity={0.7}
   onPress={[Function]}
   style={
@@ -316,38 +316,39 @@ exports[`Misc: Avatar: [ prop: editButton ] enzyme-shallow: snapshot 1`] = `
         undefined,
       ]
     }
-  />
-  <TouchableHighlight
-    activeOpacity={0.85}
-    onPress={null}
-    style={
-      Array [
-        408,
-        Object {
-          "borderRadius": 15,
-          "height": 30,
-          "width": 30,
-        },
-        Object {
-          "backgroundColor": "#7d8",
-        },
-      ]
-    }
-    underlayColor="yellow"
   >
-    <View>
-      <Icon
-        color="#071"
-        name="sms"
-        raised={false}
-        reverse={false}
-        reverseColor="white"
-        size={24}
-        type="octicons"
-        underlayColor="white"
-      />
-    </View>
-  </TouchableHighlight>
+    <TouchableHighlight
+      activeOpacity={0.85}
+      onPress={null}
+      style={
+        Array [
+          408,
+          Object {
+            "borderRadius": 15,
+            "height": 30,
+            "width": 30,
+          },
+          Object {
+            "backgroundColor": "#7d8",
+          },
+        ]
+      }
+      underlayColor="yellow"
+    >
+      <View>
+        <Icon
+          color="#071"
+          name="sms"
+          raised={false}
+          reverse={false}
+          reverseColor="white"
+          size={24}
+          type="octicons"
+          underlayColor="white"
+        />
+      </View>
+    </TouchableHighlight>
+  </View>
 </View>
 `;
 
@@ -813,36 +814,37 @@ exports[`Misc: Avatar: [ prop: onEditPress ] enzyme-shallow: snapshot 1`] = `
         undefined,
       ]
     }
-  />
-  <TouchableHighlight
-    activeOpacity={0.85}
-    onPress={[Function]}
-    style={
-      Array [
-        403,
-        Object {
-          "borderRadius": 5.666666666666667,
-          "height": 11.333333333333334,
-          "width": 11.333333333333334,
-        },
-        null,
-      ]
-    }
-    underlayColor="#000"
   >
-    <View>
-      <Icon
-        color="#fff"
-        name="mode-edit"
-        raised={false}
-        reverse={false}
-        reverseColor="white"
-        size={9.066666666666668}
-        type="material"
-        underlayColor="white"
-      />
-    </View>
-  </TouchableHighlight>
+    <TouchableHighlight
+      activeOpacity={0.85}
+      onPress={[Function]}
+      style={
+        Array [
+          403,
+          Object {
+            "borderRadius": 5.666666666666667,
+            "height": 11.333333333333334,
+            "width": 11.333333333333334,
+          },
+          null,
+        ]
+      }
+      underlayColor="#000"
+    >
+      <View>
+        <Icon
+          color="#fff"
+          name="mode-edit"
+          raised={false}
+          reverse={false}
+          reverseColor="white"
+          size={9.066666666666668}
+          type="material"
+          underlayColor="white"
+        />
+      </View>
+    </TouchableHighlight>
+  </View>
 </View>
 `;
 
@@ -1113,36 +1115,37 @@ exports[`Misc: Avatar: [ prop: showEditButton ] enzyme-shallow: snapshot 1`] = `
         undefined,
       ]
     }
-  />
-  <TouchableHighlight
-    activeOpacity={0.85}
-    onPress={null}
-    style={
-      Array [
-        398,
-        Object {
-          "borderRadius": 5.666666666666667,
-          "height": 11.333333333333334,
-          "width": 11.333333333333334,
-        },
-        null,
-      ]
-    }
-    underlayColor="#000"
   >
-    <View>
-      <Icon
-        color="#fff"
-        name="mode-edit"
-        raised={false}
-        reverse={false}
-        reverseColor="white"
-        size={9.066666666666668}
-        type="material"
-        underlayColor="white"
-      />
-    </View>
-  </TouchableHighlight>
+    <TouchableHighlight
+      activeOpacity={0.85}
+      onPress={null}
+      style={
+        Array [
+          398,
+          Object {
+            "borderRadius": 5.666666666666667,
+            "height": 11.333333333333334,
+            "width": 11.333333333333334,
+          },
+          null,
+        ]
+      }
+      underlayColor="#000"
+    >
+      <View>
+        <Icon
+          color="#fff"
+          name="mode-edit"
+          raised={false}
+          reverse={false}
+          reverseColor="white"
+          size={9.066666666666668}
+          type="material"
+          underlayColor="white"
+        />
+      </View>
+    </TouchableHighlight>
+  </View>
 </View>
 `;
 

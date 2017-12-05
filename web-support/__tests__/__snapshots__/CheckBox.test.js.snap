@@ -37,7 +37,7 @@ exports[`Input: CheckBox: [ prop: center, title, checked, & onIconPress ] enzyme
         ]
       }
     >
-      title
+      Title
     </TextElement>
   </View>
 </TouchableOpacity>
@@ -193,7 +193,7 @@ exports[`Input: CheckBox: [ prop: component, title, checked, & onIconPress ] enz
         ]
       }
     >
-      title
+      Title
     </TextElement>
   </View>
 </TouchableWithoutFeedback>
@@ -275,7 +275,7 @@ exports[`Input: CheckBox: [ prop: fontFamily ] enzyme-shallow: snapshot 1`] = `
         ]
       }
     >
-      title
+      Title
     </TextElement>
   </View>
 </TouchableOpacity>
@@ -310,7 +310,7 @@ exports[`Input: CheckBox: [ prop: iconRight, title, checked, & onIconPress ] enz
         ]
       }
     >
-      title
+      Title
     </TextElement>
     <[object Object]
       color="green"
@@ -396,7 +396,7 @@ exports[`Input: CheckBox: [ prop: onLongIconPress, title, checked, & onIconPress
         ]
       }
     >
-      title
+      Title
     </TextElement>
   </View>
 </TouchableOpacity>
@@ -438,7 +438,7 @@ exports[`Input: CheckBox: [ prop: onLongPress, title, checked, & onIconPress ] e
         ]
       }
     >
-      title
+      Title
     </TextElement>
   </View>
 </TouchableOpacity>
@@ -480,7 +480,7 @@ exports[`Input: CheckBox: [ prop: onPress, title, checked, & onIconPress ] enzym
         ]
       }
     >
-      title
+      Title
     </TextElement>
   </View>
 </TouchableOpacity>
@@ -523,7 +523,7 @@ exports[`Input: CheckBox: [ prop: right, title, checked, & onIconPress ] enzyme-
         ]
       }
     >
-      title
+      Title
     </TextElement>
   </View>
 </TouchableOpacity>
@@ -565,7 +565,7 @@ exports[`Input: CheckBox: [ prop: textStyle & title ] enzyme-shallow: snapshot 1
         ]
       }
     >
-      title
+      Title
     </TextElement>
   </View>
 </TouchableOpacity>

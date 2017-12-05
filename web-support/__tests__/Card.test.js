@@ -25,7 +25,7 @@ const props = {
     enzyme: {
       tests: onlySnapshots,
     },
-    styleguidist: {},
+    styleguidist: { script: `const View = RN.View;\n` },
   },
   flexDirection: {
     component: Component,
@@ -34,7 +34,9 @@ const props = {
     enzyme: {
       tests: onlySnapshots,
     },
-    styleguidist: {},
+    styleguidist: {
+      script: `const View = RN.View;\n`,
+    },
   },
   containerStyle: {
     component: Component,
@@ -43,7 +45,9 @@ const props = {
     enzyme: {
       tests: onlySnapshots,
     },
-    styleguidist: {},
+    styleguidist: {
+      script: `const View = RN.View;\n`,
+    },
   },
   wrapperStyle: {
     component: Component,
@@ -52,7 +56,7 @@ const props = {
     enzyme: {
       tests: onlySnapshots,
     },
-    styleguidist: {},
+    styleguidist: { script: `const View = RN.View;\n` },
   },
   title: {
     component: Component,
@@ -61,7 +65,7 @@ const props = {
     enzyme: {
       tests: onlySnapshots,
     },
-    styleguidist: {},
+    styleguidist: { script: `const View = RN.View;\n` },
   },
   titleStyle: {
     component: Component,
@@ -70,7 +74,7 @@ const props = {
     enzyme: {
       tests: onlySnapshots,
     },
-    styleguidist: {},
+    styleguidist: { script: `const View = RN.View;\n` },
   },
   featuredTitle: {
     component: Component,
@@ -79,7 +83,7 @@ const props = {
     enzyme: {
       tests: onlySnapshots,
     },
-    styleguidist: {},
+    styleguidist: { script: `const View = RN.View;\n` },
   },
   featuredTitleStyle: {
     component: Component,
@@ -92,7 +96,7 @@ const props = {
     enzyme: {
       tests: onlySnapshots,
     },
-    styleguidist: {},
+    styleguidist: { script: `const View = RN.View;\n` },
   },
   featuredSubtitle: {
     component: Component,
@@ -105,7 +109,7 @@ const props = {
     enzyme: {
       tests: onlySnapshots,
     },
-    styleguidist: {},
+    styleguidist: { script: `const View = RN.View;\n` },
   },
   featuredSubtitleStyle: {
     component: Component,
@@ -119,7 +123,7 @@ const props = {
     enzyme: {
       tests: onlySnapshots,
     },
-    styleguidist: {},
+    styleguidist: { script: `const View = RN.View;\n` },
   },
   dividerStyle: {
     component: Component,
@@ -131,7 +135,7 @@ const props = {
     enzyme: {
       tests: onlySnapshots,
     },
-    styleguidist: {},
+    styleguidist: { script: `const View = RN.View;\n` },
   },
   fontFamily: {
     component: Component,
@@ -143,7 +147,7 @@ const props = {
     enzyme: {
       tests: onlySnapshots,
     },
-    styleguidist: {},
+    styleguidist: { script: `const View = RN.View;\n` },
   },
   imageStyle: {
     component: Component,
@@ -155,7 +159,7 @@ const props = {
     enzyme: {
       tests: onlySnapshots,
     },
-    styleguidist: {},
+    styleguidist: { script: `const View = RN.View;\n` },
   },
   imageProps: {
     component: Component,
@@ -167,7 +171,7 @@ const props = {
     enzyme: {
       tests: onlySnapshots,
     },
-    styleguidist: {},
+    styleguidist: { script: `const View = RN.View;\n` },
   },
   imageWrapperStyle: {
     component: Component,
@@ -179,7 +183,7 @@ const props = {
     enzyme: {
       tests: onlySnapshots,
     },
-    styleguidist: {},
+    styleguidist: { script: `const View = RN.View;\n` },
   },
 };
 

@@ -517,7 +517,7 @@ exports[`Icons: SocialIcon: [ prop: onLongPress ] enzyme-shallow: snapshot 1`] =
       undefined,
     ]
   }
-  underlayColor="black"
+  underlayColor="#02b875"
 >
   <View
     style={98}
@@ -556,7 +556,7 @@ exports[`Icons: SocialIcon: [ prop: onPress ] enzyme-shallow: snapshot 1`] = `
       undefined,
     ]
   }
-  underlayColor="black"
+  underlayColor="#02b875"
 >
   <View
     style={98}
@@ -759,7 +759,7 @@ exports[`Icons: SocialIcon: [ prop: underlayColor ] enzyme-shallow: snapshot 1`]
       undefined,
     ]
   }
-  underlayColor="black"
+  underlayColor="yellow"
 >
   <View
     style={98}

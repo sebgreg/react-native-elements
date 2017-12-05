@@ -28,7 +28,7 @@ exports[`Cards: PricingCard: [ prop: buttonFont & required props ] enzyme-shallo
         ]
       }
     >
-      title
+      Title
     </TextElement>
     <TextElement
       style={
@@ -114,7 +114,7 @@ exports[`Cards: PricingCard: [ prop: containerStyle & required props ] enzyme-sh
         ]
       }
     >
-      title
+      Title
     </TextElement>
     <TextElement
       style={
@@ -197,7 +197,7 @@ exports[`Cards: PricingCard: [ prop: infoFont & required props ] enzyme-shallow:
         ]
       }
     >
-      title
+      Title
     </TextElement>
     <TextElement
       style={
@@ -284,7 +284,7 @@ exports[`Cards: PricingCard: [ prop: onButtonPress & required props ] enzyme-sha
         ]
       }
     >
-      title
+      Title
     </TextElement>
     <TextElement
       style={
@@ -368,7 +368,7 @@ exports[`Cards: PricingCard: [ prop: pricingFont & required props ] enzyme-shall
         ]
       }
     >
-      title
+      Title
     </TextElement>
     <TextElement
       style={
@@ -453,7 +453,7 @@ exports[`Cards: PricingCard: [ prop: required props: title, price, color, button
         ]
       }
     >
-      title
+      Title
     </TextElement>
     <TextElement
       style={
@@ -538,7 +538,7 @@ exports[`Cards: PricingCard: [ prop: titleFont & required props ] enzyme-shallow
         ]
       }
     >
-      title
+      Title
     </TextElement>
     <TextElement
       style={
@@ -623,7 +623,7 @@ exports[`Cards: PricingCard: [ prop: wrapperStyle & required props ] enzyme-shal
         ]
       }
     >
-      title
+      Title
     </TextElement>
     <TextElement
       style={

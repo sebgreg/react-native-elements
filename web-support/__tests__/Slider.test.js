@@ -180,7 +180,7 @@ const props = {
       tests: onlySnapshots,
     },
     styleguidist: {
-      script: `initialState = { value: 0.1 };`,
+      script: `const View = RN.View;\nconst TouchableHighlight = RN.TouchableHighlight;\nconst Text = RN.Text;\ninitialState = { value: 0.1 };\n\n`,
       getJsxString: attr => {
         const refId = genRefId();
         const execFunc = Function(`setState({value: 0.98});`);
@@ -209,7 +209,7 @@ const props = {
       tests: onlySnapshots,
     },
     styleguidist: {
-      script: `initialState = { value: 0.1 };`,
+      script: `const View = RN.View;\nconst TouchableHighlight = RN.TouchableHighlight;\nconst Text = RN.Text;\ninitialState = { value: 0.1 };\n\n`,
       getJsxString: attr => {
         const refId = genRefId();
         const execFunc = Function(`setState({value: 0.98});`);
@@ -250,7 +250,7 @@ const props = {
       tests: onlySnapshots,
     },
     styleguidist: {
-      script: `initialState = { value: 0.1 };`,
+      script: `const View = RN.View;\nconst TouchableHighlight = RN.TouchableHighlight;\nconst Text = RN.Text;\ninitialState = { value: 0.1 };\n\n`,
       getJsxString: attr => {
         const refId = genRefId();
         const execFunc = Function(`setState({value: 0.98});`);

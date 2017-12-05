@@ -31,7 +31,7 @@ const props = {
     props: {
       component: TouchableWithoutFeedback,
       checked: true,
-      title: 'title',
+      title: 'Title',
       onIconPress: () => {
         let x = 7;
       },
@@ -57,7 +57,7 @@ const props = {
     component: Component,
     props: {
       iconRight: true,
-      title: 'title',
+      title: 'Title',
       checked: true,
       onIconPress: () => {
         let x = 7;
@@ -84,7 +84,7 @@ const props = {
     component: Component,
     props: {
       right: true,
-      title: 'title',
+      title: 'Title',
       checked: true,
       onIconPress: () => {
         let x = 7;
@@ -111,7 +111,7 @@ const props = {
     component: Component,
     props: {
       center: true,
-      title: 'title',
+      title: 'Title',
       checked: true,
       onIconPress: () => {
         let x = 7;
@@ -144,7 +144,7 @@ const props = {
   },
   'textStyle & title': {
     component: Component,
-    props: { textStyle: { backgroundColor: '#071' }, title: 'title' },
+    props: { textStyle: { backgroundColor: '#071' }, title: 'Title' },
     enzyme: {
       tests: { shallow: { snapshot: snapShot() } },
     },
@@ -153,7 +153,7 @@ const props = {
   'onLongPress, title, checked, & onIconPress': {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       checked: true,
       onIconPress: () => {
         let x = 7;
@@ -184,7 +184,7 @@ const props = {
   'onLongIconPress, title, checked, & onIconPress': {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       checked: true,
       onIconPress: () => {
         let x = 7;
@@ -215,7 +215,7 @@ const props = {
   'onPress, title, checked, & onIconPress': {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       checked: true,
       onIconPress: () => {
         let x = 7;
@@ -279,7 +279,7 @@ const props = {
     component: Component,
     props: {
       checkedTitle: 'title - is checked',
-      title: 'title',
+      title: 'Title',
       checked: true,
       onIconPress: () => {
         let x = 7;
@@ -304,7 +304,7 @@ const props = {
   },
   fontFamily: {
     component: Component,
-    props: { title: 'title', fontFamily: 'Courier New' },
+    props: { title: 'Title', fontFamily: 'Courier New' },
     enzyme: {
       tests: { shallow: { snapshot: snapShot() } },
     },

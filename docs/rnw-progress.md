@@ -20,11 +20,12 @@
 | SearchBar    | 2017-11-12    | [low](#search-changes)     | 2017-12-03 |
 | Slider       | 2017-11-08    | [low](#slider-changes)       | 2017-12-04 |
 | Social Icons | 2017-11-11    | [low](#socialicon-changes) | 2017-11-30 |
-| Text         | 2017-11-12    | [low](#text-changes)         |
-| Tiles        | 2017-11-12    | [med](#tile-changes)         |
+| Text         | 2017-11-12    | [low](#text-changes)         | 2017-12-04 |
+| Tiles        | 2017-11-12    | [low](#tile-changes)         | 2017-12-04 |
 
 ## Component Changes
 **note**: "dom prop warnings" refer to console.warn messages which alert the developer that a dom element has been passed props it connot recognize
+**note**: Any component which uses react-native-vector-icons will produce "Warning: React.createElement: type is invalid" messages during test runs.  These can be ignored.
 
 ### Avatar changes
 - fix: for `onPress`, `onLongPress`, and `activeOpactiy`: utilize `touchableProps` object, empty if View, then added via `"{...touchableProps}"` - to avoid dom prop warnings
@@ -87,8 +88,9 @@
 - fix: changed pointerEvents; `box-none` for parent View, `none` for Image
 - fix: changed the way Animated was being used:
   - switched from ValueXY to Value - only need X
-  - keep one Animated.Value instead of creating new.  Change value via Animated.event()
   - simplified interpolations
+  - keep one Animated.Value instead of creating new
+  - change anim value via Animated.event(), which is async, and keeps from using setState on the same thread as render(); use a listener on the anim value for the same reason
 
 ### SearchBar changes
 - fix: pass `loadingIcon`.color to ActivityIndicator instead of `icon`.color
@@ -97,20 +99,29 @@
 - change: renamed class from `Search` to `SearchBar` for styleguidist
 
 ### Slider changes
-- fix: `thumbTouchSize`, `animationType`, `animateTransitions`: added to props destructuring to avoid dom prop warnings
+- fix: added to props destructuring to avoid dom prop warnings:
+  - `thumbTouchSize`
+  - `onSlidingStart`
+  - `onSlidingComplete`
+  - `animationType`
+  - `animateTransitions`
+  - `animationConfig` 
 - fix: removed `marginTop` from `minimumTrackStyle`.  No negative effect on android
 
 ### SocialIcon changes
+- fix: use `{...touchableProps}` and `{highlightProps}` to avoid dom prop warnings for
+  - `onPress`
+  - `onLongPress`
+  - `underlayColor`
 - change: added web support for `raised` prop
 
 ### Text changes
 - change: for styleguidist:
-  - rename function from `TextElement` to `Text`
-  - rename import from `Text` to `NativeText`
+- fix: set fontWeight for web
 
 ### Tile changes
-- avoid dom prop warnings
-- images not showing
+- fix: add `activeOpacity` to proper element
+- fix: add styles.imageStyle to BackgroundImage.style
 
 ## Other Changes
 - rnw does not export `ViewPropTypes` from the same place
@@ -159,9 +170,8 @@
 - **note**: `info` prop should be marked as required in the api docs
  
 ### Rating
-- **suggestion**: check for existance of `extractOffset` function and use it if available
-  - mouseclick & mousemove seem off from displayed position (more obvious on web)
-  - later versions of react-native support `extractOffset` to make this behave better
+- **suggestion**: on web, it might make sense to behave a bit differently.  Instead of forcing a user to slide, one should be able to click anywhere on the group of stars/things
 
 ### Slider
 - **note**: keeping `onValueChange` from propagating to dom elements causes test: "should call onValueChange" to fail, even though the function does get called in practical testing.  Left the warning for now
+- **note**: the PanResponder isn't very robust on the newest versions of Firefox.  I submitted [an issue](https://github.com/necolas/react-native-web/issues/729) to the react-native-web project.

@@ -148,7 +148,7 @@ const props = {
     component: Component,
     props: {
       onPress: () => {},
-      activeOpacity: 0.5,
+      activeOpacity: 0.71,
     },
     enzyme: {
       tests: { shallow: { snapshot: snapShot() } },

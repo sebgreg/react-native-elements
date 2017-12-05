@@ -138,6 +138,8 @@ const props = {
   onClearText: {
     component: Component,
     props: {
+      defaultValue: 'text to clear',
+      clearIcon: { name: 'clear' },
       onClearText: () => {
         console.log('onClearText');
       },
@@ -165,6 +167,7 @@ const methods = {
     component: Component,
     props: { defaultValue: 'cursor will appear' },
     styleguidist: {
+      script: `const View = RN.View;\nconst TouchableHighlight = RN.TouchableHighlight;\nconst Text = RN.Text;\n`,
       cd: 1000,
       buildJsx: buildJsxForGuideMethod,
     },
@@ -180,6 +183,7 @@ const methods = {
     component: Component,
     props: { defaultValue: 'place cursor here and watch it be removed' },
     styleguidist: {
+      script: `const View = RN.View;\nconst TouchableHighlight = RN.TouchableHighlight;\nconst Text = RN.Text;\n`,
       cd: 3000,
       buildJsx: buildJsxForGuideMethod,
     },
@@ -195,6 +199,7 @@ const methods = {
     component: Component,
     props: { defaultValue: 'text to clear' },
     styleguidist: {
+      script: `const View = RN.View;\nconst TouchableHighlight = RN.TouchableHighlight;\nconst Text = RN.Text;\n`,
       buildJsx: buildJsxForGuideMethod,
     },
     enzyme: {

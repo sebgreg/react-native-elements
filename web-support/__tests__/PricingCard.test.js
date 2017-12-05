@@ -17,7 +17,7 @@ const props = {
   'required props: title, price, color, button, & info': {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       price: 'price',
       color: '#071',
       button: {
@@ -35,7 +35,7 @@ const props = {
   'onButtonPress & required props': {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       price: 'price',
       color: '#071',
       button: {
@@ -56,7 +56,7 @@ const props = {
   'containerStyle & required props': {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       price: 'price',
       color: '#071',
       button: {
@@ -75,7 +75,7 @@ const props = {
   'wrapperStyle & required props': {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       price: 'price',
       color: '#071',
       button: {
@@ -94,7 +94,7 @@ const props = {
   'titleFont & required props': {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       price: 'price',
       color: '#071',
       button: {
@@ -113,7 +113,7 @@ const props = {
   'pricingFont & required props': {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       price: 'price',
       color: '#071',
       button: {
@@ -132,7 +132,7 @@ const props = {
   'infoFont & required props': {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       price: 'price',
       color: '#071',
       button: {
@@ -151,7 +151,7 @@ const props = {
   'buttonFont & required props': {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       price: 'price',
       color: '#071',
       button: {

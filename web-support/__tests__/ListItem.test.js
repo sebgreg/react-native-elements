@@ -28,7 +28,7 @@ const props = {
   },
   avatar: {
     component: Component,
-    props: { title: 'title', avatar: 'hero.jpg' },
+    props: { title: 'Title', avatar: 'hero.jpg' },
     enzyme: {
       tests: { shallow: { snapshot: snapShot() } },
     },
@@ -37,7 +37,7 @@ const props = {
   avatarStyle: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       avatar: 'hero.jpg',
       avatarStyle: { transform: [{ rotateZ: '-45deg' }] },
     },
@@ -49,7 +49,7 @@ const props = {
   avatarContainerStyle: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       avatar: 'hero.jpg',
       avatarContainerStyle: { padding: 50 },
     },
@@ -61,7 +61,7 @@ const props = {
   avatarOverlayContainerStyle: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       avatar: 'hero.jpg',
       avatarOverlayContainerStyle: { padding: 25 },
     },
@@ -72,7 +72,7 @@ const props = {
   },
   chevronColor: {
     component: Component,
-    props: { title: 'title', chevronColor: '#071' },
+    props: { title: 'Title', chevronColor: '#071' },
     enzyme: {
       tests: { shallow: { snapshot: snapShot() } },
     },
@@ -81,7 +81,7 @@ const props = {
   component: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       onPress: () => {
         console.log('pressed');
       },
@@ -105,7 +105,7 @@ const props = {
   },
   containerStyle: {
     component: Component,
-    props: { title: 'title', containerStyle: { borderWidth: 5 } },
+    props: { title: 'Title', containerStyle: { borderWidth: 5 } },
     enzyme: {
       tests: { shallow: { snapshot: snapShot() } },
     },
@@ -113,7 +113,7 @@ const props = {
   },
   wrapperStyle: {
     component: Component,
-    props: { title: 'title', wrapperStyle: { borderWidth: 5 } },
+    props: { title: 'Title', wrapperStyle: { borderWidth: 5 } },
     enzyme: {
       tests: { shallow: { snapshot: snapShot() } },
     },
@@ -122,7 +122,7 @@ const props = {
   'underlayColor & onPress': {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       underlayColor: 'yellow',
       onPress: () => {
         console.log('pressed');
@@ -135,7 +135,7 @@ const props = {
   },
   fontFamily: {
     component: Component,
-    props: { title: 'title', fontFamily: 'Courier New' },
+    props: { title: 'Title', fontFamily: 'Courier New' },
     enzyme: {
       tests: { shallow: { snapshot: snapShot() } },
     },
@@ -143,7 +143,7 @@ const props = {
   },
   hideChevron: {
     component: Component,
-    props: { title: 'title', hideChevron: true },
+    props: { title: 'Title', hideChevron: true },
     enzyme: {
       tests: { shallow: { snapshot: snapShot() } },
     },
@@ -152,7 +152,7 @@ const props = {
   onLongPress: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       onLongPress: () => {
         console.log('pressed, long');
       },
@@ -164,7 +164,7 @@ const props = {
   },
   roundAvatar: {
     component: Component,
-    props: { title: 'title', avatar: 'hero.jpg', roundAvatar: true },
+    props: { title: 'Title', avatar: 'hero.jpg', roundAvatar: true },
     enzyme: {
       tests: { shallow: { snapshot: snapShot() } },
     },
@@ -181,7 +181,7 @@ const props = {
   titleStyle: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       avatar: 'hero.jpg',
       titleStyle: { marginTop: -25 },
     },
@@ -193,7 +193,7 @@ const props = {
   titleContainerStyle: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       avatar: 'hero.jpg',
       titleContainerStyle: { borderWidth: 5 },
     },
@@ -204,7 +204,7 @@ const props = {
   },
   subtitle: {
     component: Component,
-    props: { title: 'title', subtitle: 'subtitle' },
+    props: { title: 'Title', subtitle: 'subtitle' },
     enzyme: {
       tests: { shallow: { snapshot: snapShot() } },
     },
@@ -213,7 +213,7 @@ const props = {
   subtitleNumberOfLines: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       subtitle: 'line1\\nline2\\nline3',
       subtitleNumberOfLines: 3,
     },
@@ -225,7 +225,7 @@ const props = {
   subtitleContainerStyle: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       subtitle: 'subtitle',
       avatar: 'hero.jpg',
       subtitleContainerStyle: { borderWidth: 5 },
@@ -238,7 +238,7 @@ const props = {
   subtitleStyle: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       subtitle: 'subtitle',
       avatar: 'hero.jpg',
       subtitleStyle: { color: '#071' },
@@ -250,7 +250,7 @@ const props = {
   },
   rightTitle: {
     component: Component,
-    props: { title: 'title', rightTitle: 'rightTitle' },
+    props: { title: 'Title', rightTitle: 'rightTitle' },
     enzyme: {
       tests: { shallow: { snapshot: snapShot() } },
     },
@@ -259,7 +259,7 @@ const props = {
   rightTitleNumberOfLines: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       rightTitle: 'line1\\nline2\\nline3',
       rightTitleNumberOfLines: 3,
     },
@@ -271,7 +271,7 @@ const props = {
   rightTitleContainerStyle: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       rightTitle: 'rightTitle',
       avatar: 'hero.jpg',
       rightTitleContainerStyle: { borderWidth: 5 },
@@ -284,7 +284,7 @@ const props = {
   rightTitleStyle: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       rightTitle: 'rightTitle',
       avatar: 'hero.jpg',
       rightTitleStyle: { color: '#071' },
@@ -297,7 +297,7 @@ const props = {
   label: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       avatar: 'hero.jpg',
       label: <Text>label</Text>,
     },
@@ -309,7 +309,7 @@ const props = {
   leftIcon: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       avatar: 'hero.jpg',
       leftIcon: { name: 'pets', color: '#071' },
     },
@@ -321,7 +321,7 @@ const props = {
   leftIconOnPress: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       leftIcon: { name: 'pets', color: '#071' },
       leftIconOnPress: () => {
         console.log('leftIcon pressed');
@@ -335,7 +335,7 @@ const props = {
   leftIconOnLongPress: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       avatar: 'hero.jpg',
       leftIcon: { name: 'pets', color: '#071' },
       leftIconOnLongPress: () => {
@@ -350,7 +350,7 @@ const props = {
   leftIconUnderlayColor: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       avatar: 'hero.jpg',
       leftIcon: { name: 'pets', color: '#071' },
       leftIconOnPress: () => {
@@ -366,7 +366,7 @@ const props = {
   rightIcon: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       avatar: 'hero.jpg',
       rightIcon: { name: 'pets', color: '#071' },
     },
@@ -378,7 +378,7 @@ const props = {
   onPressRightIcon: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       rightIcon: { name: 'pets', color: '#071' },
       onPressRightIcon: () => {
         console.log('rightIcon pressed');
@@ -392,7 +392,7 @@ const props = {
   switchButton: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       hideChevron: true,
       switchButton: true,
       onSwitch: () => {},
@@ -404,7 +404,7 @@ const props = {
       script: `initialState = { switchedOn: false };`,
       getJsxString: attr => {
         return `<ListItem
-  title={'title'}
+  title={'Title'}
   hideChevron={true}
   switchButton={true}
   switched={state.switchedOn}
@@ -416,7 +416,7 @@ const props = {
   switchDisabled: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       hideChevron: true,
       switchButton: true,
       switchDisabled: true,
@@ -430,7 +430,7 @@ const props = {
   switchOnTintColor: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       hideChevron: true,
       switchButton: true,
       onSwitch: () => {},
@@ -443,7 +443,7 @@ const props = {
       script: `initialState = { switchedOn: false };`,
       getJsxString: attr => {
         return `<ListItem
-  title={'title'}
+  title={'Title'}
   hideChevron={true}
   switchButton={true}
   switched={state.switchedOn}
@@ -456,7 +456,7 @@ const props = {
   switchThumbTintColor: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       hideChevron: true,
       switchButton: true,
       onSwitch: () => {},
@@ -469,7 +469,7 @@ const props = {
       script: `initialState = { switchedOn: false };`,
       getJsxString: attr => {
         return `<ListItem
-  title={'title'}
+  title={'Title'}
   hideChevron={true}
   switchButton={true}
   switched={state.switchedOn}
@@ -482,7 +482,7 @@ const props = {
   switchTintColor: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       hideChevron: true,
       switchButton: true,
       onSwitch: () => {},
@@ -495,7 +495,7 @@ const props = {
       script: `initialState = { switchedOn: false };`,
       getJsxString: attr => {
         return `<ListItem
-  title={'title'}
+  title={'Title'}
   hideChevron={true}
   switchButton={true}
   switched={state.switchedOn}
@@ -508,7 +508,7 @@ const props = {
   textInput: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       textInput: true,
     },
     enzyme: {
@@ -519,7 +519,7 @@ const props = {
   textInputAutoCapitalize: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       textInput: true,
       textInputAutoCapitalize: 'characters',
     },
@@ -531,7 +531,7 @@ const props = {
   textInputAutoCorrect: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       textInput: true,
       textInputAutoCorrect: true,
     },
@@ -543,7 +543,7 @@ const props = {
   // textInputAutoFocus: {
   //   component: Component,
   //   props: {
-  //     title: 'title',
+  //     title: 'Title',
   //     textInput: true,
   //     textInputAutoFocus: true,
   //   },
@@ -555,7 +555,7 @@ const props = {
   'textInputEditable & textInputValue': {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       textInput: true,
       textInputEditable: false,
       textInputValue: 'example text',
@@ -568,7 +568,7 @@ const props = {
   keyboardType: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       textInput: true,
       keyboardType: 'numeric',
     },
@@ -580,7 +580,7 @@ const props = {
   textInputMaxLength: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       textInput: true,
       textInputMaxLength: 7,
     },
@@ -592,7 +592,7 @@ const props = {
   textInputMultiline: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       textInput: true,
       textInputMultiline: true,
     },
@@ -604,7 +604,7 @@ const props = {
   textInputOnChangeText: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       textInput: true,
       textInputOnChangeText: text => {
         console.log(text);
@@ -618,7 +618,7 @@ const props = {
   textInputOnFocus: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       textInput: true,
       textInputOnFocus: () => {
         console.log('ListItem: textInputOnFocus');
@@ -634,7 +634,7 @@ const props = {
   textInputSecure: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       textInput: true,
       textInputSecure: true,
       textInputOnChangeText: text => {
@@ -649,7 +649,7 @@ const props = {
   textInputStyle: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       textInput: true,
       textInputStyle: { color: '#071' },
     },
@@ -661,7 +661,7 @@ const props = {
   textInputContainerStyle: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       textInput: true,
       textInputContainerStyle: { borderWidth: 5 },
     },
@@ -673,7 +673,7 @@ const props = {
   textInputPlaceholder: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       textInput: true,
       textInputPlaceholder: 'placeholder',
     },
@@ -685,7 +685,7 @@ const props = {
   textInputOnBlur: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       textInput: true,
       textInputOnBlur: () => {
         console.log('ListItem: textInputOnBlur');
@@ -699,7 +699,7 @@ const props = {
   textInputSelectTextOnFocus: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       textInput: true,
       textInputValue: 'selectable text',
       textInputSelectTextOnFocus: true,
@@ -712,7 +712,7 @@ const props = {
   textInputReturnKeyType: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       textInput: true,
       textInputValue: 'selectable text',
       textInputReturnKeyType: 'go',
@@ -725,7 +725,7 @@ const props = {
   disabled: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       textInput: true,
       textInputValue: 'selectable text',
       disabled: true,
@@ -742,7 +742,7 @@ const props = {
   disabledStyle: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       textInput: true,
       textInputValue: 'selectable text',
       disabled: true,
@@ -760,7 +760,7 @@ const props = {
   badge: {
     component: Component,
     props: {
-      title: 'title',
+      title: 'Title',
       badge: {
         value: '7',
         containerStyle: { borderWidth: 2, borderColor: '#4b5' },

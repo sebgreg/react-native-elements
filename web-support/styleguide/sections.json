@@ -24,12 +24,8 @@
     "components": "../../src/list/[A-Z]*.js"
   },
   {
-    "name": "Tiles",
-    "components": "../../src/tile/[A-Z]*.js"
-  },
-  {
-    "name": "misc",
+    "name": "Misc",
     "components":
-      "../../src/+(animtest|avatar|badge|divider|header|text)/+(badge|[A-Z])*.js"
+      "../../src/+(avatar|badge|divider|header|text|tile)/+(badge|[A-Z])*.js"
   }
 ]
