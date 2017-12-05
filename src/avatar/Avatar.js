@@ -78,6 +78,7 @@ const Avatar = props => {
   }
   if (component) {
     Component = component;
+    if (Component != TouchableOpacity) delete touchableProps.activeOpacity;
   }
 
   const renderUtils = () => {
@@ -226,8 +227,8 @@ const Avatar = props => {
         ]}
       >
         {renderContent()}
+        {renderUtils()}
       </View>
-      {renderUtils()}
     </Component>
   );
 };
