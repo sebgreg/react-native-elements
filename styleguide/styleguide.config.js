@@ -20,8 +20,8 @@ module.exports = {
   components: '../src/**/+([A-Z]*|badge).js',
   sections,
   ignore: [
-    `**/SearchBar.js`,
-    `**/SearchBar-ios.js`,
+    `**/SearchBar.native.js`,
+    `**/SearchBar.ios.js`,
     `**/SearchBar-android.js`,
     `**/Overlay.js`,
     '**/NavButton.js',
