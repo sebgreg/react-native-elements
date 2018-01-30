@@ -16,14 +16,15 @@ import options, {
 } from '../../../samples';
 import Overlay from '../Overlay';
 
-const children = <Text>here's something</Text>;
-const childrenString = `<Text>here's something</Text>`;
+const children = <Text>something here</Text>;
+const childrenString = `<Text>something here</Text>`;
 
 const getJsx = propString => {
   const jsx = `initialState = { isVisible: false };
 const View = RN.View;
 const TouchableHighlight = RN.TouchableHighlight;
 const Text = RN.Text;
+const rootNode = document.getElementById("overlay-root");
     
 <View>
   <TouchableHighlight
@@ -37,12 +38,11 @@ const Text = RN.Text;
   >
     <Text>Show Overlay for 4 sec</Text>
   </TouchableHighlight>
-  <Overlay ${propString} isVisible={state.isVisible}>
+  <Overlay ${propString} domNode={rootNode} isVisible={state.isVisible}>
     ${childrenString}
   </Overlay>
 </View>
 `;
-  console.warn(jsx);
   return jsx;
 };
 
@@ -171,6 +171,27 @@ const props = {
       tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
+  },
+  domNode: {
+    component: Overlay,
+    children,
+    props: {
+      isVisible: true,
+      domNode: true,
+    },
+    enzyme: {
+      tests: { shallow: { snapshot: snapShot() } },
+      buildJsx: attr => {
+        return (
+          <Overlay isVisible domNode={document.createElement('div')}>
+            <Text>...overlay content...</Text>
+          </Overlay>
+        );
+      },
+    },
+    styleguidist: {
+      getJsxString: () => getJsx(),
+    },
   },
 };
 

@@ -12,6 +12,7 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: borderRadius ] enzyme-shall
       "position": "absolute",
       "top": 0,
       "width": 1024,
+      "zIndex": 2,
     }
   }
 >
@@ -27,7 +28,7 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: borderRadius ] enzyme-shall
     }
   >
     <Text>
-      here's something
+      something here
     </Text>
   </View>
 </View>
@@ -46,6 +47,7 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: containerStyle ] enzyme-sha
       "position": "absolute",
       "top": 0,
       "width": 1024,
+      "zIndex": 2,
     }
   }
 >
@@ -61,11 +63,13 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: containerStyle ] enzyme-sha
     }
   >
     <Text>
-      here's something
+      something here
     </Text>
   </View>
 </View>
 `;
+
+exports[`Misc: Overlay: Props Misc: Overlay: [ prop: domNode ] enzyme-shallow: snapshot: Misc: Overlay: [ prop: domNode ] enzyme-shallow: snapshot 1`] = `undefined`;
 
 exports[`Misc: Overlay: Props Misc: Overlay: [ prop: fullScreen ] enzyme-shallow: snapshot: Misc: Overlay: [ prop: fullScreen ] enzyme-shallow: snapshot 1`] = `
 <View
@@ -79,6 +83,7 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: fullScreen ] enzyme-shallow
       "position": "absolute",
       "top": 0,
       "width": 1024,
+      "zIndex": 2,
     }
   }
 >
@@ -94,7 +99,7 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: fullScreen ] enzyme-shallow
     }
   >
     <Text>
-      here's something
+      something here
     </Text>
   </View>
 </View>
@@ -112,6 +117,7 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: height ] enzyme-shallow: sn
       "position": "absolute",
       "top": 0,
       "width": 1024,
+      "zIndex": 2,
     }
   }
 >
@@ -120,14 +126,14 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: height ] enzyme-shallow: sn
       Object {
         "backgroundColor": "white",
         "borderRadius": 3,
-        "height": 50,
+        "height": 588,
         "padding": 10,
         "width": 944,
       }
     }
   >
     <Text>
-      here's something
+      something here
     </Text>
   </View>
 </View>
@@ -145,6 +151,7 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: overlayBackgroundColor ] en
       "position": "absolute",
       "top": 0,
       "width": 1024,
+      "zIndex": 2,
     }
   }
 >
@@ -160,7 +167,7 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: overlayBackgroundColor ] en
     }
   >
     <Text>
-      here's something
+      something here
     </Text>
   </View>
 </View>
@@ -178,6 +185,7 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: overlayStyle ] enzyme-shall
       "position": "absolute",
       "top": 0,
       "width": 1024,
+      "zIndex": 2,
     }
   }
 >
@@ -194,7 +202,7 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: overlayStyle ] enzyme-shall
     }
   >
     <Text>
-      here's something
+      something here
     </Text>
   </View>
 </View>
@@ -212,6 +220,7 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: width ] enzyme-shallow: sna
       "position": "absolute",
       "top": 0,
       "width": 1024,
+      "zIndex": 2,
     }
   }
 >
@@ -222,12 +231,12 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: width ] enzyme-shallow: sna
         "borderRadius": 3,
         "height": 588,
         "padding": 10,
-        "width": 50,
+        "width": 944,
       }
     }
   >
     <Text>
-      here's something
+      something here
     </Text>
   </View>
 </View>
@@ -245,6 +254,7 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: windowBackgroundColor ] enz
       "position": "absolute",
       "top": 0,
       "width": 1024,
+      "zIndex": 2,
     }
   }
 >
@@ -260,7 +270,7 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: windowBackgroundColor ] enz
     }
   >
     <Text>
-      here's something
+      something here
     </Text>
   </View>
 </View>
