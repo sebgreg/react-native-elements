@@ -15,7 +15,7 @@
     "bootstrap"
   ],
   "scripts": {
-    "build:dist": "babel -d ./dist ./src -s",
+    "build:dist": "babel src --out-dir dist --ignore __tests__,test.js -s --copy-files ",
     "build": "rm -rf build; webpack",
     "test": "jest native web",
     "test:watch": "jest --watch native web",
