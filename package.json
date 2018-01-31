@@ -16,6 +16,7 @@
   ],
   "scripts": {
     "build": "rm -rf build; webpack",
+    "jest": "jest",
     "test": "jest native web",
     "test:watch": "jest --watch native web",
     "test:coverage": "jest --coverage native web",
