@@ -10,7 +10,7 @@ exports[`Card Component should have Card title with image 1`] = `
       "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
       "margin": 15,
       "marginBottom": 0,
       "padding": 0,
@@ -78,7 +78,7 @@ exports[`Card Component should have Card title without image 1`] = `
       "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
       "margin": 15,
       "marginBottom": 0,
       "padding": 15,
@@ -131,7 +131,7 @@ exports[`Card Component should have Card with featured title 1`] = `
       "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
       "margin": 15,
       "marginBottom": 0,
       "padding": 0,
@@ -249,7 +249,7 @@ exports[`Card Component should render without issues 1`] = `
       "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
       "margin": 15,
       "marginBottom": 0,
       "padding": 15,
@@ -283,7 +283,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: containerStyle ] enzyme-mount: 
         "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
         "margin": 15,
         "marginBottom": 0,
         "padding": 15,
@@ -291,7 +291,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: containerStyle ] enzyme-mount: 
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
       style={
         Object {
           "borderBottomWidth": "5px",
@@ -383,7 +383,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: containerStyle ] enzyme-mount: 
 
 exports[`Cards: Card: Props Cards: Card: [ prop: containerStyle ] enzyme-render: snapshot: Cards: Card: [ prop: containerStyle ] enzyme-render: snapshot 1`] = `
 <div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
+  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
   style="border-top-width:5px;border-right-width:5px;border-bottom-width:5px;border-left-width:5px"
 >
   <div
@@ -415,7 +415,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: containerStyle ] enzyme-shallow
       "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
       "margin": 15,
       "marginBottom": 0,
       "padding": 15,
@@ -482,7 +482,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: dividerStyle ] enzyme-mount: sn
         "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
         "margin": 15,
         "marginBottom": 0,
         "padding": 15,
@@ -490,7 +490,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: dividerStyle ] enzyme-mount: sn
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
     >
       <View
         style={
@@ -638,7 +638,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: dividerStyle ] enzyme-mount: sn
 
 exports[`Cards: Card: Props Cards: Card: [ prop: dividerStyle ] enzyme-render: snapshot: Cards: Card: [ prop: dividerStyle ] enzyme-render: snapshot 1`] = `
 <div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
+  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
   <div
     class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -683,7 +683,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: dividerStyle ] enzyme-shallow: 
       "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
       "margin": 15,
       "marginBottom": 0,
       "padding": 15,
@@ -770,7 +770,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: featuredSubtitle ] enzyme-mount
         "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
         "margin": 15,
         "marginBottom": 0,
         "padding": 0,
@@ -778,7 +778,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: featuredSubtitle ] enzyme-mount
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
     >
       <View
         style={
@@ -1030,7 +1030,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: featuredSubtitle ] enzyme-mount
 
 exports[`Cards: Card: Props Cards: Card: [ prop: featuredSubtitle ] enzyme-render: snapshot: Cards: Card: [ prop: featuredSubtitle ] enzyme-render: snapshot 1`] = `
 <div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
   <div
     class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -1094,7 +1094,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: featuredSubtitle ] enzyme-shall
       "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
       "margin": 15,
       "marginBottom": 0,
       "padding": 0,
@@ -1223,7 +1223,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: featuredSubtitleStyle ] enzyme-
         "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
         "margin": 15,
         "marginBottom": 0,
         "padding": 0,
@@ -1231,7 +1231,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: featuredSubtitleStyle ] enzyme-
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
     >
       <View
         style={
@@ -1488,7 +1488,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: featuredSubtitleStyle ] enzyme-
 
 exports[`Cards: Card: Props Cards: Card: [ prop: featuredSubtitleStyle ] enzyme-render: snapshot: Cards: Card: [ prop: featuredSubtitleStyle ] enzyme-render: snapshot 1`] = `
 <div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
   <div
     class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -1553,7 +1553,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: featuredSubtitleStyle ] enzyme-
       "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
       "margin": 15,
       "marginBottom": 0,
       "padding": 0,
@@ -1676,7 +1676,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: featuredTitle ] enzyme-mount: s
         "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
         "margin": 15,
         "marginBottom": 0,
         "padding": 0,
@@ -1684,7 +1684,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: featuredTitle ] enzyme-mount: s
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
     >
       <View
         style={
@@ -1908,7 +1908,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: featuredTitle ] enzyme-mount: s
 
 exports[`Cards: Card: Props Cards: Card: [ prop: featuredTitle ] enzyme-render: snapshot: Cards: Card: [ prop: featuredTitle ] enzyme-render: snapshot 1`] = `
 <div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
   <div
     class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -1966,7 +1966,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: featuredTitle ] enzyme-shallow:
       "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
       "margin": 15,
       "marginBottom": 0,
       "padding": 0,
@@ -2082,7 +2082,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: featuredTitleStyle ] enzyme-mou
         "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
         "margin": 15,
         "marginBottom": 0,
         "padding": 0,
@@ -2090,7 +2090,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: featuredTitleStyle ] enzyme-mou
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
     >
       <View
         style={
@@ -2319,7 +2319,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: featuredTitleStyle ] enzyme-mou
 
 exports[`Cards: Card: Props Cards: Card: [ prop: featuredTitleStyle ] enzyme-render: snapshot: Cards: Card: [ prop: featuredTitleStyle ] enzyme-render: snapshot 1`] = `
 <div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
   <div
     class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -2378,7 +2378,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: featuredTitleStyle ] enzyme-sha
       "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
       "margin": 15,
       "marginBottom": 0,
       "padding": 0,
@@ -2488,7 +2488,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: flexDirection ] enzyme-mount: s
         "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
         "margin": 15,
         "marginBottom": 0,
         "padding": 15,
@@ -2496,7 +2496,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: flexDirection ] enzyme-mount: s
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
     >
       <View
         style={
@@ -2581,7 +2581,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: flexDirection ] enzyme-mount: s
 
 exports[`Cards: Card: Props Cards: Card: [ prop: flexDirection ] enzyme-render: snapshot: Cards: Card: [ prop: flexDirection ] enzyme-render: snapshot 1`] = `
 <div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
+  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
   <div
     class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-18u37iz rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -2612,7 +2612,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: flexDirection ] enzyme-shallow:
       "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
       "margin": 15,
       "marginBottom": 0,
       "padding": 15,
@@ -2675,7 +2675,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: fontFamily ] enzyme-mount: snap
         "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
         "margin": 15,
         "marginBottom": 0,
         "padding": 15,
@@ -2683,7 +2683,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: fontFamily ] enzyme-mount: snap
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
     >
       <View
         style={
@@ -2831,7 +2831,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: fontFamily ] enzyme-mount: snap
 
 exports[`Cards: Card: Props Cards: Card: [ prop: fontFamily ] enzyme-render: snapshot: Cards: Card: [ prop: fontFamily ] enzyme-render: snapshot 1`] = `
 <div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
+  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
   <div
     class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -2876,7 +2876,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: fontFamily ] enzyme-shallow: sn
       "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
       "margin": 15,
       "marginBottom": 0,
       "padding": 15,
@@ -2965,7 +2965,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: imageProps ] enzyme-mount: snap
         "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
         "margin": 15,
         "marginBottom": 0,
         "padding": 0,
@@ -2973,7 +2973,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: imageProps ] enzyme-mount: snap
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
     >
       <View
         style={
@@ -3150,7 +3150,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: imageProps ] enzyme-mount: snap
 
 exports[`Cards: Card: Props Cards: Card: [ prop: imageProps ] enzyme-render: snapshot: Cards: Card: [ prop: imageProps ] enzyme-render: snapshot 1`] = `
 <div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
   <div
     class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -3198,7 +3198,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: imageProps ] enzyme-shallow: sn
       "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
       "margin": 15,
       "marginBottom": 0,
       "padding": 0,
@@ -3284,7 +3284,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: imageStyle ] enzyme-mount: snap
         "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
         "margin": 15,
         "marginBottom": 0,
         "padding": 0,
@@ -3292,7 +3292,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: imageStyle ] enzyme-mount: snap
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
     >
       <View
         style={
@@ -3470,7 +3470,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: imageStyle ] enzyme-mount: snap
 
 exports[`Cards: Card: Props Cards: Card: [ prop: imageStyle ] enzyme-render: snapshot: Cards: Card: [ prop: imageStyle ] enzyme-render: snapshot 1`] = `
 <div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
   <div
     class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -3518,7 +3518,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: imageStyle ] enzyme-shallow: sn
       "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
       "margin": 15,
       "marginBottom": 0,
       "padding": 0,
@@ -3604,7 +3604,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: imageWrapperStyle ] enzyme-moun
         "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
         "margin": 15,
         "marginBottom": 0,
         "padding": 0,
@@ -3612,7 +3612,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: imageWrapperStyle ] enzyme-moun
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
     >
       <View
         style={
@@ -3801,7 +3801,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: imageWrapperStyle ] enzyme-moun
 
 exports[`Cards: Card: Props Cards: Card: [ prop: imageWrapperStyle ] enzyme-render: snapshot: Cards: Card: [ prop: imageWrapperStyle ] enzyme-render: snapshot 1`] = `
 <div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
   <div
     class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -3850,7 +3850,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: imageWrapperStyle ] enzyme-shal
       "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
       "margin": 15,
       "marginBottom": 0,
       "padding": 0,
@@ -3934,7 +3934,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: noProps ] enzyme-mount: snapsho
         "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
         "margin": 15,
         "marginBottom": 0,
         "padding": 15,
@@ -3942,7 +3942,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: noProps ] enzyme-mount: snapsho
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
     >
       <View
         style={
@@ -3962,7 +3962,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: noProps ] enzyme-mount: snapsho
 
 exports[`Cards: Card: Props Cards: Card: [ prop: noProps ] enzyme-render: snapshot: Cards: Card: [ prop: noProps ] enzyme-render: snapshot 1`] = `
 <div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
+  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
   <div
     class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -3980,7 +3980,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: noProps ] enzyme-shallow: snaps
       "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
       "margin": 15,
       "marginBottom": 0,
       "padding": 15,
@@ -4010,7 +4010,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: title ] enzyme-mount: snapshot:
         "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
         "margin": 15,
         "marginBottom": 0,
         "padding": 15,
@@ -4018,7 +4018,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: title ] enzyme-mount: snapshot:
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
     >
       <View
         style={
@@ -4159,7 +4159,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: title ] enzyme-mount: snapshot:
 
 exports[`Cards: Card: Props Cards: Card: [ prop: title ] enzyme-render: snapshot: Cards: Card: [ prop: title ] enzyme-render: snapshot 1`] = `
 <div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
+  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
   <div
     class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -4203,7 +4203,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: title ] enzyme-shallow: snapsho
       "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
       "margin": 15,
       "marginBottom": 0,
       "padding": 15,
@@ -4291,7 +4291,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: titleStyle ] enzyme-mount: snap
         "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
         "margin": 15,
         "marginBottom": 0,
         "padding": 15,
@@ -4299,7 +4299,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: titleStyle ] enzyme-mount: snap
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
     >
       <View
         style={
@@ -4450,7 +4450,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: titleStyle ] enzyme-mount: snap
 
 exports[`Cards: Card: Props Cards: Card: [ prop: titleStyle ] enzyme-render: snapshot: Cards: Card: [ prop: titleStyle ] enzyme-render: snapshot 1`] = `
 <div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
+  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
   <div
     class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -4495,7 +4495,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: titleStyle ] enzyme-shallow: sn
       "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
       "margin": 15,
       "marginBottom": 0,
       "padding": 15,
@@ -4583,7 +4583,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: wrapperStyle ] enzyme-mount: sn
         "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
         "margin": 15,
         "marginBottom": 0,
         "padding": 15,
@@ -4591,7 +4591,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: wrapperStyle ] enzyme-mount: sn
     }
   >
     <div
-      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
     >
       <View
         style={
@@ -4684,7 +4684,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: wrapperStyle ] enzyme-mount: sn
 
 exports[`Cards: Card: Props Cards: Card: [ prop: wrapperStyle ] enzyme-render: snapshot: Cards: Card: [ prop: wrapperStyle ] enzyme-render: snapshot 1`] = `
 <div
-  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-1do4pyk rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
+  class="rn-alignItems-1oszu61 rn-backgroundColor-1ikg2hk rn-borderTopColor-15ix7gu rn-borderRightColor-t4hpar rn-borderBottomColor-104a2m3 rn-borderLeftColor-12acz3g rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-5kkj8d rn-borderRightWidth-13l2t4g rn-borderBottomWidth-qklmqi rn-borderLeftWidth-1ljd8xs rn-boxShadow-7ikrov rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-19h5ruw rn-marginRight-y3t9qe rn-marginLeft-1ozfoo7 rn-marginBottom-p1pxzi rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-1qxgc49 rn-paddingRight-ry3cjt rn-paddingBottom-19yat4t rn-paddingLeft-1yt7n81 rn-position-bnwqim rn-zIndex-1lgpqti"
 >
   <div
     class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
@@ -4716,7 +4716,7 @@ exports[`Cards: Card: Props Cards: Card: [ prop: wrapperStyle ] enzyme-shallow: 
       "boxShadow": "
         0 2px 2px 0px rgba(0, 0, 0, 0.14),
         0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  ",
+      ",
       "margin": 15,
       "marginBottom": 0,
       "padding": 15,

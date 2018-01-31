@@ -21,6 +21,10 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: borderRadius ] enzyme-shall
       Object {
         "backgroundColor": "white",
         "borderRadius": 20,
+        "boxShadow": "
+        0 3px 4px 0px rgba(0, 0, 0, 0.14),
+        0 3px 3px -2px rgba(0, 0, 0, 0.2)
+      ",
         "height": 588,
         "padding": 10,
         "width": 944,
@@ -56,6 +60,10 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: containerStyle ] enzyme-sha
       Object {
         "backgroundColor": "white",
         "borderRadius": 3,
+        "boxShadow": "
+        0 3px 4px 0px rgba(0, 0, 0, 0.14),
+        0 3px 3px -2px rgba(0, 0, 0, 0.2)
+      ",
         "height": 588,
         "padding": 10,
         "width": 944,
@@ -92,6 +100,10 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: fullScreen ] enzyme-shallow
       Object {
         "backgroundColor": "white",
         "borderRadius": 3,
+        "boxShadow": "
+        0 3px 4px 0px rgba(0, 0, 0, 0.14),
+        0 3px 3px -2px rgba(0, 0, 0, 0.2)
+      ",
         "height": 768,
         "padding": 10,
         "width": 1024,
@@ -126,6 +138,10 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: height ] enzyme-shallow: sn
       Object {
         "backgroundColor": "white",
         "borderRadius": 3,
+        "boxShadow": "
+        0 3px 4px 0px rgba(0, 0, 0, 0.14),
+        0 3px 3px -2px rgba(0, 0, 0, 0.2)
+      ",
         "height": 588,
         "padding": 10,
         "width": 944,
@@ -160,6 +176,10 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: overlayBackgroundColor ] en
       Object {
         "backgroundColor": "#aaa",
         "borderRadius": 3,
+        "boxShadow": "
+        0 3px 4px 0px rgba(0, 0, 0, 0.14),
+        0 3px 3px -2px rgba(0, 0, 0, 0.2)
+      ",
         "height": 588,
         "padding": 10,
         "width": 944,
@@ -195,6 +215,10 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: overlayStyle ] enzyme-shall
         "backgroundColor": "white",
         "borderRadius": 3,
         "borderWidth": 5,
+        "boxShadow": "
+        0 3px 4px 0px rgba(0, 0, 0, 0.14),
+        0 3px 3px -2px rgba(0, 0, 0, 0.2)
+      ",
         "height": 588,
         "padding": 10,
         "width": 944,
@@ -229,6 +253,10 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: width ] enzyme-shallow: sna
       Object {
         "backgroundColor": "white",
         "borderRadius": 3,
+        "boxShadow": "
+        0 3px 4px 0px rgba(0, 0, 0, 0.14),
+        0 3px 3px -2px rgba(0, 0, 0, 0.2)
+      ",
         "height": 588,
         "padding": 10,
         "width": 944,
@@ -263,6 +291,10 @@ exports[`Misc: Overlay: Props Misc: Overlay: [ prop: windowBackgroundColor ] enz
       Object {
         "backgroundColor": "white",
         "borderRadius": 3,
+        "boxShadow": "
+        0 3px 4px 0px rgba(0, 0, 0, 0.14),
+        0 3px 3px -2px rgba(0, 0, 0, 0.2)
+      ",
         "height": 588,
         "padding": 10,
         "width": 944,

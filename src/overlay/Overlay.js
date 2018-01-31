@@ -8,8 +8,7 @@ import {
   Platform,
   ViewPropTypes as RNViewPropTypes,
 } from 'react-native';
-import { elevations } from '../config/elevation';
-
+import elevations from '../config/elevation';
 const ViewPropTypes = RNViewPropTypes || View.propTypes;
 
 const DIM_TYPE = 'window';
