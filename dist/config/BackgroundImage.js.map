@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../src/config/BackgroundImage.js"],"names":["BackgroundImage"],"mappings":"yDAAA;;AAEA,GAAMA,iBAAkB,gDAAxB,C;;AAEeA,e","file":"BackgroundImage.js","sourcesContent":["import { Image, ImageBackground } from 'react-native';\r\n\r\nconst BackgroundImage = ImageBackground || Image;\r\n\r\nexport default BackgroundImage;\r\n"]}
