@@ -6,6 +6,7 @@ coverage
 jsconfig.json
 .vscode/
 build
+dist
 styleguide/public
 styleguide/build
 styleguide/scripts
