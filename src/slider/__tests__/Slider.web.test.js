@@ -314,21 +314,4 @@ describe('Slider component', () => {
     expect(component.length).toBe(1);
     expect(toJson(component)).toMatchSnapshot();
   });
-
-  it('should call onValueChange', () => {
-    const customFunction = jest.fn();
-    const component = shallow(
-      <Slider
-        value={20}
-        minimumValue={0}
-        maximumValue={100}
-        onValueChange={customFunction}
-        allMeasured={true}
-      />
-    );
-
-    expect(component.props().value).toBe(20);
-    component.simulate('ValueChange', 30);
-    expect(customFunction).toHaveBeenCalledTimes(1);
-  });
 });

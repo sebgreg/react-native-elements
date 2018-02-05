@@ -28,7 +28,7 @@ const props = {
   noProps: {
     component: Button,
     enzyme: {
-      tests: onlySnapshots,
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -36,7 +36,7 @@ const props = {
     component: Button,
     props: { containerStyle: { padding: 20, backgroundColor: '#071' } },
     enzyme: {
-      tests: onlySnapshots,
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -44,7 +44,7 @@ const props = {
     component: Button,
     props: { buttonStyle: { padding: 20 } },
     enzyme: {
-      tests: onlySnapshots,
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -52,7 +52,7 @@ const props = {
     component: Button,
     props: { text: 'text prop' },
     enzyme: {
-      tests: onlySnapshots,
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -75,7 +75,7 @@ const props = {
       textStyle: { fontSize: 32, fontFamily: 'Courier New' },
     },
     enzyme: {
-      tests: onlySnapshots,
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -88,7 +88,7 @@ const props = {
       },
     },
     enzyme: {
-      tests: onlySnapshots,
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -96,7 +96,7 @@ const props = {
     component: Button,
     props: { text: 'button text', loading: true },
     enzyme: {
-      tests: onlySnapshots,
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -108,7 +108,7 @@ const props = {
       loading: true,
     },
     enzyme: {
-      tests: onlySnapshots,
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -116,7 +116,7 @@ const props = {
     component: Button,
     props: { loading: true, loadingProps: { size: 'large' } },
     enzyme: {
-      tests: onlySnapshots,
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -124,7 +124,7 @@ const props = {
     component: Button,
     props: { icon },
     enzyme: {
-      tests: onlySnapshots,
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -132,7 +132,7 @@ const props = {
     component: Button,
     props: { icon, iconContainerStyle: { borderWidth: 2 } },
     enzyme: {
-      tests: onlySnapshots,
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -140,7 +140,7 @@ const props = {
     component: Button,
     props: { icon, iconRight: true },
     enzyme: {
-      tests: onlySnapshots,
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },
@@ -152,7 +152,7 @@ const props = {
       clear: true,
     },
     enzyme: {
-      tests: onlySnapshots,
+      tests: { shallow: { snapshot: snapShot() } },
     },
     styleguidist: {},
   },

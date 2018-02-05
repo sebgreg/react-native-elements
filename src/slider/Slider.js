@@ -361,6 +361,10 @@ export default class Slider extends Component {
       ...other
     } = this.props;
 
+    if (process.env.NODE_ENV !== 'test') {
+      delete other.onValueChange;
+    }
+
     var {
       value,
       containerSize,

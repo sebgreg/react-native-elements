@@ -359,7 +359,11 @@ return _react2.default.createElement(_reactNative.Animated.View,{style:positionS
 
 
 
-this.props,minimumValue=_props.minimumValue,maximumValue=_props.maximumValue,minimumTrackTintColor=_props.minimumTrackTintColor,maximumTrackTintColor=_props.maximumTrackTintColor,thumbTintColor=_props.thumbTintColor,containerStyle=_props.containerStyle,style=_props.style,trackStyle=_props.trackStyle,thumbStyle=_props.thumbStyle,debugTouchArea=_props.debugTouchArea,thumbTouchSize=_props.thumbTouchSize,onSlidingStart=_props.onSlidingStart,onSlidingComplete=_props.onSlidingComplete,animationType=_props.animationType,animateTransitions=_props.animateTransitions,animationConfig=_props.animationConfig,orientation=_props.orientation,other=_objectWithoutProperties(_props,['minimumValue','maximumValue','minimumTrackTintColor','maximumTrackTintColor','thumbTintColor','containerStyle','style','trackStyle','thumbStyle','debugTouchArea','thumbTouchSize','onSlidingStart','onSlidingComplete','animationType','animateTransitions','animationConfig','orientation']);var _state=
+this.props,minimumValue=_props.minimumValue,maximumValue=_props.maximumValue,minimumTrackTintColor=_props.minimumTrackTintColor,maximumTrackTintColor=_props.maximumTrackTintColor,thumbTintColor=_props.thumbTintColor,containerStyle=_props.containerStyle,style=_props.style,trackStyle=_props.trackStyle,thumbStyle=_props.thumbStyle,debugTouchArea=_props.debugTouchArea,thumbTouchSize=_props.thumbTouchSize,onSlidingStart=_props.onSlidingStart,onSlidingComplete=_props.onSlidingComplete,animationType=_props.animationType,animateTransitions=_props.animateTransitions,animationConfig=_props.animationConfig,orientation=_props.orientation,other=_objectWithoutProperties(_props,['minimumValue','maximumValue','minimumTrackTintColor','maximumTrackTintColor','thumbTintColor','containerStyle','style','trackStyle','thumbStyle','debugTouchArea','thumbTouchSize','onSlidingStart','onSlidingComplete','animationType','animateTransitions','animationConfig','orientation']);
+
+if(process.env.NODE_ENV!=='test'){
+delete other.onValueChange;
+}var _state=
 
 
 
