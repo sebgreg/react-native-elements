@@ -21,23 +21,21 @@ var DEFAULT_ANIMATION_CONFIGS = {
   },
 };
 
-class Rect {
-  constructor(x, y, width, height) {
-    this.x = x;
-    this.y = y;
-    this.width = width;
-    this.height = height;
-  }
-
-  containsPoint = function(x, y) {
-    return (
-      x >= this.x &&
-      y >= this.y &&
-      x <= this.x + this.width &&
-      y <= this.y + this.height
-    );
-  };
+function Rect(x, y, width, height) {
+  this.x = x;
+  this.y = y;
+  this.width = width;
+  this.height = height;
 }
+
+Rect.prototype.containsPoint = function(x, y) {
+  return (
+    x >= this.x &&
+    y >= this.y &&
+    x <= this.x + this.width &&
+    y <= this.y + this.height
+  );
+};
 
 export default class Slider extends Component {
   constructor(props) {
@@ -46,8 +44,8 @@ export default class Slider extends Component {
       containerSize: { width: 0, height: 0 },
       trackSize: { width: 0, height: 0 },
       thumbSize: { width: 0, height: 0 },
+      allMeasured: false,
       value: new Animated.Value(props.value),
-      length: 0,
     };
   }
 
@@ -135,7 +133,7 @@ export default class Slider extends Component {
   }
 
   handlePanResponderGrant(/*e: Object, gestureState: Object*/) {
-    this._previousPos = this.getThumbPos(this.getCurrentValue());
+    this._previousLeft = this.getThumbLeft(this.getCurrentValue());
     this.fireChangeEvent('onSlidingStart');
   }
 
@@ -183,15 +181,21 @@ export default class Slider extends Component {
   }
 
   getTouchOverflowSize() {
+    var state = this.state;
+    var props = this.props;
+
     var size = {};
-    size.width = Math.max(
-      0,
-      this.props.thumbTouchSize.width - this.state.thumbSize.width
-    );
-    size.height = Math.max(
-      0,
-      this.props.thumbTouchSize.height - this.state.containerSize.height
-    );
+    if (state.allMeasured === true) {
+      size.width = Math.max(
+        0,
+        props.thumbTouchSize.width - state.thumbSize.width
+      );
+      size.height = Math.max(
+        0,
+        props.thumbTouchSize.height - state.containerSize.height
+      );
+    }
+
     return size;
   }
 
@@ -217,58 +221,52 @@ export default class Slider extends Component {
     return touchOverflowStyle;
   }
 
-  measureContainer(e) {
-    const { width, height } = e.nativeEvent.layout;
-    const size = { width, height };
-    console.warn({ container: size });
-    this.setState(prevState => {
-      return {
-        ...prevState,
-        containerSize: size,
-        length:
-          this.props.orientation === 'vertical'
-            ? size.height - prevState.thumbSize.height
-            : size.width - prevState.thumbSize.width,
-      };
-    });
+  handleMeasure(name, x) {
+    var { width, height } = x.nativeEvent.layout;
+    var size = { width: width, height: height };
+
+    var storeName = `_${name}`;
+    var currentSize = this[storeName];
+    if (
+      currentSize &&
+      width === currentSize.width &&
+      height === currentSize.height
+    ) {
+      return;
+    }
+    this[storeName] = size;
+
+    if (this._containerSize && this._trackSize && this._thumbSize) {
+      this.setState({
+        containerSize: this._containerSize,
+        trackSize: this._trackSize,
+        thumbSize: this._thumbSize,
+        allMeasured: true,
+      });
+    }
   }
 
-  measureTrack(e) {
-    const { width, height } = e.nativeEvent.layout;
-    const size = { width, height };
-    console.warn({ track: size });
-    this.setState(prevState => {
-      return {
-        ...prevState,
-        trackSize: size,
-      };
-    });
+  measureContainer(x) {
+    this.handleMeasure('containerSize', x);
   }
 
-  measureThumb(e) {
-    const { width, height } = e.nativeEvent.layout;
-    const size = { width, height };
-    console.warn({ thumb: size });
-    this.setState(prevState => {
-      return {
-        ...prevState,
-        thumbSize: size,
-        length:
-          this.props.orientation === 'vertical'
-            ? size.height - prevState.thumbSize.height
-            : size.width - prevState.thumbSize.width,
-      };
-    });
+  measureTrack(x) {
+    this.handleMeasure('trackSize', x);
+  }
+
+  measureThumb(x) {
+    this.handleMeasure('thumbSize', x);
   }
 
   getValue(gestureState) {
-    var thumbPos =
-      this._previousPos +
+    var length = this.state.containerSize.width - this.state.thumbSize.width;
+    var thumbLeft =
+      this._previousLeft +
       (this.props.orientation === 'vertical'
         ? gestureState.dy
         : gestureState.dx);
 
-    var ratio = thumbPos / this.state.length;
+    var ratio = thumbLeft / length;
 
     if (this.props.step) {
       return Math.max(
@@ -307,9 +305,11 @@ export default class Slider extends Component {
     );
   }
 
-  getThumbPos(value) {
+  getThumbLeft(value) {
     var ratio = this.getRatio(value);
-    return ratio * this.state.length;
+    return (
+      ratio * (this.state.containerSize.width - this.state.thumbSize.width)
+    );
   }
 
   getThumbTouchRect() {
@@ -319,7 +319,7 @@ export default class Slider extends Component {
 
     return new Rect(
       touchOverflowSize.width / 2 +
-        this.getThumbPos(this.getCurrentValue()) +
+        this.getThumbLeft(this.getCurrentValue()) +
         (state.thumbSize.width - props.thumbTouchSize.width) / 2,
       touchOverflowSize.height / 2 +
         (state.containerSize.height - props.thumbTouchSize.height) / 2,
@@ -328,11 +328,10 @@ export default class Slider extends Component {
     );
   }
 
-  renderDebugThumbTouchRect(thumbPos) {
+  renderDebugThumbTouchRect(thumbLeft) {
     var thumbTouchRect = this.getThumbTouchRect();
-
     var positionStyle = {
-      left: thumbTouchRect.x,
+      left: thumbLeft,
       top: thumbTouchRect.y,
       width: thumbTouchRect.width,
       height: thumbTouchRect.height,
@@ -352,99 +351,74 @@ export default class Slider extends Component {
       trackStyle,
       thumbStyle,
       debugTouchArea,
-      thumbTouchSize,
-      onSlidingStart,
-      onSlidingComplete,
-      animationType,
-      animateTransitions,
-      animationConfig,
       orientation,
       ...other
     } = this.props;
 
-    if (process.env.NODE_ENV !== 'test') {
-      delete other.onValueChange;
-    }
-
-    var { value, containerSize, trackSize, thumbSize, length } = this.state;
+    var {
+      value,
+      containerSize,
+      trackSize,
+      thumbSize,
+      allMeasured,
+    } = this.state;
 
     var mainStyles = containerStyle || styles;
-    var thumbPos = value.interpolate({
+    var thumbLeft = value.interpolate({
       inputRange: [minimumValue, maximumValue],
-      outputRange: [0, length],
-      // outputRange: orientation === 'vertical' ? [length, 0] : [0, length],
+      outputRange: [0, containerSize.width - thumbSize.width],
       //extrapolate: 'clamp',
     });
 
     var valueVisibleStyle = {};
+    if (!allMeasured) {
+      valueVisibleStyle.opacity = 0;
+    }
 
     var minimumTrackStyle = {
       position: 'absolute',
-      width:
-        orientation === 'vertical'
-          ? TRACK_SIZE
-          : Animated.add(thumbPos, thumbSize.width / 2),
-      height:
-        orientation === 'vertical'
-          ? Animated.add(thumbPos, thumbSize.height / 2)
-          : TRACK_SIZE,
+      width: Animated.add(thumbLeft, thumbSize.width / 2),
+      marginTop: -trackSize.height,
       backgroundColor: minimumTrackTintColor,
       ...valueVisibleStyle,
     };
 
     const thumbStyleTransform = (thumbStyle && thumbStyle.transform) || [];
-    const thumbTransform =
-      orientation === 'vertical'
-        ? [
-            {
-              translateX: (trackSize.width - thumbSize.width) / 2,
-            },
-            { translateY: thumbPos },
-          ]
-        : [
-            { translateX: thumbPos },
-            {
-              translateY: (trackSize.height - thumbSize.height) / 2,
-            },
-          ];
     var touchOverflowStyle = this.getTouchOverflowStyle();
-
-    const maximumTrackStyle =
-      orientation === 'vertical'
-        ? { width: TRACK_SIZE, height: '100%' }
-        : { width: '100%', height: TRACK_SIZE };
     return (
       <View
         {...other}
-        style={[mainStyles.container, style]}
-        onLayout={e => {
-          this.measureContainer(e);
-        }}
+        style={[
+          mainStyles.container,
+          orientation === 'vertical' && { transform: [{ rotate: '90deg' }] },
+          style,
+        ]}
+        onLayout={this.measureContainer.bind(this)}
       >
         <View
           style={[
             { backgroundColor: maximumTrackTintColor },
             mainStyles.track,
-            maximumTrackStyle,
             trackStyle,
           ]}
-          onLayout={e => {
-            this.measureTrack(e);
-          }}
+          onLayout={this.measureTrack.bind(this)}
         />
         <Animated.View
           style={[mainStyles.track, trackStyle, minimumTrackStyle]}
         />
         <Animated.View
-          onLayout={e => {
-            this.measureThumb(e);
-          }}
+          onLayout={this.measureThumb.bind(this)}
           style={[
             { backgroundColor: thumbTintColor },
             mainStyles.thumb,
             thumbStyle,
             {
-              transform: thumbTransform,
+              transform: [
+                { translateX: thumbLeft },
+                { translateY: -(trackSize.height + thumbSize.height) / 2 },
+                ...thumbStyleTransform,
+              ],
+              ...valueVisibleStyle,
             },
           ]}
         />
@@ -452,7 +426,7 @@ export default class Slider extends Component {
           style={[styles.touchArea, touchOverflowStyle]}
           {...this.panResponder.panHandlers}
         >
-          {debugTouchArea === true && this.renderDebugThumbTouchRect(thumbPos)}
+          {debugTouchArea === true && this.renderDebugThumbTouchRect(thumbLeft)}
         </View>
       </View>
     );
@@ -559,23 +533,23 @@ Slider.propTypes = {
   debugTouchArea: PropTypes.bool,
 
   /**
-  * Set to true to animate values with default 'timing' animation type
-  */
+   * Set to true to animate values with default 'timing' animation type
+   */
   animateTransitions: PropTypes.bool,
 
   /**
-  * Custom Animation type. 'spring' or 'timing'.
-  */
+   * Custom Animation type. 'spring' or 'timing'.
+   */
   animationType: PropTypes.oneOf(['spring', 'timing']),
 
   /**
-  * Choose the orientation. 'horizontal' or 'vertical'.
-  */
+   * Choose the orientation. 'horizontal' or 'vertical'.
+   */
   orientation: PropTypes.oneOf(['horizontal', 'vertical']),
 
   /**
-  * Used to configure the animation parameters.  These are the same parameters in the Animated library.
-  */
+   * Used to configure the animation parameters.  These are the same parameters in the Animated library.
+   */
   animationConfig: PropTypes.object,
   containerStyle: ViewPropTypes.style,
 };
@@ -596,9 +570,11 @@ Slider.defaultProps = {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    height: 40,
+    justifyContent: 'center',
   },
   track: {
+    height: TRACK_SIZE,
     borderRadius: TRACK_SIZE / 2,
   },
   thumb: {
@@ -606,6 +582,7 @@ const styles = StyleSheet.create({
     width: THUMB_SIZE,
     height: THUMB_SIZE,
     borderRadius: THUMB_SIZE / 2,
+    top: 22,
   },
   touchArea: {
     position: 'absolute',

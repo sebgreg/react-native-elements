@@ -7,10 +7,8 @@ exports[`Slider component should pass down Thumb transform values 1`] = `
   style={
     Array [
       Object {
-        "height": 40,
-        "justifyContent": "center",
+        "flex": 1,
       },
-      false,
       undefined,
     ]
   }
@@ -25,7 +23,10 @@ exports[`Slider component should pass down Thumb transform values 1`] = `
         },
         Object {
           "borderRadius": 2,
+        },
+        Object {
           "height": 4,
+          "width": "100%",
         },
         undefined,
       ]
@@ -36,12 +37,11 @@ exports[`Slider component should pass down Thumb transform values 1`] = `
       Array [
         Object {
           "borderRadius": 2,
-          "height": 4,
         },
         undefined,
         Object {
           "backgroundColor": "#3f3f3f",
-          "opacity": 0,
+          "height": 4,
           "position": "absolute",
           "width": 0,
         },
@@ -59,7 +59,6 @@ exports[`Slider component should pass down Thumb transform values 1`] = `
           "borderRadius": 10,
           "height": 20,
           "position": "absolute",
-          "top": 22,
           "width": 20,
         },
         Object {
@@ -70,16 +69,12 @@ exports[`Slider component should pass down Thumb transform values 1`] = `
           ],
         },
         Object {
-          "opacity": 0,
           "transform": Array [
             Object {
               "translateX": 0,
             },
             Object {
-              "translateY": -0,
-            },
-            Object {
-              "scale": 2,
+              "translateY": 0,
             },
           ],
         },
@@ -109,7 +104,12 @@ exports[`Slider component should pass down Thumb transform values 1`] = `
           "right": 0,
           "top": 0,
         },
-        Object {},
+        Object {
+          "marginBottom": -20,
+          "marginLeft": -20,
+          "marginRight": -20,
+          "marginTop": -20,
+        },
       ]
     }
   />
@@ -123,15 +123,7 @@ exports[`Slider component should render vertically 1`] = `
   style={
     Array [
       Object {
-        "height": 40,
-        "justifyContent": "center",
-      },
-      Object {
-        "transform": Array [
-          Object {
-            "rotate": "90deg",
-          },
-        ],
+        "flex": 1,
       },
       undefined,
     ]
@@ -147,7 +139,10 @@ exports[`Slider component should render vertically 1`] = `
         },
         Object {
           "borderRadius": 2,
-          "height": 4,
+        },
+        Object {
+          "height": "100%",
+          "width": 4,
         },
         undefined,
       ]
@@ -158,14 +153,13 @@ exports[`Slider component should render vertically 1`] = `
       Array [
         Object {
           "borderRadius": 2,
-          "height": 4,
         },
         undefined,
         Object {
           "backgroundColor": "#3f3f3f",
-          "opacity": 0,
+          "height": 0,
           "position": "absolute",
-          "width": 0,
+          "width": 4,
         },
       ]
     }
@@ -181,18 +175,16 @@ exports[`Slider component should render vertically 1`] = `
           "borderRadius": 10,
           "height": 20,
           "position": "absolute",
-          "top": 22,
           "width": 20,
         },
         undefined,
         Object {
-          "opacity": 0,
           "transform": Array [
             Object {
               "translateX": 0,
             },
             Object {
-              "translateY": -0,
+              "translateY": 0,
             },
           ],
         },
@@ -222,7 +214,12 @@ exports[`Slider component should render vertically 1`] = `
           "right": 0,
           "top": 0,
         },
-        Object {},
+        Object {
+          "marginBottom": -20,
+          "marginLeft": -20,
+          "marginRight": -20,
+          "marginTop": -20,
+        },
       ]
     }
   />
@@ -236,10 +233,8 @@ exports[`Slider component should render with ThumbTouchRect 1`] = `
   style={
     Array [
       Object {
-        "height": 40,
-        "justifyContent": "center",
+        "flex": 1,
       },
-      false,
       undefined,
     ]
   }
@@ -254,7 +249,10 @@ exports[`Slider component should render with ThumbTouchRect 1`] = `
         },
         Object {
           "borderRadius": 2,
+        },
+        Object {
           "height": 4,
+          "width": "100%",
         },
         undefined,
       ]
@@ -265,12 +263,11 @@ exports[`Slider component should render with ThumbTouchRect 1`] = `
       Array [
         Object {
           "borderRadius": 2,
-          "height": 4,
         },
         undefined,
         Object {
           "backgroundColor": "#3f3f3f",
-          "opacity": 0,
+          "height": 4,
           "position": "absolute",
           "width": 0,
         },
@@ -288,18 +285,16 @@ exports[`Slider component should render with ThumbTouchRect 1`] = `
           "borderRadius": 10,
           "height": 20,
           "position": "absolute",
-          "top": 22,
           "width": 20,
         },
         undefined,
         Object {
-          "opacity": 0,
           "transform": Array [
             Object {
               "translateX": 0,
             },
             Object {
-              "translateY": -0,
+              "translateY": 0,
             },
           ],
         },
@@ -331,6 +326,10 @@ exports[`Slider component should render with ThumbTouchRect 1`] = `
         },
         Object {
           "backgroundColor": "orange",
+          "marginBottom": -20,
+          "marginLeft": -20,
+          "marginRight": -20,
+          "marginTop": -20,
           "opacity": 0.5,
         },
       ]
@@ -342,7 +341,7 @@ exports[`Slider component should render with ThumbTouchRect 1`] = `
         Object {
           "height": 40,
           "left": 0,
-          "top": NaN,
+          "top": 0,
           "width": 40,
         }
       }
@@ -358,10 +357,8 @@ exports[`Slider component should render without issues 1`] = `
   style={
     Array [
       Object {
-        "height": 40,
-        "justifyContent": "center",
+        "flex": 1,
       },
-      false,
       undefined,
     ]
   }
@@ -376,7 +373,10 @@ exports[`Slider component should render without issues 1`] = `
         },
         Object {
           "borderRadius": 2,
+        },
+        Object {
           "height": 4,
+          "width": "100%",
         },
         undefined,
       ]
@@ -387,12 +387,11 @@ exports[`Slider component should render without issues 1`] = `
       Array [
         Object {
           "borderRadius": 2,
-          "height": 4,
         },
         undefined,
         Object {
           "backgroundColor": "#3f3f3f",
-          "opacity": 0,
+          "height": 4,
           "position": "absolute",
           "width": 0,
         },
@@ -410,18 +409,16 @@ exports[`Slider component should render without issues 1`] = `
           "borderRadius": 10,
           "height": 20,
           "position": "absolute",
-          "top": 22,
           "width": 20,
         },
         undefined,
         Object {
-          "opacity": 0,
           "transform": Array [
             Object {
               "translateX": 0,
             },
             Object {
-              "translateY": -0,
+              "translateY": 0,
             },
           ],
         },
@@ -451,7 +448,12 @@ exports[`Slider component should render without issues 1`] = `
           "right": 0,
           "top": 0,
         },
-        Object {},
+        Object {
+          "marginBottom": -20,
+          "marginLeft": -20,
+          "marginRight": -20,
+          "marginTop": -20,
+        },
       ]
     }
   />

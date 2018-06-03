@@ -19,7 +19,6 @@
   ],
   "scripts": {
     "build:dist": "babel src --out-dir dist --ignore __tests__,test.js -s --copy-files ",
-    "build": "rm -rf build; webpack",
     "test": "jest native web",
     "test:watch": "jest --watch native web",
     "test:coverage": "jest --coverage native web",
@@ -27,7 +26,8 @@
     "lint": "eslint src/",
     "precommit": "lint-staged && npm test && npm run build:dist",
     "prettify": "prettier --write 'src/**/*.js'",
-    "styleguide": "styleguidist --config ./styleguide/styleguide.config.js server"
+    "styleguide": "styleguidist --config ./styleguide/styleguide.config.js server",
+    "yalc": "yarn build:dist && yalc publish"
   },
   "author": "Nader Dabit & Monte Thakkar",
   "license": "MIT",
