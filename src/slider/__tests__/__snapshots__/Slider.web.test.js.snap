@@ -91,7 +91,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: animateTransitions ] enzyme
         </View>
       </AnimatedComponent>
       <AnimatedComponent
+        hitSlop={
+          Object {
+            "bottom": 10,
+            "left": 10,
+            "right": 10,
+            "top": 10,
+          }
+        }
         onLayout={[Function]}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Object {
             "backgroundColor": "red",
@@ -111,7 +131,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: animateTransitions ] enzyme
         }
       >
         <View
+          hitSlop={
+            Object {
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "top": 10,
+            }
+          }
           onLayout={[Function]}
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Object {
               "backgroundColor": "red",
@@ -132,6 +172,18 @@ exports[`Input: Slider: Props Input: Slider: [ prop: animateTransitions ] enzyme
         >
           <div
             className="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "WebkitTransform": "translateX(0px) translateY(0px)",
@@ -139,61 +191,22 @@ exports[`Input: Slider: Props Input: Slider: [ prop: animateTransitions ] enzyme
                 "transform": "translateX(0px) translateY(0px)",
               }
             }
-          />
+          >
+            <span
+              className="rn-position-u8s1d rn-zIndex-1wyyakw"
+              key=".0"
+              style={
+                Object {
+                  "bottom": "-10px",
+                  "left": "-10px",
+                  "right": "-10px",
+                  "top": "-10px",
+                }
+              }
+            />
+          </div>
         </View>
       </AnimatedComponent>
-      <View
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        style={
-          Object {
-            "backgroundColor": "transparent",
-            "bottom": 0,
-            "left": 0,
-            "marginBottom": -20,
-            "marginLeft": -20,
-            "marginRight": -20,
-            "marginTop": -20,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      >
-        <div
-          className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-          onMoveShouldSetResponder={[Function]}
-          onMoveShouldSetResponderCapture={[Function]}
-          onResponderEnd={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderReject={[Function]}
-          onResponderRelease={[Function]}
-          onResponderStart={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          onStartShouldSetResponderCapture={[Function]}
-          style={
-            Object {
-              "marginBottom": "-20px",
-              "marginLeft": "-20px",
-              "marginRight": "-20px",
-              "marginTop": "-20px",
-            }
-          }
-        />
-      </View>
     </div>
   </View>
 </Slider>
@@ -216,11 +229,12 @@ exports[`Input: Slider: Props Input: Slider: [ prop: animateTransitions ] enzyme
   <div
     class="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
     style="background-color:red;-webkit-transform:translateX(0px) translateY(0px);transform:translateX(0px) translateY(0px)"
-  />
-  <div
-    class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-    style="margin-bottom:-20px;margin-left:-20px;margin-right:-20px;margin-top:-20px"
-  />
+  >
+    <span
+      class="rn-position-u8s1d rn-zIndex-1wyyakw"
+      style="bottom:-10px;left:-10px;right:-10px;top:-10px"
+    />
+  </div>
 </div>
 `;
 
@@ -258,7 +272,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: animateTransitions ] enzyme
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "backgroundColor": "red",
@@ -274,34 +308,6 @@ exports[`Input: Slider: Props Input: Slider: [ prop: animateTransitions ] enzyme
           },
         ],
         "width": 20,
-      }
-    }
-  />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Object {
-        "backgroundColor": "transparent",
-        "bottom": 0,
-        "left": 0,
-        "marginBottom": -20,
-        "marginLeft": -20,
-        "marginRight": -20,
-        "marginTop": -20,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
       }
     }
   />
@@ -405,7 +411,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: animationConfig ] enzyme-mo
         </View>
       </AnimatedComponent>
       <AnimatedComponent
+        hitSlop={
+          Object {
+            "bottom": 10,
+            "left": 10,
+            "right": 10,
+            "top": 10,
+          }
+        }
         onLayout={[Function]}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Object {
             "backgroundColor": "red",
@@ -425,7 +451,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: animationConfig ] enzyme-mo
         }
       >
         <View
+          hitSlop={
+            Object {
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "top": 10,
+            }
+          }
           onLayout={[Function]}
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Object {
               "backgroundColor": "red",
@@ -446,6 +492,18 @@ exports[`Input: Slider: Props Input: Slider: [ prop: animationConfig ] enzyme-mo
         >
           <div
             className="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "WebkitTransform": "translateX(0px) translateY(0px)",
@@ -453,61 +511,22 @@ exports[`Input: Slider: Props Input: Slider: [ prop: animationConfig ] enzyme-mo
                 "transform": "translateX(0px) translateY(0px)",
               }
             }
-          />
+          >
+            <span
+              className="rn-position-u8s1d rn-zIndex-1wyyakw"
+              key=".0"
+              style={
+                Object {
+                  "bottom": "-10px",
+                  "left": "-10px",
+                  "right": "-10px",
+                  "top": "-10px",
+                }
+              }
+            />
+          </div>
         </View>
       </AnimatedComponent>
-      <View
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        style={
-          Object {
-            "backgroundColor": "transparent",
-            "bottom": 0,
-            "left": 0,
-            "marginBottom": -20,
-            "marginLeft": -20,
-            "marginRight": -20,
-            "marginTop": -20,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      >
-        <div
-          className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-          onMoveShouldSetResponder={[Function]}
-          onMoveShouldSetResponderCapture={[Function]}
-          onResponderEnd={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderReject={[Function]}
-          onResponderRelease={[Function]}
-          onResponderStart={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          onStartShouldSetResponderCapture={[Function]}
-          style={
-            Object {
-              "marginBottom": "-20px",
-              "marginLeft": "-20px",
-              "marginRight": "-20px",
-              "marginTop": "-20px",
-            }
-          }
-        />
-      </View>
     </div>
   </View>
 </Slider>
@@ -530,11 +549,12 @@ exports[`Input: Slider: Props Input: Slider: [ prop: animationConfig ] enzyme-re
   <div
     class="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
     style="background-color:red;-webkit-transform:translateX(0px) translateY(0px);transform:translateX(0px) translateY(0px)"
-  />
-  <div
-    class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-    style="margin-bottom:-20px;margin-left:-20px;margin-right:-20px;margin-top:-20px"
-  />
+  >
+    <span
+      class="rn-position-u8s1d rn-zIndex-1wyyakw"
+      style="bottom:-10px;left:-10px;right:-10px;top:-10px"
+    />
+  </div>
 </div>
 `;
 
@@ -572,7 +592,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: animationConfig ] enzyme-sh
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "backgroundColor": "red",
@@ -588,34 +628,6 @@ exports[`Input: Slider: Props Input: Slider: [ prop: animationConfig ] enzyme-sh
           },
         ],
         "width": 20,
-      }
-    }
-  />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Object {
-        "backgroundColor": "transparent",
-        "bottom": 0,
-        "left": 0,
-        "marginBottom": -20,
-        "marginLeft": -20,
-        "marginRight": -20,
-        "marginTop": -20,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
       }
     }
   />
@@ -713,7 +725,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: animationType ] enzyme-moun
         </View>
       </AnimatedComponent>
       <AnimatedComponent
+        hitSlop={
+          Object {
+            "bottom": 10,
+            "left": 10,
+            "right": 10,
+            "top": 10,
+          }
+        }
         onLayout={[Function]}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Object {
             "backgroundColor": "red",
@@ -733,7 +765,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: animationType ] enzyme-moun
         }
       >
         <View
+          hitSlop={
+            Object {
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "top": 10,
+            }
+          }
           onLayout={[Function]}
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Object {
               "backgroundColor": "red",
@@ -754,6 +806,18 @@ exports[`Input: Slider: Props Input: Slider: [ prop: animationType ] enzyme-moun
         >
           <div
             className="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "WebkitTransform": "translateX(0px) translateY(0px)",
@@ -761,61 +825,22 @@ exports[`Input: Slider: Props Input: Slider: [ prop: animationType ] enzyme-moun
                 "transform": "translateX(0px) translateY(0px)",
               }
             }
-          />
+          >
+            <span
+              className="rn-position-u8s1d rn-zIndex-1wyyakw"
+              key=".0"
+              style={
+                Object {
+                  "bottom": "-10px",
+                  "left": "-10px",
+                  "right": "-10px",
+                  "top": "-10px",
+                }
+              }
+            />
+          </div>
         </View>
       </AnimatedComponent>
-      <View
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        style={
-          Object {
-            "backgroundColor": "transparent",
-            "bottom": 0,
-            "left": 0,
-            "marginBottom": -20,
-            "marginLeft": -20,
-            "marginRight": -20,
-            "marginTop": -20,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      >
-        <div
-          className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-          onMoveShouldSetResponder={[Function]}
-          onMoveShouldSetResponderCapture={[Function]}
-          onResponderEnd={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderReject={[Function]}
-          onResponderRelease={[Function]}
-          onResponderStart={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          onStartShouldSetResponderCapture={[Function]}
-          style={
-            Object {
-              "marginBottom": "-20px",
-              "marginLeft": "-20px",
-              "marginRight": "-20px",
-              "marginTop": "-20px",
-            }
-          }
-        />
-      </View>
     </div>
   </View>
 </Slider>
@@ -838,11 +863,12 @@ exports[`Input: Slider: Props Input: Slider: [ prop: animationType ] enzyme-rend
   <div
     class="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
     style="background-color:red;-webkit-transform:translateX(0px) translateY(0px);transform:translateX(0px) translateY(0px)"
-  />
-  <div
-    class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-    style="margin-bottom:-20px;margin-left:-20px;margin-right:-20px;margin-top:-20px"
-  />
+  >
+    <span
+      class="rn-position-u8s1d rn-zIndex-1wyyakw"
+      style="bottom:-10px;left:-10px;right:-10px;top:-10px"
+    />
+  </div>
 </div>
 `;
 
@@ -880,7 +906,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: animationType ] enzyme-shal
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "backgroundColor": "red",
@@ -896,34 +942,6 @@ exports[`Input: Slider: Props Input: Slider: [ prop: animationType ] enzyme-shal
           },
         ],
         "width": 20,
-      }
-    }
-  />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Object {
-        "backgroundColor": "transparent",
-        "bottom": 0,
-        "left": 0,
-        "marginBottom": -20,
-        "marginLeft": -20,
-        "marginRight": -20,
-        "marginTop": -20,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
       }
     }
   />
@@ -1020,7 +1038,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: debugTouchArea ] enzyme-mou
         </View>
       </AnimatedComponent>
       <AnimatedComponent
+        hitSlop={
+          Object {
+            "bottom": 10,
+            "left": 10,
+            "right": 10,
+            "top": 10,
+          }
+        }
         onLayout={[Function]}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Object {
             "backgroundColor": "red",
@@ -1040,7 +1078,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: debugTouchArea ] enzyme-mou
         }
       >
         <View
+          hitSlop={
+            Object {
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "top": 10,
+            }
+          }
           onLayout={[Function]}
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Object {
               "backgroundColor": "red",
@@ -1061,6 +1119,18 @@ exports[`Input: Slider: Props Input: Slider: [ prop: debugTouchArea ] enzyme-mou
         >
           <div
             className="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "WebkitTransform": "translateX(0px) translateY(0px)",
@@ -1068,97 +1138,22 @@ exports[`Input: Slider: Props Input: Slider: [ prop: debugTouchArea ] enzyme-mou
                 "transform": "translateX(0px) translateY(0px)",
               }
             }
-          />
-        </View>
-      </AnimatedComponent>
-      <View
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        style={
-          Object {
-            "backgroundColor": "orange",
-            "bottom": 0,
-            "left": 0,
-            "marginBottom": -20,
-            "marginLeft": -20,
-            "marginRight": -20,
-            "marginTop": -20,
-            "opacity": 0.5,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      >
-        <div
-          className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-opacity-icoktb rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-          onMoveShouldSetResponder={[Function]}
-          onMoveShouldSetResponderCapture={[Function]}
-          onResponderEnd={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderReject={[Function]}
-          onResponderRelease={[Function]}
-          onResponderStart={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          onStartShouldSetResponderCapture={[Function]}
-          style={
-            Object {
-              "backgroundColor": "orange",
-              "marginBottom": "-20px",
-              "marginLeft": "-20px",
-              "marginRight": "-20px",
-              "marginTop": "-20px",
-            }
-          }
-        >
-          <AnimatedComponent
-            pointerEvents="none"
-            style={
-              Object {
-                "height": 40,
-                "left": 0,
-                "top": 0,
-                "width": 40,
-              }
-            }
           >
-            <View
-              pointerEvents="none"
+            <span
+              className="rn-position-u8s1d rn-zIndex-1wyyakw"
+              key=".0"
               style={
                 Object {
-                  "height": 40,
-                  "left": 0,
-                  "top": 0,
-                  "width": 40,
+                  "bottom": "-10px",
+                  "left": "-10px",
+                  "right": "-10px",
+                  "top": "-10px",
                 }
               }
-            >
-              <div
-                className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-pointerEvents-633pao rn-position-bnwqim rn-top-ipm5af rn-zIndex-1lgpqti"
-                style={
-                  Object {
-                    "height": "40px",
-                    "width": "40px",
-                  }
-                }
-              />
-            </View>
-          </AnimatedComponent>
-        </div>
-      </View>
+            />
+          </div>
+        </View>
+      </AnimatedComponent>
     </div>
   </View>
 </Slider>
@@ -1181,14 +1176,10 @@ exports[`Input: Slider: Props Input: Slider: [ prop: debugTouchArea ] enzyme-ren
   <div
     class="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
     style="background-color:red;-webkit-transform:translateX(0px) translateY(0px);transform:translateX(0px) translateY(0px)"
-  />
-  <div
-    class="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-opacity-icoktb rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-    style="background-color:orange;margin-bottom:-20px;margin-left:-20px;margin-right:-20px;margin-top:-20px"
   >
-    <div
-      class="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-pointerEvents-633pao rn-position-bnwqim rn-top-ipm5af rn-zIndex-1lgpqti"
-      style="height:40px;width:40px"
+    <span
+      class="rn-position-u8s1d rn-zIndex-1wyyakw"
+      style="bottom:-10px;left:-10px;right:-10px;top:-10px"
     />
   </div>
 </div>
@@ -1228,7 +1219,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: debugTouchArea ] enzyme-sha
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "backgroundColor": "red",
@@ -1247,47 +1258,6 @@ exports[`Input: Slider: Props Input: Slider: [ prop: debugTouchArea ] enzyme-sha
       }
     }
   />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Object {
-        "backgroundColor": "orange",
-        "bottom": 0,
-        "left": 0,
-        "marginBottom": -20,
-        "marginLeft": -20,
-        "marginRight": -20,
-        "marginTop": -20,
-        "opacity": 0.5,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
-      }
-    }
-  >
-    <AnimatedComponent
-      pointerEvents="none"
-      style={
-        Object {
-          "height": 40,
-          "left": 0,
-          "top": 0,
-          "width": 40,
-        }
-      }
-    />
-  </View>
 </View>
 `;
 
@@ -1381,7 +1351,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: maximumTrackTintColor ] enz
         </View>
       </AnimatedComponent>
       <AnimatedComponent
+        hitSlop={
+          Object {
+            "bottom": 10,
+            "left": 10,
+            "right": 10,
+            "top": 10,
+          }
+        }
         onLayout={[Function]}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Object {
             "backgroundColor": "red",
@@ -1401,7 +1391,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: maximumTrackTintColor ] enz
         }
       >
         <View
+          hitSlop={
+            Object {
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "top": 10,
+            }
+          }
           onLayout={[Function]}
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Object {
               "backgroundColor": "red",
@@ -1422,6 +1432,18 @@ exports[`Input: Slider: Props Input: Slider: [ prop: maximumTrackTintColor ] enz
         >
           <div
             className="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "WebkitTransform": "translateX(0px) translateY(0px)",
@@ -1429,61 +1451,22 @@ exports[`Input: Slider: Props Input: Slider: [ prop: maximumTrackTintColor ] enz
                 "transform": "translateX(0px) translateY(0px)",
               }
             }
-          />
+          >
+            <span
+              className="rn-position-u8s1d rn-zIndex-1wyyakw"
+              key=".0"
+              style={
+                Object {
+                  "bottom": "-10px",
+                  "left": "-10px",
+                  "right": "-10px",
+                  "top": "-10px",
+                }
+              }
+            />
+          </div>
         </View>
       </AnimatedComponent>
-      <View
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        style={
-          Object {
-            "backgroundColor": "transparent",
-            "bottom": 0,
-            "left": 0,
-            "marginBottom": -20,
-            "marginLeft": -20,
-            "marginRight": -20,
-            "marginTop": -20,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      >
-        <div
-          className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-          onMoveShouldSetResponder={[Function]}
-          onMoveShouldSetResponderCapture={[Function]}
-          onResponderEnd={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderReject={[Function]}
-          onResponderRelease={[Function]}
-          onResponderStart={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          onStartShouldSetResponderCapture={[Function]}
-          style={
-            Object {
-              "marginBottom": "-20px",
-              "marginLeft": "-20px",
-              "marginRight": "-20px",
-              "marginTop": "-20px",
-            }
-          }
-        />
-      </View>
     </div>
   </View>
 </Slider>
@@ -1506,11 +1489,12 @@ exports[`Input: Slider: Props Input: Slider: [ prop: maximumTrackTintColor ] enz
   <div
     class="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
     style="background-color:red;-webkit-transform:translateX(0px) translateY(0px);transform:translateX(0px) translateY(0px)"
-  />
-  <div
-    class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-    style="margin-bottom:-20px;margin-left:-20px;margin-right:-20px;margin-top:-20px"
-  />
+  >
+    <span
+      class="rn-position-u8s1d rn-zIndex-1wyyakw"
+      style="bottom:-10px;left:-10px;right:-10px;top:-10px"
+    />
+  </div>
 </div>
 `;
 
@@ -1548,7 +1532,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: maximumTrackTintColor ] enz
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "backgroundColor": "red",
@@ -1564,34 +1568,6 @@ exports[`Input: Slider: Props Input: Slider: [ prop: maximumTrackTintColor ] enz
           },
         ],
         "width": 20,
-      }
-    }
-  />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Object {
-        "backgroundColor": "transparent",
-        "bottom": 0,
-        "left": 0,
-        "marginBottom": -20,
-        "marginLeft": -20,
-        "marginRight": -20,
-        "marginTop": -20,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
       }
     }
   />
@@ -1688,7 +1664,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: maximumValue ] enzyme-mount
         </View>
       </AnimatedComponent>
       <AnimatedComponent
+        hitSlop={
+          Object {
+            "bottom": 10,
+            "left": 10,
+            "right": 10,
+            "top": 10,
+          }
+        }
         onLayout={[Function]}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Object {
             "backgroundColor": "red",
@@ -1708,7 +1704,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: maximumValue ] enzyme-mount
         }
       >
         <View
+          hitSlop={
+            Object {
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "top": 10,
+            }
+          }
           onLayout={[Function]}
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Object {
               "backgroundColor": "red",
@@ -1729,6 +1745,18 @@ exports[`Input: Slider: Props Input: Slider: [ prop: maximumValue ] enzyme-mount
         >
           <div
             className="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "WebkitTransform": "translateX(0px) translateY(0px)",
@@ -1736,61 +1764,22 @@ exports[`Input: Slider: Props Input: Slider: [ prop: maximumValue ] enzyme-mount
                 "transform": "translateX(0px) translateY(0px)",
               }
             }
-          />
+          >
+            <span
+              className="rn-position-u8s1d rn-zIndex-1wyyakw"
+              key=".0"
+              style={
+                Object {
+                  "bottom": "-10px",
+                  "left": "-10px",
+                  "right": "-10px",
+                  "top": "-10px",
+                }
+              }
+            />
+          </div>
         </View>
       </AnimatedComponent>
-      <View
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        style={
-          Object {
-            "backgroundColor": "transparent",
-            "bottom": 0,
-            "left": 0,
-            "marginBottom": -20,
-            "marginLeft": -20,
-            "marginRight": -20,
-            "marginTop": -20,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      >
-        <div
-          className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-          onMoveShouldSetResponder={[Function]}
-          onMoveShouldSetResponderCapture={[Function]}
-          onResponderEnd={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderReject={[Function]}
-          onResponderRelease={[Function]}
-          onResponderStart={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          onStartShouldSetResponderCapture={[Function]}
-          style={
-            Object {
-              "marginBottom": "-20px",
-              "marginLeft": "-20px",
-              "marginRight": "-20px",
-              "marginTop": "-20px",
-            }
-          }
-        />
-      </View>
     </div>
   </View>
 </Slider>
@@ -1813,11 +1802,12 @@ exports[`Input: Slider: Props Input: Slider: [ prop: maximumValue ] enzyme-rende
   <div
     class="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
     style="background-color:red;-webkit-transform:translateX(0px) translateY(0px);transform:translateX(0px) translateY(0px)"
-  />
-  <div
-    class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-    style="margin-bottom:-20px;margin-left:-20px;margin-right:-20px;margin-top:-20px"
-  />
+  >
+    <span
+      class="rn-position-u8s1d rn-zIndex-1wyyakw"
+      style="bottom:-10px;left:-10px;right:-10px;top:-10px"
+    />
+  </div>
 </div>
 `;
 
@@ -1855,7 +1845,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: maximumValue ] enzyme-shall
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "backgroundColor": "red",
@@ -1871,34 +1881,6 @@ exports[`Input: Slider: Props Input: Slider: [ prop: maximumValue ] enzyme-shall
           },
         ],
         "width": 20,
-      }
-    }
-  />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Object {
-        "backgroundColor": "transparent",
-        "bottom": 0,
-        "left": 0,
-        "marginBottom": -20,
-        "marginLeft": -20,
-        "marginRight": -20,
-        "marginTop": -20,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
       }
     }
   />
@@ -1995,7 +1977,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: minimumTrackTintColor ] enz
         </View>
       </AnimatedComponent>
       <AnimatedComponent
+        hitSlop={
+          Object {
+            "bottom": 10,
+            "left": 10,
+            "right": 10,
+            "top": 10,
+          }
+        }
         onLayout={[Function]}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Object {
             "backgroundColor": "red",
@@ -2015,7 +2017,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: minimumTrackTintColor ] enz
         }
       >
         <View
+          hitSlop={
+            Object {
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "top": 10,
+            }
+          }
           onLayout={[Function]}
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Object {
               "backgroundColor": "red",
@@ -2036,6 +2058,18 @@ exports[`Input: Slider: Props Input: Slider: [ prop: minimumTrackTintColor ] enz
         >
           <div
             className="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "WebkitTransform": "translateX(0px) translateY(0px)",
@@ -2043,61 +2077,22 @@ exports[`Input: Slider: Props Input: Slider: [ prop: minimumTrackTintColor ] enz
                 "transform": "translateX(0px) translateY(0px)",
               }
             }
-          />
+          >
+            <span
+              className="rn-position-u8s1d rn-zIndex-1wyyakw"
+              key=".0"
+              style={
+                Object {
+                  "bottom": "-10px",
+                  "left": "-10px",
+                  "right": "-10px",
+                  "top": "-10px",
+                }
+              }
+            />
+          </div>
         </View>
       </AnimatedComponent>
-      <View
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        style={
-          Object {
-            "backgroundColor": "transparent",
-            "bottom": 0,
-            "left": 0,
-            "marginBottom": -20,
-            "marginLeft": -20,
-            "marginRight": -20,
-            "marginTop": -20,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      >
-        <div
-          className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-          onMoveShouldSetResponder={[Function]}
-          onMoveShouldSetResponderCapture={[Function]}
-          onResponderEnd={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderReject={[Function]}
-          onResponderRelease={[Function]}
-          onResponderStart={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          onStartShouldSetResponderCapture={[Function]}
-          style={
-            Object {
-              "marginBottom": "-20px",
-              "marginLeft": "-20px",
-              "marginRight": "-20px",
-              "marginTop": "-20px",
-            }
-          }
-        />
-      </View>
     </div>
   </View>
 </Slider>
@@ -2120,11 +2115,12 @@ exports[`Input: Slider: Props Input: Slider: [ prop: minimumTrackTintColor ] enz
   <div
     class="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
     style="background-color:red;-webkit-transform:translateX(0px) translateY(0px);transform:translateX(0px) translateY(0px)"
-  />
-  <div
-    class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-    style="margin-bottom:-20px;margin-left:-20px;margin-right:-20px;margin-top:-20px"
-  />
+  >
+    <span
+      class="rn-position-u8s1d rn-zIndex-1wyyakw"
+      style="bottom:-10px;left:-10px;right:-10px;top:-10px"
+    />
+  </div>
 </div>
 `;
 
@@ -2162,7 +2158,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: minimumTrackTintColor ] enz
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "backgroundColor": "red",
@@ -2178,34 +2194,6 @@ exports[`Input: Slider: Props Input: Slider: [ prop: minimumTrackTintColor ] enz
           },
         ],
         "width": 20,
-      }
-    }
-  />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Object {
-        "backgroundColor": "transparent",
-        "bottom": 0,
-        "left": 0,
-        "marginBottom": -20,
-        "marginLeft": -20,
-        "marginRight": -20,
-        "marginTop": -20,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
       }
     }
   />
@@ -2302,7 +2290,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: minimumValue ] enzyme-mount
         </View>
       </AnimatedComponent>
       <AnimatedComponent
+        hitSlop={
+          Object {
+            "bottom": 10,
+            "left": 10,
+            "right": 10,
+            "top": 10,
+          }
+        }
         onLayout={[Function]}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Object {
             "backgroundColor": "red",
@@ -2322,7 +2330,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: minimumValue ] enzyme-mount
         }
       >
         <View
+          hitSlop={
+            Object {
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "top": 10,
+            }
+          }
           onLayout={[Function]}
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Object {
               "backgroundColor": "red",
@@ -2343,6 +2371,18 @@ exports[`Input: Slider: Props Input: Slider: [ prop: minimumValue ] enzyme-mount
         >
           <div
             className="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "WebkitTransform": "translateX(0px) translateY(0px)",
@@ -2350,61 +2390,22 @@ exports[`Input: Slider: Props Input: Slider: [ prop: minimumValue ] enzyme-mount
                 "transform": "translateX(0px) translateY(0px)",
               }
             }
-          />
+          >
+            <span
+              className="rn-position-u8s1d rn-zIndex-1wyyakw"
+              key=".0"
+              style={
+                Object {
+                  "bottom": "-10px",
+                  "left": "-10px",
+                  "right": "-10px",
+                  "top": "-10px",
+                }
+              }
+            />
+          </div>
         </View>
       </AnimatedComponent>
-      <View
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        style={
-          Object {
-            "backgroundColor": "transparent",
-            "bottom": 0,
-            "left": 0,
-            "marginBottom": -20,
-            "marginLeft": -20,
-            "marginRight": -20,
-            "marginTop": -20,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      >
-        <div
-          className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-          onMoveShouldSetResponder={[Function]}
-          onMoveShouldSetResponderCapture={[Function]}
-          onResponderEnd={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderReject={[Function]}
-          onResponderRelease={[Function]}
-          onResponderStart={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          onStartShouldSetResponderCapture={[Function]}
-          style={
-            Object {
-              "marginBottom": "-20px",
-              "marginLeft": "-20px",
-              "marginRight": "-20px",
-              "marginTop": "-20px",
-            }
-          }
-        />
-      </View>
     </div>
   </View>
 </Slider>
@@ -2427,11 +2428,12 @@ exports[`Input: Slider: Props Input: Slider: [ prop: minimumValue ] enzyme-rende
   <div
     class="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
     style="background-color:red;-webkit-transform:translateX(0px) translateY(0px);transform:translateX(0px) translateY(0px)"
-  />
-  <div
-    class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-    style="margin-bottom:-20px;margin-left:-20px;margin-right:-20px;margin-top:-20px"
-  />
+  >
+    <span
+      class="rn-position-u8s1d rn-zIndex-1wyyakw"
+      style="bottom:-10px;left:-10px;right:-10px;top:-10px"
+    />
+  </div>
 </div>
 `;
 
@@ -2469,7 +2471,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: minimumValue ] enzyme-shall
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "backgroundColor": "red",
@@ -2485,34 +2507,6 @@ exports[`Input: Slider: Props Input: Slider: [ prop: minimumValue ] enzyme-shall
           },
         ],
         "width": 20,
-      }
-    }
-  />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Object {
-        "backgroundColor": "transparent",
-        "bottom": 0,
-        "left": 0,
-        "marginBottom": -20,
-        "marginLeft": -20,
-        "marginRight": -20,
-        "marginTop": -20,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
       }
     }
   />
@@ -2609,7 +2603,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: no props ] enzyme-mount: sn
         </View>
       </AnimatedComponent>
       <AnimatedComponent
+        hitSlop={
+          Object {
+            "bottom": 10,
+            "left": 10,
+            "right": 10,
+            "top": 10,
+          }
+        }
         onLayout={[Function]}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Object {
             "backgroundColor": "red",
@@ -2629,7 +2643,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: no props ] enzyme-mount: sn
         }
       >
         <View
+          hitSlop={
+            Object {
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "top": 10,
+            }
+          }
           onLayout={[Function]}
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Object {
               "backgroundColor": "red",
@@ -2650,6 +2684,18 @@ exports[`Input: Slider: Props Input: Slider: [ prop: no props ] enzyme-mount: sn
         >
           <div
             className="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "WebkitTransform": "translateX(0px) translateY(0px)",
@@ -2657,61 +2703,22 @@ exports[`Input: Slider: Props Input: Slider: [ prop: no props ] enzyme-mount: sn
                 "transform": "translateX(0px) translateY(0px)",
               }
             }
-          />
+          >
+            <span
+              className="rn-position-u8s1d rn-zIndex-1wyyakw"
+              key=".0"
+              style={
+                Object {
+                  "bottom": "-10px",
+                  "left": "-10px",
+                  "right": "-10px",
+                  "top": "-10px",
+                }
+              }
+            />
+          </div>
         </View>
       </AnimatedComponent>
-      <View
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        style={
-          Object {
-            "backgroundColor": "transparent",
-            "bottom": 0,
-            "left": 0,
-            "marginBottom": -20,
-            "marginLeft": -20,
-            "marginRight": -20,
-            "marginTop": -20,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      >
-        <div
-          className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-          onMoveShouldSetResponder={[Function]}
-          onMoveShouldSetResponderCapture={[Function]}
-          onResponderEnd={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderReject={[Function]}
-          onResponderRelease={[Function]}
-          onResponderStart={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          onStartShouldSetResponderCapture={[Function]}
-          style={
-            Object {
-              "marginBottom": "-20px",
-              "marginLeft": "-20px",
-              "marginRight": "-20px",
-              "marginTop": "-20px",
-            }
-          }
-        />
-      </View>
     </div>
   </View>
 </Slider>
@@ -2734,11 +2741,12 @@ exports[`Input: Slider: Props Input: Slider: [ prop: no props ] enzyme-render: s
   <div
     class="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
     style="background-color:red;-webkit-transform:translateX(0px) translateY(0px);transform:translateX(0px) translateY(0px)"
-  />
-  <div
-    class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-    style="margin-bottom:-20px;margin-left:-20px;margin-right:-20px;margin-top:-20px"
-  />
+  >
+    <span
+      class="rn-position-u8s1d rn-zIndex-1wyyakw"
+      style="bottom:-10px;left:-10px;right:-10px;top:-10px"
+    />
+  </div>
 </div>
 `;
 
@@ -2776,7 +2784,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: no props ] enzyme-shallow: 
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "backgroundColor": "red",
@@ -2792,34 +2820,6 @@ exports[`Input: Slider: Props Input: Slider: [ prop: no props ] enzyme-shallow: 
           },
         ],
         "width": 20,
-      }
-    }
-  />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Object {
-        "backgroundColor": "transparent",
-        "bottom": 0,
-        "left": 0,
-        "marginBottom": -20,
-        "marginLeft": -20,
-        "marginRight": -20,
-        "marginTop": -20,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
       }
     }
   />
@@ -2917,7 +2917,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: onSlidingComplete ] enzyme-
         </View>
       </AnimatedComponent>
       <AnimatedComponent
+        hitSlop={
+          Object {
+            "bottom": 10,
+            "left": 10,
+            "right": 10,
+            "top": 10,
+          }
+        }
         onLayout={[Function]}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Object {
             "backgroundColor": "red",
@@ -2937,7 +2957,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: onSlidingComplete ] enzyme-
         }
       >
         <View
+          hitSlop={
+            Object {
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "top": 10,
+            }
+          }
           onLayout={[Function]}
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Object {
               "backgroundColor": "red",
@@ -2958,6 +2998,18 @@ exports[`Input: Slider: Props Input: Slider: [ prop: onSlidingComplete ] enzyme-
         >
           <div
             className="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "WebkitTransform": "translateX(0px) translateY(0px)",
@@ -2965,61 +3017,22 @@ exports[`Input: Slider: Props Input: Slider: [ prop: onSlidingComplete ] enzyme-
                 "transform": "translateX(0px) translateY(0px)",
               }
             }
-          />
+          >
+            <span
+              className="rn-position-u8s1d rn-zIndex-1wyyakw"
+              key=".0"
+              style={
+                Object {
+                  "bottom": "-10px",
+                  "left": "-10px",
+                  "right": "-10px",
+                  "top": "-10px",
+                }
+              }
+            />
+          </div>
         </View>
       </AnimatedComponent>
-      <View
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        style={
-          Object {
-            "backgroundColor": "transparent",
-            "bottom": 0,
-            "left": 0,
-            "marginBottom": -20,
-            "marginLeft": -20,
-            "marginRight": -20,
-            "marginTop": -20,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      >
-        <div
-          className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-          onMoveShouldSetResponder={[Function]}
-          onMoveShouldSetResponderCapture={[Function]}
-          onResponderEnd={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderReject={[Function]}
-          onResponderRelease={[Function]}
-          onResponderStart={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          onStartShouldSetResponderCapture={[Function]}
-          style={
-            Object {
-              "marginBottom": "-20px",
-              "marginLeft": "-20px",
-              "marginRight": "-20px",
-              "marginTop": "-20px",
-            }
-          }
-        />
-      </View>
     </div>
   </View>
 </Slider>
@@ -3042,11 +3055,12 @@ exports[`Input: Slider: Props Input: Slider: [ prop: onSlidingComplete ] enzyme-
   <div
     class="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
     style="background-color:red;-webkit-transform:translateX(0px) translateY(0px);transform:translateX(0px) translateY(0px)"
-  />
-  <div
-    class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-    style="margin-bottom:-20px;margin-left:-20px;margin-right:-20px;margin-top:-20px"
-  />
+  >
+    <span
+      class="rn-position-u8s1d rn-zIndex-1wyyakw"
+      style="bottom:-10px;left:-10px;right:-10px;top:-10px"
+    />
+  </div>
 </div>
 `;
 
@@ -3084,7 +3098,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: onSlidingComplete ] enzyme-
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "backgroundColor": "red",
@@ -3100,34 +3134,6 @@ exports[`Input: Slider: Props Input: Slider: [ prop: onSlidingComplete ] enzyme-
           },
         ],
         "width": 20,
-      }
-    }
-  />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Object {
-        "backgroundColor": "transparent",
-        "bottom": 0,
-        "left": 0,
-        "marginBottom": -20,
-        "marginLeft": -20,
-        "marginRight": -20,
-        "marginTop": -20,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
       }
     }
   />
@@ -3225,7 +3231,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: onSlidingStart ] enzyme-mou
         </View>
       </AnimatedComponent>
       <AnimatedComponent
+        hitSlop={
+          Object {
+            "bottom": 10,
+            "left": 10,
+            "right": 10,
+            "top": 10,
+          }
+        }
         onLayout={[Function]}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Object {
             "backgroundColor": "red",
@@ -3245,7 +3271,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: onSlidingStart ] enzyme-mou
         }
       >
         <View
+          hitSlop={
+            Object {
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "top": 10,
+            }
+          }
           onLayout={[Function]}
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Object {
               "backgroundColor": "red",
@@ -3266,6 +3312,18 @@ exports[`Input: Slider: Props Input: Slider: [ prop: onSlidingStart ] enzyme-mou
         >
           <div
             className="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "WebkitTransform": "translateX(0px) translateY(0px)",
@@ -3273,61 +3331,22 @@ exports[`Input: Slider: Props Input: Slider: [ prop: onSlidingStart ] enzyme-mou
                 "transform": "translateX(0px) translateY(0px)",
               }
             }
-          />
+          >
+            <span
+              className="rn-position-u8s1d rn-zIndex-1wyyakw"
+              key=".0"
+              style={
+                Object {
+                  "bottom": "-10px",
+                  "left": "-10px",
+                  "right": "-10px",
+                  "top": "-10px",
+                }
+              }
+            />
+          </div>
         </View>
       </AnimatedComponent>
-      <View
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        style={
-          Object {
-            "backgroundColor": "transparent",
-            "bottom": 0,
-            "left": 0,
-            "marginBottom": -20,
-            "marginLeft": -20,
-            "marginRight": -20,
-            "marginTop": -20,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      >
-        <div
-          className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-          onMoveShouldSetResponder={[Function]}
-          onMoveShouldSetResponderCapture={[Function]}
-          onResponderEnd={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderReject={[Function]}
-          onResponderRelease={[Function]}
-          onResponderStart={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          onStartShouldSetResponderCapture={[Function]}
-          style={
-            Object {
-              "marginBottom": "-20px",
-              "marginLeft": "-20px",
-              "marginRight": "-20px",
-              "marginTop": "-20px",
-            }
-          }
-        />
-      </View>
     </div>
   </View>
 </Slider>
@@ -3350,11 +3369,12 @@ exports[`Input: Slider: Props Input: Slider: [ prop: onSlidingStart ] enzyme-ren
   <div
     class="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
     style="background-color:red;-webkit-transform:translateX(0px) translateY(0px);transform:translateX(0px) translateY(0px)"
-  />
-  <div
-    class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-    style="margin-bottom:-20px;margin-left:-20px;margin-right:-20px;margin-top:-20px"
-  />
+  >
+    <span
+      class="rn-position-u8s1d rn-zIndex-1wyyakw"
+      style="bottom:-10px;left:-10px;right:-10px;top:-10px"
+    />
+  </div>
 </div>
 `;
 
@@ -3392,7 +3412,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: onSlidingStart ] enzyme-sha
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "backgroundColor": "red",
@@ -3408,34 +3448,6 @@ exports[`Input: Slider: Props Input: Slider: [ prop: onSlidingStart ] enzyme-sha
           },
         ],
         "width": 20,
-      }
-    }
-  />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Object {
-        "backgroundColor": "transparent",
-        "bottom": 0,
-        "left": 0,
-        "marginBottom": -20,
-        "marginLeft": -20,
-        "marginRight": -20,
-        "marginTop": -20,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
       }
     }
   />
@@ -3535,7 +3547,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: onValueChange ] enzyme-moun
         </View>
       </AnimatedComponent>
       <AnimatedComponent
+        hitSlop={
+          Object {
+            "bottom": 10,
+            "left": 10,
+            "right": 10,
+            "top": 10,
+          }
+        }
         onLayout={[Function]}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Object {
             "backgroundColor": "red",
@@ -3555,7 +3587,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: onValueChange ] enzyme-moun
         }
       >
         <View
+          hitSlop={
+            Object {
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "top": 10,
+            }
+          }
           onLayout={[Function]}
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Object {
               "backgroundColor": "red",
@@ -3576,6 +3628,18 @@ exports[`Input: Slider: Props Input: Slider: [ prop: onValueChange ] enzyme-moun
         >
           <div
             className="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "WebkitTransform": "translateX(0px) translateY(0px)",
@@ -3583,61 +3647,22 @@ exports[`Input: Slider: Props Input: Slider: [ prop: onValueChange ] enzyme-moun
                 "transform": "translateX(0px) translateY(0px)",
               }
             }
-          />
+          >
+            <span
+              className="rn-position-u8s1d rn-zIndex-1wyyakw"
+              key=".0"
+              style={
+                Object {
+                  "bottom": "-10px",
+                  "left": "-10px",
+                  "right": "-10px",
+                  "top": "-10px",
+                }
+              }
+            />
+          </div>
         </View>
       </AnimatedComponent>
-      <View
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        style={
-          Object {
-            "backgroundColor": "transparent",
-            "bottom": 0,
-            "left": 0,
-            "marginBottom": -20,
-            "marginLeft": -20,
-            "marginRight": -20,
-            "marginTop": -20,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      >
-        <div
-          className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-          onMoveShouldSetResponder={[Function]}
-          onMoveShouldSetResponderCapture={[Function]}
-          onResponderEnd={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderReject={[Function]}
-          onResponderRelease={[Function]}
-          onResponderStart={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          onStartShouldSetResponderCapture={[Function]}
-          style={
-            Object {
-              "marginBottom": "-20px",
-              "marginLeft": "-20px",
-              "marginRight": "-20px",
-              "marginTop": "-20px",
-            }
-          }
-        />
-      </View>
     </div>
   </View>
 </Slider>
@@ -3660,11 +3685,12 @@ exports[`Input: Slider: Props Input: Slider: [ prop: onValueChange ] enzyme-rend
   <div
     class="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
     style="background-color:red;-webkit-transform:translateX(0px) translateY(0px);transform:translateX(0px) translateY(0px)"
-  />
-  <div
-    class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-    style="margin-bottom:-20px;margin-left:-20px;margin-right:-20px;margin-top:-20px"
-  />
+  >
+    <span
+      class="rn-position-u8s1d rn-zIndex-1wyyakw"
+      style="bottom:-10px;left:-10px;right:-10px;top:-10px"
+    />
+  </div>
 </div>
 `;
 
@@ -3703,7 +3729,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: onValueChange ] enzyme-shal
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "backgroundColor": "red",
@@ -3719,34 +3765,6 @@ exports[`Input: Slider: Props Input: Slider: [ prop: onValueChange ] enzyme-shal
           },
         ],
         "width": 20,
-      }
-    }
-  />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Object {
-        "backgroundColor": "transparent",
-        "bottom": 0,
-        "left": 0,
-        "marginBottom": -20,
-        "marginLeft": -20,
-        "marginRight": -20,
-        "marginTop": -20,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
       }
     }
   />
@@ -3843,7 +3861,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: step ] enzyme-mount: snapsh
         </View>
       </AnimatedComponent>
       <AnimatedComponent
+        hitSlop={
+          Object {
+            "bottom": 10,
+            "left": 10,
+            "right": 10,
+            "top": 10,
+          }
+        }
         onLayout={[Function]}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Object {
             "backgroundColor": "red",
@@ -3863,7 +3901,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: step ] enzyme-mount: snapsh
         }
       >
         <View
+          hitSlop={
+            Object {
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "top": 10,
+            }
+          }
           onLayout={[Function]}
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Object {
               "backgroundColor": "red",
@@ -3884,6 +3942,18 @@ exports[`Input: Slider: Props Input: Slider: [ prop: step ] enzyme-mount: snapsh
         >
           <div
             className="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "WebkitTransform": "translateX(0px) translateY(0px)",
@@ -3891,61 +3961,22 @@ exports[`Input: Slider: Props Input: Slider: [ prop: step ] enzyme-mount: snapsh
                 "transform": "translateX(0px) translateY(0px)",
               }
             }
-          />
+          >
+            <span
+              className="rn-position-u8s1d rn-zIndex-1wyyakw"
+              key=".0"
+              style={
+                Object {
+                  "bottom": "-10px",
+                  "left": "-10px",
+                  "right": "-10px",
+                  "top": "-10px",
+                }
+              }
+            />
+          </div>
         </View>
       </AnimatedComponent>
-      <View
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        style={
-          Object {
-            "backgroundColor": "transparent",
-            "bottom": 0,
-            "left": 0,
-            "marginBottom": -20,
-            "marginLeft": -20,
-            "marginRight": -20,
-            "marginTop": -20,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      >
-        <div
-          className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-          onMoveShouldSetResponder={[Function]}
-          onMoveShouldSetResponderCapture={[Function]}
-          onResponderEnd={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderReject={[Function]}
-          onResponderRelease={[Function]}
-          onResponderStart={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          onStartShouldSetResponderCapture={[Function]}
-          style={
-            Object {
-              "marginBottom": "-20px",
-              "marginLeft": "-20px",
-              "marginRight": "-20px",
-              "marginTop": "-20px",
-            }
-          }
-        />
-      </View>
     </div>
   </View>
 </Slider>
@@ -3968,11 +3999,12 @@ exports[`Input: Slider: Props Input: Slider: [ prop: step ] enzyme-render: snaps
   <div
     class="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
     style="background-color:red;-webkit-transform:translateX(0px) translateY(0px);transform:translateX(0px) translateY(0px)"
-  />
-  <div
-    class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-    style="margin-bottom:-20px;margin-left:-20px;margin-right:-20px;margin-top:-20px"
-  />
+  >
+    <span
+      class="rn-position-u8s1d rn-zIndex-1wyyakw"
+      style="bottom:-10px;left:-10px;right:-10px;top:-10px"
+    />
+  </div>
 </div>
 `;
 
@@ -4010,7 +4042,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: step ] enzyme-shallow: snap
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "backgroundColor": "red",
@@ -4026,34 +4078,6 @@ exports[`Input: Slider: Props Input: Slider: [ prop: step ] enzyme-shallow: snap
           },
         ],
         "width": 20,
-      }
-    }
-  />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Object {
-        "backgroundColor": "transparent",
-        "bottom": 0,
-        "left": 0,
-        "marginBottom": -20,
-        "marginLeft": -20,
-        "marginRight": -20,
-        "marginTop": -20,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
       }
     }
   />
@@ -4164,7 +4188,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: style ] enzyme-mount: snaps
         </View>
       </AnimatedComponent>
       <AnimatedComponent
+        hitSlop={
+          Object {
+            "bottom": 10,
+            "left": 10,
+            "right": 10,
+            "top": 10,
+          }
+        }
         onLayout={[Function]}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Object {
             "backgroundColor": "red",
@@ -4184,7 +4228,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: style ] enzyme-mount: snaps
         }
       >
         <View
+          hitSlop={
+            Object {
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "top": 10,
+            }
+          }
           onLayout={[Function]}
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Object {
               "backgroundColor": "red",
@@ -4205,6 +4269,18 @@ exports[`Input: Slider: Props Input: Slider: [ prop: style ] enzyme-mount: snaps
         >
           <div
             className="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "WebkitTransform": "translateX(0px) translateY(0px)",
@@ -4212,61 +4288,22 @@ exports[`Input: Slider: Props Input: Slider: [ prop: style ] enzyme-mount: snaps
                 "transform": "translateX(0px) translateY(0px)",
               }
             }
-          />
+          >
+            <span
+              className="rn-position-u8s1d rn-zIndex-1wyyakw"
+              key=".0"
+              style={
+                Object {
+                  "bottom": "-10px",
+                  "left": "-10px",
+                  "right": "-10px",
+                  "top": "-10px",
+                }
+              }
+            />
+          </div>
         </View>
       </AnimatedComponent>
-      <View
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        style={
-          Object {
-            "backgroundColor": "transparent",
-            "bottom": 0,
-            "left": 0,
-            "marginBottom": -20,
-            "marginLeft": -20,
-            "marginRight": -20,
-            "marginTop": -20,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      >
-        <div
-          className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-          onMoveShouldSetResponder={[Function]}
-          onMoveShouldSetResponderCapture={[Function]}
-          onResponderEnd={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderReject={[Function]}
-          onResponderRelease={[Function]}
-          onResponderStart={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          onStartShouldSetResponderCapture={[Function]}
-          style={
-            Object {
-              "marginBottom": "-20px",
-              "marginLeft": "-20px",
-              "marginRight": "-20px",
-              "marginTop": "-20px",
-            }
-          }
-        />
-      </View>
     </div>
   </View>
 </Slider>
@@ -4290,11 +4327,12 @@ exports[`Input: Slider: Props Input: Slider: [ prop: style ] enzyme-render: snap
   <div
     class="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
     style="background-color:red;-webkit-transform:translateX(0px) translateY(0px);transform:translateX(0px) translateY(0px)"
-  />
-  <div
-    class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-    style="margin-bottom:-20px;margin-left:-20px;margin-right:-20px;margin-top:-20px"
-  />
+  >
+    <span
+      class="rn-position-u8s1d rn-zIndex-1wyyakw"
+      style="bottom:-10px;left:-10px;right:-10px;top:-10px"
+    />
+  </div>
 </div>
 `;
 
@@ -4333,7 +4371,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: style ] enzyme-shallow: sna
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "backgroundColor": "red",
@@ -4349,34 +4407,6 @@ exports[`Input: Slider: Props Input: Slider: [ prop: style ] enzyme-shallow: sna
           },
         ],
         "width": 20,
-      }
-    }
-  />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Object {
-        "backgroundColor": "transparent",
-        "bottom": 0,
-        "left": 0,
-        "marginBottom": -20,
-        "marginLeft": -20,
-        "marginRight": -20,
-        "marginTop": -20,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
       }
     }
   />
@@ -4479,7 +4509,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: thumbStyle ] enzyme-mount: 
         </View>
       </AnimatedComponent>
       <AnimatedComponent
+        hitSlop={
+          Object {
+            "bottom": 10,
+            "left": 10,
+            "right": 10,
+            "top": 10,
+          }
+        }
         onLayout={[Function]}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Object {
             "backgroundColor": "red",
@@ -4499,7 +4549,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: thumbStyle ] enzyme-mount: 
         }
       >
         <View
+          hitSlop={
+            Object {
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "top": 10,
+            }
+          }
           onLayout={[Function]}
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Object {
               "backgroundColor": "red",
@@ -4520,6 +4590,18 @@ exports[`Input: Slider: Props Input: Slider: [ prop: thumbStyle ] enzyme-mount: 
         >
           <div
             className="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-zIndex-1lgpqti"
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "WebkitTransform": "translateX(0px) translateY(0px)",
@@ -4529,61 +4611,22 @@ exports[`Input: Slider: Props Input: Slider: [ prop: thumbStyle ] enzyme-mount: 
                 "width": "100px",
               }
             }
-          />
+          >
+            <span
+              className="rn-position-u8s1d rn-zIndex-1wyyakw"
+              key=".0"
+              style={
+                Object {
+                  "bottom": "-10px",
+                  "left": "-10px",
+                  "right": "-10px",
+                  "top": "-10px",
+                }
+              }
+            />
+          </div>
         </View>
       </AnimatedComponent>
-      <View
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        style={
-          Object {
-            "backgroundColor": "transparent",
-            "bottom": 0,
-            "left": 0,
-            "marginBottom": -20,
-            "marginLeft": -20,
-            "marginRight": -20,
-            "marginTop": -20,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      >
-        <div
-          className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-          onMoveShouldSetResponder={[Function]}
-          onMoveShouldSetResponderCapture={[Function]}
-          onResponderEnd={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderReject={[Function]}
-          onResponderRelease={[Function]}
-          onResponderStart={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          onStartShouldSetResponderCapture={[Function]}
-          style={
-            Object {
-              "marginBottom": "-20px",
-              "marginLeft": "-20px",
-              "marginRight": "-20px",
-              "marginTop": "-20px",
-            }
-          }
-        />
-      </View>
     </div>
   </View>
 </Slider>
@@ -4606,11 +4649,12 @@ exports[`Input: Slider: Props Input: Slider: [ prop: thumbStyle ] enzyme-render:
   <div
     class="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-zIndex-1lgpqti"
     style="background-color:red;height:100px;-webkit-transform:translateX(0px) translateY(0px);transform:translateX(0px) translateY(0px);width:100px"
-  />
-  <div
-    class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-    style="margin-bottom:-20px;margin-left:-20px;margin-right:-20px;margin-top:-20px"
-  />
+  >
+    <span
+      class="rn-position-u8s1d rn-zIndex-1wyyakw"
+      style="bottom:-10px;left:-10px;right:-10px;top:-10px"
+    />
+  </div>
 </div>
 `;
 
@@ -4648,7 +4692,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: thumbStyle ] enzyme-shallow
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "backgroundColor": "red",
@@ -4664,34 +4728,6 @@ exports[`Input: Slider: Props Input: Slider: [ prop: thumbStyle ] enzyme-shallow
           },
         ],
         "width": 100,
-      }
-    }
-  />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Object {
-        "backgroundColor": "transparent",
-        "bottom": 0,
-        "left": 0,
-        "marginBottom": -20,
-        "marginLeft": -20,
-        "marginRight": -20,
-        "marginTop": -20,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
       }
     }
   />
@@ -4788,7 +4824,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: thumbTouchSize ] enzyme-mou
         </View>
       </AnimatedComponent>
       <AnimatedComponent
+        hitSlop={
+          Object {
+            "bottom": 10,
+            "left": 10,
+            "right": 10,
+            "top": 10,
+          }
+        }
         onLayout={[Function]}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Object {
             "backgroundColor": "red",
@@ -4808,7 +4864,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: thumbTouchSize ] enzyme-mou
         }
       >
         <View
+          hitSlop={
+            Object {
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "top": 10,
+            }
+          }
           onLayout={[Function]}
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Object {
               "backgroundColor": "red",
@@ -4829,6 +4905,18 @@ exports[`Input: Slider: Props Input: Slider: [ prop: thumbTouchSize ] enzyme-mou
         >
           <div
             className="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "WebkitTransform": "translateX(0px) translateY(0px)",
@@ -4836,97 +4924,22 @@ exports[`Input: Slider: Props Input: Slider: [ prop: thumbTouchSize ] enzyme-mou
                 "transform": "translateX(0px) translateY(0px)",
               }
             }
-          />
-        </View>
-      </AnimatedComponent>
-      <View
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        style={
-          Object {
-            "backgroundColor": "orange",
-            "bottom": 0,
-            "left": 0,
-            "marginBottom": -50,
-            "marginLeft": -50,
-            "marginRight": -50,
-            "marginTop": -50,
-            "opacity": 0.5,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      >
-        <div
-          className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-opacity-icoktb rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-          onMoveShouldSetResponder={[Function]}
-          onMoveShouldSetResponderCapture={[Function]}
-          onResponderEnd={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderReject={[Function]}
-          onResponderRelease={[Function]}
-          onResponderStart={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          onStartShouldSetResponderCapture={[Function]}
-          style={
-            Object {
-              "backgroundColor": "orange",
-              "marginBottom": "-50px",
-              "marginLeft": "-50px",
-              "marginRight": "-50px",
-              "marginTop": "-50px",
-            }
-          }
-        >
-          <AnimatedComponent
-            pointerEvents="none"
-            style={
-              Object {
-                "height": 100,
-                "left": 0,
-                "top": 0,
-                "width": 100,
-              }
-            }
           >
-            <View
-              pointerEvents="none"
+            <span
+              className="rn-position-u8s1d rn-zIndex-1wyyakw"
+              key=".0"
               style={
                 Object {
-                  "height": 100,
-                  "left": 0,
-                  "top": 0,
-                  "width": 100,
+                  "bottom": "-10px",
+                  "left": "-10px",
+                  "right": "-10px",
+                  "top": "-10px",
                 }
               }
-            >
-              <div
-                className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-pointerEvents-633pao rn-position-bnwqim rn-top-ipm5af rn-zIndex-1lgpqti"
-                style={
-                  Object {
-                    "height": "100px",
-                    "width": "100px",
-                  }
-                }
-              />
-            </View>
-          </AnimatedComponent>
-        </div>
-      </View>
+            />
+          </div>
+        </View>
+      </AnimatedComponent>
     </div>
   </View>
 </Slider>
@@ -4949,14 +4962,10 @@ exports[`Input: Slider: Props Input: Slider: [ prop: thumbTouchSize ] enzyme-ren
   <div
     class="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
     style="background-color:red;-webkit-transform:translateX(0px) translateY(0px);transform:translateX(0px) translateY(0px)"
-  />
-  <div
-    class="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-opacity-icoktb rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-    style="background-color:orange;margin-bottom:-50px;margin-left:-50px;margin-right:-50px;margin-top:-50px"
   >
-    <div
-      class="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-pointerEvents-633pao rn-position-bnwqim rn-top-ipm5af rn-zIndex-1lgpqti"
-      style="height:100px;width:100px"
+    <span
+      class="rn-position-u8s1d rn-zIndex-1wyyakw"
+      style="bottom:-10px;left:-10px;right:-10px;top:-10px"
     />
   </div>
 </div>
@@ -4996,7 +5005,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: thumbTouchSize ] enzyme-sha
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "backgroundColor": "red",
@@ -5015,47 +5044,6 @@ exports[`Input: Slider: Props Input: Slider: [ prop: thumbTouchSize ] enzyme-sha
       }
     }
   />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Object {
-        "backgroundColor": "orange",
-        "bottom": 0,
-        "left": 0,
-        "marginBottom": -50,
-        "marginLeft": -50,
-        "marginRight": -50,
-        "marginTop": -50,
-        "opacity": 0.5,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
-      }
-    }
-  >
-    <AnimatedComponent
-      pointerEvents="none"
-      style={
-        Object {
-          "height": 100,
-          "left": 0,
-          "top": 0,
-          "width": 100,
-        }
-      }
-    />
-  </View>
 </View>
 `;
 
@@ -5165,7 +5153,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: trackStyle ] enzyme-mount: 
         </View>
       </AnimatedComponent>
       <AnimatedComponent
+        hitSlop={
+          Object {
+            "bottom": 10,
+            "left": 10,
+            "right": 10,
+            "top": 10,
+          }
+        }
         onLayout={[Function]}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Object {
             "backgroundColor": "red",
@@ -5185,7 +5193,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: trackStyle ] enzyme-mount: 
         }
       >
         <View
+          hitSlop={
+            Object {
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "top": 10,
+            }
+          }
           onLayout={[Function]}
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Object {
               "backgroundColor": "red",
@@ -5206,6 +5234,18 @@ exports[`Input: Slider: Props Input: Slider: [ prop: trackStyle ] enzyme-mount: 
         >
           <div
             className="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "WebkitTransform": "translateX(0px) translateY(0px)",
@@ -5213,61 +5253,22 @@ exports[`Input: Slider: Props Input: Slider: [ prop: trackStyle ] enzyme-mount: 
                 "transform": "translateX(0px) translateY(0px)",
               }
             }
-          />
+          >
+            <span
+              className="rn-position-u8s1d rn-zIndex-1wyyakw"
+              key=".0"
+              style={
+                Object {
+                  "bottom": "-10px",
+                  "left": "-10px",
+                  "right": "-10px",
+                  "top": "-10px",
+                }
+              }
+            />
+          </div>
         </View>
       </AnimatedComponent>
-      <View
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        style={
-          Object {
-            "backgroundColor": "transparent",
-            "bottom": 0,
-            "left": 0,
-            "marginBottom": -20,
-            "marginLeft": -20,
-            "marginRight": -20,
-            "marginTop": -20,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      >
-        <div
-          className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-          onMoveShouldSetResponder={[Function]}
-          onMoveShouldSetResponderCapture={[Function]}
-          onResponderEnd={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderReject={[Function]}
-          onResponderRelease={[Function]}
-          onResponderStart={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          onStartShouldSetResponderCapture={[Function]}
-          style={
-            Object {
-              "marginBottom": "-20px",
-              "marginLeft": "-20px",
-              "marginRight": "-20px",
-              "marginTop": "-20px",
-            }
-          }
-        />
-      </View>
     </div>
   </View>
 </Slider>
@@ -5290,11 +5291,12 @@ exports[`Input: Slider: Props Input: Slider: [ prop: trackStyle ] enzyme-render:
   <div
     class="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
     style="background-color:red;-webkit-transform:translateX(0px) translateY(0px);transform:translateX(0px) translateY(0px)"
-  />
-  <div
-    class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-    style="margin-bottom:-20px;margin-left:-20px;margin-right:-20px;margin-top:-20px"
-  />
+  >
+    <span
+      class="rn-position-u8s1d rn-zIndex-1wyyakw"
+      style="bottom:-10px;left:-10px;right:-10px;top:-10px"
+    />
+  </div>
 </div>
 `;
 
@@ -5334,7 +5336,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: trackStyle ] enzyme-shallow
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "backgroundColor": "red",
@@ -5350,34 +5372,6 @@ exports[`Input: Slider: Props Input: Slider: [ prop: trackStyle ] enzyme-shallow
           },
         ],
         "width": 20,
-      }
-    }
-  />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Object {
-        "backgroundColor": "transparent",
-        "bottom": 0,
-        "left": 0,
-        "marginBottom": -20,
-        "marginLeft": -20,
-        "marginRight": -20,
-        "marginTop": -20,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
       }
     }
   />
@@ -5474,7 +5468,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: value ] enzyme-mount: snaps
         </View>
       </AnimatedComponent>
       <AnimatedComponent
+        hitSlop={
+          Object {
+            "bottom": 10,
+            "left": 10,
+            "right": 10,
+            "top": 10,
+          }
+        }
         onLayout={[Function]}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Object {
             "backgroundColor": "red",
@@ -5494,7 +5508,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: value ] enzyme-mount: snaps
         }
       >
         <View
+          hitSlop={
+            Object {
+              "bottom": 10,
+              "left": 10,
+              "right": 10,
+              "top": 10,
+            }
+          }
           onLayout={[Function]}
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Object {
               "backgroundColor": "red",
@@ -5515,6 +5549,18 @@ exports[`Input: Slider: Props Input: Slider: [ prop: value ] enzyme-mount: snaps
         >
           <div
             className="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
+            onMoveShouldSetResponder={[Function]}
+            onMoveShouldSetResponderCapture={[Function]}
+            onResponderEnd={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderReject={[Function]}
+            onResponderRelease={[Function]}
+            onResponderStart={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
                 "WebkitTransform": "translateX(0px) translateY(0px)",
@@ -5522,61 +5568,22 @@ exports[`Input: Slider: Props Input: Slider: [ prop: value ] enzyme-mount: snaps
                 "transform": "translateX(0px) translateY(0px)",
               }
             }
-          />
+          >
+            <span
+              className="rn-position-u8s1d rn-zIndex-1wyyakw"
+              key=".0"
+              style={
+                Object {
+                  "bottom": "-10px",
+                  "left": "-10px",
+                  "right": "-10px",
+                  "top": "-10px",
+                }
+              }
+            />
+          </div>
         </View>
       </AnimatedComponent>
-      <View
-        onMoveShouldSetResponder={[Function]}
-        onMoveShouldSetResponderCapture={[Function]}
-        onResponderEnd={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderReject={[Function]}
-        onResponderRelease={[Function]}
-        onResponderStart={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onStartShouldSetResponderCapture={[Function]}
-        style={
-          Object {
-            "backgroundColor": "transparent",
-            "bottom": 0,
-            "left": 0,
-            "marginBottom": -20,
-            "marginLeft": -20,
-            "marginRight": -20,
-            "marginTop": -20,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      >
-        <div
-          className="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-          onMoveShouldSetResponder={[Function]}
-          onMoveShouldSetResponderCapture={[Function]}
-          onResponderEnd={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderReject={[Function]}
-          onResponderRelease={[Function]}
-          onResponderStart={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          onStartShouldSetResponderCapture={[Function]}
-          style={
-            Object {
-              "marginBottom": "-20px",
-              "marginLeft": "-20px",
-              "marginRight": "-20px",
-              "marginTop": "-20px",
-            }
-          }
-        />
-      </View>
     </div>
   </View>
 </Slider>
@@ -5599,11 +5606,12 @@ exports[`Input: Slider: Props Input: Slider: [ prop: value ] enzyme-render: snap
   <div
     class="rn-alignItems-1oszu61 rn-borderTopLeftRadius-j9b53g rn-borderTopRightRadius-1i97xy8 rn-borderBottomRightRadius-tabonr rn-borderBottomLeftRadius-shm4j rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-height-z80fyv rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-width-19wmn03 rn-zIndex-1lgpqti"
     style="background-color:red;-webkit-transform:translateX(0px) translateY(0px);transform:translateX(0px) translateY(0px)"
-  />
-  <div
-    class="rn-alignItems-1oszu61 rn-backgroundColor-wib322 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-bottom-1p0dtai rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1pxmb3b rn-flexBasis-7vfszb rn-flexDirection-eqz5dr rn-left-1d2f490 rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-u8s1d rn-right-zchlnj rn-top-ipm5af rn-zIndex-1lgpqti"
-    style="margin-bottom:-20px;margin-left:-20px;margin-right:-20px;margin-top:-20px"
-  />
+  >
+    <span
+      class="rn-position-u8s1d rn-zIndex-1wyyakw"
+      style="bottom:-10px;left:-10px;right:-10px;top:-10px"
+    />
+  </div>
 </div>
 `;
 
@@ -5641,7 +5649,27 @@ exports[`Input: Slider: Props Input: Slider: [ prop: value ] enzyme-shallow: sna
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "backgroundColor": "red",
@@ -5657,34 +5685,6 @@ exports[`Input: Slider: Props Input: Slider: [ prop: value ] enzyme-shallow: sna
           },
         ],
         "width": 20,
-      }
-    }
-  />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Object {
-        "backgroundColor": "transparent",
-        "bottom": 0,
-        "left": 0,
-        "marginBottom": -20,
-        "marginLeft": -20,
-        "marginRight": -20,
-        "marginTop": -20,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
       }
     }
   />
@@ -5725,7 +5725,27 @@ exports[`Slider component should render vertically 1`] = `
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "backgroundColor": "red",
@@ -5741,34 +5761,6 @@ exports[`Slider component should render vertically 1`] = `
           },
         ],
         "width": 20,
-      }
-    }
-  />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Object {
-        "backgroundColor": "transparent",
-        "bottom": 0,
-        "left": 0,
-        "marginBottom": -20,
-        "marginLeft": -20,
-        "marginRight": -20,
-        "marginTop": -20,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
       }
     }
   />
@@ -5809,7 +5801,27 @@ exports[`Slider component should render with ThumbTouchRect 1`] = `
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "backgroundColor": "red",
@@ -5828,47 +5840,6 @@ exports[`Slider component should render with ThumbTouchRect 1`] = `
       }
     }
   />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Object {
-        "backgroundColor": "orange",
-        "bottom": 0,
-        "left": 0,
-        "marginBottom": -20,
-        "marginLeft": -20,
-        "marginRight": -20,
-        "marginTop": -20,
-        "opacity": 0.5,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
-      }
-    }
-  >
-    <AnimatedComponent
-      pointerEvents="none"
-      style={
-        Object {
-          "height": 40,
-          "left": 0,
-          "top": 0,
-          "width": 40,
-        }
-      }
-    />
-  </View>
 </View>
 `;
 
@@ -5906,7 +5877,27 @@ exports[`Slider component should render without issues 1`] = `
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "backgroundColor": "red",
@@ -5922,34 +5913,6 @@ exports[`Slider component should render without issues 1`] = `
           },
         ],
         "width": 20,
-      }
-    }
-  />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Object {
-        "backgroundColor": "transparent",
-        "bottom": 0,
-        "left": 0,
-        "marginBottom": -20,
-        "marginLeft": -20,
-        "marginRight": -20,
-        "marginTop": -20,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
       }
     }
   />

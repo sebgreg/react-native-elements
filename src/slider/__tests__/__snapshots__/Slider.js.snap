@@ -49,7 +49,27 @@ exports[`Slider component should pass down Thumb transform values 1`] = `
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Array [
         Object {
@@ -77,38 +97,6 @@ exports[`Slider component should pass down Thumb transform values 1`] = `
               "translateY": 0,
             },
           ],
-        },
-      ]
-    }
-  />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Array [
-        Object {
-          "backgroundColor": "transparent",
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "marginBottom": -20,
-          "marginLeft": -20,
-          "marginRight": -20,
-          "marginTop": -20,
         },
       ]
     }
@@ -165,7 +153,27 @@ exports[`Slider component should render vertically 1`] = `
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Array [
         Object {
@@ -187,38 +195,6 @@ exports[`Slider component should render vertically 1`] = `
               "translateY": 0,
             },
           ],
-        },
-      ]
-    }
-  />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Array [
-        Object {
-          "backgroundColor": "transparent",
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "marginBottom": -20,
-          "marginLeft": -20,
-          "marginRight": -20,
-          "marginTop": -20,
         },
       ]
     }
@@ -275,7 +251,27 @@ exports[`Slider component should render with ThumbTouchRect 1`] = `
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Array [
         Object {
@@ -301,52 +297,6 @@ exports[`Slider component should render with ThumbTouchRect 1`] = `
       ]
     }
   />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Array [
-        Object {
-          "backgroundColor": "transparent",
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "backgroundColor": "orange",
-          "marginBottom": -20,
-          "marginLeft": -20,
-          "marginRight": -20,
-          "marginTop": -20,
-          "opacity": 0.5,
-        },
-      ]
-    }
-  >
-    <AnimatedComponent
-      pointerEvents="none"
-      style={
-        Object {
-          "height": 40,
-          "left": 0,
-          "top": 0,
-          "width": 40,
-        }
-      }
-    />
-  </View>
 </View>
 `;
 
@@ -399,7 +349,27 @@ exports[`Slider component should render without issues 1`] = `
     }
   />
   <AnimatedComponent
+    hitSlop={
+      Object {
+        "bottom": 10,
+        "left": 10,
+        "right": 10,
+        "top": 10,
+      }
+    }
     onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     style={
       Array [
         Object {
@@ -421,38 +391,6 @@ exports[`Slider component should render without issues 1`] = `
               "translateY": 0,
             },
           ],
-        },
-      ]
-    }
-  />
-  <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
-    style={
-      Array [
-        Object {
-          "backgroundColor": "transparent",
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "marginBottom": -20,
-          "marginLeft": -20,
-          "marginRight": -20,
-          "marginTop": -20,
         },
       ]
     }

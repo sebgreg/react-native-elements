@@ -21,24 +21,6 @@ var DEFAULT_ANIMATION_CONFIGS = {
   },
 };
 
-class Rect {
-  constructor(x, y, width, height) {
-    this.x = x;
-    this.y = y;
-    this.width = width;
-    this.height = height;
-  }
-
-  containsPoint = function(x, y) {
-    return (
-      x >= this.x &&
-      y >= this.y &&
-      x <= this.x + this.width &&
-      y <= this.y + this.height
-    );
-  };
-}
-
 export default class Slider extends Component {
   constructor(props) {
     super(props);
@@ -49,24 +31,6 @@ export default class Slider extends Component {
       value: new Animated.Value(props.value),
       length: 0,
     };
-  }
-
-  componentWillMount() {
-    this.panResponder = PanResponder.create({
-      onStartShouldSetPanResponder: this.handleStartShouldSetPanResponder.bind(
-        this
-      ),
-      onMoveShouldSetPanResponder: this.handleMoveShouldSetPanResponder.bind(
-        this
-      ),
-      onPanResponderGrant: this.handlePanResponderGrant.bind(this),
-      onPanResponderMove: this.handlePanResponderMove.bind(this),
-      onPanResponderRelease: this.handlePanResponderEnd.bind(this),
-      onPanResponderTerminationRequest: this.handlePanResponderRequestEnd.bind(
-        this
-      ),
-      onPanResponderTerminate: this.handlePanResponderEnd.bind(this),
-    });
   }
 
   componentWillReceiveProps(nextProps) {
@@ -80,36 +44,6 @@ export default class Slider extends Component {
       }
     }
   }
-
-  // shouldComponentUpdate(nextProps, nextState) {
-  //   // We don't want to re-render in the following cases:
-  //   // - when only the 'value' prop changes as it's already handled with the Animated.Value
-  //   // - when the event handlers change (rendering doesn't depend on them)
-  //   // - when the style props haven't actually change
-  //
-  //   return shallowCompare(
-  //     { props: this._getPropsForComponentUpdate(this.props), state: this.state },
-  //     this._getPropsForComponentUpdate(nextProps),
-  //     nextState
-  //   ) || !styleEqual(this.props.style, nextProps.style)
-  //     || !styleEqual(this.props.trackStyle, nextProps.trackStyle)
-  //     || !styleEqual(this.props.thumbStyle, nextProps.thumbStyle);
-  // }
-  //
-  // _getPropsForComponentUpdate(props) {
-  //   var {
-  //     value,
-  //     onValueChange,
-  //     onSlidingStart,
-  //     onSlidingComplete,
-  //     style,
-  //     trackStyle,
-  //     thumbStyle,
-  //     ...otherProps,
-  //   } = props;
-  //
-  //   return otherProps;
-  // }
 
   setCurrentValue(value) {
     this.state.value.setValue(value);
@@ -129,9 +63,18 @@ export default class Slider extends Component {
     Animated[animationType](this.state.value, animationConfig).start();
   }
 
-  handleMoveShouldSetPanResponder(/*e: Object, gestureState: Object*/) {
-    // Should we become active when the user moves a touch over the thumb?
-    return false;
+  componentWillMount() {
+    this.panResponder = PanResponder.create({
+      onStartShouldSetPanResponder: () => true,
+      onMoveShouldSetPanResponder: () => false,
+      onPanResponderGrant: this.handlePanResponderGrant.bind(this),
+      onPanResponderMove: this.handlePanResponderMove.bind(this),
+      onPanResponderRelease: this.handlePanResponderEnd.bind(this),
+      onPanResponderTerminationRequest: this.handlePanResponderRequestEnd.bind(
+        this
+      ),
+      onPanResponderTerminate: this.handlePanResponderEnd.bind(this),
+    });
   }
 
   handlePanResponderGrant(/*e: Object, gestureState: Object*/) {
@@ -162,65 +105,15 @@ export default class Slider extends Component {
     this.fireChangeEvent('onSlidingComplete');
   }
 
-  thumbHitTest(e) {
-    var nativeEvent = e.nativeEvent;
-    var thumbTouchRect = this.getThumbTouchRect();
-    return thumbTouchRect.containsPoint(
-      nativeEvent.locationX,
-      nativeEvent.locationY
-    );
-  }
-
-  handleStartShouldSetPanResponder(e /*gestureState: Object*/) {
-    // Should we become active when the user presses down on the thumb?
-    return this.thumbHitTest(e);
-  }
-
   fireChangeEvent(event) {
     if (this.props[event]) {
       this.props[event](this.getCurrentValue());
     }
   }
 
-  getTouchOverflowSize() {
-    var size = {};
-    size.width = Math.max(
-      0,
-      this.props.thumbTouchSize.width - this.state.thumbSize.width
-    );
-    size.height = Math.max(
-      0,
-      this.props.thumbTouchSize.height - this.state.containerSize.height
-    );
-    return size;
-  }
-
-  getTouchOverflowStyle() {
-    var { width, height } = this.getTouchOverflowSize();
-
-    var touchOverflowStyle = {};
-    if (width !== undefined && height !== undefined) {
-      var verticalMargin = -height / 2;
-      touchOverflowStyle.marginTop = verticalMargin;
-      touchOverflowStyle.marginBottom = verticalMargin;
-
-      var horizontalMargin = -width / 2;
-      touchOverflowStyle.marginLeft = horizontalMargin;
-      touchOverflowStyle.marginRight = horizontalMargin;
-    }
-
-    if (this.props.debugTouchArea === true) {
-      touchOverflowStyle.backgroundColor = 'orange';
-      touchOverflowStyle.opacity = 0.5;
-    }
-
-    return touchOverflowStyle;
-  }
-
   measureContainer(e) {
     const { width, height } = e.nativeEvent.layout;
     const size = { width, height };
-    console.warn({ container: size });
     this.setState(prevState => {
       return {
         ...prevState,
@@ -236,7 +129,6 @@ export default class Slider extends Component {
   measureTrack(e) {
     const { width, height } = e.nativeEvent.layout;
     const size = { width, height };
-    console.warn({ track: size });
     this.setState(prevState => {
       return {
         ...prevState,
@@ -248,7 +140,6 @@ export default class Slider extends Component {
   measureThumb(e) {
     const { width, height } = e.nativeEvent.layout;
     const size = { width, height };
-    console.warn({ thumb: size });
     this.setState(prevState => {
       return {
         ...prevState,
@@ -310,34 +201,6 @@ export default class Slider extends Component {
   getThumbPos(value) {
     var ratio = this.getRatio(value);
     return ratio * this.state.length;
-  }
-
-  getThumbTouchRect() {
-    var state = this.state;
-    var props = this.props;
-    var touchOverflowSize = this.getTouchOverflowSize();
-
-    return new Rect(
-      touchOverflowSize.width / 2 +
-        this.getThumbPos(this.getCurrentValue()) +
-        (state.thumbSize.width - props.thumbTouchSize.width) / 2,
-      touchOverflowSize.height / 2 +
-        (state.containerSize.height - props.thumbTouchSize.height) / 2,
-      props.thumbTouchSize.width,
-      props.thumbTouchSize.height
-    );
-  }
-
-  renderDebugThumbTouchRect(thumbPos) {
-    var thumbTouchRect = this.getThumbTouchRect();
-
-    var positionStyle = {
-      left: thumbTouchRect.x,
-      top: thumbTouchRect.y,
-      width: thumbTouchRect.width,
-      height: thumbTouchRect.height,
-    };
-    return <Animated.View style={positionStyle} pointerEvents="none" />;
   }
 
   render() {
@@ -407,7 +270,6 @@ export default class Slider extends Component {
               translateY: (trackSize.height - thumbSize.height) / 2,
             },
           ];
-    var touchOverflowStyle = this.getTouchOverflowStyle();
 
     const maximumTrackStyle =
       orientation === 'vertical'
@@ -439,6 +301,7 @@ export default class Slider extends Component {
           onLayout={e => {
             this.measureThumb(e);
           }}
+          hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
           style={[
             { backgroundColor: thumbTintColor },
             mainStyles.thumb,
@@ -447,13 +310,8 @@ export default class Slider extends Component {
               transform: thumbTransform,
             },
           ]}
-        />
-        <View
-          style={[styles.touchArea, touchOverflowStyle]}
           {...this.panResponder.panHandlers}
-        >
-          {debugTouchArea === true && this.renderDebugThumbTouchRect(thumbPos)}
-        </View>
+        />
       </View>
     );
   }

@@ -1,7 +1,7 @@
 Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
 var _react=require('react');var _react2=_interopRequireDefault(_react);
 var _reactNative=require('react-native');
-var _ViewPropTypes=require('../config/ViewPropTypes');var _ViewPropTypes2=_interopRequireDefault(_ViewPropTypes);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _objectWithoutProperties(obj,keys){var target={};for(var i in obj){if(keys.indexOf(i)>=0)continue;if(!Object.prototype.hasOwnProperty.call(obj,i))continue;target[i]=obj[i];}return target;}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}
+var _ViewPropTypes=require('../config/ViewPropTypes');var _ViewPropTypes2=_interopRequireDefault(_ViewPropTypes);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _objectWithoutProperties(obj,keys){var target={};for(var i in obj){if(keys.indexOf(i)>=0)continue;if(!Object.prototype.hasOwnProperty.call(obj,i))continue;target[i]=obj[i];}return target;}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}
 
 
 
@@ -21,28 +21,9 @@ delay:0}};var
 
 
 
-Rect=
-function Rect(x,y,width,height){_classCallCheck(this,Rect);_initialiseProps.call(this);
-this.x=x;
-this.y=y;
-this.width=width;
-this.height=height;
-};var _initialiseProps=function _initialiseProps(){this.
-
-containsPoint=function(x,y){
-return(
-x>=this.x&&
-y>=this.y&&
-x<=this.x+this.width&&
-y<=this.y+this.height);
-
-};};var
-
-
 Slider=function(_Component){_inherits(Slider,_Component);
 function Slider(props){_classCallCheck(this,Slider);var _this=_possibleConstructorReturn(this,(Slider.__proto__||Object.getPrototypeOf(Slider)).call(this,
 props));
-console.warn('rne');
 _this.state={
 containerSize:{width:0,height:0},
 trackSize:{width:0,height:0},
@@ -50,25 +31,7 @@ thumbSize:{width:0,height:0},
 value:new _reactNative.Animated.Value(props.value),
 length:0};return _this;
 
-}_createClass(Slider,[{key:'componentWillMount',value:function componentWillMount()
-
-{
-this.panResponder=_reactNative.PanResponder.create({
-onStartShouldSetPanResponder:this.handleStartShouldSetPanResponder.bind(
-this),
-
-onMoveShouldSetPanResponder:this.handleMoveShouldSetPanResponder.bind(
-this),
-
-onPanResponderGrant:this.handlePanResponderGrant.bind(this),
-onPanResponderMove:this.handlePanResponderMove.bind(this),
-onPanResponderRelease:this.handlePanResponderEnd.bind(this),
-onPanResponderTerminationRequest:this.handlePanResponderRequestEnd.bind(
-this),
-
-onPanResponderTerminate:this.handlePanResponderEnd.bind(this)});
-
-}},{key:'componentWillReceiveProps',value:function componentWillReceiveProps(
+}_createClass(Slider,[{key:'componentWillReceiveProps',value:function componentWillReceiveProps(
 
 nextProps){
 var newValue=nextProps.value;
@@ -81,36 +44,6 @@ this.setCurrentValue(newValue);
 }
 }
 }},{key:'setCurrentValue',value:function setCurrentValue(
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 value){
 this.state.value.setValue(value);
@@ -128,11 +61,20 @@ toValue:value});
 
 
 _reactNative.Animated[animationType](this.state.value,animationConfig).start();
-}},{key:'handleMoveShouldSetPanResponder',value:function handleMoveShouldSetPanResponder()
+}},{key:'componentWillMount',value:function componentWillMount()
 
 {
+this.panResponder=_reactNative.PanResponder.create({
+onStartShouldSetPanResponder:function onStartShouldSetPanResponder(){return true;},
+onMoveShouldSetPanResponder:function onMoveShouldSetPanResponder(){return false;},
+onPanResponderGrant:this.handlePanResponderGrant.bind(this),
+onPanResponderMove:this.handlePanResponderMove.bind(this),
+onPanResponderRelease:this.handlePanResponderEnd.bind(this),
+onPanResponderTerminationRequest:this.handlePanResponderRequestEnd.bind(
+this),
 
-return false;
+onPanResponderTerminate:this.handlePanResponderEnd.bind(this)});
+
 }},{key:'handlePanResponderGrant',value:function handlePanResponderGrant()
 
 {
@@ -161,67 +103,17 @@ return;
 
 this.setCurrentValue(this.getValue(gestureState));
 this.fireChangeEvent('onSlidingComplete');
-}},{key:'thumbHitTest',value:function thumbHitTest(
-
-e){
-var nativeEvent=e.nativeEvent;
-var thumbTouchRect=this.getThumbTouchRect();
-return thumbTouchRect.containsPoint(
-nativeEvent.locationX,
-nativeEvent.locationY);
-
-}},{key:'handleStartShouldSetPanResponder',value:function handleStartShouldSetPanResponder(
-
-e){
-
-return this.thumbHitTest(e);
 }},{key:'fireChangeEvent',value:function fireChangeEvent(
 
 event){
 if(this.props[event]){
 this.props[event](this.getCurrentValue());
 }
-}},{key:'getTouchOverflowSize',value:function getTouchOverflowSize()
-
-{
-var size={};
-size.width=Math.max(
-0,
-this.props.thumbTouchSize.width-this.state.thumbSize.width);
-
-size.height=Math.max(
-0,
-this.props.thumbTouchSize.height-this.state.containerSize.height);
-
-return size;
-}},{key:'getTouchOverflowStyle',value:function getTouchOverflowStyle()
-
-{var _getTouchOverflowSize=
-this.getTouchOverflowSize(),width=_getTouchOverflowSize.width,height=_getTouchOverflowSize.height;
-
-var touchOverflowStyle={};
-if(width!==undefined&&height!==undefined){
-var verticalMargin=-height/2;
-touchOverflowStyle.marginTop=verticalMargin;
-touchOverflowStyle.marginBottom=verticalMargin;
-
-var horizontalMargin=-width/2;
-touchOverflowStyle.marginLeft=horizontalMargin;
-touchOverflowStyle.marginRight=horizontalMargin;
-}
-
-if(this.props.debugTouchArea===true){
-touchOverflowStyle.backgroundColor='orange';
-touchOverflowStyle.opacity=0.5;
-}
-
-return touchOverflowStyle;
 }},{key:'measureContainer',value:function measureContainer(
 
 e){var _this2=this;var _e$nativeEvent$layout=
 e.nativeEvent.layout,width=_e$nativeEvent$layout.width,height=_e$nativeEvent$layout.height;
 var size={width:width,height:height};
-console.warn({container:size});
 this.setState(function(prevState){
 return _extends({},
 prevState,{
@@ -237,7 +129,6 @@ size.width-prevState.thumbSize.width});
 e){var _e$nativeEvent$layout2=
 e.nativeEvent.layout,width=_e$nativeEvent$layout2.width,height=_e$nativeEvent$layout2.height;
 var size={width:width,height:height};
-console.warn({track:size});
 this.setState(function(prevState){
 return _extends({},
 prevState,{
@@ -249,7 +140,6 @@ trackSize:size});
 e){var _this3=this;var _e$nativeEvent$layout3=
 e.nativeEvent.layout,width=_e$nativeEvent$layout3.width,height=_e$nativeEvent$layout3.height;
 var size={width:width,height:height};
-console.warn({thumb:size});
 this.setState(function(prevState){
 return _extends({},
 prevState,{
@@ -266,7 +156,7 @@ gestureState){
 var thumbPos=
 this._previousPos+(
 this.props.orientation==='vertical'?
--1*gestureState.dy:
+gestureState.dy:
 gestureState.dx);
 
 var ratio=thumbPos/this.state.length;
@@ -311,33 +201,6 @@ this.props.maximumValue-this.props.minimumValue));
 value){
 var ratio=this.getRatio(value);
 return ratio*this.state.length;
-}},{key:'getThumbTouchRect',value:function getThumbTouchRect()
-
-{
-var state=this.state;
-var props=this.props;
-var touchOverflowSize=this.getTouchOverflowSize();
-
-return new Rect(
-touchOverflowSize.width/2+
-this.getThumbPos(this.getCurrentValue())+
-(state.thumbSize.width-props.thumbTouchSize.width)/2,
-touchOverflowSize.height/2+
-(state.containerSize.height-props.thumbTouchSize.height)/2,
-props.thumbTouchSize.width,
-props.thumbTouchSize.height);
-
-}},{key:'renderDebugThumbTouchRect',value:function renderDebugThumbTouchRect(
-
-thumbPos){
-var thumbTouchRect=this.getThumbTouchRect();
-var positionStyle={
-left:thumbTouchRect.x,
-top:thumbTouchRect.y,
-width:thumbTouchRect.width,
-height:thumbTouchRect.height};
-
-return _react2.default.createElement(_reactNative.Animated.View,{style:positionStyle,pointerEvents:'none'});
 }},{key:'render',value:function render()
 
 {var _this4=this;var _props=
@@ -371,7 +234,8 @@ this.state,value=_state.value,containerSize=_state.containerSize,trackSize=_stat
 var mainStyles=containerStyle||styles;
 var thumbPos=value.interpolate({
 inputRange:[minimumValue,maximumValue],
-outputRange:orientation==='vertical'?[length,0]:[0,length]});
+outputRange:[0,length]});
+
 
 
 
@@ -406,7 +270,6 @@ translateX:(trackSize.width-thumbSize.width)/2},
 translateY:(trackSize.height-thumbSize.height)/2}];
 
 
-var touchOverflowStyle=this.getTouchOverflowStyle();
 
 var maximumTrackStyle=
 orientation==='vertical'?
@@ -434,24 +297,20 @@ _this4.measureTrack(e);
 _react2.default.createElement(_reactNative.Animated.View,{
 style:[mainStyles.track,trackStyle,minimumTrackStyle]}),
 
-_react2.default.createElement(_reactNative.Animated.View,{
+_react2.default.createElement(_reactNative.Animated.View,_extends({
 onLayout:function onLayout(e){
 _this4.measureThumb(e);
 },
+hitSlop:{top:10,bottom:10,left:10,right:10},
 style:[
 {backgroundColor:thumbTintColor},
 mainStyles.thumb,
 thumbStyle,
 {
-transform:thumbTransform}]}),
+transform:thumbTransform}]},
 
 
-
-_react2.default.createElement(_reactNative.View,_extends({
-style:[styles.touchArea,touchOverflowStyle]},
-this.panResponder.panHandlers),
-
-debugTouchArea===true&&this.renderDebugThumbTouchRect(thumbPos))));
+this.panResponder.panHandlers))));
 
 
 
