@@ -133,7 +133,6 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  text: 'Welcome to\nReact Native Elements',
   iconRight: false,
   TouchableComponent:
     Platform.OS === 'android' ? TouchableNativeFeedback : TouchableOpacity,

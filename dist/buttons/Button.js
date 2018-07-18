@@ -133,7 +133,6 @@ ViewComponent:_propTypes2.default.any};
 
 
 Button.defaultProps={
-text:'Welcome to\nReact Native Elements',
 iconRight:false,
 TouchableComponent:
 _reactNative.Platform.OS==='android'?_reactNative.TouchableNativeFeedback:_reactNative.TouchableOpacity,

@@ -1,4 +1,4 @@
-Object.defineProperty(exports,"__esModule",{value:true});exports.Overlay=exports.Header=exports.Rating=exports.Avatar=exports.Slider=exports.Tile=exports.normalize=exports.registerCustomIconType=exports.getIconType=exports.colors=exports.Icon=exports.SearchBar=exports.CheckBox=exports.Divider=exports.Text=exports.SocialIcon=exports.PricingCard=exports.ListItem=exports.List=exports.Input=exports.Card=exports.ButtonGroup=exports.Button=exports.Badge=undefined;
+Object.defineProperty(exports,"__esModule",{value:true});exports.Overlay=exports.Header=exports.Rating=exports.Avatar=exports.Slider=exports.Tile=exports.elevations=exports.normalize=exports.registerCustomIconType=exports.getIconType=exports.colors=exports.Icon=exports.SearchBar=exports.CheckBox=exports.Divider=exports.Text=exports.SocialIcon=exports.PricingCard=exports.ListItem=exports.List=exports.Input=exports.Card=exports.ButtonGroup=exports.Button=exports.Badge=undefined;
 
 
 
@@ -33,7 +33,8 @@ var _PricingCard=require('./pricing/PricingCard');var _PricingCard2=_interopRequ
 var _Text=require('./text/Text');var _Text2=_interopRequireDefault(_Text);
 var _colors=require('./config/colors');var _colors2=_interopRequireDefault(_colors);
 var _getIconType=require('./helpers/getIconType');var _getIconType2=_interopRequireDefault(_getIconType);
-var _normalizeText=require('./helpers/normalizeText');var _normalizeText2=_interopRequireDefault(_normalizeText);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.
+var _normalizeText=require('./helpers/normalizeText');var _normalizeText2=_interopRequireDefault(_normalizeText);
+var _elevation=require('./config/elevation');var _elevation2=_interopRequireDefault(_elevation);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.
 
 
 Badge=_badge2.default;exports.
@@ -54,6 +55,7 @@ colors=_colors2.default;exports.
 getIconType=_getIconType2.default;exports.
 registerCustomIconType=_getIconType.registerCustomIconType;exports.
 normalize=_normalizeText2.default;exports.
+elevations=_elevation2.default;exports.
 Tile=_Tile2.default;exports.
 Slider=_Slider2.default;exports.
 Avatar=_Avatar2.default;exports.

@@ -1,6 +1,6 @@
 {
   "name": "react-native-elements",
-  "version": "1.0.0-beta3",
+  "version": "1.0.0-rnw",
   "description": "React Native Elements & UI Toolkit",
   "directories": {
     "lib": "dist"
@@ -24,10 +24,9 @@
     "test:coverage": "jest --coverage native web",
     "postinstall": "opencollective postinstall",
     "lint": "eslint src/",
-    "precommit": "lint-staged && npm test",
     "prettify": "prettier --write 'src/**/*.js'",
     "styleguide": "styleguidist --config ./styleguide/styleguide.config.js server",
-    "yalc": "yarn build:dist && yalc publish"
+    "yalc": "yarn build:dist && yalc push"
   },
   "author": "Nader Dabit & Monte Thakkar",
   "license": "MIT",
@@ -44,7 +43,8 @@
     "lodash.isempty": "^4.4.0",
     "lodash.times": "^4.3.2",
     "opencollective": "^1.0.3",
-    "prop-types": "^15.5.8"
+    "prop-types": "^15.5.8",
+    "react-art": "^16.4.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -81,7 +81,7 @@
     "react-dom": "16.2.0",
     "react-native": "0.52.2",
     "react-native-vector-icons": "^4.4.2",
-    "react-native-web": "^0.3.0",
+    "react-native-web": "^0.8.0",
     "react-styleguidist": "^6.0.33",
     "react-test-renderer": "16.2.0",
     "sinon": "^4.1.2",

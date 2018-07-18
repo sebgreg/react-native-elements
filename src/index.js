@@ -34,6 +34,7 @@ import Text from './text/Text';
 import colors from './config/colors';
 import getIconType, { registerCustomIconType } from './helpers/getIconType';
 import normalize from './helpers/normalizeText';
+import elevations from './config/elevation';
 
 export {
   Badge,
@@ -54,6 +55,7 @@ export {
   getIconType,
   registerCustomIconType,
   normalize,
+  elevations,
   Tile,
   Slider,
   Avatar,
