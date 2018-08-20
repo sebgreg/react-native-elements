@@ -1,4 +1,4 @@
-Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName='src\\buttons\\ButtonGroup.js';var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
 var _react=require('react');var _react2=_interopRequireDefault(_react);
 var _reactNative=require('react-native');
 
@@ -53,7 +53,7 @@ underlayColor:underlayColor||_colors2.default.primary};
 return(
 _react2.default.createElement(_reactNative.View,_extends({},
 attributes,{
-style:[styles.container,containerStyle&&containerStyle]}),
+style:[styles.container,containerStyle&&containerStyle],__source:{fileName:_jsxFileName,lineNumber:54}}),
 
 buttons.map(function(button,i){
 var isSelected=selectedIndex===i||selectedIndexes.includes(i);
@@ -103,7 +103,7 @@ borderTopLeftRadius:containerBorderRadius,
 borderBottomLeftRadius:containerBorderRadius},
 
 isSelected&&{
-backgroundColor:_colors2.default.primary}]}),
+backgroundColor:_colors2.default.primary}],__source:{fileName:_jsxFileName,lineNumber:62}}),
 
 
 
@@ -111,18 +111,18 @@ _react2.default.createElement(_reactNative.View,{
 style:[
 styles.textContainer,
 buttonStyle&&buttonStyle,
-isSelected&&selectedButtonStyle&&selectedButtonStyle]},
+isSelected&&selectedButtonStyle&&selectedButtonStyle],__source:{fileName:_jsxFileName,lineNumber:110}},
 
 
 button.element?
-_react2.default.createElement(button.element,null):
+_react2.default.createElement(button.element,{__source:{fileName:_jsxFileName,lineNumber:118}}):
 
 _react2.default.createElement(_Text2.default,{
 style:[
 styles.buttonText,
 textStyle&&textStyle,
 isSelected&&{color:'#fff'},
-isSelected&&selectedTextStyle]},
+isSelected&&selectedTextStyle],__source:{fileName:_jsxFileName,lineNumber:120}},
 
 
 button))));

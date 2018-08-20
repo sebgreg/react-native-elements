@@ -1,4 +1,4 @@
-Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName='src\\buttons\\Button.js';var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
 var _react=require('react');var _react2=_interopRequireDefault(_react);
 
 var _reactNative=require('react-native');
@@ -54,14 +54,14 @@ console.error('You need to pass a ViewComponent to use linearGradientProps !\nEx
 this.props,ViewComponent=_props.ViewComponent,TouchableComponent=_props.TouchableComponent,containerStyle=_props.containerStyle,onPress=_props.onPress,buttonStyle=_props.buttonStyle,clear=_props.clear,loading=_props.loading,loadingStyle=_props.loadingStyle,loadingProps=_props.loadingProps,text=_props.text,textStyle=_props.textStyle,textProps=_props.textProps,icon=_props.icon,iconContainerStyle=_props.iconContainerStyle,iconRight=_props.iconRight,linearGradientProps=_props.linearGradientProps,attributes=_objectWithoutProperties(_props,['ViewComponent','TouchableComponent','containerStyle','onPress','buttonStyle','clear','loading','loadingStyle','loadingProps','text','textStyle','textProps','icon','iconContainerStyle','iconRight','linearGradientProps']);
 
 return(
-_react2.default.createElement(_reactNative.View,{style:[styles.container,containerStyle]},
+_react2.default.createElement(_reactNative.View,{style:[styles.container,containerStyle],__source:{fileName:_jsxFileName,lineNumber:57}},
 _react2.default.createElement(TouchableComponent,_extends({
 onPress:onPress,
 activeOpacity:clear?0:undefined,
 style:{
 borderRadius:buttonStyle.borderRadius}},
 
-attributes),
+attributes,{__source:{fileName:_jsxFileName,lineNumber:58}}),
 
 _react2.default.createElement(ViewComponent,_extends({},
 linearGradientProps,{
@@ -75,7 +75,7 @@ web:_elevation2.default.web.zero})),
 
 
 buttonStyle,
-linearGradientProps&&{backgroundColor:'transparent'}]}),
+linearGradientProps&&{backgroundColor:'transparent'}],__source:{fileName:_jsxFileName,lineNumber:66}}),
 
 
 loading&&
@@ -84,25 +84,25 @@ animating:true,
 style:[styles.loading,loadingStyle],
 color:loadingProps.color,
 size:loadingProps.size},
-loadingProps)),
+loadingProps,{__source:{fileName:_jsxFileName,lineNumber:82}})),
 
 
 !loading&&
 icon&&
 !iconRight&&
-_react2.default.createElement(_reactNative.View,{style:[styles.iconContainer,iconContainerStyle]},
+_react2.default.createElement(_reactNative.View,{style:[styles.iconContainer,iconContainerStyle],__source:{fileName:_jsxFileName,lineNumber:93}},
 icon),
 
 
 !loading&&
-_react2.default.createElement(_reactNative.Text,_extends({style:[styles.text,textStyle]},textProps),
+_react2.default.createElement(_reactNative.Text,_extends({style:[styles.text,textStyle]},textProps,{__source:{fileName:_jsxFileName,lineNumber:98}}),
 text),
 
 
 !loading&&
 icon&&
 iconRight&&
-_react2.default.createElement(_reactNative.View,{style:[styles.iconContainer,iconContainerStyle]},
+_react2.default.createElement(_reactNative.View,{style:[styles.iconContainer,iconContainerStyle],__source:{fileName:_jsxFileName,lineNumber:105}},
 icon)))));
 
 

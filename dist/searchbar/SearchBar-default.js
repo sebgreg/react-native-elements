@@ -1,4 +1,4 @@
-Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName='src\\searchbar\\SearchBar-default.js';var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
 var _react=require('react');var _react2=_interopRequireDefault(_react);
 var _reactNative=require('react-native');
 
@@ -78,7 +78,7 @@ ref:containerRef,
 style:[
 styles.container,
 lightTheme&&styles.containerLight,
-containerStyle&&containerStyle]},
+containerStyle&&containerStyle],__source:{fileName:_jsxFileName,lineNumber:76}},
 
 
 _react2.default.createElement(_reactNative.TextInput,_extends({},
@@ -95,7 +95,7 @@ round&&{borderRadius:_reactNative.Platform.OS==='ios'?15:20},
 inputStyle&&inputStyle,
 clearIcon&&showLoading&&{paddingRight:50},
 (clearIcon&&!showLoading||!clearIcon&&showLoading)&&{
-paddingRight:30}]})),
+paddingRight:30}],__source:{fileName:_jsxFileName,lineNumber:84}})),
 
 
 
@@ -104,7 +104,7 @@ _react2.default.createElement(Icon,{
 size:16,
 style:[styles.icon,styles.searchIcon,icon.style&&icon.style],
 name:icon.name||'search',
-color:icon.color||_colors2.default.grey3}),
+color:icon.color||_colors2.default.grey3,__source:{fileName:_jsxFileName,lineNumber:103}}),
 
 
 clearIcon&&
@@ -117,7 +117,7 @@ clearIcon.style&&clearIcon.style],
 
 name:clearIcon.name||'close',
 onPress:this.clearText.bind(this),
-color:clearIcon.color||_colors2.default.grey3}),
+color:clearIcon.color||_colors2.default.grey3,__source:{fileName:_jsxFileName,lineNumber:111}}),
 
 
 showLoading&&
@@ -128,7 +128,7 @@ loadingStyle&&loadingStyle,
 clearIcon&&{right:35}],
 
 color:icon.color||_colors2.default.grey3},
-otherLoadingProps))));
+otherLoadingProps,{__source:{fileName:_jsxFileName,lineNumber:124}}))));
 
 
 

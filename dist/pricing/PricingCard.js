@@ -1,4 +1,4 @@
-Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName='src\\pricing\\PricingCard.js';var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
 var _react=require('react');var _react2=_interopRequireDefault(_react);
 var _reactNative=require('react-native');
 var _Text=require('../text/Text');var _Text2=_interopRequireDefault(_Text);
@@ -29,14 +29,14 @@ props.containerStyle,wrapperStyle=props.wrapperStyle,title=props.title,price=pro
 return(
 _react2.default.createElement(_reactNative.View,_extends({},
 attributes,{
-style:[styles.container,containerStyle&&containerStyle]}),
+style:[styles.container,containerStyle&&containerStyle],__source:{fileName:_jsxFileName,lineNumber:30}}),
 
-_react2.default.createElement(_reactNative.View,{style:[styles.wrapper,wrapperStyle&&wrapperStyle]},
+_react2.default.createElement(_reactNative.View,{style:[styles.wrapper,wrapperStyle&&wrapperStyle],__source:{fileName:_jsxFileName,lineNumber:34}},
 _react2.default.createElement(_Text2.default,{
 style:[
 styles.pricingTitle,
 {color:color},
-titleFont&&{fontFamily:titleFont}]},
+titleFont&&{fontFamily:titleFont}],__source:{fileName:_jsxFileName,lineNumber:35}},
 
 
 title),
@@ -44,7 +44,7 @@ title),
 _react2.default.createElement(_Text2.default,{
 style:[
 styles.pricingPrice,
-pricingFont&&{fontFamily:pricingFont}]},
+pricingFont&&{fontFamily:pricingFont}],__source:{fileName:_jsxFileName,lineNumber:44}},
 
 
 price),
@@ -53,7 +53,7 @@ info.map(function(item,i){
 return(
 _react2.default.createElement(_Text2.default,{
 key:i,
-style:[styles.pricingInfo,infoFont&&{fontFamily:infoFont}]},
+style:[styles.pricingInfo,infoFont&&{fontFamily:infoFont}],__source:{fileName:_jsxFileName,lineNumber:54}},
 
 item));
 
@@ -67,7 +67,7 @@ button.buttonStyle,
 {backgroundColor:color}],
 
 onPress:onButtonPress,
-icon:_react2.default.createElement(_Icon2.default,{name:button.icon,size:15,color:'white'})}))));
+icon:_react2.default.createElement(_Icon2.default,{name:button.icon,size:15,color:'white',__source:{fileName:_jsxFileName,lineNumber:70}}),__source:{fileName:_jsxFileName,lineNumber:62}}))));
 
 
 

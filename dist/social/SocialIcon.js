@@ -1,4 +1,4 @@
-Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _colors;var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _colors,_jsxFileName='src\\social\\SocialIcon.js';var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
 var _react=require('react');var _react2=_interopRequireDefault(_react);
 var _reactNative=require('react-native');
 
@@ -95,7 +95,7 @@ _react2.default.createElement(_reactNative.ActivityIndicator,{
 animating:true,
 style:[styles.activityIndicatorStyle,activityIndicatorStyle],
 color:iconColor||'white',
-size:small&&'small'||'large'});
+size:small&&'small'||'large',__source:{fileName:_jsxFileName,lineNumber:94}});
 
 
 }
@@ -119,15 +119,15 @@ borderRadius:iconSize*2},
 
 {backgroundColor:colors[type]},
 light&&{backgroundColor:'white'},
-style&&style]}),
+style&&style],__source:{fileName:_jsxFileName,lineNumber:103}}),
 
 
-_react2.default.createElement(_reactNative.View,{style:styles.wrapper},
+_react2.default.createElement(_reactNative.View,{style:styles.wrapper,__source:{fileName:_jsxFileName,lineNumber:125}},
 _react2.default.createElement(_FontAwesome2.default,{
 style:[iconStyle&&iconStyle],
 color:light?colors[type]:iconColor,
 name:type,
-size:iconSize}),
+size:iconSize,__source:{fileName:_jsxFileName,lineNumber:126}}),
 
 button&&
 title&&
@@ -137,7 +137,7 @@ styles.title,
 light&&{color:colors[type]},
 fontFamily&&{fontFamily:fontFamily},
 fontWeight&&{fontWeight:fontWeight},
-fontStyle&&fontStyle]},
+fontStyle&&fontStyle],__source:{fileName:_jsxFileName,lineNumber:134}},
 
 
 title),

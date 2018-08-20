@@ -1,4 +1,4 @@
-Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName='src\\list\\ListItem.js';var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
 var _react=require('react');var _react2=_interopRequireDefault(_react);
 var _reactNative=require('react-native');
 
@@ -122,10 +122,10 @@ style:[
 styles.container,
 containerStyle&&containerStyle,
 disabled&&styles.disabled,
-disabled&&disabledStyle&&disabledStyle]}),
+disabled&&disabledStyle&&disabledStyle],__source:{fileName:_jsxFileName,lineNumber:117}}),
 
 
-_react2.default.createElement(_reactNative.View,{style:[styles.wrapper,wrapperStyle&&wrapperStyle]},
+_react2.default.createElement(_reactNative.View,{style:[styles.wrapper,wrapperStyle&&wrapperStyle],__source:{fileName:_jsxFileName,lineNumber:128}},
 _react2.default.isValidElement(leftIcon)?
 leftIcon:
 leftIcon&&
@@ -135,16 +135,16 @@ leftIconHighlightProps,{
 disabled:disabled,
 style:[
 styles.iconStyle,
-leftIconContainerStyle&&leftIconContainerStyle]}),
+leftIconContainerStyle&&leftIconContainerStyle],__source:{fileName:_jsxFileName,lineNumber:133}}),
 
 
-_react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_reactNative.View,{__source:{fileName:_jsxFileName,lineNumber:141}},
 _react2.default.createElement(_Icon2.default,{
 type:leftIcon.type,
 iconStyle:[styles.icon,leftIcon.style&&leftIcon.style],
 name:leftIcon.name,
 color:leftIcon.color||_colors2.default.grey4,
-size:leftIcon.size||24}))),
+size:leftIcon.size||24,__source:{fileName:_jsxFileName,lineNumber:142}}))),
 
 
 
@@ -160,11 +160,11 @@ overlayContainerStyle:
 avatarOverlayContainerStyle&&avatarOverlayContainerStyle,
 
 rounded:roundAvatar,
-source:avatar}),
+source:avatar,__source:{fileName:_jsxFileName,lineNumber:156}}),
 
 
-_react2.default.createElement(_reactNative.View,{style:styles.titleSubtitleContainer},
-_react2.default.createElement(_reactNative.View,{style:titleContainerStyle},
+_react2.default.createElement(_reactNative.View,{style:styles.titleSubtitleContainer,__source:{fileName:_jsxFileName,lineNumber:166}},
+_react2.default.createElement(_reactNative.View,{style:titleContainerStyle,__source:{fileName:_jsxFileName,lineNumber:167}},
 title!==null&&(
 typeof title==='string'||typeof title==='number')?
 _react2.default.createElement(_Text2.default,{
@@ -173,16 +173,16 @@ style:[
 styles.title,
 !leftIcon&&{marginLeft:10},
 titleStyle&&titleStyle,
-fontFamily&&{fontFamily:fontFamily}]},
+fontFamily&&{fontFamily:fontFamily}],__source:{fileName:_jsxFileName,lineNumber:170}},
 
 
 title):
 
 
-_react2.default.createElement(_reactNative.View,null,title)),
+_react2.default.createElement(_reactNative.View,{__source:{fileName:_jsxFileName,lineNumber:182}},title)),
 
 
-_react2.default.createElement(_reactNative.View,{style:subtitleContainerStyle},
+_react2.default.createElement(_reactNative.View,{style:subtitleContainerStyle,__source:{fileName:_jsxFileName,lineNumber:185}},
 subtitle!==null&&(
 typeof subtitle==='string'||typeof subtitle==='number')?
 _react2.default.createElement(_Text2.default,{
@@ -191,13 +191,13 @@ style:[
 styles.subtitle,
 !leftIcon&&{marginLeft:10},
 subtitleStyle&&subtitleStyle,
-fontFamily&&{fontFamily:fontFamily}]},
+fontFamily&&{fontFamily:fontFamily}],__source:{fileName:_jsxFileName,lineNumber:188}},
 
 
 subtitle):
 
 
-_react2.default.createElement(_reactNative.View,null,subtitle))),
+_react2.default.createElement(_reactNative.View,{__source:{fileName:_jsxFileName,lineNumber:200}},subtitle))),
 
 
 
@@ -205,11 +205,11 @@ _react2.default.createElement(_reactNative.View,null,subtitle))),
 rightTitle!==''&&
 !textInput&&
 _react2.default.createElement(_reactNative.View,{
-style:[styles.rightTitleContainer,rightTitleContainerStyle]},
+style:[styles.rightTitleContainer,rightTitleContainerStyle],__source:{fileName:_jsxFileName,lineNumber:207}},
 
 _react2.default.createElement(_Text2.default,{
 numberOfLines:rightTitleNumberOfLines,
-style:[styles.rightTitleStyle,rightTitleStyle]},
+style:[styles.rightTitleStyle,rightTitleStyle],__source:{fileName:_jsxFileName,lineNumber:210}},
 
 rightTitle)),
 
@@ -220,7 +220,7 @@ _react2.default.createElement(_reactNative.View,{
 style:[
 styles.rightTitleContainer,
 styles.textInputContainerStyle,
-textInputContainerStyle]},
+textInputContainerStyle],__source:{fileName:_jsxFileName,lineNumber:219}},
 
 
 _react2.default.createElement(_reactNative.TextInput,{
@@ -241,11 +241,11 @@ onFocus:textInputOnFocus,
 onBlur:textInputOnBlur,
 secureTextEntry:textInputSecure,
 selectTextOnFocus:textInputSelectTextOnFocus,
-returnKeyType:textInputReturnKeyType})),
+returnKeyType:textInputReturnKeyType,__source:{fileName:_jsxFileName,lineNumber:226}})),
 
 
 
-badge&&!rightTitle&&_react2.default.createElement(_badge2.default,badge),
+badge&&!rightTitle&&_react2.default.createElement(_badge2.default,_extends({},badge,{__source:{fileName:_jsxFileName,lineNumber:248}})),
 !hideChevron&&(
 _react2.default.isValidElement(rightIcon)?
 rightIcon:
@@ -253,27 +253,27 @@ rightIcon:
 _react2.default.createElement(_reactNative.TouchableOpacity,{
 onPress:onPressRightIcon,
 disabled:disabled?disabled:!onPressRightIcon,
-style:styles.chevronContainer},
+style:styles.chevronContainer,__source:{fileName:_jsxFileName,lineNumber:253}},
 
 _react2.default.createElement(_Icon2.default,{
 type:rightIcon.type,
 iconStyle:rightIcon.style,
 size:rightIcon.size||28,
 name:rightIcon.name||'chevron-right',
-color:rightIcon.color||chevronColor}))),
+color:rightIcon.color||chevronColor,__source:{fileName:_jsxFileName,lineNumber:258}}))),
 
 
 
 switchButton&&
 hideChevron&&
-_react2.default.createElement(_reactNative.View,{style:styles.switchContainer},
+_react2.default.createElement(_reactNative.View,{style:styles.switchContainer,__source:{fileName:_jsxFileName,lineNumber:269}},
 _react2.default.createElement(_reactNative.Switch,{
 onValueChange:onSwitch,
 disabled:disabled?disabled:switchDisabled,
 onTintColor:switchOnTintColor,
 thumbTintColor:switchThumbTintColor,
 tintColor:switchTintColor,
-value:switched})),
+value:switched,__source:{fileName:_jsxFileName,lineNumber:270}})),
 
 
 

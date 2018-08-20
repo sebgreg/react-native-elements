@@ -1,4 +1,4 @@
-Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName='src\\searchbar\\SearchBar-ios.js';var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
 var _react=require('react');var _react2=_interopRequireDefault(_react);
 var _reactNative=require('react-native');
 
@@ -81,10 +81,10 @@ this.props,cancelButtonTitle=_props.cancelButtonTitle,clearIcon=_props.clearIcon
 this.state,hasFocus=_state.hasFocus,isEmpty=_state.isEmpty;var
 loadingStyle=loadingProps.style,otherLoadingProps=_objectWithoutProperties(loadingProps,['style']);
 var searchIcon=
-_react2.default.createElement(_Ionicons2.default,{size:20,name:'ios-search',color:IOS_GRAY});
+_react2.default.createElement(_Ionicons2.default,{size:20,name:'ios-search',color:IOS_GRAY,__source:{fileName:_jsxFileName,lineNumber:84}});
 
 return(
-_react2.default.createElement(_reactNative.View,{style:styles.container},
+_react2.default.createElement(_reactNative.View,{style:styles.container,__source:{fileName:_jsxFileName,lineNumber:87}},
 _react2.default.createElement(_Input2.default,_extends({},
 attributes,{
 onFocus:this.onFocus,
@@ -104,14 +104,14 @@ leftIconContainerStyle],
 
 placeholderTextColor:placeholderTextColor,
 rightIcon:
-_react2.default.createElement(_reactNative.View,{style:{flexDirection:'row'}},
+_react2.default.createElement(_reactNative.View,{style:{flexDirection:'row'},__source:{fileName:_jsxFileName,lineNumber:107}},
 showLoading&&
 _react2.default.createElement(_reactNative.ActivityIndicator,_extends({
 style:[
 clearIcon&&!isEmpty&&{marginRight:10},
 loadingStyle]},
 
-otherLoadingProps)),
+otherLoadingProps,{__source:{fileName:_jsxFileName,lineNumber:109}})),
 
 
 clearIcon&&
@@ -120,17 +120,17 @@ _react2.default.createElement(_Ionicons2.default,{
 name:'ios-close-circle',
 size:20,
 color:IOS_GRAY,
-onPress:function onPress(){return _this2.clear();}})),
+onPress:function onPress(){return _this2.clear();},__source:{fileName:_jsxFileName,lineNumber:119}})),
 
 
 
 
 rightIconContainerStyle:[
 styles.rightIconContainerStyle,
-rightIconContainerStyle]})),
+rightIconContainerStyle],__source:{fileName:_jsxFileName,lineNumber:88}})),
 
 
-_react2.default.createElement(_reactNative.Button,{title:cancelButtonTitle,onPress:this.cancel})));
+_react2.default.createElement(_reactNative.Button,{title:cancelButtonTitle,onPress:this.cancel,__source:{fileName:_jsxFileName,lineNumber:133}})));
 
 
 }}]);return SearchBar;}(_react.Component);

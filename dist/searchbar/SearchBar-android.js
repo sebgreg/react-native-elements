@@ -1,4 +1,4 @@
-Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName='src\\searchbar\\SearchBar-android.js';var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
 var _react=require('react');var _react2=_interopRequireDefault(_react);
 var _reactNative=require('react-native');
 
@@ -78,11 +78,11 @@ _react2.default.createElement(_MaterialCommunityIcons2.default,{
 size:25,
 color:ANDROID_GRAY,
 name:hasFocus?'arrow-left':'magnify',
-onPress:hasFocus?this.cancel:null});
+onPress:hasFocus?this.cancel:null,__source:{fileName:_jsxFileName,lineNumber:77}});
 
 
 return(
-_react2.default.createElement(_reactNative.View,{style:styles.container},
+_react2.default.createElement(_reactNative.View,{style:styles.container,__source:{fileName:_jsxFileName,lineNumber:85}},
 _react2.default.createElement(_Input2.default,_extends({},
 attributes,{
 onFocus:this.onFocus,
@@ -97,14 +97,14 @@ styles.leftIconContainerStyle,
 leftIconContainerStyle],
 
 rightIcon:
-_react2.default.createElement(_reactNative.View,{style:{flexDirection:'row'}},
+_react2.default.createElement(_reactNative.View,{style:{flexDirection:'row'},__source:{fileName:_jsxFileName,lineNumber:100}},
 showLoading&&
 _react2.default.createElement(_reactNative.ActivityIndicator,_extends({
 style:[
 clearIcon&&!isEmpty&&{marginRight:10},
 loadingStyle]},
 
-otherLoadingProps)),
+otherLoadingProps,{__source:{fileName:_jsxFileName,lineNumber:102}})),
 
 
 clearIcon&&
@@ -113,14 +113,14 @@ _react2.default.createElement(_MaterialCommunityIcons2.default,{
 name:'close',
 size:25,
 color:ANDROID_GRAY,
-onPress:function onPress(){return _this2.clear();}})),
+onPress:function onPress(){return _this2.clear();},__source:{fileName:_jsxFileName,lineNumber:112}})),
 
 
 
 
 rightIconContainerStyle:[
 styles.rightIconContainerStyle,
-rightIconContainerStyle]}))));
+rightIconContainerStyle],__source:{fileName:_jsxFileName,lineNumber:86}}))));
 
 
 

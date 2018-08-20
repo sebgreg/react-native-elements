@@ -1,4 +1,4 @@
-Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName='src\\input\\Input.js';var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
 var _react=require('react');var _react2=_interopRequireDefault(_react);
 
 var _reactNative=require('react-native');
@@ -66,13 +66,13 @@ outputRange:[0,-15,0,15,0,-15,0]});
 
 
 return(
-_react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_reactNative.View,{__source:{fileName:_jsxFileName,lineNumber:69}},
 _react2.default.createElement(_reactNative.Animated.View,{
 style:[
 styles.container,
 {width:SCREEN_WIDTH-100,height:40},
 containerStyle,
-{transform:[{translateX:translateX}]}]},
+{transform:[{translateX:translateX}]}],__source:{fileName:_jsxFileName,lineNumber:70}},
 
 
 leftIcon&&
@@ -80,7 +80,7 @@ _react2.default.createElement(_reactNative.View,{
 style:[
 styles.iconContainer,
 {marginLeft:15},
-leftIconContainerStyle]},
+leftIconContainerStyle],__source:{fileName:_jsxFileName,lineNumber:79}},
 
 
 leftIcon),
@@ -94,16 +94,16 @@ styles.input,
 {width:SCREEN_WIDTH-100,height:40},
 inputStyle]},
 
-attributes)),
+attributes,{__source:{fileName:_jsxFileName,lineNumber:89}})),
 
 rightIcon&&
-_react2.default.createElement(_reactNative.View,{style:[styles.iconContainer,rightIconContainerStyle]},
+_react2.default.createElement(_reactNative.View,{style:[styles.iconContainer,rightIconContainerStyle],__source:{fileName:_jsxFileName,lineNumber:100}},
 rightIcon)),
 
 
 
 displayError&&
-_react2.default.createElement(_reactNative.Text,{style:[styles.error,errorStyle&&errorStyle]},
+_react2.default.createElement(_reactNative.Text,{style:[styles.error,errorStyle&&errorStyle],__source:{fileName:_jsxFileName,lineNumber:106}},
 errorMessage||'Error!')));
 
 

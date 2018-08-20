@@ -1,4 +1,4 @@
-Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};
+Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName='src\\badge\\badge.js';
 var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
 var _react=require('react');var _react2=_interopRequireDefault(_react);
 var _reactNative=require('react-native');
@@ -22,7 +22,7 @@ if(element)return element;
 
 var Component=_reactNative.View;
 var childElement=
-_react2.default.createElement(_reactNative.Text,{style:[styles.text,textStyle&&textStyle]},value);
+_react2.default.createElement(_reactNative.Text,{style:[styles.text,textStyle&&textStyle],__source:{fileName:_jsxFileName,lineNumber:25}},value);
 
 
 if(children){
@@ -42,11 +42,11 @@ touchableProps={onPress:onPress};
 if(component)Component=component;
 
 return(
-_react2.default.createElement(_reactNative.View,{style:[styles.container&&wrapperStyle&&wrapperStyle]},
+_react2.default.createElement(_reactNative.View,{style:[styles.container&&wrapperStyle&&wrapperStyle],__source:{fileName:_jsxFileName,lineNumber:45}},
 _react2.default.createElement(Component,_extends({},
 attributes,{
 style:[styles.badge,containerStyle&&containerStyle]},
-touchableProps),
+touchableProps,{__source:{fileName:_jsxFileName,lineNumber:46}}),
 
 childElement)));
 

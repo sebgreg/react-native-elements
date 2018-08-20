@@ -1,4 +1,4 @@
-Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _react=require('react');var _react2=_interopRequireDefault(_react);
+Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName='src\\header\\Header.js';var _react=require('react');var _react2=_interopRequireDefault(_react);
 var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
 var _reactNative=require('react-native');
 var _lodash=require('lodash.isempty');var _lodash2=_interopRequireDefault(_lodash);
@@ -10,15 +10,15 @@ var _colors=require('../config/colors');var _colors2=_interopRequireDefault(_col
 
 function generateChild(value,type){
 if(_react2.default.isValidElement(value)){
-return _react2.default.createElement(_reactNative.View,{key:type},value);
+return _react2.default.createElement(_reactNative.View,{key:type,__source:{fileName:_jsxFileName,lineNumber:13}},value);
 }else if(typeof value==='object'&&!(0,_lodash2.default)(value)){
 return type==='center'?
-_react2.default.createElement(_Title2.default,_extends({},value,{key:type})):
+_react2.default.createElement(_Title2.default,_extends({},value,{key:type,__source:{fileName:_jsxFileName,lineNumber:16}})):
 
-_react2.default.createElement(_NavButton2.default,_extends({},value,{key:type}));
+_react2.default.createElement(_NavButton2.default,_extends({},value,{key:type,__source:{fileName:_jsxFileName,lineNumber:18}}));
 
 }
-return type==='center'?null:_react2.default.createElement(_DummyNavButton2.default,{key:type});
+return type==='center'?null:_react2.default.createElement(_DummyNavButton2.default,{key:type,__source:{fileName:_jsxFileName,lineNumber:21}});
 }
 
 function populateChildren(propChildren){
@@ -62,11 +62,11 @@ attributes,{
 style:[
 styles.outerContainer,
 backgroundColor&&{backgroundColor:backgroundColor},
-outerContainerStyles]}),
+outerContainerStyles],__source:{fileName:_jsxFileName,lineNumber:60}}),
 
 
-_react2.default.createElement(_reactNative.StatusBar,statusBarProps),
-_react2.default.createElement(_reactNative.View,{style:[styles.innerContainer,innerContainerStyles]},
+_react2.default.createElement(_reactNative.StatusBar,_extends({},statusBarProps,{__source:{fileName:_jsxFileName,lineNumber:68}})),
+_react2.default.createElement(_reactNative.View,{style:[styles.innerContainer,innerContainerStyles],__source:{fileName:_jsxFileName,lineNumber:69}},
 propChildren.length>0?propChildren:children)));
 
 

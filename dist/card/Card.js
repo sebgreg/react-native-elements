@@ -1,4 +1,4 @@
-Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName='src\\card\\Card.js';var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
 var _react=require('react');var _react2=_interopRequireDefault(_react);
 var _reactNative=require('react-native');
 
@@ -44,20 +44,20 @@ attributes,{
 style:[
 styles.container,
 image&&{padding:0},
-containerStyle&&containerStyle]}),
+containerStyle&&containerStyle],__source:{fileName:_jsxFileName,lineNumber:42}}),
 
 
 _react2.default.createElement(_reactNative.View,{
 style:[
 styles.wrapper,
 wrapperStyle&&wrapperStyle,
-flexDirection&&{flexDirection:flexDirection}]},
+flexDirection&&{flexDirection:flexDirection}],__source:{fileName:_jsxFileName,lineNumber:50}},
 
 
 title===''||
 title&&
 title.length>0&&
-_react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_reactNative.View,{__source:{fileName:_jsxFileName,lineNumber:60}},
 _react2.default.createElement(_Text2.default,{
 style:[
 styles.cardTitle,
@@ -65,31 +65,31 @@ image&&styles.imageCardTitle,
 titleStyle&&titleStyle,
 fontFamily&&{fontFamily:fontFamily}],
 
-numberOfLines:titleNumberOfLines},
+numberOfLines:titleNumberOfLines,__source:{fileName:_jsxFileName,lineNumber:61}},
 
 title),
 
 !image&&
 _react2.default.createElement(_Divider2.default,{
-style:[styles.divider,dividerStyle&&dividerStyle]})),
+style:[styles.divider,dividerStyle&&dividerStyle],__source:{fileName:_jsxFileName,lineNumber:73}})),
 
 
 
 
 image&&
-_react2.default.createElement(_reactNative.View,{style:imageWrapperStyle&&imageWrapperStyle},
+_react2.default.createElement(_reactNative.View,{style:imageWrapperStyle&&imageWrapperStyle,__source:{fileName:_jsxFileName,lineNumber:80}},
 _react2.default.createElement(_BackgroundImage2.default,_extends({
 style:[{width:null,height:150},imageStyle&&imageStyle],
 source:image},
-imageProps),
+imageProps,{__source:{fileName:_jsxFileName,lineNumber:81}}),
 
 (featuredTitle||featuredSubtitle)&&
-_react2.default.createElement(_reactNative.View,{style:styles.overlayContainer},
+_react2.default.createElement(_reactNative.View,{style:styles.overlayContainer,__source:{fileName:_jsxFileName,lineNumber:87}},
 featuredTitle&&
 _react2.default.createElement(_Text2.default,{
 style:[
 styles.featuredTitle,
-featuredTitleStyle&&featuredTitleStyle]},
+featuredTitleStyle&&featuredTitleStyle],__source:{fileName:_jsxFileName,lineNumber:89}},
 
 
 featuredTitle),
@@ -99,7 +99,7 @@ featuredSubtitle&&
 _react2.default.createElement(_Text2.default,{
 style:[
 styles.featuredSubtitle,
-featuredSubtitleStyle&&featuredSubtitleStyle]},
+featuredSubtitleStyle&&featuredSubtitleStyle],__source:{fileName:_jsxFileName,lineNumber:99}},
 
 
 featuredSubtitle))),
@@ -108,7 +108,7 @@ featuredSubtitle))),
 
 
 
-_react2.default.createElement(_reactNative.View,{style:[{padding:10},wrapperStyle&&wrapperStyle]},
+_react2.default.createElement(_reactNative.View,{style:[{padding:10},wrapperStyle&&wrapperStyle],__source:{fileName:_jsxFileName,lineNumber:111}},
 children)),
 
 

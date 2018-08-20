@@ -1,4 +1,4 @@
-Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName='src\\searchbar\\SearchBar.js';var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
 var _react=require('react');var _react2=_interopRequireDefault(_react);
 var _SearchBarIos=require('./SearchBar-ios');var _SearchBarIos2=_interopRequireDefault(_SearchBarIos);
 var _SearchBarAndroid=require('./SearchBar-android');var _SearchBarAndroid2=_interopRequireDefault(_SearchBarAndroid);
@@ -14,7 +14,7 @@ SearchBar=function(_Component){_inherits(SearchBar,_Component);function SearchBa
 
 {
 var SearchBar=SEARCHBAR_COMPONENTS[this.props.platform]||_SearchBarDefault2.default;
-return _react2.default.createElement(SearchBar,this.props);
+return _react2.default.createElement(SearchBar,_extends({},this.props,{__source:{fileName:_jsxFileName,lineNumber:17}}));
 }}]);return SearchBar;}(_react.Component);
 
 

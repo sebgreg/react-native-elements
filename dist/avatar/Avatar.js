@@ -1,4 +1,4 @@
-Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName='src\\avatar\\Avatar.js';var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
 var _react=require('react');var _react2=_interopRequireDefault(_react);
 var _reactNative=require('react-native');
 
@@ -101,14 +101,14 @@ editButtonSizeStyle,
 editButtonProps.style],
 
 underlayColor:editButtonProps.underlayColor,
-onPress:onEditPress},
+onPress:onEditPress,__source:{fileName:_jsxFileName,lineNumber:97}},
 
-_react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_reactNative.View,{__source:{fileName:_jsxFileName,lineNumber:106}},
 _react2.default.createElement(_Icon2.default,{
 size:editButtonIconSize,
 name:editButtonProps.iconName,
 type:editButtonProps.iconType,
-color:editButtonProps.iconColor}))));
+color:editButtonProps.iconColor,__source:{fileName:_jsxFileName,lineNumber:107}}))));
 
 
 
@@ -126,12 +126,12 @@ rounded&&{borderRadius:width/2},
 avatarStyle&&avatarStyle],
 
 source:source,
-draggable:false}));
+draggable:false,__source:{fileName:_jsxFileName,lineNumber:122}}));
 
 
 }else if(title){
 return(
-_react2.default.createElement(_reactNative.Text,{style:[styles.title,titleStyle&&titleStyle]},title));
+_react2.default.createElement(_reactNative.Text,{style:[styles.title,titleStyle&&titleStyle],__source:{fileName:_jsxFileName,lineNumber:134}},title));
 
 }else if(icon){
 return(
@@ -140,7 +140,7 @@ iconStyle:iconStyle&&iconStyle,
 color:icon.color||'white',
 name:icon.name||'user',
 size:icon.size||iconSize,
-type:icon.type&&icon.type}));
+type:icon.type&&icon.type,__source:{fileName:_jsxFileName,lineNumber:138}}));
 
 
 }
@@ -202,13 +202,13 @@ styles.container,
 rounded&&{borderRadius:width/2},
 containerStyle&&containerStyle]},
 
-attributes),
+attributes,{__source:{fileName:_jsxFileName,lineNumber:198}}),
 
 _react2.default.createElement(_reactNative.View,{
 style:[
 styles.overlayContainer,
 rounded&&{borderRadius:width/2},
-overlayContainerStyle&&overlayContainerStyle]},
+overlayContainerStyle&&overlayContainerStyle],__source:{fileName:_jsxFileName,lineNumber:207}},
 
 
 renderContent(),

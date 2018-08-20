@@ -1,4 +1,4 @@
-Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName='src\\checkbox\\CheckBox.js';var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
 var _react=require('react');var _react2=_interopRequireDefault(_react);
 var _reactNative=require('react-native');
 
@@ -56,14 +56,14 @@ onPress:onPress,
 style:[
 styles.container,
 title&&styles.containerHasTitle,
-containerStyle&&containerStyle]}),
+containerStyle&&containerStyle],__source:{fileName:_jsxFileName,lineNumber:52}}),
 
 
 _react2.default.createElement(_reactNative.View,{
 style:[
 styles.wrapper,
 right&&{justifyContent:'flex-end'},
-center&&{justifyContent:'center'}]},
+center&&{justifyContent:'center'}],__source:{fileName:_jsxFileName,lineNumber:62}},
 
 
 !iconRight&&
@@ -73,7 +73,7 @@ name:iconName,
 size:size||24,
 style:{minWidth:size||24},
 onLongPress:onLongIconPress,
-onPress:onIconPress}),
+onPress:onIconPress,__source:{fileName:_jsxFileName,lineNumber:70}}),
 
 
 
@@ -84,7 +84,7 @@ _react2.default.createElement(_Text2.default,{
 style:[
 styles.text,
 textStyle&&textStyle,
-fontFamily&&{fontFamily:fontFamily}]},
+fontFamily&&{fontFamily:fontFamily}],__source:{fileName:_jsxFileName,lineNumber:83}},
 
 
 checked?checkedTitle||title:title),
@@ -98,7 +98,7 @@ name:iconName,
 size:size||24,
 style:{minWidth:size||24},
 onLongPress:onLongIconPress,
-onPress:onIconPress}))));
+onPress:onIconPress,__source:{fileName:_jsxFileName,lineNumber:95}}))));
 
 
 

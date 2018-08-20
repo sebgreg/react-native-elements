@@ -1,4 +1,4 @@
-Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName='src\\tile\\FeaturedTile.js';var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
 var _react=require('react');var _react2=_interopRequireDefault(_react);
 var _reactNative=require('react-native');
 
@@ -81,7 +81,7 @@ alignSelf:'center'}});
 return(
 _react2.default.createElement(_reactNative.TouchableOpacity,_extends({},
 attributes,{
-style:[styles.container,containerStyle&&containerStyle]}),
+style:[styles.container,containerStyle&&containerStyle],__source:{fileName:_jsxFileName,lineNumber:82}}),
 
 _react2.default.createElement(_BackgroundImage2.default,{
 source:imageSrc,
@@ -89,26 +89,26 @@ style:[
 styles.imageContainer,
 imageContainerStyle&&imageContainerStyle],
 
-resizeMode:'cover'},
+resizeMode:'cover',__source:{fileName:_jsxFileName,lineNumber:86}},
 
 _react2.default.createElement(_reactNative.View,{
 style:[
 styles.overlayContainer,
-overlayContainerStyle&&overlayContainerStyle]},
+overlayContainerStyle&&overlayContainerStyle],__source:{fileName:_jsxFileName,lineNumber:94}},
 
 
 _react2.default.createElement(_reactNative.View,{
 style:[
 styles.iconContainer,
-iconContainerStyle&&iconContainerStyle]},
+iconContainerStyle&&iconContainerStyle],__source:{fileName:_jsxFileName,lineNumber:100}},
 
 
-icon&&_react2.default.createElement(_Icon2.default,icon)),
+icon&&_react2.default.createElement(_Icon2.default,_extends({},icon,{__source:{fileName:_jsxFileName,lineNumber:106}}))),
 
-_react2.default.createElement(_Text2.default,{h4:true,style:[styles.text,titleStyle&&titleStyle]},
+_react2.default.createElement(_Text2.default,{h4:true,style:[styles.text,titleStyle&&titleStyle],__source:{fileName:_jsxFileName,lineNumber:108}},
 title),
 
-_react2.default.createElement(_Text2.default,{style:[styles.text,captionStyle&&captionStyle]},
+_react2.default.createElement(_Text2.default,{style:[styles.text,captionStyle&&captionStyle],__source:{fileName:_jsxFileName,lineNumber:111}},
 caption)))));
 
 
@@ -121,7 +121,7 @@ FeaturedTile.propTypes={
 title:_propTypes2.default.string,
 icon:_propTypes2.default.object,
 caption:_propTypes2.default.string,
-imageSrc:_reactNative.Image.propTypes.source.isRequired,
+imageSrc:_reactNative.Image.propTypes.source,
 onPress:_propTypes2.default.func,
 containerStyle:_ViewPropTypes2.default.style,
 iconContainerStyle:_ViewPropTypes2.default.style,
