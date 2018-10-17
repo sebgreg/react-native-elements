@@ -49,6 +49,9 @@ class Button extends Component {
       icon,
       iconContainerStyle,
       iconRight,
+      disabled,
+      disabledStyle,
+      disabledTextStyle,
       linearGradientProps,
       ...attributes
     } = this.props;
@@ -56,12 +59,13 @@ class Button extends Component {
     return (
       <View style={[styles.container, containerStyle]}>
         <TouchableComponent
+          {...attributes} 
           onPress={onPress}
           activeOpacity={clear ? 0 : undefined}
           style={{
             borderRadius: buttonStyle.borderRadius,
           }}
-          {...attributes}
+          disabled={disabled}
         >
           <ViewComponent
             {...linearGradientProps}
@@ -76,6 +80,8 @@ class Button extends Component {
               },
               buttonStyle,
               linearGradientProps && { backgroundColor: 'transparent' },
+              disabled && styles.disabled,
+              disabled && disabledStyle,
             ]}
           >
             {loading && (
@@ -94,10 +100,18 @@ class Button extends Component {
                   {icon}
                 </View>
               )}
-            {!loading && (
-              <Text style={[styles.text, textStyle]} {...textProps}>
-                {text}
-              </Text>
+            {!loading && 
+              !!text && (
+                <Text style={[
+                  styles.text, 
+                  textStyle,                   
+                  disabled && styles.disabledText,
+                  disabled && disabledTextStyle
+                  ]} 
+                  {...textProps}
+                  >
+                  {text}
+                </Text>
             )}
             {!loading &&
               icon &&
@@ -130,6 +144,9 @@ Button.propTypes = {
   linearGradientProps: PropTypes.object,
   TouchableComponent: PropTypes.any,
   ViewComponent: PropTypes.any,
+  disabled: PropTypes.bool,
+  disabledStyle: ViewPropTypes.style,
+  disabledTextStyle: Text.propTypes.style,
 };
 
 Button.defaultProps = {
@@ -146,6 +163,7 @@ Button.defaultProps = {
   buttonStyle: {
     borderRadius: 3,
   },
+  disabled: false,
 };
 
 const styles = StyleSheet.create({
@@ -171,6 +189,18 @@ const styles = StyleSheet.create({
     }),
   },
   loading: {
+    padding: 8,
+  },
+  disabled: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#D1D5D8',
+  },
+  disabledText: {
+    color: '#F3F4F5',
+    fontSize: 16,
+    textAlign: 'center',
     padding: 8,
   },
   text: {
