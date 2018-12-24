@@ -15,6 +15,7 @@ import {
 
 import Text from '../text/Text';
 import ViewPropTypes from '../config/ViewPropTypes';
+import ImagePropTypes from '../config/ImagePropTypes';
 
 const STAR_IMAGE = require('./images/star.png');
 const HEART_IMAGE = require('./images/heart.png');
@@ -316,7 +317,7 @@ const fractionsType = (props, propName, componentName) => {
 
 Rating.propTypes = {
   type: PropTypes.string,
-  ratingImage: Image.propTypes.source,
+  ratingImage: ImagePropTypes.source,
   ratingColor: PropTypes.string,
   ratingBackgroundColor: PropTypes.string,
   ratingCount: PropTypes.number,

@@ -51,17 +51,21 @@ console.error('You need to pass a ViewComponent to use linearGradientProps !\nEx
 
 
 
-this.props,ViewComponent=_props.ViewComponent,TouchableComponent=_props.TouchableComponent,containerStyle=_props.containerStyle,onPress=_props.onPress,buttonStyle=_props.buttonStyle,clear=_props.clear,loading=_props.loading,loadingStyle=_props.loadingStyle,loadingProps=_props.loadingProps,text=_props.text,textStyle=_props.textStyle,textProps=_props.textProps,icon=_props.icon,iconContainerStyle=_props.iconContainerStyle,iconRight=_props.iconRight,linearGradientProps=_props.linearGradientProps,attributes=_objectWithoutProperties(_props,['ViewComponent','TouchableComponent','containerStyle','onPress','buttonStyle','clear','loading','loadingStyle','loadingProps','text','textStyle','textProps','icon','iconContainerStyle','iconRight','linearGradientProps']);
+
+
+
+this.props,ViewComponent=_props.ViewComponent,TouchableComponent=_props.TouchableComponent,containerStyle=_props.containerStyle,onPress=_props.onPress,buttonStyle=_props.buttonStyle,clear=_props.clear,loading=_props.loading,loadingStyle=_props.loadingStyle,loadingProps=_props.loadingProps,text=_props.text,textStyle=_props.textStyle,textProps=_props.textProps,icon=_props.icon,iconContainerStyle=_props.iconContainerStyle,iconRight=_props.iconRight,disabled=_props.disabled,disabledStyle=_props.disabledStyle,disabledTextStyle=_props.disabledTextStyle,linearGradientProps=_props.linearGradientProps,attributes=_objectWithoutProperties(_props,['ViewComponent','TouchableComponent','containerStyle','onPress','buttonStyle','clear','loading','loadingStyle','loadingProps','text','textStyle','textProps','icon','iconContainerStyle','iconRight','disabled','disabledStyle','disabledTextStyle','linearGradientProps']);
 
 return(
-_react2.default.createElement(_reactNative.View,{style:[styles.container,containerStyle],__source:{fileName:_jsxFileName,lineNumber:57}},
-_react2.default.createElement(TouchableComponent,_extends({
+_react2.default.createElement(_reactNative.View,{style:[styles.container,containerStyle],__source:{fileName:_jsxFileName,lineNumber:60}},
+_react2.default.createElement(TouchableComponent,_extends({},
+attributes,{
 onPress:onPress,
 activeOpacity:clear?0:undefined,
 style:{
-borderRadius:buttonStyle.borderRadius}},
+borderRadius:buttonStyle.borderRadius},
 
-attributes,{__source:{fileName:_jsxFileName,lineNumber:58}}),
+disabled:disabled,__source:{fileName:_jsxFileName,lineNumber:61}}),
 
 _react2.default.createElement(ViewComponent,_extends({},
 linearGradientProps,{
@@ -75,7 +79,9 @@ web:_elevation2.default.web.zero})),
 
 
 buttonStyle,
-linearGradientProps&&{backgroundColor:'transparent'}],__source:{fileName:_jsxFileName,lineNumber:66}}),
+linearGradientProps&&{backgroundColor:'transparent'},
+disabled&&styles.disabled,
+disabled&&disabledStyle],__source:{fileName:_jsxFileName,lineNumber:70}}),
 
 
 loading&&
@@ -84,25 +90,33 @@ animating:true,
 style:[styles.loading,loadingStyle],
 color:loadingProps.color,
 size:loadingProps.size},
-loadingProps,{__source:{fileName:_jsxFileName,lineNumber:82}})),
+loadingProps,{__source:{fileName:_jsxFileName,lineNumber:88}})),
 
 
 !loading&&
 icon&&
 !iconRight&&
-_react2.default.createElement(_reactNative.View,{style:[styles.iconContainer,iconContainerStyle],__source:{fileName:_jsxFileName,lineNumber:93}},
+_react2.default.createElement(_reactNative.View,{style:[styles.iconContainer,iconContainerStyle],__source:{fileName:_jsxFileName,lineNumber:99}},
 icon),
 
 
 !loading&&
-_react2.default.createElement(_reactNative.Text,_extends({style:[styles.text,textStyle]},textProps,{__source:{fileName:_jsxFileName,lineNumber:98}}),
+!!text&&
+_react2.default.createElement(_reactNative.Text,_extends({style:[
+styles.text,
+textStyle,
+disabled&&styles.disabledText,
+disabled&&disabledTextStyle]},
+
+textProps,{__source:{fileName:_jsxFileName,lineNumber:105}}),
+
 text),
 
 
 !loading&&
 icon&&
 iconRight&&
-_react2.default.createElement(_reactNative.View,{style:[styles.iconContainer,iconContainerStyle],__source:{fileName:_jsxFileName,lineNumber:105}},
+_react2.default.createElement(_reactNative.View,{style:[styles.iconContainer,iconContainerStyle],__source:{fileName:_jsxFileName,lineNumber:119}},
 icon)))));
 
 
@@ -129,7 +143,10 @@ iconContainerStyle:_ViewPropTypes2.default.style,
 iconRight:_propTypes2.default.bool,
 linearGradientProps:_propTypes2.default.object,
 TouchableComponent:_propTypes2.default.any,
-ViewComponent:_propTypes2.default.any};
+ViewComponent:_propTypes2.default.any,
+disabled:_propTypes2.default.bool,
+disabledStyle:_ViewPropTypes2.default.style,
+disabledTextStyle:_reactNative.Text.propTypes.style};
 
 
 Button.defaultProps={
@@ -144,8 +161,9 @@ color:'white',
 size:'small'},
 
 buttonStyle:{
-borderRadius:3}};
+borderRadius:3},
 
+disabled:false};
 
 
 var styles=_reactNative.StyleSheet.create({
@@ -171,6 +189,18 @@ _elevation2.default.web.two)})),
 
 
 loading:{
+padding:8},
+
+disabled:{
+flexDirection:'row',
+justifyContent:'center',
+alignItems:'center',
+backgroundColor:'#D1D5D8'},
+
+disabledText:{
+color:'#F3F4F5',
+fontSize:16,
+textAlign:'center',
 padding:8},
 
 text:_extends({

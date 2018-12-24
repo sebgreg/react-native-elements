@@ -4,7 +4,6 @@ import {
   View,
   StyleSheet,
   Platform,
-  Image,
   Text as NativeText,
 } from 'react-native';
 import fonts from '../config/fonts';
@@ -14,6 +13,7 @@ import Divider from '../divider/Divider';
 import normalize from '../helpers/normalizeText';
 import elevation from '../config/elevation';
 import ViewPropTypes from '../config/ViewPropTypes';
+import ImagePropTypes from '../config/ImagePropTypes';
 import BackgroundImage from '../config/BackgroundImage';
 
 const Card = props => {
@@ -132,7 +132,7 @@ Card.propTypes = {
   featuredSubtitle: PropTypes.string,
   featuredSubtitleStyle: Text.propTypes.style,
   dividerStyle: ViewPropTypes.style,
-  image: Image.propTypes.source,
+  image: ImagePropTypes.source,
   imageStyle: ViewPropTypes.style,
   imageWrapperStyle: ViewPropTypes.style,
   fontFamily: PropTypes.string,

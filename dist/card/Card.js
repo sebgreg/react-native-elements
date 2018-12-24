@@ -6,7 +6,6 @@ var _reactNative=require('react-native');
 
 
 
-
 var _fonts=require('../config/fonts');var _fonts2=_interopRequireDefault(_fonts);
 var _colors=require('../config/colors');var _colors2=_interopRequireDefault(_colors);
 var _Text=require('../text/Text');var _Text2=_interopRequireDefault(_Text);
@@ -14,6 +13,7 @@ var _Divider=require('../divider/Divider');var _Divider2=_interopRequireDefault(
 var _normalizeText=require('../helpers/normalizeText');var _normalizeText2=_interopRequireDefault(_normalizeText);
 var _elevation=require('../config/elevation');var _elevation2=_interopRequireDefault(_elevation);
 var _ViewPropTypes=require('../config/ViewPropTypes');var _ViewPropTypes2=_interopRequireDefault(_ViewPropTypes);
+var _ImagePropTypes=require('../config/ImagePropTypes');var _ImagePropTypes2=_interopRequireDefault(_ImagePropTypes);
 var _BackgroundImage=require('../config/BackgroundImage');var _BackgroundImage2=_interopRequireDefault(_BackgroundImage);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _objectWithoutProperties(obj,keys){var target={};for(var i in obj){if(keys.indexOf(i)>=0)continue;if(!Object.prototype.hasOwnProperty.call(obj,i))continue;target[i]=obj[i];}return target;}
 
 var Card=function Card(props){var
@@ -132,7 +132,7 @@ featuredTitleStyle:_Text2.default.propTypes.style,
 featuredSubtitle:_propTypes2.default.string,
 featuredSubtitleStyle:_Text2.default.propTypes.style,
 dividerStyle:_ViewPropTypes2.default.style,
-image:_reactNative.Image.propTypes.source,
+image:_ImagePropTypes2.default.source,
 imageStyle:_ViewPropTypes2.default.style,
 imageWrapperStyle:_ViewPropTypes2.default.style,
 fontFamily:_propTypes2.default.string,

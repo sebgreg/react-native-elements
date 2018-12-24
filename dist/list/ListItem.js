@@ -9,7 +9,6 @@ var _reactNative=require('react-native');
 
 
 
-
 var _Avatar=require('../avatar/Avatar');var _Avatar2=_interopRequireDefault(_Avatar);
 var _badge=require('../badge/badge');var _badge2=_interopRequireDefault(_badge);
 var _Icon=require('../icons/Icon');var _Icon2=_interopRequireDefault(_Icon);
@@ -17,7 +16,8 @@ var _Text=require('../text/Text');var _Text2=_interopRequireDefault(_Text);
 var _colors=require('../config/colors');var _colors2=_interopRequireDefault(_colors);
 var _fonts=require('../config/fonts');var _fonts2=_interopRequireDefault(_fonts);
 var _normalizeText=require('../helpers/normalizeText');var _normalizeText2=_interopRequireDefault(_normalizeText);
-var _ViewPropTypes=require('../config/ViewPropTypes');var _ViewPropTypes2=_interopRequireDefault(_ViewPropTypes);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _objectWithoutProperties(obj,keys){var target={};for(var i in obj){if(keys.indexOf(i)>=0)continue;if(!Object.prototype.hasOwnProperty.call(obj,i))continue;target[i]=obj[i];}return target;}
+var _ViewPropTypes=require('../config/ViewPropTypes');var _ViewPropTypes2=_interopRequireDefault(_ViewPropTypes);
+var _ImagePropTypes=require('../config/ImagePropTypes');var _ImagePropTypes2=_interopRequireDefault(_ImagePropTypes);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _objectWithoutProperties(obj,keys){var target={};for(var i in obj){if(keys.indexOf(i)>=0)continue;if(!Object.prototype.hasOwnProperty.call(obj,i))continue;target[i]=obj[i];}return target;}
 
 var ListItem=function ListItem(props){var
 
@@ -382,7 +382,7 @@ leftIconOnPress:_propTypes2.default.func,
 leftIconOnLongPress:_propTypes2.default.func,
 leftIconUnderlayColor:_propTypes2.default.string,
 leftIconContainerStyle:_ViewPropTypes2.default.style,
-avatarStyle:_reactNative.Image.propTypes.style,
+avatarStyle:_ImagePropTypes2.default.style,
 avatarContainerStyle:_ViewPropTypes2.default.style,
 avatarOverlayContainerStyle:_ViewPropTypes2.default.style,
 onPressRightIcon:_propTypes2.default.func,

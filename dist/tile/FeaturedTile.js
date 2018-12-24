@@ -7,10 +7,10 @@ var _reactNative=require('react-native');
 
 
 
-
 var _Text=require('../text/Text');var _Text2=_interopRequireDefault(_Text);
 var _Icon=require('../icons/Icon');var _Icon2=_interopRequireDefault(_Icon);
 var _ViewPropTypes=require('../config/ViewPropTypes');var _ViewPropTypes2=_interopRequireDefault(_ViewPropTypes);
+var _ImagePropTypes=require('../config/ImagePropTypes');var _ImagePropTypes2=_interopRequireDefault(_ImagePropTypes);
 var _BackgroundImage=require('../config/BackgroundImage');var _BackgroundImage2=_interopRequireDefault(_BackgroundImage);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _objectWithoutProperties(obj,keys){var target={};for(var i in obj){if(keys.indexOf(i)>=0)continue;if(!Object.prototype.hasOwnProperty.call(obj,i))continue;target[i]=obj[i];}return target;}
 
 var FeaturedTile=function FeaturedTile(props){var
@@ -121,7 +121,7 @@ FeaturedTile.propTypes={
 title:_propTypes2.default.string,
 icon:_propTypes2.default.object,
 caption:_propTypes2.default.string,
-imageSrc:_reactNative.Image.propTypes.source,
+imageSrc:_ImagePropTypes2.default.source,
 onPress:_propTypes2.default.func,
 containerStyle:_ViewPropTypes2.default.style,
 iconContainerStyle:_ViewPropTypes2.default.style,

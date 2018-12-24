@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/config/ImagePropTypes.js"],"names":["ImagePropTypes","propTypes"],"mappings":"yDAAA;;AAEA,GAAMA,gBAAiB,mBAAMC,SAAN,EAAmB,EAA1C,C;;AAEeD,c","file":"ImagePropTypes.js","sourcesContent":["import { Image } from 'react-native';\n\nconst ImagePropTypes = Image.propTypes || {};\n\nexport default ImagePropTypes;\n"]}

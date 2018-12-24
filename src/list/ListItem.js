@@ -7,7 +7,6 @@ import {
   TouchableOpacity,
   Platform,
   Switch,
-  Image,
   TextInput,
 } from 'react-native';
 import Avatar from '../avatar/Avatar';
@@ -18,6 +17,7 @@ import colors from '../config/colors';
 import fonts from '../config/fonts';
 import normalize from '../helpers/normalizeText';
 import ViewPropTypes from '../config/ViewPropTypes';
+import ImagePropTypes from '../config/ImagePropTypes';
 
 const ListItem = props => {
   const {
@@ -382,7 +382,7 @@ ListItem.propTypes = {
   leftIconOnLongPress: PropTypes.func,
   leftIconUnderlayColor: PropTypes.string,
   leftIconContainerStyle: ViewPropTypes.style,
-  avatarStyle: Image.propTypes.style,
+  avatarStyle: ImagePropTypes.style,
   avatarContainerStyle: ViewPropTypes.style,
   avatarOverlayContainerStyle: ViewPropTypes.style,
   onPressRightIcon: PropTypes.func,

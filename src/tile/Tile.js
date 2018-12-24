@@ -5,13 +5,13 @@ import {
   Text as NativeText,
   StyleSheet,
   Dimensions,
-  Image,
   TouchableOpacity,
 } from 'react-native';
 import Text from '../text/Text';
 import Icon from '../icons/Icon';
 import FeaturedTile from './FeaturedTile';
 import ViewPropTypes from '../config/ViewPropTypes';
+import ImagePropTypes from '../config/ImagePropTypes';
 import BackgroundImage from '../config/BackgroundImage';
 
 const Tile = props => {
@@ -139,7 +139,7 @@ Tile.propTypes = {
   title: PropTypes.string,
   icon: PropTypes.object,
   caption: PropTypes.string,
-  imageSrc: Image.propTypes.source,
+  imageSrc: ImagePropTypes.source,
   onPress: PropTypes.func,
   activeOpacity: PropTypes.number,
   containerStyle: ViewPropTypes.style,

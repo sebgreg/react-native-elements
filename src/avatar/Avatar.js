@@ -13,6 +13,7 @@ import {
 } from 'react-native';
 import elevation from '../config/elevation';
 import ViewPropTypes from '../config/ViewPropTypes';
+import ImagePropTypes from '../config/ImagePropTypes';
 
 import Icon from '../icons/Icon';
 
@@ -238,7 +239,7 @@ Avatar.propTypes = {
   onPress: PropTypes.func,
   onLongPress: PropTypes.func,
   containerStyle: PropTypes.any,
-  source: Image.propTypes.source,
+  source: ImagePropTypes.source,
   avatarStyle: PropTypes.any,
   rounded: PropTypes.bool,
   title: PropTypes.string,

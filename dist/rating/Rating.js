@@ -14,7 +14,8 @@ var _reactNative=require('react-native');
 
 
 var _Text=require('../text/Text');var _Text2=_interopRequireDefault(_Text);
-var _ViewPropTypes=require('../config/ViewPropTypes');var _ViewPropTypes2=_interopRequireDefault(_ViewPropTypes);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}
+var _ViewPropTypes=require('../config/ViewPropTypes');var _ViewPropTypes2=_interopRequireDefault(_ViewPropTypes);
+var _ImagePropTypes=require('../config/ImagePropTypes');var _ImagePropTypes2=_interopRequireDefault(_ImagePropTypes);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}
 
 var STAR_IMAGE=require('./images/star.png');
 var HEART_IMAGE=require('./images/heart.png');
@@ -154,12 +155,12 @@ this.props,imageSize=_props4.imageSize,ratingCount=_props4.ratingCount,type=_pro
 var source=TYPES[type].source;
 
 return(0,_lodash2.default)(ratingCount,function(index){return(
-_react2.default.createElement(_reactNative.View,{key:index,style:styles.starContainer,pointerEvents:'none',__source:{fileName:_jsxFileName,lineNumber:157}},
+_react2.default.createElement(_reactNative.View,{key:index,style:styles.starContainer,pointerEvents:'none',__source:{fileName:_jsxFileName,lineNumber:158}},
 _react2.default.createElement(_reactNative.Image,{
 source:source,
 style:{width:imageSize,height:imageSize},
 pointerEvents:'none',
-draggable:false,__source:{fileName:_jsxFileName,lineNumber:158}})));});
+draggable:false,__source:{fileName:_jsxFileName,lineNumber:159}})));});
 
 
 
@@ -195,16 +196,16 @@ this.props,ratingCount=_props7.ratingCount,type=_props7.type,readonly=_props7.re
 var color=TYPES[type].color;
 
 return(
-_react2.default.createElement(_reactNative.View,{style:styles.showRatingView,__source:{fileName:_jsxFileName,lineNumber:198}},
-_react2.default.createElement(_reactNative.View,{style:styles.ratingView,__source:{fileName:_jsxFileName,lineNumber:199}},
-_react2.default.createElement(_Text2.default,{style:styles.ratingText,__source:{fileName:_jsxFileName,lineNumber:200}},'Rating: '),
-_react2.default.createElement(_Text2.default,{style:[styles.currentRatingText,{color:color}],__source:{fileName:_jsxFileName,lineNumber:201}},
+_react2.default.createElement(_reactNative.View,{style:styles.showRatingView,__source:{fileName:_jsxFileName,lineNumber:199}},
+_react2.default.createElement(_reactNative.View,{style:styles.ratingView,__source:{fileName:_jsxFileName,lineNumber:200}},
+_react2.default.createElement(_Text2.default,{style:styles.ratingText,__source:{fileName:_jsxFileName,lineNumber:201}},'Rating: '),
+_react2.default.createElement(_Text2.default,{style:[styles.currentRatingText,{color:color}],__source:{fileName:_jsxFileName,lineNumber:202}},
 this.state.rating),
 
-_react2.default.createElement(_Text2.default,{style:styles.maxRatingText,__source:{fileName:_jsxFileName,lineNumber:204}},'/',ratingCount)),
+_react2.default.createElement(_Text2.default,{style:styles.maxRatingText,__source:{fileName:_jsxFileName,lineNumber:205}},'/',ratingCount)),
 
-_react2.default.createElement(_reactNative.View,{__source:{fileName:_jsxFileName,lineNumber:206}},
-readonly&&_react2.default.createElement(_Text2.default,{style:styles.readonlyLabel,__source:{fileName:_jsxFileName,lineNumber:207}},'(readonly)'))));
+_react2.default.createElement(_reactNative.View,{__source:{fileName:_jsxFileName,lineNumber:207}},
+readonly&&_react2.default.createElement(_Text2.default,{style:styles.readonlyLabel,__source:{fileName:_jsxFileName,lineNumber:208}},'(readonly)'))));
 
 
 
@@ -231,15 +232,15 @@ TYPES.custom=custom;
 }
 
 return(
-_react2.default.createElement(_reactNative.View,{pointerEvents:readonly?'none':'box-none',style:style,__source:{fileName:_jsxFileName,lineNumber:234}},
+_react2.default.createElement(_reactNative.View,{pointerEvents:readonly?'none':'box-none',style:style,__source:{fileName:_jsxFileName,lineNumber:235}},
 showRating&&this.displayCurrentRating(),
 _react2.default.createElement(_reactNative.View,_extends({
 style:styles.starsWrapper},
-this.state.panResponder.panHandlers,{__source:{fileName:_jsxFileName,lineNumber:236}}),
+this.state.panResponder.panHandlers,{__source:{fileName:_jsxFileName,lineNumber:237}}),
 
-_react2.default.createElement(_reactNative.View,{style:styles.starsInsideWrapper,pointerEvents:'none',__source:{fileName:_jsxFileName,lineNumber:240}},
-_react2.default.createElement(_reactNative.Animated.View,{style:this.getPrimaryViewStyle(),__source:{fileName:_jsxFileName,lineNumber:241}}),
-_react2.default.createElement(_reactNative.Animated.View,{style:this.getSecondaryViewStyle(),__source:{fileName:_jsxFileName,lineNumber:242}})),
+_react2.default.createElement(_reactNative.View,{style:styles.starsInsideWrapper,pointerEvents:'none',__source:{fileName:_jsxFileName,lineNumber:241}},
+_react2.default.createElement(_reactNative.Animated.View,{style:this.getPrimaryViewStyle(),__source:{fileName:_jsxFileName,lineNumber:242}}),
+_react2.default.createElement(_reactNative.Animated.View,{style:this.getSecondaryViewStyle(),__source:{fileName:_jsxFileName,lineNumber:243}})),
 
 this.renderRatings())));
 
@@ -316,7 +317,7 @@ propName+'` in `'+componentName+'` must be a number');
 
 Rating.propTypes={
 type:_propTypes2.default.string,
-ratingImage:_reactNative.Image.propTypes.source,
+ratingImage:_ImagePropTypes2.default.source,
 ratingColor:_propTypes2.default.string,
 ratingBackgroundColor:_propTypes2.default.string,
 ratingCount:_propTypes2.default.number,
